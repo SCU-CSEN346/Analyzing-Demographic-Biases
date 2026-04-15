@@ -58,10 +58,22 @@ Both interventions target the root cause of bias — the implicit encoding of de
 
 ## Datasets
 
+This project uses ASAP 2.0 and PERSUADE 2.0. Data is not included in the repo.
+
 | Dataset | Size | Demographic Metadata | Access |
 |---|---|---|---|
 | [PERSUADE 2.0](https://github.com/scrosseye/persuade_corpus_2.0) | 25,000+ essays | Race, gender, ELL, SES | Public |
-| [ASAP 2.0](https://www.kaggle.com/c/asap-aes) | ~25,000 essays | Race, gender, ELL | Public |
+| [ASAP 2.0](https://github.com/scrosseye/ASAP_2.0) | ~25,000 essays | Race, gender, ELL | Public |
+
+To download:
+
+```bash
+bash data/download_data.sh
+```
+
+This will create a `DATA/` directory (gitignored) with the following structure:
+- `DATA/ASAP/train/` and `DATA/ASAP/test/`
+- `DATA/PERSUADE/train/` and `DATA/PERSUADE/test/`
 
 ---
 
@@ -89,8 +101,8 @@ Fairness is evaluated using demographic parity and equalized odds across race an
 
 | Paper | Model | Dataset |
 |---|---|---|
-| [Ormerod & Kehat (2025)](https://aclanthology.org/) | DeBERTa, XLNet, Longformer, Mamba | ASAP 2.0 |
-| [Abdullah et al. / FairGrade (2026)](https://doi.org/10.5281/zenodo.12426230) | BERT + GRL | ASAP, TOEFL11 |
+| [Ormerod & Kehat (2025)](https://aclanthology.org/2025.aimecon-main.5) | DeBERTa, XLNet, Longformer, Mamba | ASAP 2.0 |
+| [Abdullah et al. / FairGrade (2026)](https://sci-cult.net/index.php/cult/article/view/3738/2210) | BERT + GRL | ASAP, TOEFL11 |
 | [Fan & Yun (2026)](https://arxiv.org/abs/2601.16724) | DeBERTa-v3 + contrastive learning | ASAP 2.0, ELLIPSE |
 
 ---
