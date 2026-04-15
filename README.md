@@ -8,7 +8,7 @@
 
 Transformer-based Automated Essay Scoring (AES) systems risk inheriting and amplifying the demographic biases present in their pretraining data. When deployed at scale, these biases can systematically disadvantage students by race, gender, or language background — with real consequences for grades and future opportunities.
 
-This project extends [Kwako & Ormerod (BEA 2024)](https://aclanthology.org/2024.bea-1.7/), who showed that XLNet fine-tuned on PERSUADE amplifies marginal human score differences across race and gender, and that demographic information is implicitly encoded in model hidden states. We make two contributions: a **cross-model, cross-corpus bias analysis** and a **fairness-aware AES model** incorporating in-training debiasing techniques.
+This project extends [Kwako & Ormerod (BEA 2024)](https://aclanthology.org/2024.bea-1.7/), who showed that XLNet fine-tuned on PERSUADE amplifies marginal human score differences across race and gender, and that demographic information is implicitly encoded in model hidden states. We make two contributions: a **cross-model, cross-corpus bias analysis** and a **fairness-aware AES model** incorporating in-training debiasing techniques. From the project instructions, this is a combination of Option 1(Reproduction), and Option 2(Improvement).
 
 ---
 
@@ -117,6 +117,27 @@ Fairness is evaluated using demographic parity and equalized odds across race an
 ├── results/            # Output scores and fairness metrics
 └── paper/              # LaTeX source (Overleaf)
 ```
+
+---
+
+## Contributions
+
+### Rina Li
+
+- Paper Related Work section
+- Githib README
+
+### Tom Ngo
+
+- Paper Introduction section
+- XLNet Preliminary Implementation
+
+### Karthik Tamil
+
+- Paper Abstract
+- Github README
+- HuggingFace Datasets
+- HuggingFace README
 
 ---
 
