@@ -125,16 +125,21 @@ Fairness is evaluated using demographic parity and equalized odds across race an
 ### Rina Li
 
 - Paper Related Work section
+- Automated Bias Evaluation Section
+- Embedded Features Extraction Section
 - Githib README
 
 ### Tom Ngo
 
 - Paper Introduction section
+- Data Preparation & Tokenization Section
+- Model Architecture & Fine-Tuning Section
 - XLNet Preliminary Implementation
 
 ### Karthik Tamil
 
 - Paper Abstract
+- Dataset Section
 - Github README
 - HuggingFace Datasets
 - HuggingFace README
