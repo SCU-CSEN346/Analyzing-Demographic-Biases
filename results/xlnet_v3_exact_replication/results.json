@@ -1,0 +1,437 @@
+[
+  {
+    "prompt": "\"A Cowboy Who Rode the Waves\"",
+    "n_test": null,
+    "qwk": 0.6957462594287128,
+    "exact_acc": 0.6432748538011696,
+    "best_dev_qwk": 0.7850467289719627,
+    "bias": {
+      "gender": {
+        "human_smd": 0.2028,
+        "model_smd": 0.17059999704360962,
+        "amplification": -0.0322
+      },
+      "ell_status": {
+        "human_smd": 0.8758,
+        "model_smd": 1.0882999897003174,
+        "amplification": 0.2125
+      },
+      "economically_disadvantaged": {
+        "human_smd": 0.3413,
+        "model_smd": 0.3571999967098236,
+        "amplification": 0.0159
+      },
+      "student_disability_status": {
+        "human_smd": 0.6332,
+        "model_smd": 0.4580000042915344,
+        "amplification": -0.1752
+      }
+    }
+  },
+  {
+    "prompt": "Car-free cities",
+    "n_test": null,
+    "qwk": 0.6550880626223092,
+    "exact_acc": 0.45594262295081966,
+    "best_dev_qwk": 0.6649676206392312,
+    "bias": {
+      "gender": {
+        "human_smd": 0.2893,
+        "model_smd": 0.34279999136924744,
+        "amplification": 0.0535
+      },
+      "ell_status": {
+        "human_smd": 1.0903,
+        "model_smd": 1.0437999963760376,
+        "amplification": -0.0465
+      },
+      "economically_disadvantaged": {
+        "human_smd": null,
+        "model_smd": null,
+        "amplification": null
+      },
+      "student_disability_status": {
+        "human_smd": null,
+        "model_smd": null,
+        "amplification": null
+      }
+    }
+  },
+  {
+    "prompt": "Cell phones at school",
+    "n_test": null,
+    "qwk": 0.7247573699734792,
+    "exact_acc": 0.6396614268440145,
+    "best_dev_qwk": 0.7871592743850317,
+    "bias": {
+      "gender": {
+        "human_smd": 0.3389,
+        "model_smd": 0.3635999858379364,
+        "amplification": 0.0247
+      },
+      "ell_status": {
+        "human_smd": 0.7525,
+        "model_smd": 1.0893000364303589,
+        "amplification": 0.3368
+      },
+      "economically_disadvantaged": {
+        "human_smd": 0.5583,
+        "model_smd": 0.6624000072479248,
+        "amplification": 0.1041
+      },
+      "student_disability_status": {
+        "human_smd": 1.0094,
+        "model_smd": 0.9926999807357788,
+        "amplification": -0.0167
+      }
+    }
+  },
+  {
+    "prompt": "Community service",
+    "n_test": null,
+    "qwk": 0.7224438210905952,
+    "exact_acc": 0.5981912144702842,
+    "best_dev_qwk": 0.8005715816736626,
+    "bias": {
+      "gender": {
+        "human_smd": 0.3609,
+        "model_smd": 0.32420000433921814,
+        "amplification": -0.0367
+      },
+      "ell_status": {
+        "human_smd": 0.8206,
+        "model_smd": 0.9211000204086304,
+        "amplification": 0.1005
+      },
+      "economically_disadvantaged": {
+        "human_smd": 0.4053,
+        "model_smd": 0.4706999957561493,
+        "amplification": 0.0654
+      },
+      "student_disability_status": {
+        "human_smd": 0.8726,
+        "model_smd": 1.0241999626159668,
+        "amplification": 0.1516
+      }
+    }
+  },
+  {
+    "prompt": "Distance learning",
+    "n_test": null,
+    "qwk": 0.8054445335112178,
+    "exact_acc": 0.5660091047040972,
+    "best_dev_qwk": 0.7840531561461794,
+    "bias": {
+      "gender": {
+        "human_smd": 0.133,
+        "model_smd": 0.13050000369548798,
+        "amplification": -0.0025
+      },
+      "ell_status": {
+        "human_smd": 1.633,
+        "model_smd": 1.9321999549865725,
+        "amplification": 0.2992
+      },
+      "economically_disadvantaged": {
+        "human_smd": 0.9266,
+        "model_smd": 1.0321999788284302,
+        "amplification": 0.1056
+      },
+      "student_disability_status": {
+        "human_smd": 0.3731,
+        "model_smd": 0.3546000123023987,
+        "amplification": -0.0185
+      }
+    }
+  },
+  {
+    "prompt": "Does the electoral college work?",
+    "n_test": null,
+    "qwk": 0.81129236140372,
+    "exact_acc": 0.5701754385964912,
+    "best_dev_qwk": 0.7905278475988886,
+    "bias": {
+      "gender": {
+        "human_smd": 0.3308,
+        "model_smd": 0.37940001487731934,
+        "amplification": 0.0486
+      },
+      "ell_status": {
+        "human_smd": null,
+        "model_smd": null,
+        "amplification": null
+      },
+      "economically_disadvantaged": {
+        "human_smd": null,
+        "model_smd": null,
+        "amplification": null
+      },
+      "student_disability_status": {
+        "human_smd": null,
+        "model_smd": null,
+        "amplification": null
+      }
+    }
+  },
+  {
+    "prompt": "Driverless cars",
+    "n_test": null,
+    "qwk": 0.7188489458645455,
+    "exact_acc": 0.626,
+    "best_dev_qwk": 0.7616344391224646,
+    "bias": {
+      "gender": {
+        "human_smd": 0.3565,
+        "model_smd": 0.39809998869895935,
+        "amplification": 0.0416
+      },
+      "ell_status": {
+        "human_smd": null,
+        "model_smd": null,
+        "amplification": null
+      },
+      "economically_disadvantaged": {
+        "human_smd": 0.2546,
+        "model_smd": 0.6261000037193298,
+        "amplification": 0.3715
+      },
+      "student_disability_status": {
+        "human_smd": 0.699,
+        "model_smd": 0.6920999884605408,
+        "amplification": -0.0069
+      }
+    }
+  },
+  {
+    "prompt": "Exploring Venus",
+    "n_test": null,
+    "qwk": 0.8047795775064777,
+    "exact_acc": 0.576017130620985,
+    "best_dev_qwk": 0.7888980602558812,
+    "bias": {
+      "gender": {
+        "human_smd": 0.2551,
+        "model_smd": 0.295199990272522,
+        "amplification": 0.0401
+      },
+      "ell_status": {
+        "human_smd": 0.6914,
+        "model_smd": 0.8033999800682068,
+        "amplification": 0.112
+      },
+      "economically_disadvantaged": {
+        "human_smd": 0.6044,
+        "model_smd": 0.5824000239372253,
+        "amplification": -0.022
+      },
+      "student_disability_status": {
+        "human_smd": 0.7528,
+        "model_smd": 0.8934000134468079,
+        "amplification": 0.1406
+      }
+    }
+  },
+  {
+    "prompt": "Facial action coding system",
+    "n_test": null,
+    "qwk": 0.8087886965436784,
+    "exact_acc": 0.5864661654135338,
+    "best_dev_qwk": 0.8056042031523643,
+    "bias": {
+      "gender": {
+        "human_smd": 0.2409,
+        "model_smd": 0.22840000689029696,
+        "amplification": -0.0125
+      },
+      "ell_status": {
+        "human_smd": 0.6255,
+        "model_smd": 0.7366999983787537,
+        "amplification": 0.1112
+      },
+      "economically_disadvantaged": {
+        "human_smd": 0.534,
+        "model_smd": 0.5866000056266785,
+        "amplification": 0.0526
+      },
+      "student_disability_status": {
+        "human_smd": 0.7043,
+        "model_smd": 0.6858000159263611,
+        "amplification": -0.0185
+      }
+    }
+  },
+  {
+    "prompt": "Grades for extracurricular activities",
+    "n_test": null,
+    "qwk": 0.7055042850826443,
+    "exact_acc": 0.5684340320591862,
+    "best_dev_qwk": 0.8138056312443234,
+    "bias": {
+      "gender": {
+        "human_smd": 0.3758,
+        "model_smd": 0.4047000110149383,
+        "amplification": 0.0289
+      },
+      "ell_status": {
+        "human_smd": 0.7319,
+        "model_smd": 1.1069999933242798,
+        "amplification": 0.3751
+      },
+      "economically_disadvantaged": {
+        "human_smd": 0.5418,
+        "model_smd": 0.6877999901771545,
+        "amplification": 0.146
+      },
+      "student_disability_status": {
+        "human_smd": 0.6638,
+        "model_smd": 0.5752000212669373,
+        "amplification": -0.0886
+      }
+    }
+  },
+  {
+    "prompt": "Mandatory extracurricular activities",
+    "n_test": null,
+    "qwk": 0.7534576846523622,
+    "exact_acc": 0.5716004813477737,
+    "best_dev_qwk": 0.7703842549203375,
+    "bias": {
+      "gender": {
+        "human_smd": 0.3538,
+        "model_smd": 0.38940000534057617,
+        "amplification": 0.0356
+      },
+      "ell_status": {
+        "human_smd": 1.0523,
+        "model_smd": 1.1339000463485718,
+        "amplification": 0.0816
+      },
+      "economically_disadvantaged": {
+        "human_smd": 0.727,
+        "model_smd": 0.8585000038146973,
+        "amplification": 0.1315
+      },
+      "student_disability_status": {
+        "human_smd": 0.526,
+        "model_smd": 0.5752000212669373,
+        "amplification": 0.0492
+      }
+    }
+  },
+  {
+    "prompt": "Phones and driving",
+    "n_test": null,
+    "qwk": 0.6975909698499925,
+    "exact_acc": 0.6102783725910065,
+    "best_dev_qwk": 0.7347145022738757,
+    "bias": {
+      "gender": {
+        "human_smd": 0.1347,
+        "model_smd": 0.2565999925136566,
+        "amplification": 0.1219
+      },
+      "ell_status": {
+        "human_smd": null,
+        "model_smd": null,
+        "amplification": null
+      },
+      "economically_disadvantaged": {
+        "human_smd": null,
+        "model_smd": null,
+        "amplification": null
+      },
+      "student_disability_status": {
+        "human_smd": null,
+        "model_smd": null,
+        "amplification": null
+      }
+    }
+  },
+  {
+    "prompt": "Seeking multiple opinions",
+    "n_test": null,
+    "qwk": 0.6000000000000001,
+    "exact_acc": 0.5,
+    "best_dev_qwk": 0.7879505393317547,
+    "bias": {
+      "gender": {
+        "human_smd": null,
+        "model_smd": null,
+        "amplification": null
+      },
+      "ell_status": {
+        "human_smd": null,
+        "model_smd": null,
+        "amplification": null
+      },
+      "economically_disadvantaged": {
+        "human_smd": null,
+        "model_smd": null,
+        "amplification": null
+      },
+      "student_disability_status": {
+        "human_smd": null,
+        "model_smd": null,
+        "amplification": null
+      }
+    }
+  },
+  {
+    "prompt": "Summer projects",
+    "n_test": null,
+    "qwk": 0.7032818936868597,
+    "exact_acc": 0.5577142857142857,
+    "best_dev_qwk": 0.6938369781312128,
+    "bias": {
+      "gender": {
+        "human_smd": 0.284,
+        "model_smd": 0.2775999903678894,
+        "amplification": -0.0064
+      },
+      "ell_status": {
+        "human_smd": 1.2712,
+        "model_smd": 1.6711000204086304,
+        "amplification": 0.3999
+      },
+      "economically_disadvantaged": {
+        "human_smd": 0.4879,
+        "model_smd": 0.5569999814033508,
+        "amplification": 0.0691
+      },
+      "student_disability_status": {
+        "human_smd": 0.6211,
+        "model_smd": 0.5972999930381775,
+        "amplification": -0.0238
+      }
+    }
+  },
+  {
+    "prompt": "The Face on Mars",
+    "n_test": null,
+    "qwk": 0.7511838624578617,
+    "exact_acc": 0.6191099476439791,
+    "best_dev_qwk": 0.7607126401474428,
+    "bias": {
+      "gender": {
+        "human_smd": 0.1366,
+        "model_smd": 0.14390000700950625,
+        "amplification": 0.0073
+      },
+      "ell_status": {
+        "human_smd": -0.033,
+        "model_smd": 0.43630000948905945,
+        "amplification": 0.4033
+      },
+      "economically_disadvantaged": {
+        "human_smd": 0.3231,
+        "model_smd": 0.46630001068115234,
+        "amplification": 0.1432
+      },
+      "student_disability_status": {
+        "human_smd": 0.4363,
+        "model_smd": 0.5295000076293945,
+        "amplification": 0.0932
+      }
+    }
+  }
+]

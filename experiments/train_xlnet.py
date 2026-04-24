@@ -33,9 +33,9 @@ WANDB_PROJECT = "xlnet-aes-replication"
 # ── Config ─────────────────────────────────────────────────────────────────
 MODEL_NAME   = "xlnet-base-cased"
 MAX_LEN      = 512
-BATCH_SIZE   = 4
-LR           = 2e-5          # v2: increased from 1e-6 for better convergence
-EPOCHS       = 10
+LR           = 5e-6          # exact replication: Kwako & Ormerod (BEA 2024)
+BATCH_SIZE   = 8             # exact replication: Kwako & Ormerod (BEA 2024)
+EPOCHS       = 20            # exact replication: Kwako & Ormerod (BEA 2024)
 DEV_SPLIT    = 0.10
 RANDOM_SEED  = 42
 SCORE_COL    = "holistic_essay_score"
@@ -44,8 +44,8 @@ PROMPT_COL   = "prompt_name"
 DEMO_COLS    = ["gender", "race_ethnicity", "economically_disadvantaged",
                 "student_disability_status", "ell_status"]
 
-RUN_VERSION  = "v2_lr2e-5"   # bump this for each experiment
-RESULTS_DIR  = os.path.expanduser(f"~/CSEN364/PROJECT/results/xlnet_{RUN_VERSION}")
+RUN_VERSION  = "v3_exact_replication"  # lr=5e-6, batch=8, epochs=20
+RESULTS_DIR  = os.path.expanduser(f"~/CSEN364/PROJECT/Analyzing-Demographic-Biases/results/xlnet_{RUN_VERSION}")
 os.makedirs(RESULTS_DIR, exist_ok=True)
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
@@ -70,6 +70,18 @@ def quadratic_weighted_kappa(y_true, y_pred, min_score=1, max_score=6):
 def smd(group_a, group_b):
     pooled = np.sqrt((group_a.std() ** 2 + group_b.std() ** 2) / 2)
     return (group_a.mean() - group_b.mean()) / pooled if pooled > 0 else 0.0
+
+def to_python(obj):
+    """Recursively convert numpy types to native Python for JSON serialization."""
+    if isinstance(obj, dict):
+        return {k: to_python(v) for k, v in obj.items()}
+    if isinstance(obj, (list, tuple)):
+        return [to_python(v) for v in obj]
+    if isinstance(obj, (np.floating, np.float32, np.float64)):
+        return round(float(obj), 4)
+    if isinstance(obj, (np.integer,)):
+        return int(obj)
+    return obj
 
 def compute_bias_metrics(df, pred_col, score_col):
     results = {}
@@ -283,7 +295,7 @@ def train_prompt(prompt_name, train_df, test_df, tokenizer):
     save_path = os.path.join(RESULTS_DIR, f"xlnet_{prompt_name.replace(' ', '_')}.pt")
     torch.save(best_state, save_path)
 
-    return result
+    return to_python(result)
 
 # ── Main ───────────────────────────────────────────────────────────────────
 def main():
