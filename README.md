@@ -21,7 +21,8 @@ This project extends [Kwako & Ormerod (BEA 2024)](https://aclanthology.org/2024.
 | `[MODEL NAME]-GRL` | DeBERTa-v3 | Adversarial (GRL) | — | — |
 | `[MODEL NAME]-OrthoProj` | DeBERTa-v3 | Orthogonal Projection | — | — |
 | Baseline (no debiasing) | DeBERTa-v3 | — | — | — |
-
+| XLNet (v1, lr=1e-6) | XLNet-base-cased | None (baseline) | 0.594 (macro avg) | — |
+| XLNet (v2, lr=2e-5) | XLNet-base-cased | None (baseline) | in progress | — |
 <!-- TODO: Fill in QWK scores and model names after experiments complete -->
 
 ---
@@ -93,7 +94,10 @@ Fairness is evaluated using demographic parity and equalized odds across race an
 
 > 🚧 Experiments in progress. Results table will be populated here.
 
-<!-- TODO: Add results table comparing baseline vs GRL vs OrthoProj across subgroups -->
+### XLNet Replication (v1)
+Macro-average QWK: **0.594** vs Kwako & Ormerod's reported **0.864**.
+Full per-prompt comparison in `results/xlnet_replication/comparison_vs_paper.csv`.
+V2 retraining with lr=2e-5 in progress.
 
 ---
 
@@ -127,7 +131,7 @@ Fairness is evaluated using demographic parity and equalized odds across race an
 - Paper Related Work section
 - Automated Bias Evaluation Section
 - Embedded Features Extraction Section
-- Githib README
+- GitHub README
 
 ### Tom Ngo
 
@@ -140,7 +144,7 @@ Fairness is evaluated using demographic parity and equalized odds across race an
 
 - Paper Abstract
 - Dataset Section
-- Github README
+- GitHub README
 - HuggingFace Datasets
 - HuggingFace README
 

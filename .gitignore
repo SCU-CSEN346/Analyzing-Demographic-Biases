@@ -1,0 +1,8 @@
+results/*.pt
+results/**/*.pt
+DATA/
+wandb/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+*.pt
