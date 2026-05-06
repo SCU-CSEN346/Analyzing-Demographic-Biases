@@ -299,3 +299,4 @@ Early stopping at epoch 7.
   MSE:             549.2692
   QWK:             0.8092
   Exact Agreement: 0.6651
+  SMD:             0.0280

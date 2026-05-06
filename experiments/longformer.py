@@ -5,8 +5,10 @@ SCU CSEN 346 - Rina Li, Tom Ngo, Karthik Tamil
 Usage:
   python longformer.py --dataset persuade
   python longformer.py --dataset asap
+  python longformer.py --dataset persuade --skip-train   # skips training if .pt exists
 """
 
+import os
 import argparse
 import numpy as np
 import pandas as pd
@@ -181,6 +183,11 @@ def train(model, train_loader, dev_loader, optimizer, loss_fn,
 # Evaluation
 # ------------------------------------------------------------------
 
+def compute_smd(preds, labels):
+    diff = np.array(preds) - np.array(labels)
+    return diff.mean() / diff.std()
+
+
 def evaluate(model, loader, verbose=True):
     model.eval()
     all_preds, all_labels = [], []
@@ -204,11 +211,13 @@ def evaluate(model, loader, verbose=True):
 
     qwk   = cohen_kappa_score(all_labels_int, all_preds_rounded, weights="quadratic")
     exact = np.mean(all_preds_rounded == all_labels_int)
+    smd   = compute_smd(all_preds, all_labels)
 
     if verbose:
         print(f"  MSE:             {total_loss:.4f}", flush=True)
         print(f"  QWK:             {qwk:.4f}", flush=True)
         print(f"  Exact Agreement: {exact:.4f}", flush=True)
+        print(f"  SMD:             {smd:.4f}", flush=True)
 
     return total_loss, qwk
 
@@ -225,6 +234,11 @@ def main():
         required=True,
         help="Dataset to train and test on."
     )
+    parser.add_argument(
+        "--skip-train",
+        action="store_true",
+        help="Skip training and load existing .pt checkpoint if available."
+    )
     args = parser.parse_args()
 
     print("\n" + "="*60, flush=True)
@@ -240,6 +254,17 @@ def main():
         save_path = "best_longformer_asap.pt"
         label     = "ASAP"
 
+    model = LongformerForEssayScoring().to(device)
+
+    if args.skip_train and os.path.exists(save_path):
+        print(f"  Found {save_path}, skipping training.", flush=True)
+        test_dataset = EssayDataset(test_texts, test_scores)
+        test_loader  = DataLoader(test_dataset, batch_size=BATCH_SIZE, shuffle=False)
+        model.load_state_dict(torch.load(save_path))
+        print(f"\n--- {label} Test Results ---", flush=True)
+        evaluate(model, test_loader, verbose=True)
+        return
+
     train_df = pd.DataFrame({"text": train_texts, "score": train_scores})
     dev_df   = train_df.sample(frac=0.1, random_state=RANDOM_STATE)
     train_df = train_df.drop(dev_df.index)
@@ -254,7 +279,6 @@ def main():
     dev_loader   = DataLoader(dev_dataset,   batch_size=BATCH_SIZE, shuffle=False)
     test_loader  = DataLoader(test_dataset,  batch_size=BATCH_SIZE, shuffle=False)
 
-    model     = LongformerForEssayScoring().to(device)
     optimizer = AdamW(model.parameters(), lr=LEARNING_RATE)
     loss_fn   = nn.MSELoss()
 
