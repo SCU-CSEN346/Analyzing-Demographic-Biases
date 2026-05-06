@@ -26,10 +26,10 @@ PATIENCE      = 3
 LEARNING_RATE = 5e-6
 RANDOM_STATE  = 42
 
-PERSUADE_TRAIN = "../DATA/PERSUADE/train/persuade_corpus_2.0_train.csv"
-PERSUADE_TEST  = "../DATA/PERSUADE/test/persuade_corpus_2.0_test.csv"
-ASAP_TRAIN     = "../DATA/ASAP/train/ASAP_2_Final_github_train.csv"
-ASAP_TEST      = "../DATA/ASAP/test/ASAP_2_Final_github_test.csv"
+PERSUADE_TRAIN = "/WAVE/users2/unix/pngo2/Analyzing-Demographic-Biases/DATA/PERSUADE/train/persuade_corpus_2.0_train.csv"
+PERSUADE_TEST  = "/WAVE/users2/unix/pngo2/Analyzing-Demographic-Biases/DATA/PERSUADE/test/persuade_corpus_2.0_test.csv"
+ASAP_TRAIN     = "/WAVE/users2/unix/pngo2/Analyzing-Demographic-Biases/DATA/ASAP/train/ASAP_2_Final_github_train.csv"
+ASAP_TEST      = "/WAVE/users2/unix/pngo2/Analyzing-Demographic-Biases/DATA/ASAP/test/ASAP_2_Final_github_test.csv"
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 print(f"Using device: {device}", flush=True)
