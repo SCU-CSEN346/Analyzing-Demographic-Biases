@@ -1,0 +1,35 @@
+--- ASAP ---
+  MSE:             549.2692
+  QWK:             0.8092
+  Exact Agreement: 0.6651
+  SMD:             0.0280
+
+--- GRL ASAP ---
+  MSE:             592.9655
+  QWK:             0.7890
+  Exact Agreement: 0.6465
+  SMD:             0.3318
+
+--- GRL ORTHOGONAL PROJECTION ASAP ---
+  MSE:             2274.6703
+  QWK:             0.2156
+  Exact Agreement: 0.3006
+  SMD:             0.5663
+
+--- PERSUADE ---
+  MSE:             781.9488
+  QWK:             0.8509
+  Exact Agreement: 0.6586
+  SMD:             0.1358
+
+--- GRL PERSUADE ---
+  MSE:             814.3093
+  QWK:             0.8411
+  Exact Agreement: 0.6421
+  SMD:             0.2987
+
+--- GRL ORTHOGONAL PROJECTION PERSUADE ---
+  MSE:             4121.0094
+  QWK:             0.0243
+  Exact Agreement: 0.2458
+  SMD:             0.4981

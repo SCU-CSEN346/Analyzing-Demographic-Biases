@@ -1,0 +1,24 @@
+Using device: cuda
+  Demo encoding (gender): {'M': 0, 'F': 1}
+  Tokenizing 15594 essays...
+  Tokenization complete.
+  Tokenizing 10402 essays...
+  Tokenization complete.
+
+--- PERSUADE Before Projection ---
+  MSE:             814.3093
+  QWK:             0.8411
+  Exact Agreement: 0.6421
+  SMD:             0.2987
+
+Extracting hidden states...
+Computing bias direction...
+Projecting regression weights...
+
+--- PERSUADE After Projection ---
+  MSE:             4121.0094
+  QWK:             0.0243
+  Exact Agreement: 0.2458
+  SMD:             0.4981
+
+Saved projected model to best_longformer_persuade_projected.pt

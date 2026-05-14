@@ -1,0 +1,170 @@
+Using device: cuda
+
+============================================================
+  Dataset: PERSUADE
+  Debiasing: GRL (target=gender)
+============================================================
+  Demo encoding (gender): {'M': 0, 'F': 1}
+  Train: 14035 | Dev: 1559 | Test: 10402
+  Tokenizing 14035 essays...
+  Tokenization complete.
+  Tokenizing 1559 essays...
+  Tokenization complete.
+  Tokenizing 10402 essays...
+  Tokenization complete.
+  Batch 0/3509 | Loss: 13.0733
+  Batch 100/3509 | Loss: 0.6348
+  Batch 200/3509 | Loss: 1.4617
+  Batch 300/3509 | Loss: 0.4856
+  Batch 400/3509 | Loss: 0.5024
+  Batch 500/3509 | Loss: 0.1644
+  Batch 600/3509 | Loss: 0.1002
+  Batch 700/3509 | Loss: 0.6922
+  Batch 800/3509 | Loss: 0.4408
+  Batch 900/3509 | Loss: 0.0961
+  Batch 1000/3509 | Loss: 0.6713
+  Batch 1100/3509 | Loss: 0.5290
+  Batch 1200/3509 | Loss: 0.6490
+  Batch 1300/3509 | Loss: 0.3648
+  Batch 1400/3509 | Loss: 0.2497
+  Batch 1500/3509 | Loss: 0.3689
+  Batch 1600/3509 | Loss: 1.0546
+  Batch 1700/3509 | Loss: 0.4691
+  Batch 1800/3509 | Loss: 0.5444
+  Batch 1900/3509 | Loss: 0.4025
+  Batch 2000/3509 | Loss: 1.1770
+  Batch 2100/3509 | Loss: 2.0049
+  Batch 2200/3509 | Loss: 0.3151
+  Batch 2300/3509 | Loss: 0.2203
+  Batch 2400/3509 | Loss: 0.3665
+  Batch 2500/3509 | Loss: 0.3306
+  Batch 2600/3509 | Loss: 0.1928
+  Batch 2700/3509 | Loss: 0.2588
+  Batch 2800/3509 | Loss: 0.4621
+  Batch 2900/3509 | Loss: 0.5551
+  Batch 3000/3509 | Loss: 0.4431
+  Batch 3100/3509 | Loss: 0.2679
+  Batch 3200/3509 | Loss: 0.4623
+  Batch 3300/3509 | Loss: 0.1619
+  Batch 3400/3509 | Loss: 0.6198
+  Batch 3500/3509 | Loss: 0.5653
+Epoch 01 | Train Loss: 1994.0058 | Dev Loss: 125.7632 | Dev QWK: 0.8377
+  --> Saved best model.
+  Batch 0/3509 | Loss: 0.1812
+  Batch 100/3509 | Loss: 0.5770
+  Batch 200/3509 | Loss: 0.4010
+  Batch 300/3509 | Loss: 0.1769
+  Batch 400/3509 | Loss: 0.3886
+  Batch 500/3509 | Loss: 0.1735
+  Batch 600/3509 | Loss: 1.2366
+  Batch 700/3509 | Loss: 0.0918
+  Batch 800/3509 | Loss: 0.1049
+  Batch 900/3509 | Loss: 1.6418
+  Batch 1000/3509 | Loss: 0.3930
+  Batch 1100/3509 | Loss: 0.1867
+  Batch 1200/3509 | Loss: 0.2337
+  Batch 1300/3509 | Loss: 1.5750
+  Batch 1400/3509 | Loss: 0.1948
+  Batch 1500/3509 | Loss: 0.5645
+  Batch 1600/3509 | Loss: 0.1488
+  Batch 1700/3509 | Loss: 1.5319
+  Batch 1800/3509 | Loss: 0.1153
+  Batch 1900/3509 | Loss: 0.4953
+  Batch 2000/3509 | Loss: 1.3509
+  Batch 2100/3509 | Loss: 0.7006
+  Batch 2200/3509 | Loss: 0.2008
+  Batch 2300/3509 | Loss: 0.3395
+  Batch 2400/3509 | Loss: 0.3432
+  Batch 2500/3509 | Loss: 0.4907
+  Batch 2600/3509 | Loss: 0.2525
+  Batch 2700/3509 | Loss: 0.7495
+  Batch 2800/3509 | Loss: 0.5905
+  Batch 2900/3509 | Loss: 0.7388
+  Batch 3000/3509 | Loss: 0.3060
+  Batch 3100/3509 | Loss: 0.2311
+  Batch 3200/3509 | Loss: 0.5699
+  Batch 3300/3509 | Loss: 0.1291
+  Batch 3400/3509 | Loss: 0.2079
+  Batch 3500/3509 | Loss: 0.4817
+Epoch 02 | Train Loss: 1337.3203 | Dev Loss: 129.3188 | Dev QWK: 0.8341
+  Batch 0/3509 | Loss: 0.3370
+  Batch 100/3509 | Loss: 0.2739
+  Batch 200/3509 | Loss: 0.1376
+  Batch 300/3509 | Loss: 0.2762
+  Batch 400/3509 | Loss: 0.2905
+  Batch 500/3509 | Loss: 0.5516
+  Batch 600/3509 | Loss: 0.3817
+  Batch 700/3509 | Loss: 0.3864
+  Batch 800/3509 | Loss: 0.3462
+  Batch 900/3509 | Loss: 0.2292
+  Batch 1000/3509 | Loss: 0.2627
+  Batch 1100/3509 | Loss: 0.0936
+  Batch 1200/3509 | Loss: 0.2253
+  Batch 1300/3509 | Loss: 0.1575
+  Batch 1400/3509 | Loss: 0.3242
+  Batch 1500/3509 | Loss: 0.1121
+  Batch 1600/3509 | Loss: 0.7151
+  Batch 1700/3509 | Loss: 0.2688
+  Batch 1800/3509 | Loss: 0.1988
+  Batch 1900/3509 | Loss: 0.8407
+  Batch 2000/3509 | Loss: 0.1329
+  Batch 2100/3509 | Loss: 0.4906
+  Batch 2200/3509 | Loss: 0.1980
+  Batch 2300/3509 | Loss: 0.3038
+  Batch 2400/3509 | Loss: 0.1404
+  Batch 2500/3509 | Loss: 0.2441
+  Batch 2600/3509 | Loss: 0.6753
+  Batch 2700/3509 | Loss: 0.2784
+  Batch 2800/3509 | Loss: 0.4591
+  Batch 2900/3509 | Loss: 0.3907
+  Batch 3000/3509 | Loss: 0.0812
+  Batch 3100/3509 | Loss: 0.0769
+  Batch 3200/3509 | Loss: 0.1282
+  Batch 3300/3509 | Loss: 0.1799
+  Batch 3400/3509 | Loss: 0.2310
+  Batch 3500/3509 | Loss: 0.4957
+Epoch 03 | Train Loss: 1199.2714 | Dev Loss: 154.3042 | Dev QWK: 0.8292
+  Batch 0/3509 | Loss: 0.1841
+  Batch 100/3509 | Loss: 0.1563
+  Batch 200/3509 | Loss: 0.2249
+  Batch 300/3509 | Loss: 0.2070
+  Batch 400/3509 | Loss: 0.6472
+  Batch 500/3509 | Loss: 0.1742
+  Batch 600/3509 | Loss: 0.2245
+  Batch 700/3509 | Loss: 0.3984
+  Batch 800/3509 | Loss: 0.2704
+  Batch 900/3509 | Loss: 0.2344
+  Batch 1000/3509 | Loss: 0.1914
+  Batch 1100/3509 | Loss: 0.4020
+  Batch 1200/3509 | Loss: 0.1932
+  Batch 1300/3509 | Loss: 0.0975
+  Batch 1400/3509 | Loss: 0.1854
+  Batch 1500/3509 | Loss: 0.2157
+  Batch 1600/3509 | Loss: 0.9535
+  Batch 1700/3509 | Loss: 0.2487
+  Batch 1800/3509 | Loss: 0.4248
+  Batch 1900/3509 | Loss: 0.2378
+  Batch 2000/3509 | Loss: 0.1396
+  Batch 2100/3509 | Loss: 0.4034
+  Batch 2200/3509 | Loss: 0.4462
+  Batch 2300/3509 | Loss: 0.2154
+  Batch 2400/3509 | Loss: 0.6535
+  Batch 2500/3509 | Loss: 0.2988
+  Batch 2600/3509 | Loss: 0.2032
+  Batch 2700/3509 | Loss: 0.5851
+  Batch 2800/3509 | Loss: 0.0987
+  Batch 2900/3509 | Loss: 0.2567
+  Batch 3000/3509 | Loss: 0.3113
+  Batch 3100/3509 | Loss: 0.2041
+  Batch 3200/3509 | Loss: 0.2527
+  Batch 3300/3509 | Loss: 0.4599
+  Batch 3400/3509 | Loss: 0.2099
+  Batch 3500/3509 | Loss: 0.2538
+Epoch 04 | Train Loss: 1077.8635 | Dev Loss: 144.7289 | Dev QWK: 0.8227
+Early stopping at epoch 4.
+
+--- PERSUADE Test Results ---
+  MSE:             814.3093
+  QWK:             0.8411
+  Exact Agreement: 0.6421
+  SMD:             0.2987
