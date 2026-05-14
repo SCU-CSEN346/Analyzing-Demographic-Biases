@@ -19,7 +19,7 @@ from sklearn.metrics import cohen_kappa_score
 # ------------------------------------------------------------------
 
 MODEL_NAME    = "roberta-base"
-MAX_LENGTH    = 512 # RoBERTa has a strict 512 max context limit
+MAX_LENGTH    = 512 # RoBERTa has a strict 512 max coPntext limit
 BATCH_SIZE    = 8
 MAX_EPOCHS    = 20
 PATIENCE      = 3

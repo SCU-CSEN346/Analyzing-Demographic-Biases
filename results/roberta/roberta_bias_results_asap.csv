@@ -1,0 +1,10 @@
+Category,Reference Group,Focal Group,Z-Score (Bias),Raw P-Value,Adjusted P-Value,Statistically Significant
+gender,F,M,-0.31,0.7562535812634137,0.9055,False
+race_ethnicity,Two or more races/Other,Black/African American,-0.247,0.8049191479498414,0.9055,False
+race_ethnicity,Two or more races/Other,Hispanic/Latino,-0.076,0.9397416538566445,0.9397,False
+race_ethnicity,Two or more races/Other,White,0.329,0.7419838012932282,0.9055,False
+race_ethnicity,Two or more races/Other,Asian/Pacific Islander,0.769,0.4420481632497675,0.7957,False
+race_ethnicity,Two or more races/Other,American Indian/Alaskan Native,1.024,0.3057482471532087,0.6879,False
+ell_status,No,Yes,-2.644,0.008201397430576936,0.0246,True
+economically_disadvantaged,Economically disadvantaged,Not economically disadvantaged,3.875,0.00010683870363026818,0.0005,True
+student_disability_status,Not identified as having disability,Identified as having disability,-8.128,4.37381814098911e-16,0.0,True

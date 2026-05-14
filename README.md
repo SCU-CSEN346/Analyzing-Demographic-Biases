@@ -133,6 +133,7 @@ V2 retraining with lr=2e-5 in progress.
 - Embedded Features Extraction Section
 - GitHub README
 - XLNet Fine-Tuning
+- Evaluation and Results Section
 
 ### Tom Ngo
 
@@ -141,6 +142,7 @@ V2 retraining with lr=2e-5 in progress.
 - Model Architecture & Fine-Tuning Section
 - XLNet Preliminary Implementation
 - RoBERTa Implementation
+- Evaluation and Results Section
 
 ### Karthik Tamil
 
@@ -150,6 +152,7 @@ V2 retraining with lr=2e-5 in progress.
 - HuggingFace Datasets
 - HuggingFace README
 - Longformer Implementation
+- Evaluation and Results Section
 
 ---
 
