@@ -5,6 +5,11 @@ Replication of Kwako & Ormerod (BEA 2024):
   - Regression head (MSE loss)
   - AdamW + linear LR schedule, early stopping on QWK
   - Evaluates QWK, SMD per demographic group
+
+Paths default to repo-relative locations and can be overridden via env vars:
+    DATA_BASE     defaults to <repo_root>/../DATA
+    RESULTS_DIR   defaults to <repo_root>/results/xlnet/<RUN_VERSION>
+    RUN_VERSION   defaults to "baseline_replication"
 """
 
 import os
@@ -21,21 +26,16 @@ from transformers import (
     XLNetModel,
     get_linear_schedule_with_warmup,
 )
-from datasets import load_dataset
 from sklearn.model_selection import train_test_split
-from scipy.stats import pearsonr
-import wandb
-import warnings
-warnings.filterwarnings("ignore")
 
-WANDB_PROJECT = "xlnet-aes-replication"
+warnings.filterwarnings("ignore")
 
 # ── Config ─────────────────────────────────────────────────────────────────
 MODEL_NAME   = "xlnet-base-cased"
-MAX_LEN      = 512
-LR           = 5e-6          # exact replication: Kwako & Ormerod (BEA 2024)
-BATCH_SIZE   = 8             # exact replication: Kwako & Ormerod (BEA 2024)
-EPOCHS       = 20            # exact replication: Kwako & Ormerod (BEA 2024)
+MAX_LEN      = int(os.environ.get("MAX_LEN", 2048))
+LR           = float(os.environ.get("LR", 5e-6))    # Kwako & Ormerod (BEA 2024)
+BATCH_SIZE   = int(os.environ.get("BATCH_SIZE", 8)) # Kwako & Ormerod (BEA 2024)
+EPOCHS       = int(os.environ.get("EPOCHS", 20))    # Kwako & Ormerod (BEA 2024)
 DEV_SPLIT    = 0.10
 RANDOM_SEED  = 42
 SCORE_COL    = "holistic_essay_score"
@@ -44,12 +44,19 @@ PROMPT_COL   = "prompt_name"
 DEMO_COLS    = ["gender", "race_ethnicity", "economically_disadvantaged",
                 "student_disability_status", "ell_status"]
 
-RUN_VERSION  = "v3_exact_replication"  # lr=5e-6, batch=8, epochs=20
-RESULTS_DIR  = os.path.expanduser(f"~/CSEN364/PROJECT/Analyzing-Demographic-Biases/results/xlnet_{RUN_VERSION}")
+RUN_VERSION  = os.environ.get("RUN_VERSION", "baseline_replication")
+
+# Paths default to repo-relative locations; override via env vars on RunPod etc.
+SCRIPT_DIR   = os.path.dirname(os.path.abspath(__file__))
+REPO_ROOT    = os.path.abspath(os.path.join(SCRIPT_DIR, "..", ".."))
+RESULTS_DIR  = os.environ.get(
+    "RESULTS_DIR",
+    os.path.join(REPO_ROOT, "results", "xlnet", RUN_VERSION)
+)
 os.makedirs(RESULTS_DIR, exist_ok=True)
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-print(f"Device: {device}")
+print(f"[{RUN_VERSION}] device={device}  results={RESULTS_DIR}")
 
 # ── Metrics ────────────────────────────────────────────────────────────────
 def quadratic_weighted_kappa(y_true, y_pred, min_score=1, max_score=6):
@@ -125,7 +132,6 @@ class XLNetRegressor(torch.nn.Module):
             attention_mask=attention_mask,
             token_type_ids=token_type_ids,
         )
-        # Use last token's hidden state (XLNet CLS equivalent)
         cls = out.last_hidden_state[:, -1, :]
         cls = self.dropout(cls)
         return self.regressor(cls).squeeze(-1)
@@ -154,31 +160,11 @@ class EssayDataset(torch.utils.data.Dataset):
 
 # ── Training per prompt ────────────────────────────────────────────────────
 def train_prompt(prompt_name, train_df, test_df, tokenizer):
-    print(f"\n{'='*60}\nPrompt: {prompt_name}\n{'='*60}")
-
-    run = wandb.init(
-        project=WANDB_PROJECT,
-        name=f"{RUN_VERSION}/{prompt_name}",
-        group=RUN_VERSION,
-        config={
-            "model":      MODEL_NAME,
-            "prompt":     prompt_name,
-            "max_len":    MAX_LEN,
-            "batch_size": BATCH_SIZE,
-            "lr":         LR,
-            "epochs":     EPOCHS,
-            "dev_split":  DEV_SPLIT,
-            "run_version": RUN_VERSION,
-        },
-        reinit=True,
-    )
-
-    # Split train → train/dev
     tr, dev = train_test_split(train_df, test_size=DEV_SPLIT, random_state=RANDOM_SEED)
     tr  = tr.reset_index(drop=True)
     dev = dev.reset_index(drop=True)
 
-    print(f"  Train: {len(tr)}  Dev: {len(dev)}  Test: {len(test_df)}")
+    print(f"\n[{prompt_name}] train={len(tr)} dev={len(dev)} test={len(test_df)}")
 
     train_ds = EssayDataset(tr[TEXT_COL].tolist(),  tr[SCORE_COL].tolist(),  tokenizer)
     dev_ds   = EssayDataset(dev[TEXT_COL].tolist(), dev[SCORE_COL].tolist(), tokenizer)
@@ -200,7 +186,6 @@ def train_prompt(prompt_name, train_df, test_df, tokenizer):
     best_state = None
 
     for epoch in range(EPOCHS):
-        # Train
         model.train()
         train_loss = 0
         for batch in train_dl:
@@ -216,7 +201,6 @@ def train_prompt(prompt_name, train_df, test_df, tokenizer):
             scheduler.step()
             train_loss += loss.item()
 
-        # Dev
         model.eval()
         dev_preds, dev_true = [], []
         with torch.no_grad():
@@ -230,20 +214,12 @@ def train_prompt(prompt_name, train_df, test_df, tokenizer):
                 dev_true.extend(batch["labels"].numpy())
 
         dev_qwk = quadratic_weighted_kappa(np.array(dev_true), np.array(dev_preds))
-        print(f"  Epoch {epoch+1:2d} | Train Loss: {train_loss/len(train_dl):.4f} | Dev QWK: {dev_qwk:.4f}")
-
-        wandb.log({
-            "epoch":      epoch + 1,
-            "train_loss": train_loss / len(train_dl),
-            "dev_qwk":    dev_qwk,
-        })
+        print(f"  ep{epoch+1:02d} loss={train_loss/len(train_dl):.4f} dev_qwk={dev_qwk:+.4f}")
 
         if dev_qwk > best_qwk:
             best_qwk   = dev_qwk
             best_state = {k: v.cpu().clone() for k, v in model.state_dict().items()}
 
-    # Test with best model
-    print(f"  Best Dev QWK: {best_qwk:.4f} — evaluating on test set...")
     model.load_state_dict(best_state)
     model.eval()
 
@@ -262,10 +238,8 @@ def train_prompt(prompt_name, train_df, test_df, tokenizer):
     test_true  = np.array(test_true)
 
     qwk = quadratic_weighted_kappa(test_true, test_preds)
-    smd_overall = smd(test_preds, test_true)  # model vs human overall
     exact_acc = np.mean(np.round(test_preds).clip(1, 6) == test_true)
 
-    # Bias metrics
     test_df = test_df.copy()
     test_df["model_score"] = test_preds
     bias = compute_bias_metrics(test_df, "model_score", SCORE_COL)
@@ -278,20 +252,8 @@ def train_prompt(prompt_name, train_df, test_df, tokenizer):
         "bias":      bias,
     }
 
-    print(f"  Test QWK: {qwk:.4f} | Exact Acc: {exact_acc:.4f}")
-    for attr, vals in bias.items():
-        print(f"    {attr}: human_smd={vals['human_smd']:+.3f} → model_smd={vals['model_smd']:+.3f}")
+    print(f"  test_qwk={qwk:+.4f} test_acc={exact_acc:.3f}")
 
-    # Log test metrics to wandb
-    test_log = {"test_qwk": qwk, "test_exact_acc": exact_acc, "best_dev_qwk": best_qwk}
-    for attr, vals in bias.items():
-        test_log[f"bias/{attr}/human_smd"] = vals["human_smd"]
-        test_log[f"bias/{attr}/model_smd"] = vals["model_smd"]
-        test_log[f"bias/{attr}/amplification"] = round(abs(vals["model_smd"]) - abs(vals["human_smd"]), 4)
-    wandb.log(test_log)
-    wandb.finish()
-
-    # Save model
     save_path = os.path.join(RESULTS_DIR, f"xlnet_{prompt_name.replace(' ', '_')}.pt")
     torch.save(best_state, save_path)
 
@@ -299,10 +261,12 @@ def train_prompt(prompt_name, train_df, test_df, tokenizer):
 
 # ── Main ───────────────────────────────────────────────────────────────────
 def main():
-    # ── Data Loading ──────────────────────────────────────────────────────
-    # LOCAL (temporary): switch back to HuggingFace paths once repo is public
-    BASE = os.path.expanduser("~/CSEN364/PROJECT/DATA")
-    print("Loading PERSUADE from local files...")
+    # Default DATA_BASE: <repo_root>/../DATA (data sits alongside the repo)
+    BASE = os.environ.get(
+        "DATA_BASE",
+        os.path.join(REPO_ROOT, "..", "DATA")
+    )
+
     persuade_train = pd.read_csv(
         os.path.join(BASE, "PERSUADE/train/persuade_corpus_2.0_train.csv"),
         low_memory=False
@@ -313,18 +277,12 @@ def main():
         low_memory=False
     ).drop_duplicates(subset="essay_id").reset_index(drop=True)
 
-    # ── HuggingFace loading (uncomment once repo is public) ───────────────
-    # print("Loading PERSUADE from HuggingFace...")
+    # Alternative: load from HuggingFace once dataset is public
     # persuade_train = pd.read_csv(
     #     "hf://datasets/nlpscu/Analyzing-Demographic-Biases/PERSUADE/persuade_corpus_2.0_train.csv",
     #     low_memory=False
     # ).drop_duplicates(subset="essay_id").reset_index(drop=True)
-    # persuade_test = pd.read_csv(
-    #     "hf://datasets/nlpscu/Analyzing-Demographic-Biases/PERSUADE/persuade_corpus_2.0_test.csv",
-    #     low_memory=False
-    # ).drop_duplicates(subset="essay_id").reset_index(drop=True)
 
-    # Clean
     for df in [persuade_train, persuade_test]:
         for c in DEMO_COLS:
             if c in df.columns:
@@ -337,51 +295,30 @@ def main():
         persuade_test[TEXT_COL].notna() & persuade_test[SCORE_COL].notna()
     ].reset_index(drop=True)
 
-    print(f"Train: {len(persuade_train):,}  Test: {len(persuade_test):,}")
-    print(f"Prompts: {sorted(persuade_train[PROMPT_COL].unique())}")
+    prompts = sorted(persuade_train[PROMPT_COL].dropna().unique())
+    print(f"PERSUADE loaded: train={len(persuade_train):,} test={len(persuade_test):,} prompts={len(prompts)}")
 
     tokenizer = XLNetTokenizer.from_pretrained(MODEL_NAME)
 
     all_results = []
-    prompts = sorted(persuade_train[PROMPT_COL].dropna().unique())
 
     for prompt in prompts:
         tr = persuade_train[persuade_train[PROMPT_COL] == prompt].reset_index(drop=True)
         te = persuade_test[persuade_test[PROMPT_COL] == prompt].reset_index(drop=True)
 
         if len(tr) < 20 or len(te) < 5:
-            print(f"Skipping '{prompt}' — too few samples (train={len(tr)}, test={len(te)})")
+            print(f"[{prompt}] skipped (train={len(tr)}, test={len(te)})")
             continue
 
         result = train_prompt(prompt, tr, te, tokenizer)
         all_results.append(result)
 
-    # Save all results
     results_path = os.path.join(RESULTS_DIR, "results.json")
     with open(results_path, "w") as f:
         json.dump(all_results, f, indent=2)
 
-    # Summary table
-    print(f"\n{'='*60}")
-    print("SUMMARY")
-    print(f"{'='*60}")
-    print(f"{'Prompt':<45} {'QWK':>6} {'Exact':>6}")
-    print("-" * 60)
-    qwks = []
-    for r in all_results:
-        print(f"{r['prompt']:<45} {r['qwk']:>6.4f} {r['exact_acc']:>6.4f}")
-        qwks.append(r['qwk'])
-    print("-" * 60)
-    print(f"{'Macro Average':<45} {np.mean(qwks):>6.4f}")
-    print(f"\nResults saved to: {results_path}")
-
-    # Log macro summary run
-    summary_run = wandb.init(project=WANDB_PROJECT, name=f"{RUN_VERSION}/summary", group=RUN_VERSION, reinit=True)
-    wandb.log({
-        "macro_avg_qwk": float(np.mean(qwks)),
-        **{f"prompt_qwk/{r['prompt']}": r["qwk"] for r in all_results},
-    })
-    wandb.finish()
+    qwks = [r['qwk'] for r in all_results]
+    print(f"\nmacro_qwk={np.mean(qwks):.4f}  saved={results_path}")
 
 if __name__ == "__main__":
     main()
