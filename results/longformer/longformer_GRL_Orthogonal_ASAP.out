@@ -6,19 +6,19 @@ Using device: cuda
   Tokenization complete.
 
 --- ASAP Before Projection ---
-  MSE:             592.9655
-  QWK:             0.7890
-  Exact Agreement: 0.6465
-  SMD:             0.3318
+  MSE:             591.0181
+  QWK:             0.7815
+  Exact Agreement: 0.6457
+  SMD:             0.1246
 
 Extracting hidden states...
 Computing bias direction...
 Projecting regression weights...
 
 --- ASAP After Projection ---
-  MSE:             2274.6703
-  QWK:             0.2156
-  Exact Agreement: 0.3006
-  SMD:             0.5663
+  MSE:             3834.8213
+  QWK:             0.0040
+  Exact Agreement: 0.2194
+  SMD:             1.0431
 
 Saved projected model to best_longformer_asap_projected.pt

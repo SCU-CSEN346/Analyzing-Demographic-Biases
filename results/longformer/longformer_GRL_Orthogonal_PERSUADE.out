@@ -6,19 +6,19 @@ Using device: cuda
   Tokenization complete.
 
 --- PERSUADE Before Projection ---
-  MSE:             814.3093
-  QWK:             0.8411
-  Exact Agreement: 0.6421
-  SMD:             0.2987
+  MSE:             711.8704
+  QWK:             0.8653
+  Exact Agreement: 0.6748
+  SMD:             0.1864
 
 Extracting hidden states...
 Computing bias direction...
 Projecting regression weights...
 
 --- PERSUADE After Projection ---
-  MSE:             4121.0094
-  QWK:             0.0243
-  Exact Agreement: 0.2458
-  SMD:             0.4981
+  MSE:             6431.6667
+  QWK:             0.0692
+  Exact Agreement: 0.1818
+  SMD:             0.9676
 
 Saved projected model to best_longformer_persuade_projected.pt
