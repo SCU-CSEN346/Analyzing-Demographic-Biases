@@ -170,6 +170,10 @@ def train(model, train_loader, dev_loader, optimizer, loss_fn,
 # Evaluation
 # ------------------------------------------------------------------
 
+def compute_smd(preds, labels):
+    diff = np.array(preds) - np.array(labels)
+    return diff.mean() / diff.std()
+
 def evaluate(model, loader, verbose=True):
     model.eval()
     all_preds, all_labels = [], []
@@ -192,11 +196,13 @@ def evaluate(model, loader, verbose=True):
 
     qwk   = cohen_kappa_score(all_labels_int, all_preds_rounded, weights="quadratic")
     exact = np.mean(all_preds_rounded == all_labels_int)
+    smd   = compute_smd(all_preds, all_labels)
 
     if verbose:
         print(f"  MSE:             {total_loss:.4f}", flush=True)
         print(f"  QWK:             {qwk:.4f}", flush=True)
         print(f"  Exact Agreement: {exact:.4f}", flush=True)
+        print(f"  SMD:             {smd:.4f}", flush=True)
 
     return total_loss, qwk
 
