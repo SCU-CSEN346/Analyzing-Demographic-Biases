@@ -25,9 +25,9 @@ PATIENCE      = 3
 LEARNING_RATE = 5e-6
 RANDOM_STATE  = 42
 
-PERSUADE_TRAIN = "/WAVE/users2/unix/pngo2/Analyzing-Demographic-Biases/DATA/PERSUADE/train/persuade_corpus_2.0_train.csv"
-PERSUADE_TEST  = "/WAVE/users2/unix/pngo2/Analyzing-Demographic-Biases/DATA/PERSUADE/test/persuade_corpus_2.0_test.csv"
-TRAINED_GRADER_PATH = "/WAVE/users2/unix/pngo2/Analyzing-Demographic-Biases/best_roberta_persuade.pt"
+ASAP_TRAIN = "/WAVE/users2/unix/pngo2/Analyzing-Demographic-Biases/DATA/ASAP/train/ASAP_2_Final_github_train.csv"
+ASAP_TEST  = "/WAVE/users2/unix/pngo2/Analyzing-Demographic-Biases/DATA/ASAP/test/ASAP_2_Final_github_test.csv"
+TRAINED_GRADER_PATH = "/WAVE/users2/unix/pngo2/Analyzing-Demographic-Biases/best_roberta_asap.pt"
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 print(f"Using device: {device}", flush=True)
@@ -47,7 +47,7 @@ print("Scanning dataset for prompts and demographics...", flush=True)
 # Use `usecols` to only load the columns we care about. 
 # This prevents pandas from loading the massive "full_text" column into memory during the scan.
 cols_to_load = ["prompt_name"] + DEMO_COLUMNS_TO_CHECK
-df_meta = pd.read_csv(PERSUADE_TRAIN, usecols=lambda c: c in cols_to_load, low_memory=False)
+df_meta = pd.read_csv(ASAP_TRAIN, usecols=lambda c: c in cols_to_load, low_memory=False)
 
 # 1. Auto-extract all unique prompts
 PROMPTS = df_meta["prompt_name"].dropna().unique().tolist()
@@ -187,7 +187,7 @@ def main():
             print(f"\n--- Probing: {prompt} | {demo_name} ---")
             
             train_loader, test_loader = get_dataloaders(
-                PERSUADE_TRAIN, PERSUADE_TEST, prompt, demo_name, demo_map
+                ASAP_TRAIN, ASAP_TEST, prompt, demo_name, demo_map
             )
             
             if train_loader is None:
@@ -210,8 +210,8 @@ def main():
 
     # Save everything to a clean CSV
     results_df = pd.DataFrame(results)
-    results_df.to_csv("probing_results_matrix.csv", index=False)
-    print("\nAll probing complete! Results saved to 'probing_results_matrix.csv'.")
+    results_df.to_csv("probing_results_matrix_asap.csv", index=False)
+    print("\nAll probing complete! Results saved to 'probing_results_matrix_asap.csv'.")
     print(results_df)
 
 if __name__ == "__main__":
