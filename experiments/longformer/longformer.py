@@ -36,7 +36,7 @@ MAX_EPOCHS    = 20
 PATIENCE      = 3
 LEARNING_RATE = 5e-6
 RANDOM_STATE  = 42
-GRL_LAMBDA    = 0.1
+GRL_LAMBDA    = 0.01
 
 PERSUADE_TRAIN = "PERSUADE/persuade_corpus_2.0_train.csv"
 PERSUADE_TEST  = "PERSUADE/persuade_corpus_2.0_test.csv"

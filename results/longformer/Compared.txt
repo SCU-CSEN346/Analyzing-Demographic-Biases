@@ -4,6 +4,12 @@
   Exact Agreement: 0.6651
   SMD:             0.0280
 
+--- ASAP After Projection ---
+  MSE:             2597.9324
+  QWK:             0.0255
+  Exact Agreement: 0.1904
+  SMD:             0.6288
+
 --- GRL ASAP ---
   MSE:             591.0181
   QWK:             0.7815
@@ -21,6 +27,12 @@
   QWK:             0.8509
   Exact Agreement: 0.6586
   SMD:             0.1358
+
+--- PERSUADE After Projection ---
+  MSE:             6059.6425
+  QWK:             0.0302
+  Exact Agreement: 0.2369
+  SMD:             0.9289
 
 --- GRL PERSUADE ---
   MSE:             711.8704

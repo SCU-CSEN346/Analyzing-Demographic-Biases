@@ -1,0 +1,167 @@
+Using device: cuda
+
+============================================================
+  Probing: pt/best_longformer_asap_projected_base.pt
+  Dataset: ASAP
+============================================================
+  Loading cached tokens from cache/asap_train_tokens.pt
+  Loading cached tokens from cache/asap_test_tokens.pt
+  Extracting features for 17307 essays...
+    batch 0/1082
+    batch 50/1082
+    batch 100/1082
+    batch 150/1082
+    batch 200/1082
+    batch 250/1082
+    batch 300/1082
+    batch 350/1082
+    batch 400/1082
+    batch 450/1082
+    batch 500/1082
+    batch 550/1082
+    batch 600/1082
+    batch 650/1082
+    batch 700/1082
+    batch 750/1082
+    batch 800/1082
+    batch 850/1082
+    batch 900/1082
+    batch 950/1082
+    batch 1000/1082
+    batch 1050/1082
+  Cached features to cache/asap_best_longformer_asap_projected_base_train_features.pt
+  Extracting features for 7421 essays...
+    batch 0/464
+    batch 50/464
+    batch 100/464
+    batch 150/464
+    batch 200/464
+    batch 250/464
+    batch 300/464
+    batch 350/464
+    batch 400/464
+    batch 450/464
+  Cached features to cache/asap_best_longformer_asap_projected_base_test_features.pt
+
+  -- gender --
+  [gender] Epoch 01 | Dev κ: 0.1881
+  [gender] Epoch 02 | Dev κ: 0.1874
+  [gender] Epoch 03 | Dev κ: 0.1536
+  [gender] Epoch 04 | Dev κ: 0.1852
+  [gender] Epoch 05 | Dev κ: 0.1981
+  [gender] Epoch 06 | Dev κ: 0.1718
+  [gender] Epoch 07 | Dev κ: 0.2191
+  [gender] Epoch 08 | Dev κ: 0.0189
+  [gender] Epoch 09 | Dev κ: 0.1540
+  [gender] Epoch 10 | Dev κ: 0.1385
+  [gender] Epoch 11 | Dev κ: 0.2003
+  [gender] Epoch 12 | Dev κ: 0.1805
+  Early stopping at epoch 12.
+  gender: κ = 0.2839
+
+  -- race --
+  [race (White)] Epoch 01 | Dev κ: 0.0694
+  [race (White)] Epoch 02 | Dev κ: 0.1919
+  [race (White)] Epoch 03 | Dev κ: 0.2665
+  [race (White)] Epoch 04 | Dev κ: 0.2712
+  [race (White)] Epoch 05 | Dev κ: 0.2620
+  [race (White)] Epoch 06 | Dev κ: 0.2591
+  [race (White)] Epoch 07 | Dev κ: 0.2127
+  [race (White)] Epoch 08 | Dev κ: 0.1563
+  [race (White)] Epoch 09 | Dev κ: 0.2809
+  [race (White)] Epoch 10 | Dev κ: 0.1109
+  [race (White)] Epoch 11 | Dev κ: 0.2677
+  [race (White)] Epoch 12 | Dev κ: 0.1523
+  [race (White)] Epoch 13 | Dev κ: 0.3010
+  [race (White)] Epoch 14 | Dev κ: 0.3050
+  [race (White)] Epoch 15 | Dev κ: 0.1915
+  [race (White)] Epoch 16 | Dev κ: 0.2755
+  [race (White)] Epoch 17 | Dev κ: 0.2814
+  [race (White)] Epoch 18 | Dev κ: 0.2746
+  [race (White)] Epoch 19 | Dev κ: 0.2262
+  Early stopping at epoch 19.
+  race (White): κ = 0.2130
+  [race (Hispanic/Latino)] Epoch 01 | Dev κ: 0.0906
+  [race (Hispanic/Latino)] Epoch 02 | Dev κ: 0.1623
+  [race (Hispanic/Latino)] Epoch 03 | Dev κ: 0.1463
+  [race (Hispanic/Latino)] Epoch 04 | Dev κ: 0.1706
+  [race (Hispanic/Latino)] Epoch 05 | Dev κ: 0.0129
+  [race (Hispanic/Latino)] Epoch 06 | Dev κ: 0.1652
+  [race (Hispanic/Latino)] Epoch 07 | Dev κ: 0.0474
+  [race (Hispanic/Latino)] Epoch 08 | Dev κ: 0.1141
+  [race (Hispanic/Latino)] Epoch 09 | Dev κ: 0.1668
+  Early stopping at epoch 9.
+  race (Hispanic/Latino): κ = 0.1725
+  [race (Black/African American)] Epoch 01 | Dev κ: 0.1150
+  [race (Black/African American)] Epoch 02 | Dev κ: 0.1764
+  [race (Black/African American)] Epoch 03 | Dev κ: 0.1105
+  [race (Black/African American)] Epoch 04 | Dev κ: 0.1602
+  [race (Black/African American)] Epoch 05 | Dev κ: 0.2092
+  [race (Black/African American)] Epoch 06 | Dev κ: 0.1902
+  [race (Black/African American)] Epoch 07 | Dev κ: 0.2023
+  [race (Black/African American)] Epoch 08 | Dev κ: 0.1993
+  [race (Black/African American)] Epoch 09 | Dev κ: 0.0616
+  [race (Black/African American)] Epoch 10 | Dev κ: 0.1895
+  Early stopping at epoch 10.
+  race (Black/African American): κ = 0.2605
+  [race (Asian/Pacific Islander)] Epoch 01 | Dev κ: 0.1611
+  [race (Asian/Pacific Islander)] Epoch 02 | Dev κ: 0.1393
+  [race (Asian/Pacific Islander)] Epoch 03 | Dev κ: 0.1113
+  [race (Asian/Pacific Islander)] Epoch 04 | Dev κ: 0.0000
+  [race (Asian/Pacific Islander)] Epoch 05 | Dev κ: 0.0653
+  [race (Asian/Pacific Islander)] Epoch 06 | Dev κ: 0.1378
+  Early stopping at epoch 6.
+  race (Asian/Pacific Islander): κ = 0.1734
+
+  -- ell --
+  [ell] Epoch 01 | Dev κ: 0.2322
+  [ell] Epoch 02 | Dev κ: 0.3803
+  [ell] Epoch 03 | Dev κ: 0.4282
+  [ell] Epoch 04 | Dev κ: 0.4130
+  [ell] Epoch 05 | Dev κ: 0.4255
+  [ell] Epoch 06 | Dev κ: 0.3862
+  [ell] Epoch 07 | Dev κ: 0.2799
+  [ell] Epoch 08 | Dev κ: 0.3405
+  Early stopping at epoch 8.
+  ell: κ = 0.3460
+
+  -- ses --
+  [ses] Epoch 01 | Dev κ: 0.1075
+  [ses] Epoch 02 | Dev κ: 0.0079
+  [ses] Epoch 03 | Dev κ: 0.2397
+  [ses] Epoch 04 | Dev κ: 0.2386
+  [ses] Epoch 05 | Dev κ: 0.2287
+  [ses] Epoch 06 | Dev κ: 0.2279
+  [ses] Epoch 07 | Dev κ: 0.0860
+  [ses] Epoch 08 | Dev κ: 0.2676
+  [ses] Epoch 09 | Dev κ: 0.1390
+  [ses] Epoch 10 | Dev κ: 0.2514
+  [ses] Epoch 11 | Dev κ: 0.2482
+  [ses] Epoch 12 | Dev κ: 0.2401
+  [ses] Epoch 13 | Dev κ: 0.1714
+  Early stopping at epoch 13.
+  ses: κ = 0.1868
+
+  -- disability --
+  [disability] Epoch 01 | Dev κ: 0.3806
+  [disability] Epoch 02 | Dev κ: 0.2847
+  [disability] Epoch 03 | Dev κ: 0.4064
+  [disability] Epoch 04 | Dev κ: 0.3444
+  [disability] Epoch 05 | Dev κ: 0.3482
+  [disability] Epoch 06 | Dev κ: 0.3500
+  [disability] Epoch 07 | Dev κ: 0.4037
+  [disability] Epoch 08 | Dev κ: 0.3872
+  Early stopping at epoch 8.
+  disability: κ = 0.2848
+
+============================================================
+  Summary: pt/best_longformer_asap_projected_base.pt
+============================================================
+  gender                                   κ = 0.2839
+  race (White)                             κ = 0.2130
+  race (Hispanic/Latino)                   κ = 0.1725
+  race (Black/African American)            κ = 0.2605
+  race (Asian/Pacific Islander)            κ = 0.1734
+  ell                                      κ = 0.3460
+  ses                                      κ = 0.1868
+  disability                               κ = 0.2848

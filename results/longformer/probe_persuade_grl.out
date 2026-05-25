@@ -1,0 +1,177 @@
+Using device: cuda
+
+============================================================
+  Probing: pt/best_longformer_persuade_grl.pt
+  Dataset: PERSUADE
+============================================================
+  Loading cached tokens from cache/persuade_train_tokens.pt
+  Loading cached tokens from cache/persuade_test_tokens.pt
+  Extracting features for 15594 essays...
+    batch 0/975
+    batch 50/975
+    batch 100/975
+    batch 150/975
+    batch 200/975
+    batch 250/975
+    batch 300/975
+    batch 350/975
+    batch 400/975
+    batch 450/975
+    batch 500/975
+    batch 550/975
+    batch 600/975
+    batch 650/975
+    batch 700/975
+    batch 750/975
+    batch 800/975
+    batch 850/975
+    batch 900/975
+    batch 950/975
+  Cached features to cache/persuade_best_longformer_persuade_grl_train_features.pt
+  Extracting features for 10402 essays...
+    batch 0/651
+    batch 50/651
+    batch 100/651
+    batch 150/651
+    batch 200/651
+    batch 250/651
+    batch 300/651
+    batch 350/651
+    batch 400/651
+    batch 450/651
+    batch 500/651
+    batch 550/651
+    batch 600/651
+    batch 650/651
+  Cached features to cache/persuade_best_longformer_persuade_grl_test_features.pt
+
+  -- gender --
+  [gender] Epoch 01 | Dev κ: 0.1822
+  [gender] Epoch 02 | Dev κ: 0.0026
+  [gender] Epoch 03 | Dev κ: 0.1534
+  [gender] Epoch 04 | Dev κ: 0.1784
+  [gender] Epoch 05 | Dev κ: 0.1665
+  [gender] Epoch 06 | Dev κ: 0.0060
+  Early stopping at epoch 6.
+  gender: κ = 0.1448
+
+  -- race --
+  [race (White)] Epoch 01 | Dev κ: 0.2150
+  [race (White)] Epoch 02 | Dev κ: 0.2093
+  [race (White)] Epoch 03 | Dev κ: 0.2707
+  [race (White)] Epoch 04 | Dev κ: 0.3187
+  [race (White)] Epoch 05 | Dev κ: 0.2628
+  [race (White)] Epoch 06 | Dev κ: 0.2347
+  [race (White)] Epoch 07 | Dev κ: 0.1859
+  [race (White)] Epoch 08 | Dev κ: 0.3082
+  [race (White)] Epoch 09 | Dev κ: 0.2669
+  Early stopping at epoch 9.
+  race (White): κ = 0.2711
+  [race (Hispanic/Latino)] Epoch 01 | Dev κ: 0.0943
+  [race (Hispanic/Latino)] Epoch 02 | Dev κ: 0.0946
+  [race (Hispanic/Latino)] Epoch 03 | Dev κ: 0.0978
+  [race (Hispanic/Latino)] Epoch 04 | Dev κ: 0.1864
+  [race (Hispanic/Latino)] Epoch 05 | Dev κ: 0.1888
+  [race (Hispanic/Latino)] Epoch 06 | Dev κ: 0.1896
+  [race (Hispanic/Latino)] Epoch 07 | Dev κ: 0.1694
+  [race (Hispanic/Latino)] Epoch 08 | Dev κ: 0.1152
+  [race (Hispanic/Latino)] Epoch 09 | Dev κ: 0.1278
+  [race (Hispanic/Latino)] Epoch 10 | Dev κ: 0.1565
+  [race (Hispanic/Latino)] Epoch 11 | Dev κ: 0.1980
+  [race (Hispanic/Latino)] Epoch 12 | Dev κ: 0.0728
+  [race (Hispanic/Latino)] Epoch 13 | Dev κ: 0.1781
+  [race (Hispanic/Latino)] Epoch 14 | Dev κ: 0.1197
+  [race (Hispanic/Latino)] Epoch 15 | Dev κ: 0.0636
+  [race (Hispanic/Latino)] Epoch 16 | Dev κ: 0.1599
+  Early stopping at epoch 16.
+  race (Hispanic/Latino): κ = 0.1795
+  [race (Black/African American)] Epoch 01 | Dev κ: 0.2013
+  [race (Black/African American)] Epoch 02 | Dev κ: 0.1942
+  [race (Black/African American)] Epoch 03 | Dev κ: 0.1528
+  [race (Black/African American)] Epoch 04 | Dev κ: 0.1667
+  [race (Black/African American)] Epoch 05 | Dev κ: 0.2224
+  [race (Black/African American)] Epoch 06 | Dev κ: 0.1792
+  [race (Black/African American)] Epoch 07 | Dev κ: 0.1454
+  [race (Black/African American)] Epoch 08 | Dev κ: 0.2033
+  [race (Black/African American)] Epoch 09 | Dev κ: 0.1229
+  [race (Black/African American)] Epoch 10 | Dev κ: 0.1825
+  Early stopping at epoch 10.
+  race (Black/African American): κ = 0.2180
+  [race (Asian/Pacific Islander)] Epoch 01 | Dev κ: 0.1218
+  [race (Asian/Pacific Islander)] Epoch 02 | Dev κ: 0.0965
+  [race (Asian/Pacific Islander)] Epoch 03 | Dev κ: 0.1509
+  [race (Asian/Pacific Islander)] Epoch 04 | Dev κ: 0.0268
+  [race (Asian/Pacific Islander)] Epoch 05 | Dev κ: 0.0143
+  [race (Asian/Pacific Islander)] Epoch 06 | Dev κ: 0.0821
+  [race (Asian/Pacific Islander)] Epoch 07 | Dev κ: 0.0254
+  [race (Asian/Pacific Islander)] Epoch 08 | Dev κ: 0.0567
+  Early stopping at epoch 8.
+  race (Asian/Pacific Islander): κ = 0.1854
+
+  -- ell --
+  [ell] Epoch 01 | Dev κ: 0.2097
+  [ell] Epoch 02 | Dev κ: 0.2978
+  [ell] Epoch 03 | Dev κ: 0.3885
+  [ell] Epoch 04 | Dev κ: 0.3248
+  [ell] Epoch 05 | Dev κ: 0.4202
+  [ell] Epoch 06 | Dev κ: 0.4360
+  [ell] Epoch 07 | Dev κ: 0.4414
+  [ell] Epoch 08 | Dev κ: 0.4695
+  [ell] Epoch 09 | Dev κ: 0.4600
+  [ell] Epoch 10 | Dev κ: 0.3644
+  [ell] Epoch 11 | Dev κ: 0.4424
+  [ell] Epoch 12 | Dev κ: 0.3879
+  [ell] Epoch 13 | Dev κ: 0.3291
+  Early stopping at epoch 13.
+  ell: κ = 0.4750
+
+  -- ses --
+  [ses] Epoch 01 | Dev κ: 0.1583
+  [ses] Epoch 02 | Dev κ: 0.3226
+  [ses] Epoch 03 | Dev κ: 0.2984
+  [ses] Epoch 04 | Dev κ: 0.2959
+  [ses] Epoch 05 | Dev κ: 0.3468
+  [ses] Epoch 06 | Dev κ: 0.2908
+  [ses] Epoch 07 | Dev κ: 0.3004
+  [ses] Epoch 08 | Dev κ: 0.2928
+  [ses] Epoch 09 | Dev κ: 0.3018
+  [ses] Epoch 10 | Dev κ: 0.1980
+  Early stopping at epoch 10.
+  ses: κ = 0.3072
+
+  -- disability --
+  [disability] Epoch 01 | Dev κ: 0.2282
+  [disability] Epoch 02 | Dev κ: 0.2090
+  [disability] Epoch 03 | Dev κ: 0.2613
+  [disability] Epoch 04 | Dev κ: 0.1565
+  [disability] Epoch 05 | Dev κ: 0.2233
+  [disability] Epoch 06 | Dev κ: 0.2687
+  [disability] Epoch 07 | Dev κ: 0.1509
+  [disability] Epoch 08 | Dev κ: 0.2443
+  [disability] Epoch 09 | Dev κ: 0.1111
+  [disability] Epoch 10 | Dev κ: 0.0851
+  [disability] Epoch 11 | Dev κ: 0.2985
+  [disability] Epoch 12 | Dev κ: 0.2560
+  [disability] Epoch 13 | Dev κ: 0.2557
+  [disability] Epoch 14 | Dev κ: 0.2243
+  [disability] Epoch 15 | Dev κ: 0.2511
+  [disability] Epoch 16 | Dev κ: 0.3006
+  [disability] Epoch 17 | Dev κ: 0.2565
+  [disability] Epoch 18 | Dev κ: 0.2684
+  [disability] Epoch 19 | Dev κ: 0.2847
+  [disability] Epoch 20 | Dev κ: 0.2902
+  [disability] Epoch 21 | Dev κ: 0.1859
+  Early stopping at epoch 21.
+  disability: κ = 0.3346
+
+============================================================
+  Summary: pt/best_longformer_persuade_grl.pt
+============================================================
+  gender                                   κ = 0.1448
+  race (White)                             κ = 0.2711
+  race (Hispanic/Latino)                   κ = 0.1795
+  race (Black/African American)            κ = 0.2180
+  race (Asian/Pacific Islander)            κ = 0.1854
+  ell                                      κ = 0.4750
+  ses                                      κ = 0.3072
+  disability                               κ = 0.3346

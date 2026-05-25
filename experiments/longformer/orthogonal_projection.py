@@ -90,7 +90,7 @@ def main():
         model_path = "best_longformer_asap.pt"
         label      = "ASAP"
 
-    model = LongformerForEssayScoring(debias=True).to(device)
+    model = LongformerForEssayScoring(debias=False).to(device)
     model.load_state_dict(torch.load(model_path))
 
     # Use train set to extract hidden states and compute bias direction
