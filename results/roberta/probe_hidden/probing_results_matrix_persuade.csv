@@ -1,0 +1,69 @@
+Prompt,Demographic,Kappa
+Phones and driving,gender,0.0
+Phones and driving,race_ethnicity,0.0
+Car-free cities,gender,0.23275782458825156
+Car-free cities,race_ethnicity,0.018004415467472223
+Car-free cities,ell_status,0.0
+Summer projects,gender,0.1689691237753782
+Summer projects,race_ethnicity,0.1025616871053957
+Summer projects,ell_status,-0.0001543506948069595
+Summer projects,economically_disadvantaged,0.13463437990071614
+Summer projects,student_disability_status,0.0
+"""A Cowboy Who Rode the Waves""",gender,0.15107263026278728
+"""A Cowboy Who Rode the Waves""",race_ethnicity,0.0
+"""A Cowboy Who Rode the Waves""",ell_status,0.0
+"""A Cowboy Who Rode the Waves""",economically_disadvantaged,0.17756273419173418
+"""A Cowboy Who Rode the Waves""",student_disability_status,0.0
+Mandatory extracurricular activities,gender,0.19685666116052525
+Mandatory extracurricular activities,race_ethnicity,0.047899323440304786
+Mandatory extracurricular activities,ell_status,-0.002547532945935904
+Mandatory extracurricular activities,economically_disadvantaged,0.26990084792522495
+Mandatory extracurricular activities,student_disability_status,0.019708959494678102
+Exploring Venus,gender,0.16512703556682384
+Exploring Venus,race_ethnicity,0.10428074131731979
+Exploring Venus,ell_status,0.028902607182742845
+Exploring Venus,economically_disadvantaged,0.28681695823933073
+Exploring Venus,student_disability_status,0.21095869634447695
+Facial action coding system,gender,0.18608658037354175
+Facial action coding system,race_ethnicity,0.13027542178113816
+Facial action coding system,ell_status,0.04995491946404429
+Facial action coding system,economically_disadvantaged,0.2688871687331992
+Facial action coding system,student_disability_status,0.21095984209136676
+The Face on Mars,gender,0.22112392791670443
+The Face on Mars,race_ethnicity,0.011222925835536857
+The Face on Mars,ell_status,0.0
+The Face on Mars,economically_disadvantaged,0.2123641407235829
+The Face on Mars,student_disability_status,0.0
+Community service,gender,0.17016745521812104
+Community service,race_ethnicity,0.034862256765719635
+Community service,ell_status,0.0
+Community service,economically_disadvantaged,0.2240186433447724
+Community service,student_disability_status,0.0
+Grades for extracurricular activities,gender,0.17583708984375412
+Grades for extracurricular activities,race_ethnicity,0.028582966084619743
+Grades for extracurricular activities,ell_status,0.0
+Grades for extracurricular activities,economically_disadvantaged,0.2955673326410059
+Grades for extracurricular activities,student_disability_status,0.0
+Driverless cars,gender,0.29814426772467406
+Driverless cars,race_ethnicity,0.022348485686657593
+Driverless cars,ell_status,0.0
+Driverless cars,economically_disadvantaged,0.03155559486609716
+Driverless cars,student_disability_status,0.0
+Does the electoral college work?,gender,0.21088742188725118
+Does the electoral college work?,race_ethnicity,0.029266911688337838
+Does the electoral college work?,ell_status,
+Cell phones at school,gender,0.15753216606123865
+Cell phones at school,race_ethnicity,0.05541777743372822
+Cell phones at school,ell_status,0.0
+Cell phones at school,economically_disadvantaged,0.3390804501350204
+Cell phones at school,student_disability_status,0.0
+Distance learning,gender,0.11198206930488175
+Distance learning,race_ethnicity,0.3006095160016361
+Distance learning,ell_status,0.7197696558193276
+Distance learning,economically_disadvantaged,0.46490821950046035
+Distance learning,student_disability_status,0.0
+Seeking multiple opinions,gender,0.024249772658381352
+Seeking multiple opinions,race_ethnicity,0.0
+Seeking multiple opinions,ell_status,0.0
+Seeking multiple opinions,economically_disadvantaged,0.5095230839555082
+Seeking multiple opinions,student_disability_status,

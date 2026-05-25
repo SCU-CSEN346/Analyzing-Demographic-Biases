@@ -1,9 +1,9 @@
-# inference.py
-# Generates prediction CSVs for Bias Analysis
+# inference_debiased.py
+# Generates prediction CSVs from the debiased models for Bias Analysis
 
 import torch
 import pandas as pd
-from tqdm import tqdm # Run: pip install tqdm
+from tqdm import tqdm
 from transformers import RobertaTokenizer
 from train_evaluate_roberta import RobertaForEssayScoring, MODEL_NAME, MAX_LENGTH
 
@@ -13,27 +13,27 @@ print(f"Using device: {device}", flush=True)
 # ------------------------------------------------------------------
 # Config
 # ------------------------------------------------------------------
-BATCH_SIZE = 16 # Inference takes less memory, we can safely double this
+BATCH_SIZE = 16 
 tokenizer  = RobertaTokenizer.from_pretrained(MODEL_NAME)
 
 DATASETS = [
     {
         "name": "PERSUADE",
         "test_path": "/WAVE/users2/unix/pngo2/Analyzing-Demographic-Biases/DATA/PERSUADE/test/persuade_corpus_2.0_test.csv",
-        "model_path": "best_roberta_persuade.pt",
+        "model_path": "best_debiased_roberta_persuade.pt",
         "id_col": "essay_id_comp",
         "text_col": "full_text",
         "score_col": "holistic_essay_score",
-        "output_name": "persuade_roberta_predictions.csv"
+        "output_name": "persuade_debiased_roberta_predictions.csv"
     },
     {
         "name": "ASAP",
         "test_path": "/WAVE/users2/unix/pngo2/Analyzing-Demographic-Biases/DATA/ASAP/test/ASAP_2_Final_github_test.csv",
-        "model_path": "best_roberta_asap.pt",
+        "model_path": "best_debiased_roberta_asap.pt",
         "id_col": "essay_id",
         "text_col": "full_text",
         "score_col": "score",
-        "output_name": "asap_roberta_predictions.csv"
+        "output_name": "asap_debiased_roberta_predictions.csv"
     }
 ]
 
@@ -53,8 +53,16 @@ def generate_predictions():
         human_scores = df[ds["score_col"]].tolist()
         
         # 2. Load Model
+        # We use the standard model class. By setting strict=False, PyTorch will gracefully 
+        # ignore the 'adversaries' heads that are in the debiased checkpoint, since we only need
+        # the RoBERTa encoder and the scoring head for inference.
         model = RobertaForEssayScoring().to(device)
-        model.load_state_dict(torch.load(ds["model_path"]))
+        try:
+            model.load_state_dict(torch.load(ds["model_path"]), strict=False)
+        except Exception as e:
+            print(f"Could not load {ds['model_path']}: {e}")
+            continue
+            
         model.eval()
         
         predictions = []

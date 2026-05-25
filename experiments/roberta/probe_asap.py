@@ -11,7 +11,7 @@ from torch.optim import AdamW
 from transformers import RobertaModel, RobertaTokenizer
 from sklearn.metrics import cohen_kappa_score
 
-from roberta import RobertaForEssayScoring
+from train_evaluate_roberta import RobertaForEssayScoring
 
 # ------------------------------------------------------------------
 # Config
