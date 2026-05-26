@@ -1,0 +1,45 @@
+Prompt,Category,Reference Group,Focal Group,Z-Score (Base),Z-Score (Debiased)
+"""A Cowboy Who Rode the Waves""",gender,F,M,-1.721685452856967,-2.6572003832548456
+"""A Cowboy Who Rode the Waves""",race_ethnicity,Two or more races/Other,Black/African American,-0.6975614312567878,-1.32663227674976
+"""A Cowboy Who Rode the Waves""",race_ethnicity,Two or more races/Other,Hispanic/Latino,0.8393791712459046,0.7009310254389978
+"""A Cowboy Who Rode the Waves""",race_ethnicity,Two or more races/Other,White,-0.7201794287313427,-1.3981391513136319
+"""A Cowboy Who Rode the Waves""",race_ethnicity,Two or more races/Other,Asian/Pacific Islander,0.4093749568737467,1.2323234645690675
+"""A Cowboy Who Rode the Waves""",race_ethnicity,Two or more races/Other,American Indian/Alaskan Native,0.05131694094182055,0.8200881397307072
+"""A Cowboy Who Rode the Waves""",ell_status,No,Yes,-1.4638899926526694,-0.2676415158444436
+"""A Cowboy Who Rode the Waves""",economically_disadvantaged,Economically disadvantaged,Not economically disadvantaged,2.5473674066266327,2.7403003857767123
+"""A Cowboy Who Rode the Waves""",student_disability_status,Not identified as having disability,Identified as having disability,-3.430109519122818,-3.192754147478556
+The Face on Mars,gender,M,F,2.633824893828284,3.828528657055453
+The Face on Mars,race_ethnicity,White,Hispanic/Latino,1.9151991851630796,1.6348843375833686
+The Face on Mars,race_ethnicity,White,Black/African American,-1.0432882927015208,-1.0913546555284537
+The Face on Mars,race_ethnicity,White,Asian/Pacific Islander,1.2509067131747338,1.2794469605194878
+The Face on Mars,race_ethnicity,White,Two or more races/Other,2.598043456646703,2.8840234560266573
+The Face on Mars,race_ethnicity,White,American Indian/Alaskan Native,-0.7245549297775532,0.39589801924017065
+The Face on Mars,ell_status,No,Yes,0.0029911155386096234,0.3454017355414501
+The Face on Mars,economically_disadvantaged,Economically disadvantaged,Not economically disadvantaged,3.665491946573962,3.9554835705250198
+The Face on Mars,student_disability_status,Identified as having disability,Not identified as having disability,2.781652779845397,3.5500371552999073
+Exploring Venus,gender,M,F,0.9757542519047914,3.220592534027754
+Exploring Venus,race_ethnicity,White,Hispanic/Latino,-0.8312542162122829,-0.9802898853931559
+Exploring Venus,race_ethnicity,White,Black/African American,-0.1893565138713703,-1.3193481807517498
+Exploring Venus,race_ethnicity,White,Asian/Pacific Islander,-2.1070289213624314,0.35569388581003986
+Exploring Venus,race_ethnicity,White,Two or more races/Other,-0.18239986119232876,-1.3449677546548398
+Exploring Venus,ell_status,No,Yes,-7.728587584117398,-5.156355603767025
+Exploring Venus,economically_disadvantaged,Economically disadvantaged,Not economically disadvantaged,0.039557779429902934,0.013304329122013075
+Exploring Venus,student_disability_status,Identified as having disability,Not identified as having disability,4.807639721590471,5.926711595164517
+Facial action coding system,gender,M,F,-0.0907967877469967,1.5093942429870726
+Facial action coding system,race_ethnicity,Hispanic/Latino,White,0.09477318420732035,0.5379535563550757
+Facial action coding system,race_ethnicity,Hispanic/Latino,Asian/Pacific Islander,0.8416135956004931,2.2147898410352567
+Facial action coding system,race_ethnicity,Hispanic/Latino,Black/African American,-0.763993204120383,-2.583869457752993
+Facial action coding system,race_ethnicity,Hispanic/Latino,Two or more races/Other,0.6079119105569211,1.0246035425903426
+Facial action coding system,race_ethnicity,Hispanic/Latino,American Indian/Alaskan Native,1.1310047417855489,0.9666586699539873
+Facial action coding system,ell_status,No,Yes,-2.761196555906621,-3.470625925442615
+Facial action coding system,economically_disadvantaged,Economically disadvantaged,Not economically disadvantaged,3.223997302122625,4.079696725427873
+Facial action coding system,student_disability_status,Not identified as having disability,Identified as having disability,-0.842491211535854,-0.9894763910690304
+Driverless cars,gender,M,F,3.0256330820660633,5.064438396205028
+Driverless cars,race_ethnicity,Black/African American,Two or more races/Other,0.30498260275011413,0.748542546750037
+Driverless cars,race_ethnicity,Black/African American,Hispanic/Latino,1.3839311775076573,2.071244771145974
+Driverless cars,race_ethnicity,Black/African American,White,1.1077028521258887,1.963055554794789
+Driverless cars,race_ethnicity,Black/African American,Asian/Pacific Islander,1.817933903323034,3.0930778755968635
+Driverless cars,race_ethnicity,Black/African American,American Indian/Alaskan Native,0.2940770828150961,0.6472054301103627
+Driverless cars,ell_status,No,Yes,0.8385220838918478,1.515276203104371
+Driverless cars,economically_disadvantaged,Economically disadvantaged,Not economically disadvantaged,2.6943255685953655,4.712037550321689
+Driverless cars,student_disability_status,Not identified as having disability,Identified as having disability,-3.5674631294318684,-3.495244705405504

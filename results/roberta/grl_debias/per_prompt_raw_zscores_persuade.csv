@@ -1,0 +1,125 @@
+Prompt,Category,Reference Group,Focal Group,Z-Score (Base),Z-Score (Debiased)
+Phones and driving,gender,M,F,3.8188688385108485,4.108835262078879
+Phones and driving,race_ethnicity,Black/African American,White,-3.3033237350163756,-3.3560293931645595
+Phones and driving,race_ethnicity,Black/African American,Hispanic/Latino,-1.0404762145617303,0.05294123526322253
+Phones and driving,race_ethnicity,Black/African American,Two or more races/Other,-1.910122917352663,0.26283356424719256
+Phones and driving,race_ethnicity,Black/African American,Asian/Pacific Islander,-0.22049326951039724,-0.13771624473410266
+Phones and driving,race_ethnicity,Black/African American,American Indian/Alaskan Native,-1.4045367822423507,-3.157284910657478
+Car-free cities,gender,F,M,-7.138068612329651,-6.155520050363249
+Car-free cities,race_ethnicity,White,Hispanic/Latino,-0.46114646008511606,1.7183540467663974
+Car-free cities,race_ethnicity,White,Black/African American,-6.829101711695321,-4.289404067408676
+Car-free cities,race_ethnicity,White,Asian/Pacific Islander,4.946598915849595,5.284727765781884
+Car-free cities,race_ethnicity,White,Two or more races/Other,-2.9120043521230374,-1.1204881731410739
+Car-free cities,race_ethnicity,White,American Indian/Alaskan Native,-7.2724395237095925,-4.152230109553799
+Car-free cities,ell_status,No,Yes,-7.110161009616532,-3.3476740084466483
+Summer projects,gender,M,F,2.464211303809373,1.8323568199283906
+Summer projects,race_ethnicity,Black/African American,Hispanic/Latino,5.523514460023245,3.830480443109187
+Summer projects,race_ethnicity,Black/African American,Asian/Pacific Islander,8.119615926750416,7.024363253930829
+Summer projects,race_ethnicity,Black/African American,White,9.652530184824299,7.00109122219904
+Summer projects,race_ethnicity,Black/African American,Two or more races/Other,2.1756380182591295,1.0796858786917494
+Summer projects,race_ethnicity,Black/African American,American Indian/Alaskan Native,33.311239053088414,-17.618972437289504
+Summer projects,ell_status,No,Yes,-4.957931814468365,-5.879656116561181
+Summer projects,economically_disadvantaged,Not economically disadvantaged,Economically disadvantaged,-7.518415902387897,-4.5863344971165105
+Summer projects,student_disability_status,Not identified as having disability,Identified as having disability,-1.57643608689233,-3.412029534479204
+"""A Cowboy Who Rode the Waves""",gender,M,F,3.5528588186862606,3.5032564276978317
+"""A Cowboy Who Rode the Waves""",race_ethnicity,Hispanic/Latino,White,1.4589689291450136,0.036282601354464164
+"""A Cowboy Who Rode the Waves""",race_ethnicity,Hispanic/Latino,Black/African American,-2.8661542360723438,-3.5456030549458393
+"""A Cowboy Who Rode the Waves""",race_ethnicity,Hispanic/Latino,Two or more races/Other,2.9783037043758167,2.0924265952279546
+"""A Cowboy Who Rode the Waves""",race_ethnicity,Hispanic/Latino,Asian/Pacific Islander,4.2779309445006914,4.2067739015843175
+"""A Cowboy Who Rode the Waves""",race_ethnicity,Hispanic/Latino,American Indian/Alaskan Native,1.5837724798158868,1.417031919655973
+"""A Cowboy Who Rode the Waves""",ell_status,No,Yes,-7.927116234522206,-3.8573697612115327
+"""A Cowboy Who Rode the Waves""",ell_status,No, ,-14.575598334507921,-11.544471885313053
+"""A Cowboy Who Rode the Waves""",economically_disadvantaged,Economically disadvantaged,Not economically disadvantaged,6.039336745242961,5.345054370293754
+"""A Cowboy Who Rode the Waves""",student_disability_status,Not identified as having disability,Identified as having disability,-2.5671340865243484,-2.663907570799687
+Mandatory extracurricular activities,gender,F,M,-6.514968737668151,-5.835787412422738
+Mandatory extracurricular activities,race_ethnicity,White,Asian/Pacific Islander,3.3502349504207833,4.573699370489509
+Mandatory extracurricular activities,race_ethnicity,White,Hispanic/Latino,-4.879416579631432,-2.4111570021210236
+Mandatory extracurricular activities,race_ethnicity,White,Black/African American,-5.917165616142177,-2.7853143844284043
+Mandatory extracurricular activities,race_ethnicity,White,Two or more races/Other,-0.4839948461309949,1.1495520814730662
+Mandatory extracurricular activities,race_ethnicity,White,American Indian/Alaskan Native,2.849721089937687,2.167618541072614
+Mandatory extracurricular activities,ell_status,No,Yes,-6.562876257957838,-4.77954699300397
+Mandatory extracurricular activities,economically_disadvantaged,Not economically disadvantaged,Economically disadvantaged,-10.417418683451652,-7.660882782879847
+Mandatory extracurricular activities,student_disability_status,Not identified as having disability,Identified as having disability,-3.7620286806757037,-4.017314373892613
+Exploring Venus,gender,F,M,-7.92754952282415,-7.734213622887579
+Exploring Venus,race_ethnicity,Hispanic/Latino,Black/African American,-2.292038202537901,-1.9363238754788552
+Exploring Venus,race_ethnicity,Hispanic/Latino,White,3.3384861645639723,1.9814398037384118
+Exploring Venus,race_ethnicity,Hispanic/Latino,American Indian/Alaskan Native,2.202574119141691,1.870172594895458
+Exploring Venus,race_ethnicity,Hispanic/Latino,Two or more races/Other,-1.401038121049717,-2.383234760917567
+Exploring Venus,race_ethnicity,Hispanic/Latino,Asian/Pacific Islander,0.39511893986902197,0.14279369777730533
+Exploring Venus,ell_status,No,Yes,-7.281000491788146,-5.257954901635193
+Exploring Venus,economically_disadvantaged,Economically disadvantaged,Not economically disadvantaged,3.072509323645451,2.836583863417903
+Exploring Venus,student_disability_status,Not identified as having disability,Identified as having disability,-11.232819632462473,-7.830005518224677
+Facial action coding system,gender,F,M,-7.472082363294044,-6.446622318316906
+Facial action coding system,race_ethnicity,Black/African American,White,5.499959820581144,3.9184509862978465
+Facial action coding system,race_ethnicity,Black/African American,Hispanic/Latino,2.970533965086969,1.3881505843877946
+Facial action coding system,race_ethnicity,Black/African American,Two or more races/Other,5.13685591191324,1.8750829615147782
+Facial action coding system,race_ethnicity,Black/African American,Asian/Pacific Islander,4.463967444388812,4.511743699994461
+Facial action coding system,race_ethnicity,Black/African American,American Indian/Alaskan Native,3.649426972225726,2.974468656680863
+Facial action coding system,ell_status,No,Yes,-7.303028295715596,-5.466741433486209
+Facial action coding system,economically_disadvantaged,Not economically disadvantaged,Economically disadvantaged,-9.526837825410945,-8.947950362063901
+Facial action coding system,student_disability_status,Identified as having disability,Not identified as having disability,7.51658136513753,7.629076870748062
+The Face on Mars,gender,F,M,-5.016942663667221,-5.476334320846454
+The Face on Mars,race_ethnicity,Black/African American,White,4.468777881174207,4.312249924458659
+The Face on Mars,race_ethnicity,Black/African American,Hispanic/Latino,4.413837722562411,4.50326864777038
+The Face on Mars,race_ethnicity,Black/African American,American Indian/Alaskan Native,-3.050582273539746,-5.216889527475865
+The Face on Mars,race_ethnicity,Black/African American,Two or more races/Other,1.009081716577896,-0.1673610592193703
+The Face on Mars,race_ethnicity,Black/African American,Asian/Pacific Islander,2.0648239813614335,1.2670846841459926
+The Face on Mars,ell_status,No,Yes,-4.428769262679337,-4.547550172069819
+The Face on Mars,ell_status,No, ,-3.1735559073740296,-1.9585124407587335
+The Face on Mars,economically_disadvantaged,Not economically disadvantaged,Economically disadvantaged,-7.679671527612822,-6.3559422988727885
+The Face on Mars,student_disability_status,Not identified as having disability,Identified as having disability,-0.016174966548416853,-1.7696677501067049
+Community service,gender,F,M,-4.593804579259935,-2.460945043330872
+Community service,race_ethnicity,White,Black/African American,-6.226181375733698,-2.7148427329411216
+Community service,race_ethnicity,White,Hispanic/Latino,-11.143300739755247,-6.701169704362106
+Community service,race_ethnicity,White,American Indian/Alaskan Native,4.783953307096409,3.9518446692511935
+Community service,race_ethnicity,White,Asian/Pacific Islander,3.605923271449666,3.079257261232401
+Community service,race_ethnicity,White,Two or more races/Other,-2.4625009462591487,-1.8443576805942083
+Community service,ell_status,No,Yes,-8.353954693626191,-3.477722094827108
+Community service,economically_disadvantaged,Not economically disadvantaged,Economically disadvantaged,-7.096205177923771,-1.6044223186597637
+Community service,student_disability_status,Not identified as having disability,Identified as having disability,-10.279676344868,-7.762262005328202
+Grades for extracurricular activities,gender,M,F,3.9372686924892815,3.641840198734984
+Grades for extracurricular activities,race_ethnicity,Black/African American,Hispanic/Latino,4.388945200403441,4.267934860365079
+Grades for extracurricular activities,race_ethnicity,Black/African American,White,10.966892789081607,7.551325370909914
+Grades for extracurricular activities,race_ethnicity,Black/African American,Asian/Pacific Islander,8.09183855271241,6.3957887827146935
+Grades for extracurricular activities,race_ethnicity,Black/African American,Two or more races/Other,4.469570054423139,3.580690672737272
+Grades for extracurricular activities,race_ethnicity,Black/African American,American Indian/Alaskan Native,3.833394891637783,2.2048935209955998
+Grades for extracurricular activities,ell_status,No,Yes,-7.7179901707965275,-4.69164319941459
+Grades for extracurricular activities,economically_disadvantaged,Economically disadvantaged,Not economically disadvantaged,11.30347283525833,11.391371971034726
+Grades for extracurricular activities,student_disability_status,Not identified as having disability,Identified as having disability,-2.225509939995726,0.5026456805488007
+Driverless cars,gender,M,F,5.296151907346445,5.552087086231628
+Driverless cars,race_ethnicity,Black/African American,Hispanic/Latino,0.187658787706163,0.6098885681902213
+Driverless cars,race_ethnicity,Black/African American,Asian/Pacific Islander,2.0002077165901353,2.5563880909988663
+Driverless cars,race_ethnicity,Black/African American,White,0.8855318197515034,-2.1763930733795105
+Driverless cars,race_ethnicity,Black/African American,American Indian/Alaskan Native,1.0437717953066254,0.3304189226661853
+Driverless cars,race_ethnicity,Black/African American,Two or more races/Other,-0.46299614771493464,-2.4485112642454587
+Driverless cars,ell_status,No, ,-0.9821202653436264,-1.3980059822630084
+Driverless cars,ell_status,No,Yes,-0.7923167933806691,-2.336192282198612
+Driverless cars,economically_disadvantaged,Economically disadvantaged,Not economically disadvantaged,2.111124853442833,2.114811101326088
+Driverless cars,student_disability_status,Not identified as having disability,Identified as having disability,-0.9433542444440508,-2.054249689238026
+Does the electoral college work?,gender,F,M,-2.803470598791553,-2.107271763949744
+Does the electoral college work?,race_ethnicity,White,Hispanic/Latino,-2.5591143518443893,-2.457034939010313
+Does the electoral college work?,race_ethnicity,White,American Indian/Alaskan Native,-2.0891065898764087,-1.6117284127383507
+Does the electoral college work?,race_ethnicity,White,Asian/Pacific Islander,-0.038193803033467276,-0.00234295366076803
+Does the electoral college work?,race_ethnicity,White,Two or more races/Other,0.40303369234905706,-0.29234500111412887
+Cell phones at school,gender,M,F,6.00486122199896,5.682364365467547
+Cell phones at school,race_ethnicity,Hispanic/Latino,White,7.853570367303053,5.000106379107462
+Cell phones at school,race_ethnicity,Hispanic/Latino,American Indian/Alaskan Native,-2.3185183819196364,-1.0447452408387488
+Cell phones at school,race_ethnicity,Hispanic/Latino,Black/African American,-3.2109783383444945,-4.559982123499973
+Cell phones at school,race_ethnicity,Hispanic/Latino,Asian/Pacific Islander,4.48357539447875,4.924906902907145
+Cell phones at school,race_ethnicity,Hispanic/Latino,Two or more races/Other,1.0432269959719844,-1.6513762998153285
+Cell phones at school,ell_status,Yes,No,7.732545374259536,4.846909057318214
+Cell phones at school,economically_disadvantaged,Economically disadvantaged,Not economically disadvantaged,8.541808855191345,5.490646002589243
+Cell phones at school,student_disability_status,Not identified as having disability,Identified as having disability,-8.46049978181971,-5.145083712153453
+Distance learning,gender,F,M,-1.381945851412248,-1.7862404501440288
+Distance learning,race_ethnicity,White,Asian/Pacific Islander,0.8397214860603104,1.0564965347954096
+Distance learning,race_ethnicity,White,Hispanic/Latino,-9.542788587708754,-7.603654837883584
+Distance learning,race_ethnicity,White,Black/African American,-4.560264546195947,-2.5570568888014646
+Distance learning,race_ethnicity,White,Two or more races/Other,4.113393257394735,3.5982617038892557
+Distance learning,race_ethnicity,White,American Indian/Alaskan Native,-18.82732748477367,-19.73285746876207
+Distance learning,ell_status,No,Yes,-19.43956275373086,-13.36144372397407
+Distance learning,economically_disadvantaged,Economically disadvantaged,Not economically disadvantaged,12.699092832276364,8.69851710891597
+Distance learning,student_disability_status,Not identified as having disability,Identified as having disability,-4.566046279044412,-3.8358463027199674
+Seeking multiple opinions,gender,M,F,-0.8007127622950232,-0.7958570140849826
+Seeking multiple opinions,race_ethnicity,Black/African American,Asian/Pacific Islander,19.796646913557524,20.71403673075646
+Seeking multiple opinions,race_ethnicity,Black/African American,White,10.90943056176889,8.945027036944994
+Seeking multiple opinions,economically_disadvantaged,Economically disadvantaged,Not economically disadvantaged,10.703190357447756,13.106058892784118

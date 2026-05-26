@@ -1,0 +1,25 @@
+Category,Reference Group,Focal Group,Num_Prompts,Mean_Abs_Z_Base,Var_Z_Base,Mean_Abs_Z_Debiased,Var_Z_Debiased
+economically_disadvantaged,Economically disadvantaged,Not economically disadvantaged,7,7.782,17.177,6.998,17.612
+economically_disadvantaged,Not economically disadvantaged,Economically disadvantaged,5,8.448,2.081,5.831,8.188
+ell_status,No, ,3,6.244,53.265,4.967,32.526
+ell_status,No,Yes,11,7.443,20.548,5.182,8.44
+ell_status,Yes,No,1,7.733,,4.847,
+gender,F,M,8,5.356,5.516,4.75,5.211
+gender,M,F,7,3.696,4.893,3.588,5.077
+race_ethnicity,Black/African American,American Indian/Alaskan Native,6,7.715,183.422,5.25,58.301
+race_ethnicity,Black/African American,Asian/Pacific Islander,7,6.394,45.165,6.087,48.64
+race_ethnicity,Black/African American,Hispanic/Latino,6,3.087,6.826,2.442,3.937
+race_ethnicity,Black/African American,Two or more races/Other,6,2.527,7.578,1.569,4.136
+race_ethnicity,Black/African American,White,7,6.527,29.367,5.323,22.995
+race_ethnicity,Hispanic/Latino,American Indian/Alaskan Native,3,2.035,6.009,1.444,2.46
+race_ethnicity,Hispanic/Latino,Asian/Pacific Islander,3,3.052,5.306,3.091,6.65
+race_ethnicity,Hispanic/Latino,Black/African American,3,2.79,0.215,3.347,1.75
+race_ethnicity,Hispanic/Latino,Two or more races/Other,3,1.808,4.816,2.042,5.764
+race_ethnicity,Hispanic/Latino,White,3,4.217,10.802,2.339,6.256
+race_ethnicity,White,American Indian/Alaskan Native,5,7.165,89.556,6.323,88.611
+race_ethnicity,White,Asian/Pacific Islander,5,2.556,4.281,2.799,5.073
+race_ethnicity,White,Black/African American,4,5.883,0.921,3.087,0.652
+race_ethnicity,White,Hispanic/Latino,5,5.717,20.595,4.178,14.148
+race_ethnicity,White,Two or more races/Other,5,2.075,7.875,1.601,4.642
+student_disability_status,Identified as having disability,Not identified as having disability,1,7.517,,7.629,
+student_disability_status,Not identified as having disability,Identified as having disability,10,4.563,16.127,3.899,6.769
