@@ -30,19 +30,20 @@ from sklearn.metrics import cohen_kappa_score
 # ------------------------------------------------------------------
 
 MODEL_NAME    = "allenai/longformer-base-4096"
-MAX_LENGTH    = 1024
+MAX_LENGTH    = 1024      # reduced from 2048 due to V100 memory constraints
 BATCH_SIZE    = 4
 MAX_EPOCHS    = 20
-PATIENCE      = 3
+PATIENCE      = 3         # early stopping: stop if dev loss doesn't improve for 3 epochs
 LEARNING_RATE = 5e-6
 RANDOM_STATE  = 42
-GRL_LAMBDA    = 0.01
+GRL_LAMBDA    = 0.01      # weight for adversarial loss in GRL debiasing
 
 PERSUADE_TRAIN = "PERSUADE/persuade_corpus_2.0_train.csv"
 PERSUADE_TEST  = "PERSUADE/persuade_corpus_2.0_test.csv"
 ASAP_TRAIN     = "ASAP/ASAP_2_Final_github_train.csv"
 ASAP_TEST      = "ASAP/ASAP_2_Final_github_test.csv"
 
+# Maps our --demo argument names to actual CSV column names
 DEMO_COLS = {
     "persuade": {
         "gender":     "gender",
@@ -69,6 +70,11 @@ tokenizer = LongformerTokenizer.from_pretrained(MODEL_NAME)
 # ------------------------------------------------------------------
 # Gradient Reversal Layer
 # ------------------------------------------------------------------
+
+# GRL is the core of adversarial debiasing. On the forward pass it
+# acts as an identity function. On the backward pass it flips the
+# gradient sign, which forces the encoder to stop encoding
+# demographic information that the adversary is trying to predict.
 
 class GradientReversalFn(Function):
     @staticmethod
@@ -106,7 +112,8 @@ class EssayDataset(Dataset):
         )
         self.input_ids             = encoded["input_ids"]
         self.attention_mask        = encoded["attention_mask"]
-        # Longformer requires global attention on [CLS] token for regression
+        # Longformer needs global attention on the [CLS] token so it can
+        # attend to the entire sequence when producing the essay representation
         self.global_attention_mask = torch.zeros_like(encoded["input_ids"])
         self.global_attention_mask[:, 0] = 1
         self.scores      = torch.tensor(list(scores), dtype=torch.float)
@@ -134,6 +141,7 @@ class EssayDataset(Dataset):
 # ------------------------------------------------------------------
 
 def encode_binary(series):
+    # Convert a two-value demographic column to 0/1 integers
     vals = series.dropna().unique()
     if len(vals) != 2:
         raise ValueError(f"Expected binary column, got {vals}")
@@ -148,6 +156,8 @@ def load_persuade(train_path, test_path, demo_col=None):
     test_df = pd.read_csv(test_path, low_memory=False).dropna(
         subset=["holistic_essay_score", "full_text"]
     )
+    # PERSUADE has multiple rows per essay (one per discourse element),
+    # so we deduplicate by essay_id_comp to get one row per essay
     train_df = train_df.drop_duplicates(subset=["essay_id_comp"])
     test_df  = test_df.drop_duplicates(subset=["essay_id_comp"])
 
@@ -208,9 +218,12 @@ class LongformerForEssayScoring(nn.Module):
         super().__init__()
         self.longformer = LongformerModel.from_pretrained(model_name)
         hidden_size     = self.longformer.config.hidden_size
+        # Regression head: maps CLS hidden state to a single score
         self.regressor  = nn.Linear(hidden_size, 1)
         self.debias     = debias
         if debias:
+            # Adversarial classifier: predicts demographic label from
+            # the reversed gradient of the CLS hidden state
             self.grl             = GradientReversal(lambda_=GRL_LAMBDA)
             self.demo_classifier = nn.Linear(hidden_size, num_demo_classes)
 
@@ -256,6 +269,7 @@ def train(model, train_loader, dev_loader, optimizer, loss_fn,
                 )
                 scoring_loss = loss_fn(score_pred, batch["labels"].to(device))
                 adv_loss     = demo_loss_fn(demo_logits, batch["demo_labels"].to(device))
+                # Combined loss: scoring loss + weighted adversarial loss
                 loss         = scoring_loss + GRL_LAMBDA * adv_loss
             else:
                 score_pred = model(
@@ -293,6 +307,9 @@ def train(model, train_loader, dev_loader, optimizer, loss_fn,
 # ------------------------------------------------------------------
 
 def compute_smd(preds, labels):
+    # Standardized Mean Difference: measures how much the model's
+    # predicted scores deviate from human scores on average,
+    # normalized by the spread. Operational threshold: |SMD| <= 0.15
     diff = np.array(preds) - np.array(labels)
     return diff.mean() / diff.std()
 
@@ -310,6 +327,7 @@ def evaluate(model, loader, verbose=True):
                 attention_mask=batch["attention_mask"].to(device),
                 global_attention_mask=batch["global_attention_mask"].to(device)
             )
+            # Handle both standard and debiased model outputs
             preds = out[0] if isinstance(out, tuple) else out
             loss  = loss_fn(preds, batch["labels"].to(device))
             total_loss += loss.item()
@@ -337,9 +355,12 @@ def evaluate(model, loader, verbose=True):
 # ------------------------------------------------------------------
 
 def run_per_prompt(train_df, test_df, score_col, prompt_col,
-                   save_dir, demo_col=None, skip_train=False, debias=False):
+                   save_dir, demo_col=None, skip_train=False, debias=False,
+                   prompt_start=0, prompt_end=None):
     os.makedirs(save_dir, exist_ok=True)
-    prompts  = train_df[prompt_col].unique()
+    # Sort prompts so --prompt-start/end slicing is deterministic across runs
+    prompts  = sorted(train_df[prompt_col].unique())
+    prompts  = prompts[prompt_start:prompt_end]
     all_qwk  = []
 
     for prompt in prompts:
@@ -418,12 +439,14 @@ def run_per_prompt(train_df, test_df, score_col, prompt_col,
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--dataset",    choices=["persuade", "asap"], required=True)
-    parser.add_argument("--skip-train", action="store_true")
-    parser.add_argument("--per-prompt", action="store_true")
-    parser.add_argument("--debias",     action="store_true")
-    parser.add_argument("--demo",       default="gender",
+    parser.add_argument("--dataset",      choices=["persuade", "asap"], required=True)
+    parser.add_argument("--skip-train",   action="store_true")
+    parser.add_argument("--per-prompt",   action="store_true")
+    parser.add_argument("--debias",       action="store_true")
+    parser.add_argument("--demo",         default="gender",
                         choices=["gender", "race", "ell", "ses", "disability"])
+    parser.add_argument("--prompt-start", type=int, default=0)
+    parser.add_argument("--prompt-end",   type=int, default=None)
     args = parser.parse_args()
 
     print("\n" + "="*60, flush=True)
@@ -442,7 +465,7 @@ def main():
         )
         prompt_col = "prompt_name"
         score_col  = "holistic_essay_score"
-        save_path  = "best_longformer_persuade.pt"
+        save_path  = "pt/best_longformer_persuade_base.pt"
         save_dir   = "checkpoints/persuade"
         label      = "PERSUADE"
     else:
@@ -453,9 +476,13 @@ def main():
         )
         prompt_col = "set"
         score_col  = "score"
-        save_path  = "best_longformer_asap.pt"
+        save_path  = "pt/best_longformer_asap_base.pt"
         save_dir   = "checkpoints/asap"
         label      = "ASAP"
+
+    # Override save path for debiased runs so base checkpoints aren't overwritten
+    if args.debias:
+        save_path = save_path.replace("_base.pt", "_grl.pt")
 
     if args.per_prompt:
         demo_col = DEMO_COLS[args.dataset].get(args.demo) if args.debias else None
@@ -464,7 +491,9 @@ def main():
             save_dir=save_dir,
             demo_col=demo_col,
             skip_train=args.skip_train,
-            debias=args.debias
+            debias=args.debias,
+            prompt_start=args.prompt_start,
+            prompt_end=args.prompt_end
         )
         return
 

@@ -1,8 +1,8 @@
 """
 Post-hoc orthogonal projection debiasing for Longformer AES.
-Loads a trained .pt model, extracts hidden states per demographic group,
-computes the bias direction via PCA, projects it out of the regression weights,
-and re-evaluates.
+Loads a trained model, extracts CLS hidden states per demographic group,
+computes the bias direction, projects it out of the regression weights,
+and re-evaluates. Saves the projected model as a new checkpoint.
 
 Usage:
   python orthogonal_projection.py --dataset persuade --demo gender
@@ -28,6 +28,8 @@ from longformer import (
 
 
 def extract_hidden_states(model, loader):
+    # Run the model over the dataset and collect CLS embeddings,
+    # demographic labels, and essay scores
     model.eval()
     all_hidden, all_demo, all_labels = [], [], []
 
@@ -51,19 +53,20 @@ def extract_hidden_states(model, loader):
 
 
 def compute_bias_direction(hidden_states, demo_labels):
+    # Estimate the demographic bias direction by finding the principal
+    # component of the difference between group mean embeddings
     group0 = hidden_states[demo_labels == 0]
     group1 = hidden_states[demo_labels == 1]
-    diff   = group1.mean(axis=0) - group0.mean(axis=0)
-    # PCA on the difference to get the principal bias direction
     pca    = PCA(n_components=1)
     pca.fit(np.stack([group0.mean(axis=0), group1.mean(axis=0)]))
     return pca.components_[0]
 
 
 def project_out(weight, bias_direction):
+    # Remove the component of the regression weights that lies along
+    # the demographic bias direction using orthogonal projection
     bias_dir = torch.tensor(bias_direction, dtype=weight.dtype, device=weight.device)
     bias_dir = bias_dir / bias_dir.norm()
-    # Remove component along bias direction from each row
     proj = weight - (weight @ bias_dir).unsqueeze(1) * bias_dir.unsqueeze(0)
     return proj
 
@@ -80,20 +83,20 @@ def main():
         test_texts, test_scores, train_demo, test_demo = load_persuade(
             PERSUADE_TRAIN, PERSUADE_TEST, demo_col=args.demo
         )
-        model_path = "best_longformer_persuade.pt"
+        model_path = "pt/best_longformer_persuade_base.pt"
         label      = "PERSUADE"
     else:
         _, _, train_texts, train_scores, \
         test_texts, test_scores, train_demo, test_demo = load_asap(
             ASAP_TRAIN, ASAP_TEST, demo_col=args.demo
         )
-        model_path = "best_longformer_asap.pt"
+        model_path = "pt/best_longformer_asap_base.pt"
         label      = "ASAP"
 
     model = LongformerForEssayScoring(debias=False).to(device)
     model.load_state_dict(torch.load(model_path))
 
-    # Use train set to extract hidden states and compute bias direction
+    # Use the training set to estimate the bias direction
     train_dataset = EssayDataset(train_texts, train_scores, train_demo)
     train_loader  = DataLoader(train_dataset, batch_size=BATCH_SIZE, shuffle=False)
     test_dataset  = EssayDataset(test_texts,  test_scores,  test_demo)
@@ -108,6 +111,7 @@ def main():
     print(f"Computing bias direction...", flush=True)
     bias_dir = compute_bias_direction(hidden, demo_labels)
 
+    # Modify only the regression head weights — the encoder is untouched
     print(f"Projecting regression weights...", flush=True)
     with torch.no_grad():
         model.regressor.weight.data = project_out(
@@ -117,7 +121,7 @@ def main():
     print(f"\n--- {label} After Projection ---", flush=True)
     evaluate(model, test_loader, verbose=True)
 
-    out_path = model_path.replace(".pt", "_projected.pt")
+    out_path = model_path.replace("_base.pt", "_projected_base.pt")
     torch.save(model.state_dict(), out_path)
     print(f"\nSaved projected model to {out_path}", flush=True)
 

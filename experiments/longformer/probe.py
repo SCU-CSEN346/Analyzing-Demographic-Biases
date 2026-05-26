@@ -1,8 +1,11 @@
 """
 Demographic probing for Longformer AES models.
-Freezes the feature model, pre-extracts CLS embeddings ONCE per split,
-then trains a linear classification head on those embeddings only.
-Reports Cohen's kappa per demographic per model checkpoint.
+Pre-extracts CLS embeddings once per model checkpoint, then trains a
+linear classification head on those embeddings to predict demographic
+attributes. Reports Cohen's kappa per demographic.
+
+Pre-extracting features means we only run Longformer once per checkpoint
+instead of once per epoch, making probing ~50x faster.
 
 Usage:
   python probe.py --dataset persuade --model pt/best_longformer_persuade_base.pt
@@ -33,10 +36,10 @@ from sklearn.preprocessing import LabelEncoder
 MODEL_NAME    = "allenai/longformer-base-4096"
 MAX_LENGTH    = 1024
 BATCH_SIZE    = 4
-EXTRACT_BATCH = 16          # larger batch for one-shot extraction (no grad)
+EXTRACT_BATCH = 16          # larger batch during feature extraction (no grad needed)
 MAX_EPOCHS    = 50
 PATIENCE      = 5
-LEARNING_RATE = 1e-3
+LEARNING_RATE = 1e-3        # standard linear probing LR; 5e-6 (paper's LR) didn't converge
 RANDOM_STATE  = 42
 
 PERSUADE_TRAIN = "PERSUADE/persuade_corpus_2.0_train.csv"
@@ -61,6 +64,7 @@ PROBE_COLS = {
     }
 }
 
+# Race is probed as one-vs-rest binary to match Table 4 in Kwako & Ormerod (2024)
 RACE_BINARY_GROUPS = [
     "White",
     "Hispanic/Latino",
@@ -79,6 +83,8 @@ tokenizer = LongformerTokenizer.from_pretrained(MODEL_NAME)
 # ------------------------------------------------------------------
 
 def tokenize_and_cache(df, cache_path):
+    # Tokenization is slow, so we cache the result to disk.
+    # All probe runs on the same dataset reuse the same cache file.
     if os.path.exists(cache_path):
         print(f"  Loading cached tokens from {cache_path}", flush=True)
         return torch.load(cache_path)
@@ -90,6 +96,7 @@ def tokenize_and_cache(df, cache_path):
         padding="max_length",
         return_tensors="pt"
     )
+    # Longformer needs global attention on [CLS] for sequence classification
     global_attention_mask = torch.zeros_like(encoded["input_ids"])
     global_attention_mask[:, 0] = 1
     encoded["global_attention_mask"] = global_attention_mask
@@ -99,11 +106,11 @@ def tokenize_and_cache(df, cache_path):
 
 
 # ------------------------------------------------------------------
-# Feature extraction  (called ONCE per split per model)
+# Feature extraction (called once per model checkpoint per split)
 # ------------------------------------------------------------------
 
 class _TokenDataset(Dataset):
-    """Minimal dataset for bulk feature extraction."""
+    """Minimal dataset used only during bulk feature extraction."""
     def __init__(self, encoded):
         self.input_ids             = encoded["input_ids"]
         self.attention_mask        = encoded["attention_mask"]
@@ -121,17 +128,15 @@ class _TokenDataset(Dataset):
 
 
 def extract_features(longformer, encoded, cache_path):
-    """
-    Run the frozen Longformer over all essays in `encoded` exactly once,
-    returning a (N, hidden_size) CPU tensor of CLS embeddings.
-    Result is cached to `cache_path` so subsequent probes are instant.
-    """
+    # Run the frozen Longformer over all essays once and save the CLS
+    # embeddings. Subsequent probes for different demographics reuse
+    # these embeddings without touching Longformer again.
     if os.path.exists(cache_path):
         print(f"  Loading cached features from {cache_path}", flush=True)
         return torch.load(cache_path, map_location="cpu")
 
     print(f"  Extracting features for {encoded['input_ids'].shape[0]} essays...", flush=True)
-    loader = DataLoader(_TokenDataset(encoded), batch_size=EXTRACT_BATCH, shuffle=False)
+    loader  = DataLoader(_TokenDataset(encoded), batch_size=EXTRACT_BATCH, shuffle=False)
     all_cls = []
     longformer.eval()
     with torch.no_grad():
@@ -145,19 +150,19 @@ def extract_features(longformer, encoded, cache_path):
             if i % 50 == 0:
                 print(f"    batch {i}/{len(loader)}", flush=True)
 
-    features = torch.cat(all_cls, dim=0)          # (N, H)
+    features = torch.cat(all_cls, dim=0)
     torch.save(features, cache_path)
     print(f"  Cached features to {cache_path}", flush=True)
     return features
 
 
 # ------------------------------------------------------------------
-# Dataset for linear probe (operates on pre-extracted embeddings)
+# Dataset for linear probe (works on pre-extracted embeddings)
 # ------------------------------------------------------------------
 
 class EmbeddingDataset(Dataset):
     def __init__(self, features, indices, labels):
-        # features: (N, H) CPU tensor; index into it with the row indices
+        # Index into the full feature matrix with the relevant row indices
         self.features = features[indices]
         self.labels   = torch.tensor(list(labels), dtype=torch.long)
 
@@ -169,7 +174,7 @@ class EmbeddingDataset(Dataset):
 
 
 # ------------------------------------------------------------------
-# Linear probe
+# Linear probe head
 # ------------------------------------------------------------------
 
 class LinearProbe(nn.Module):
@@ -182,11 +187,12 @@ class LinearProbe(nn.Module):
 
 
 # ------------------------------------------------------------------
-# Load checkpoint — we only need the Longformer backbone weights
+# Load checkpoint — extract only the Longformer backbone
 # ------------------------------------------------------------------
 
 def load_longformer(model_path):
     state_dict = torch.load(model_path, map_location=device)
+    # Strip the "longformer." prefix added by LongformerForEssayScoring
     longformer_state = {
         k.replace("longformer.", ""): v
         for k, v in state_dict.items()
@@ -231,13 +237,15 @@ def load_asap(train_path, test_path, test_mode=False):
 
 
 # ------------------------------------------------------------------
-# Probing — no Longformer calls here; pure embedding → linear head
+# Probing — no Longformer calls here, just linear head on embeddings
 # ------------------------------------------------------------------
 
 def run_probe(train_features, train_indices, train_labels,
               test_features,  test_indices,  test_labels,
               num_classes, label_name):
 
+    # Weight classes inversely by frequency to handle imbalanced demographics
+    # (e.g. ELL ~9%, disability ~10% in PERSUADE)
     label_counts  = np.bincount(train_labels, minlength=num_classes).astype(float)
     class_weights = torch.tensor(1.0 / (label_counts + 1e-6), dtype=torch.float).to(device)
 
@@ -272,6 +280,7 @@ def run_probe(train_features, train_indices, train_labels,
             loss.backward()
             optimizer.step()
 
+        # Evaluate on dev set and use kappa for early stopping
         probe.eval()
         dev_preds, dev_true = [], []
         with torch.no_grad():
@@ -322,6 +331,7 @@ def probe_demographic(train_df, test_df,
     results = {}
 
     if demo_name == "race":
+        # One-vs-rest binary probe for each racial group
         for group in RACE_BINARY_GROUPS:
             tr = train_df.dropna(subset=[col])
             te = test_df.dropna(subset=[col])
@@ -360,7 +370,8 @@ def main():
     parser.add_argument("--model",   required=True)
     parser.add_argument("--demo",    default=None,
                         choices=["gender", "race", "ell", "ses", "disability"])
-    parser.add_argument("--test",    action="store_true")
+    parser.add_argument("--test",    action="store_true",
+                        help="Run on a small subset for quick debugging.")
     args = parser.parse_args()
 
     print(f"\n{'='*60}", flush=True)
@@ -368,33 +379,31 @@ def main():
     print(f"  Dataset: {args.dataset.upper()}", flush=True)
     print(f"{'='*60}", flush=True)
 
-    # ---- Load data ------------------------------------------------
     if args.dataset == "persuade":
         train_df, test_df = load_persuade(PERSUADE_TRAIN, PERSUADE_TEST, test_mode=args.test)
     else:
         train_df, test_df = load_asap(ASAP_TRAIN, ASAP_TEST, test_mode=args.test)
 
-    # ---- Tokenize (cached per dataset, shared across models) ------
+    # Tokenize once per dataset and cache — shared across all model checkpoints
     os.makedirs("cache", exist_ok=True)
     slug         = args.dataset
     train_tokens = tokenize_and_cache(train_df, f"cache/{slug}_train_tokens.pt")
     test_tokens  = tokenize_and_cache(test_df,  f"cache/{slug}_test_tokens.pt")
 
-    # ---- Extract CLS features (cached per model checkpoint) -------
+    # Extract CLS features once per model checkpoint and cache
     model_slug      = os.path.splitext(os.path.basename(args.model))[0]
     train_feat_path = f"cache/{slug}_{model_slug}_train_features.pt"
     test_feat_path  = f"cache/{slug}_{model_slug}_test_features.pt"
 
-    longformer      = load_longformer(args.model)
-    train_features  = extract_features(longformer, train_tokens, train_feat_path)
-    test_features   = extract_features(longformer, test_tokens,  test_feat_path)
+    longformer     = load_longformer(args.model)
+    train_features = extract_features(longformer, train_tokens, train_feat_path)
+    test_features  = extract_features(longformer, test_tokens,  test_feat_path)
 
-    # Longformer is no longer needed — free VRAM before probe training
+    # Free GPU memory — Longformer is no longer needed for probe training
     del longformer
     if device.type == "cuda":
         torch.cuda.empty_cache()
 
-    # ---- Run probes (pure linear, no Longformer) ------------------
     demo_cols = PROBE_COLS[args.dataset]
     if args.demo:
         demo_cols = {args.demo: demo_cols[args.demo]}
@@ -409,7 +418,6 @@ def main():
         )
         all_results.update(results)
 
-    # ---- Summary --------------------------------------------------
     print(f"\n{'='*60}", flush=True)
     print(f"  Summary: {args.model}", flush=True)
     print(f"{'='*60}", flush=True)
