@@ -1,0 +1,10 @@
+Category,Reference Group,Focal Group,Z-Score (Base),Raw P-Value_x,P-Value (Base),Sig (Base),Z-Score (Debiased),Raw P-Value_y,QWK (Base),QWK (Debiased),P-Value (Debiased),Sig (Debiased)
+gender,M,F,2.22,0.0264213907507576,0.0476,True,1.157,0.2473404643303052,0.783,0.799,0.6184,False
+race_ethnicity,Black/African American,White,1.833,0.0667625288841805,0.1001,False,-0.27,0.7869024784171641,0.778,0.8,0.7869,False
+race_ethnicity,Black/African American,Hispanic/Latino,-1.112,0.266182191702781,0.3422,False,-0.546,0.5849852629453072,0.776,0.779,0.7869,False
+race_ethnicity,Black/African American,Two or more races/Other,0.813,0.4161518809910255,0.4682,False,0.322,0.7471608349811072,0.79,0.812,0.7869,False
+race_ethnicity,Black/African American,Asian/Pacific Islander,5.273,1.340053360924495e-07,0.0,True,3.533,0.0004101148277437983,0.817,0.805,0.0021,True
+race_ethnicity,Black/African American,American Indian/Alaskan Native,0.693,0.4881205670966544,0.4881,False,-0.644,0.5196744922979559,0.72,0.731,0.7869,False
+ell_status,No,Yes,-5.958,2.556511356021942e-09,0.0,True,0.784,0.433305956056777,0.732,0.706,0.7869,False
+ell_status,No, ,-3.264,0.0010966209812471,0.0033,True,-2.951,0.0031665522841561856,0.497,0.538,0.0106,True
+student_disability_status,Not identified as having disability,Identified as having disability,-2.529,0.0114466693228291,0.0258,True,-0.349,0.7267696369027554,0.802,0.814,0.7869,False

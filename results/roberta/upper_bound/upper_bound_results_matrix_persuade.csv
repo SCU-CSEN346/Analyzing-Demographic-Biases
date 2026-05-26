@@ -1,0 +1,69 @@
+Prompt,Demographic,Kappa
+Phones and driving,gender,0.12672364534405112
+Phones and driving,race_ethnicity,0.15057122875410422
+Car-free cities,gender,0.18967727263755685
+Car-free cities,race_ethnicity,0.20252202727376178
+Car-free cities,ell_status,0.019711367458531415
+Summer projects,gender,0.19274788647875574
+Summer projects,race_ethnicity,0.1333666356563017
+Summer projects,ell_status,0.018094715024148056
+Summer projects,economically_disadvantaged,0.22580558474924417
+Summer projects,student_disability_status,-0.00877212672842198
+"""A Cowboy Who Rode the Waves""",gender,0.04563399539357216
+"""A Cowboy Who Rode the Waves""",race_ethnicity,0.12594229081664643
+"""A Cowboy Who Rode the Waves""",ell_status,-0.00028879530301062495
+"""A Cowboy Who Rode the Waves""",economically_disadvantaged,0.14487471130003837
+"""A Cowboy Who Rode the Waves""",student_disability_status,-0.0020809116374793657
+Mandatory extracurricular activities,gender,0.2831236886831261
+Mandatory extracurricular activities,race_ethnicity,0.13617053756083297
+Mandatory extracurricular activities,ell_status,0.03357827133447999
+Mandatory extracurricular activities,economically_disadvantaged,0.28278215663543915
+Mandatory extracurricular activities,student_disability_status,0.12166378037429881
+Exploring Venus,gender,0.23314826662250077
+Exploring Venus,race_ethnicity,0.183695830457264
+Exploring Venus,ell_status,0.2710483907800266
+Exploring Venus,economically_disadvantaged,0.2313926724493045
+Exploring Venus,student_disability_status,0.14468891471389167
+Facial action coding system,gender,0.0
+Facial action coding system,race_ethnicity,0.2145538348206929
+Facial action coding system,ell_status,0.31721205299096666
+Facial action coding system,economically_disadvantaged,0.2462025748487422
+Facial action coding system,student_disability_status,0.23441437117766029
+The Face on Mars,gender,0.20412965866690236
+The Face on Mars,race_ethnicity,0.11506736232396853
+The Face on Mars,ell_status,-0.009510439749554456
+The Face on Mars,economically_disadvantaged,0.136789001573835
+The Face on Mars,student_disability_status,0.0
+Community service,gender,0.2312380588915789
+Community service,race_ethnicity,0.24396608179827972
+Community service,ell_status,0.023493457119452388
+Community service,economically_disadvantaged,0.21845571850843093
+Community service,student_disability_status,-0.015109258278068527
+Grades for extracurricular activities,gender,0.20778581681463015
+Grades for extracurricular activities,race_ethnicity,0.17163303125285745
+Grades for extracurricular activities,ell_status,-0.00048383499155346676
+Grades for extracurricular activities,economically_disadvantaged,0.18490251748980946
+Grades for extracurricular activities,student_disability_status,0.0533549594350321
+Driverless cars,gender,0.16684982961095562
+Driverless cars,race_ethnicity,0.13118206409519761
+Driverless cars,ell_status,0.1676616373498424
+Driverless cars,economically_disadvantaged,0.03510088563863267
+Driverless cars,student_disability_status,0.0038707772140950114
+Does the electoral college work?,gender,0.3041468952122601
+Does the electoral college work?,race_ethnicity,0.1437034826747865
+Does the electoral college work?,ell_status,0.0
+Cell phones at school,gender,0.20676645191461984
+Cell phones at school,race_ethnicity,0.2388030047930888
+Cell phones at school,ell_status,0.0
+Cell phones at school,economically_disadvantaged,0.1953313946233548
+Cell phones at school,student_disability_status,0.023919882737094667
+Distance learning,gender,0.0
+Distance learning,race_ethnicity,0.31467138426042873
+Distance learning,ell_status,0.7951696442362148
+Distance learning,economically_disadvantaged,0.3140344136483538
+Distance learning,student_disability_status,0.23594603164728267
+Seeking multiple opinions,gender,0.7324441587658685
+Seeking multiple opinions,race_ethnicity,0.19915119363395228
+Seeking multiple opinions,ell_status,0.4477611940298507
+Seeking multiple opinions,economically_disadvantaged,0.08435797665369649
+Seeking multiple opinions,student_disability_status,
