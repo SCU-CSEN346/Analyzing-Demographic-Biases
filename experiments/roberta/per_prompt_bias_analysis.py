@@ -5,6 +5,8 @@ import argparse
 import pandas as pd
 import numpy as np
 import statsmodels.api as sm
+import warnings
+from sklearn.metrics import cohen_kappa_score
 
 DEMO_COLUMNS = [
     "gender", 
@@ -53,6 +55,23 @@ def run_per_prompt_analysis(preds_path, base_preds_path, meta_path, is_persuade)
             reference_group = groups[0]
             
             for focal_group in groups[1:]:
+                # ----- QWK Calculation -----
+                focal_mask_debiased = (prompt_df[column] == focal_group) & prompt_df["roberta_score"].notna() & prompt_df["human_score"].notna()
+                focal_debiased = prompt_df[focal_mask_debiased]
+                qwk_debiased = np.nan
+                if len(focal_debiased) > 0:
+                    with warnings.catch_warnings():
+                        warnings.simplefilter("ignore")
+                        qwk_debiased = cohen_kappa_score(focal_debiased["human_score"].astype(int), np.round(focal_debiased["roberta_score"]).astype(int), weights="quadratic")
+
+                focal_mask_base = (prompt_base_df[column] == focal_group) & prompt_base_df["roberta_score"].notna() & prompt_base_df["human_score"].notna()
+                focal_base = prompt_base_df[focal_mask_base]
+                qwk_base = np.nan
+                if len(focal_base) > 0:
+                    with warnings.catch_warnings():
+                        warnings.simplefilter("ignore")
+                        qwk_base = cohen_kappa_score(focal_base["human_score"].astype(int), np.round(focal_base["roberta_score"]).astype(int), weights="quadratic")
+                
                 # ----- Debiased WLS -----
                 group_mask = subset[column].isin([reference_group, focal_group])
                 test_df = subset[group_mask].copy()
@@ -107,7 +126,9 @@ def run_per_prompt_analysis(preds_path, base_preds_path, meta_path, is_persuade)
                         "Reference Group": reference_group,
                         "Focal Group": focal_group,
                         "Z-Score (Base)": z_base,
-                        "Z-Score (Debiased)": z_debiased
+                        "Z-Score (Debiased)": z_debiased,
+                        "QWK (Base)": qwk_base,
+                        "QWK (Debiased)": qwk_debiased
                     })
                     
     return pd.DataFrame(results)
@@ -149,11 +170,13 @@ def main():
         Mean_Abs_Z_Base=("Abs Z (Base)", "mean"),
         Var_Z_Base=("Z-Score (Base)", "var"),
         Mean_Abs_Z_Debiased=("Abs Z (Debiased)", "mean"),
-        Var_Z_Debiased=("Z-Score (Debiased)", "var")
+        Var_Z_Debiased=("Z-Score (Debiased)", "var"),
+        Mean_QWK_Base=("QWK (Base)", "mean"),
+        Mean_QWK_Debiased=("QWK (Debiased)", "mean")
     ).reset_index()
     
     # Round for display
-    for col in ["Mean_Abs_Z_Base", "Var_Z_Base", "Mean_Abs_Z_Debiased", "Var_Z_Debiased"]:
+    for col in ["Mean_Abs_Z_Base", "Var_Z_Base", "Mean_Abs_Z_Debiased", "Var_Z_Debiased", "Mean_QWK_Base", "Mean_QWK_Debiased"]:
         agg_df[col] = agg_df[col].round(3)
         
     agg_out = f"per_prompt_aggregated_bias_{args.dataset}.csv"
@@ -163,7 +186,7 @@ def main():
     print(f"  PER-PROMPT Z-SCORE MAGNITUDE & VARIANCE ({args.dataset.upper()})")
     print("="*100)
     
-    display_cols = ["Category", "Focal Group", "Num_Prompts", "Mean_Abs_Z_Base", "Mean_Abs_Z_Debiased", "Var_Z_Base", "Var_Z_Debiased"]
+    display_cols = ["Category", "Focal Group", "Num_Prompts", "Mean_QWK_Base", "Mean_QWK_Debiased", "Mean_Abs_Z_Base", "Mean_Abs_Z_Debiased", "Var_Z_Base", "Var_Z_Debiased"]
     print(agg_df[display_cols].to_string(index=False))
     print("="*100)
     print(f"Saved aggregated per-prompt statistics to {agg_out}")
