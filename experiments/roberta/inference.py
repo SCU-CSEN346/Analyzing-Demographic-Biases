@@ -5,7 +5,7 @@ import torch
 import pandas as pd
 from tqdm import tqdm # Run: pip install tqdm
 from transformers import RobertaTokenizer
-from roberta import RobertaForEssayScoring, MODEL_NAME, MAX_LENGTH
+from train_evaluate_roberta import RobertaForEssayScoring, MODEL_NAME, MAX_LENGTH
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 print(f"Using device: {device}", flush=True)

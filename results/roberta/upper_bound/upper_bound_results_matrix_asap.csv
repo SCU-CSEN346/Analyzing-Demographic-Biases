@@ -1,0 +1,26 @@
+Prompt,Demographic,Kappa
+"""A Cowboy Who Rode the Waves""",gender,0.0
+"""A Cowboy Who Rode the Waves""",race_ethnicity,0.04175176098583222
+"""A Cowboy Who Rode the Waves""",ell_status,0.0
+"""A Cowboy Who Rode the Waves""",economically_disadvantaged,0.08721538628080694
+"""A Cowboy Who Rode the Waves""",student_disability_status,0.0
+The Face on Mars,gender,0.25971277992202346
+The Face on Mars,race_ethnicity,0.14995584257879346
+The Face on Mars,ell_status,0.0
+The Face on Mars,economically_disadvantaged,0.08602360522879005
+The Face on Mars,student_disability_status,0.0
+Exploring Venus,gender,0.0
+Exploring Venus,race_ethnicity,0.21819742290353317
+Exploring Venus,ell_status,0.4809160386789906
+Exploring Venus,economically_disadvantaged,0.0
+Exploring Venus,student_disability_status,0.14460241260462814
+Facial action coding system,gender,0.27635273443060715
+Facial action coding system,race_ethnicity,0.18974988626997846
+Facial action coding system,ell_status,0.0
+Facial action coding system,economically_disadvantaged,0.172126642562775
+Facial action coding system,student_disability_status,0.03458478816457289
+Driverless cars,gender,0.294783357127263
+Driverless cars,race_ethnicity,0.12500674811708257
+Driverless cars,ell_status,0.0
+Driverless cars,economically_disadvantaged,0.18395578473931362
+Driverless cars,student_disability_status,0.0
