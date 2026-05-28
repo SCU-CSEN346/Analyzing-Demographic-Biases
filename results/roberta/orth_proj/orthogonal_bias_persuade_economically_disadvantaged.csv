@@ -1,0 +1,11 @@
+Category,Reference Group,Focal Group,Z-Score_Base,Z-Score_Proj,Z-Score_Diff,Abs_Z_Reduction,Base_QWK,Proj_QWK,Base_Z_Var,Proj_Z_Var
+gender,M,F,1.465,-0.05,-1.5150000000000001,1.415,0.837,0.0127,14.6406,0.0451
+race_ethnicity,Black/African American,White,1.216,0.098,-1.1179999999999999,1.118,0.837,0.0127,14.6406,0.0451
+race_ethnicity,Black/African American,Hispanic/Latino,-1.463,0.076,1.5390000000000001,1.387,0.837,0.0127,14.6406,0.0451
+race_ethnicity,Black/African American,Two or more races/Other,0.175,0.035,-0.13999999999999999,0.141,0.837,0.0127,14.6406,0.0451
+race_ethnicity,Black/African American,Asian/Pacific Islander,4.414,-0.082,-4.4959999999999996,4.333,0.837,0.0127,14.6406,0.0451
+race_ethnicity,Black/African American,American Indian/Alaskan Native,0.062,0.076,0.013999999999999999,-0.015,0.837,0.0127,14.6406,0.0451
+ell_status,No,Yes,-3.863,-0.186,3.677,3.677,0.837,0.0127,14.6406,0.0451
+ell_status,No,,-3.699,-0.594,3.105,3.104,0.837,0.0127,14.6406,0.0451
+economically_disadvantaged,Not economically disadvantaged,Economically disadvantaged,-10.402,-0.38,10.021999999999998,10.022,0.837,0.0127,14.6406,0.0451
+student_disability_status,Not identified as having disability,Identified as having disability,-2.14,-0.121,2.019,2.019,0.837,0.0127,14.6406,0.0451
