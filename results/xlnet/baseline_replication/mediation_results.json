@@ -1,0 +1,43 @@
+{
+  "control_features": [
+    "n_words",
+    "n_sentences",
+    "mean_word_len",
+    "flesch_kincaid",
+    "type_token_ratio"
+  ],
+  "results": {
+    "gender": {
+      "n_matched": 10402,
+      "coef_raw": -0.0491,
+      "coef_controlled": -0.0002,
+      "smd_raw": -0.0449,
+      "smd_controlled": -0.0002,
+      "prop_mediated": 0.9954
+    },
+    "ell_status": {
+      "n_matched": 9898,
+      "coef_raw": -0.1482,
+      "coef_controlled": -0.3231,
+      "smd_raw": -0.1346,
+      "smd_controlled": -0.2935,
+      "prop_mediated": -1.1804
+    },
+    "economically_disadvantaged": {
+      "n_matched": 8699,
+      "coef_raw": -0.1247,
+      "coef_controlled": -0.1477,
+      "smd_raw": -0.1118,
+      "smd_controlled": -0.1325,
+      "prop_mediated": -0.1845
+    },
+    "student_disability_status": {
+      "n_matched": 8731,
+      "coef_raw": -0.1272,
+      "coef_controlled": -0.1998,
+      "smd_raw": -0.1141,
+      "smd_controlled": -0.1792,
+      "prop_mediated": -0.5713
+    }
+  }
+}

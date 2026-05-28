@@ -1,0 +1,1414 @@
+{
+  "run_version": "grl_joint_l05_persuade",
+  "config": {
+    "PROBE_EPOCHS": 50,
+    "PROBE_LR": 0.001,
+    "PROBE_BS": 64,
+    "WEIGHT_DECAY": 0.0001,
+    "PATIENCE": 8,
+    "MAX_LEN": 2048,
+    "RANDOM_SEED": 42
+  },
+  "summary": {
+    "economically_disadvantaged": {
+      "mean_kappa": 0.2695,
+      "median_kappa": 0.2823,
+      "min_kappa": 0.0527,
+      "max_kappa": 0.4246,
+      "n_prompts": 11,
+      "n_dropped_nan": 0
+    },
+    "ell_status": {
+      "mean_kappa": 0.2251,
+      "median_kappa": 0.1688,
+      "min_kappa": -0.0291,
+      "max_kappa": 0.7786,
+      "n_prompts": 12,
+      "n_dropped_nan": 0
+    },
+    "gender": {
+      "mean_kappa": 0.2527,
+      "median_kappa": 0.2461,
+      "min_kappa": 0.1445,
+      "max_kappa": 0.3818,
+      "n_prompts": 14,
+      "n_dropped_nan": 0
+    },
+    "race_asian": {
+      "mean_kappa": 0.1211,
+      "median_kappa": 0.1016,
+      "min_kappa": 0.0248,
+      "max_kappa": 0.2533,
+      "n_prompts": 14,
+      "n_dropped_nan": 0
+    },
+    "race_black": {
+      "mean_kappa": 0.1479,
+      "median_kappa": 0.135,
+      "min_kappa": 0.0172,
+      "max_kappa": 0.2659,
+      "n_prompts": 13,
+      "n_dropped_nan": 0
+    },
+    "race_hispanic": {
+      "mean_kappa": 0.1309,
+      "median_kappa": 0.1109,
+      "min_kappa": 0.0138,
+      "max_kappa": 0.4633,
+      "n_prompts": 14,
+      "n_dropped_nan": 0
+    },
+    "race_white": {
+      "mean_kappa": 0.2513,
+      "median_kappa": 0.2525,
+      "min_kappa": 0.0595,
+      "max_kappa": 0.3766,
+      "n_prompts": 14,
+      "n_dropped_nan": 0
+    },
+    "student_disability_status": {
+      "mean_kappa": 0.169,
+      "median_kappa": 0.1759,
+      "min_kappa": 0.0245,
+      "max_kappa": 0.3027,
+      "n_prompts": 11,
+      "n_dropped_nan": 0
+    }
+  },
+  "per_prompt": [
+    {
+      "prompt": "\"A Cowboy Who Rode the Waves\"",
+      "n_train": 688,
+      "n_test": 684,
+      "demographics": {
+        "gender": {
+          "test_kappa": 0.2051,
+          "dev_kappa": 0.146,
+          "n_classes": 2,
+          "n_train": 688,
+          "n_test": 684,
+          "interpretation": "minimal",
+          "classes": [
+            "f",
+            "m"
+          ]
+        },
+        "economically_disadvantaged": {
+          "test_kappa": 0.176,
+          "dev_kappa": 0.3048,
+          "n_classes": 2,
+          "n_train": 688,
+          "n_test": 684,
+          "interpretation": "no_agreement",
+          "classes": [
+            "economically disadvantaged",
+            "not economically disadvantaged"
+          ]
+        },
+        "ell_status": {
+          "test_kappa": -0.0291,
+          "dev_kappa": 0.2549,
+          "n_classes": 2,
+          "n_train": 685,
+          "n_test": 683,
+          "interpretation": "no_agreement",
+          "classes": [
+            "no",
+            "yes"
+          ]
+        },
+        "student_disability_status": {
+          "test_kappa": 0.057,
+          "dev_kappa": 0.1687,
+          "n_classes": 2,
+          "n_train": 688,
+          "n_test": 684,
+          "interpretation": "no_agreement",
+          "classes": [
+            "identified as having disability",
+            "not identified as having disability"
+          ]
+        },
+        "race_white": {
+          "test_kappa": 0.2476,
+          "dev_kappa": 0.2767,
+          "n_classes": 2,
+          "n_train": 688,
+          "n_test": 684,
+          "interpretation": "minimal",
+          "classes": [
+            "not_white",
+            "white"
+          ]
+        },
+        "race_black": {
+          "test_kappa": 0.0743,
+          "dev_kappa": 0.1214,
+          "n_classes": 2,
+          "n_train": 688,
+          "n_test": 684,
+          "interpretation": "no_agreement",
+          "classes": [
+            "not_black/african american",
+            "black/african american"
+          ]
+        },
+        "race_hispanic": {
+          "test_kappa": 0.077,
+          "dev_kappa": 0.0858,
+          "n_classes": 2,
+          "n_train": 688,
+          "n_test": 684,
+          "interpretation": "no_agreement",
+          "classes": [
+            "not_hispanic/latino",
+            "hispanic/latino"
+          ]
+        },
+        "race_asian": {
+          "test_kappa": 0.077,
+          "dev_kappa": 0.1102,
+          "n_classes": 2,
+          "n_train": 688,
+          "n_test": 684,
+          "interpretation": "no_agreement",
+          "classes": [
+            "not_asian/pacific islander",
+            "asian/pacific islander"
+          ]
+        }
+      }
+    },
+    {
+      "prompt": "Car-free cities",
+      "n_train": 983,
+      "n_test": 976,
+      "demographics": {
+        "gender": {
+          "test_kappa": 0.3214,
+          "dev_kappa": 0.2541,
+          "n_classes": 2,
+          "n_train": 983,
+          "n_test": 976,
+          "interpretation": "minimal",
+          "classes": [
+            "f",
+            "m"
+          ]
+        },
+        "ell_status": {
+          "test_kappa": 0.1647,
+          "dev_kappa": 0.242,
+          "n_classes": 2,
+          "n_train": 983,
+          "n_test": 976,
+          "interpretation": "no_agreement",
+          "classes": [
+            "no",
+            "yes"
+          ]
+        },
+        "race_white": {
+          "test_kappa": 0.2478,
+          "dev_kappa": 0.4431,
+          "n_classes": 2,
+          "n_train": 983,
+          "n_test": 976,
+          "interpretation": "minimal",
+          "classes": [
+            "not_white",
+            "white"
+          ]
+        },
+        "race_black": {
+          "test_kappa": 0.2274,
+          "dev_kappa": 0.3631,
+          "n_classes": 2,
+          "n_train": 983,
+          "n_test": 976,
+          "interpretation": "minimal",
+          "classes": [
+            "not_black/african american",
+            "black/african american"
+          ]
+        },
+        "race_hispanic": {
+          "test_kappa": 0.1448,
+          "dev_kappa": 0.1551,
+          "n_classes": 2,
+          "n_train": 983,
+          "n_test": 976,
+          "interpretation": "no_agreement",
+          "classes": [
+            "not_hispanic/latino",
+            "hispanic/latino"
+          ]
+        },
+        "race_asian": {
+          "test_kappa": 0.0292,
+          "dev_kappa": 0.0343,
+          "n_classes": 2,
+          "n_train": 983,
+          "n_test": 976,
+          "interpretation": "no_agreement",
+          "classes": [
+            "not_asian/pacific islander",
+            "asian/pacific islander"
+          ]
+        }
+      }
+    },
+    {
+      "prompt": "Cell phones at school",
+      "n_train": 829,
+      "n_test": 827,
+      "demographics": {
+        "gender": {
+          "test_kappa": 0.2134,
+          "dev_kappa": 0.2646,
+          "n_classes": 2,
+          "n_train": 829,
+          "n_test": 827,
+          "interpretation": "minimal",
+          "classes": [
+            "f",
+            "m"
+          ]
+        },
+        "economically_disadvantaged": {
+          "test_kappa": 0.2861,
+          "dev_kappa": 0.4058,
+          "n_classes": 2,
+          "n_train": 813,
+          "n_test": 820,
+          "interpretation": "minimal",
+          "classes": [
+            "economically disadvantaged",
+            "not economically disadvantaged"
+          ]
+        },
+        "ell_status": {
+          "test_kappa": 0.1356,
+          "dev_kappa": 0.1185,
+          "n_classes": 2,
+          "n_train": 829,
+          "n_test": 827,
+          "interpretation": "no_agreement",
+          "classes": [
+            "no",
+            "yes"
+          ]
+        },
+        "student_disability_status": {
+          "test_kappa": 0.2576,
+          "dev_kappa": 0.2342,
+          "n_classes": 2,
+          "n_train": 829,
+          "n_test": 827,
+          "interpretation": "minimal",
+          "classes": [
+            "identified as having disability",
+            "not identified as having disability"
+          ]
+        },
+        "race_white": {
+          "test_kappa": 0.2788,
+          "dev_kappa": 0.3525,
+          "n_classes": 2,
+          "n_train": 829,
+          "n_test": 827,
+          "interpretation": "minimal",
+          "classes": [
+            "not_white",
+            "white"
+          ]
+        },
+        "race_black": {
+          "test_kappa": 0.1051,
+          "dev_kappa": 0.0842,
+          "n_classes": 2,
+          "n_train": 829,
+          "n_test": 827,
+          "interpretation": "no_agreement",
+          "classes": [
+            "not_black/african american",
+            "black/african american"
+          ]
+        },
+        "race_hispanic": {
+          "test_kappa": 0.1223,
+          "dev_kappa": 0.1252,
+          "n_classes": 2,
+          "n_train": 829,
+          "n_test": 827,
+          "interpretation": "no_agreement",
+          "classes": [
+            "not_hispanic/latino",
+            "hispanic/latino"
+          ]
+        },
+        "race_asian": {
+          "test_kappa": 0.1276,
+          "dev_kappa": 0.1393,
+          "n_classes": 2,
+          "n_train": 829,
+          "n_test": 827,
+          "interpretation": "no_agreement",
+          "classes": [
+            "not_asian/pacific islander",
+            "asian/pacific islander"
+          ]
+        }
+      }
+    },
+    {
+      "prompt": "Community service",
+      "n_train": 768,
+      "n_test": 774,
+      "demographics": {
+        "gender": {
+          "test_kappa": 0.2862,
+          "dev_kappa": 0.4149,
+          "n_classes": 2,
+          "n_train": 768,
+          "n_test": 774,
+          "interpretation": "minimal",
+          "classes": [
+            "f",
+            "m"
+          ]
+        },
+        "economically_disadvantaged": {
+          "test_kappa": 0.2831,
+          "dev_kappa": 0.4542,
+          "n_classes": 2,
+          "n_train": 760,
+          "n_test": 761,
+          "interpretation": "minimal",
+          "classes": [
+            "economically disadvantaged",
+            "not economically disadvantaged"
+          ]
+        },
+        "ell_status": {
+          "test_kappa": 0.1729,
+          "dev_kappa": 0.1993,
+          "n_classes": 2,
+          "n_train": 768,
+          "n_test": 774,
+          "interpretation": "no_agreement",
+          "classes": [
+            "no",
+            "yes"
+          ]
+        },
+        "student_disability_status": {
+          "test_kappa": 0.1409,
+          "dev_kappa": 0.2089,
+          "n_classes": 2,
+          "n_train": 768,
+          "n_test": 774,
+          "interpretation": "no_agreement",
+          "classes": [
+            "identified as having disability",
+            "not identified as having disability"
+          ]
+        },
+        "race_white": {
+          "test_kappa": 0.27,
+          "dev_kappa": 0.4047,
+          "n_classes": 2,
+          "n_train": 768,
+          "n_test": 774,
+          "interpretation": "minimal",
+          "classes": [
+            "not_white",
+            "white"
+          ]
+        },
+        "race_black": {
+          "test_kappa": 0.1313,
+          "dev_kappa": 0.18,
+          "n_classes": 2,
+          "n_train": 768,
+          "n_test": 774,
+          "interpretation": "no_agreement",
+          "classes": [
+            "not_black/african american",
+            "black/african american"
+          ]
+        },
+        "race_hispanic": {
+          "test_kappa": 0.1071,
+          "dev_kappa": 0.1932,
+          "n_classes": 2,
+          "n_train": 768,
+          "n_test": 774,
+          "interpretation": "no_agreement",
+          "classes": [
+            "not_hispanic/latino",
+            "hispanic/latino"
+          ]
+        },
+        "race_asian": {
+          "test_kappa": 0.0629,
+          "dev_kappa": 0.2252,
+          "n_classes": 2,
+          "n_train": 768,
+          "n_test": 774,
+          "interpretation": "no_agreement",
+          "classes": [
+            "not_asian/pacific islander",
+            "asian/pacific islander"
+          ]
+        }
+      }
+    },
+    {
+      "prompt": "Distance learning",
+      "n_train": 1498,
+      "n_test": 659,
+      "demographics": {
+        "gender": {
+          "test_kappa": 0.1693,
+          "dev_kappa": 0.2801,
+          "n_classes": 2,
+          "n_train": 1498,
+          "n_test": 659,
+          "interpretation": "no_agreement",
+          "classes": [
+            "f",
+            "m"
+          ]
+        },
+        "economically_disadvantaged": {
+          "test_kappa": 0.4246,
+          "dev_kappa": 0.3382,
+          "n_classes": 2,
+          "n_train": 1498,
+          "n_test": 659,
+          "interpretation": "moderate",
+          "classes": [
+            "economically disadvantaged",
+            "not economically disadvantaged"
+          ]
+        },
+        "ell_status": {
+          "test_kappa": 0.7786,
+          "dev_kappa": 0.7181,
+          "n_classes": 2,
+          "n_train": 1498,
+          "n_test": 659,
+          "interpretation": "substantial",
+          "classes": [
+            "no",
+            "yes"
+          ]
+        },
+        "student_disability_status": {
+          "test_kappa": 0.1759,
+          "dev_kappa": 0.2349,
+          "n_classes": 2,
+          "n_train": 1498,
+          "n_test": 659,
+          "interpretation": "no_agreement",
+          "classes": [
+            "identified as having disability",
+            "not identified as having disability"
+          ]
+        },
+        "race_white": {
+          "test_kappa": 0.3766,
+          "dev_kappa": 0.3112,
+          "n_classes": 2,
+          "n_train": 1498,
+          "n_test": 659,
+          "interpretation": "minimal",
+          "classes": [
+            "not_white",
+            "white"
+          ]
+        },
+        "race_black": {
+          "test_kappa": 0.1175,
+          "dev_kappa": 0.2735,
+          "n_classes": 2,
+          "n_train": 1498,
+          "n_test": 659,
+          "interpretation": "no_agreement",
+          "classes": [
+            "not_black/african american",
+            "black/african american"
+          ]
+        },
+        "race_hispanic": {
+          "test_kappa": 0.4633,
+          "dev_kappa": 0.4341,
+          "n_classes": 2,
+          "n_train": 1498,
+          "n_test": 659,
+          "interpretation": "moderate",
+          "classes": [
+            "not_hispanic/latino",
+            "hispanic/latino"
+          ]
+        },
+        "race_asian": {
+          "test_kappa": 0.1686,
+          "dev_kappa": 0.3443,
+          "n_classes": 2,
+          "n_train": 1498,
+          "n_test": 659,
+          "interpretation": "no_agreement",
+          "classes": [
+            "not_asian/pacific islander",
+            "asian/pacific islander"
+          ]
+        }
+      }
+    },
+    {
+      "prompt": "Does the electoral college work?",
+      "n_train": 1818,
+      "n_test": 228,
+      "demographics": {
+        "gender": {
+          "test_kappa": 0.3421,
+          "dev_kappa": 0.3635,
+          "n_classes": 2,
+          "n_train": 1818,
+          "n_test": 228,
+          "interpretation": "minimal",
+          "classes": [
+            "f",
+            "m"
+          ]
+        },
+        "race_white": {
+          "test_kappa": 0.1909,
+          "dev_kappa": 0.283,
+          "n_classes": 2,
+          "n_train": 1818,
+          "n_test": 228,
+          "interpretation": "no_agreement",
+          "classes": [
+            "not_white",
+            "white"
+          ]
+        },
+        "race_hispanic": {
+          "test_kappa": 0.1694,
+          "dev_kappa": 0.2548,
+          "n_classes": 2,
+          "n_train": 1818,
+          "n_test": 228,
+          "interpretation": "no_agreement",
+          "classes": [
+            "not_hispanic/latino",
+            "hispanic/latino"
+          ]
+        },
+        "race_asian": {
+          "test_kappa": 0.0248,
+          "dev_kappa": 0.1714,
+          "n_classes": 2,
+          "n_train": 1818,
+          "n_test": 228,
+          "interpretation": "no_agreement",
+          "classes": [
+            "not_asian/pacific islander",
+            "asian/pacific islander"
+          ]
+        }
+      }
+    },
+    {
+      "prompt": "Driverless cars",
+      "n_train": 1386,
+      "n_test": 500,
+      "demographics": {
+        "gender": {
+          "test_kappa": 0.3325,
+          "dev_kappa": 0.2539,
+          "n_classes": 2,
+          "n_train": 1386,
+          "n_test": 500,
+          "interpretation": "minimal",
+          "classes": [
+            "f",
+            "m"
+          ]
+        },
+        "economically_disadvantaged": {
+          "test_kappa": 0.0527,
+          "dev_kappa": 0.2833,
+          "n_classes": 2,
+          "n_train": 1386,
+          "n_test": 500,
+          "interpretation": "no_agreement",
+          "classes": [
+            "economically disadvantaged",
+            "not economically disadvantaged"
+          ]
+        },
+        "ell_status": {
+          "test_kappa": -0.0103,
+          "dev_kappa": 0.3774,
+          "n_classes": 2,
+          "n_train": 1320,
+          "n_test": 489,
+          "interpretation": "no_agreement",
+          "classes": [
+            "no",
+            "yes"
+          ]
+        },
+        "student_disability_status": {
+          "test_kappa": 0.0245,
+          "dev_kappa": 0.0977,
+          "n_classes": 2,
+          "n_train": 1386,
+          "n_test": 500,
+          "interpretation": "no_agreement",
+          "classes": [
+            "identified as having disability",
+            "not identified as having disability"
+          ]
+        },
+        "race_white": {
+          "test_kappa": 0.2047,
+          "dev_kappa": 0.3388,
+          "n_classes": 2,
+          "n_train": 1386,
+          "n_test": 500,
+          "interpretation": "minimal",
+          "classes": [
+            "not_white",
+            "white"
+          ]
+        },
+        "race_black": {
+          "test_kappa": 0.135,
+          "dev_kappa": 0.1882,
+          "n_classes": 2,
+          "n_train": 1386,
+          "n_test": 500,
+          "interpretation": "no_agreement",
+          "classes": [
+            "not_black/african american",
+            "black/african american"
+          ]
+        },
+        "race_hispanic": {
+          "test_kappa": 0.0163,
+          "dev_kappa": 0.341,
+          "n_classes": 2,
+          "n_train": 1386,
+          "n_test": 500,
+          "interpretation": "no_agreement",
+          "classes": [
+            "not_hispanic/latino",
+            "hispanic/latino"
+          ]
+        },
+        "race_asian": {
+          "test_kappa": 0.2253,
+          "dev_kappa": 0.3531,
+          "n_classes": 2,
+          "n_train": 1386,
+          "n_test": 500,
+          "interpretation": "minimal",
+          "classes": [
+            "not_asian/pacific islander",
+            "asian/pacific islander"
+          ]
+        }
+      }
+    },
+    {
+      "prompt": "Exploring Venus",
+      "n_train": 928,
+      "n_test": 934,
+      "demographics": {
+        "gender": {
+          "test_kappa": 0.2747,
+          "dev_kappa": 0.5057,
+          "n_classes": 2,
+          "n_train": 928,
+          "n_test": 934,
+          "interpretation": "minimal",
+          "classes": [
+            "f",
+            "m"
+          ]
+        },
+        "economically_disadvantaged": {
+          "test_kappa": 0.3093,
+          "dev_kappa": 0.2393,
+          "n_classes": 2,
+          "n_train": 928,
+          "n_test": 934,
+          "interpretation": "minimal",
+          "classes": [
+            "economically disadvantaged",
+            "not economically disadvantaged"
+          ]
+        },
+        "ell_status": {
+          "test_kappa": 0.3079,
+          "dev_kappa": 0.4777,
+          "n_classes": 2,
+          "n_train": 925,
+          "n_test": 931,
+          "interpretation": "minimal",
+          "classes": [
+            "no",
+            "yes"
+          ]
+        },
+        "student_disability_status": {
+          "test_kappa": 0.2854,
+          "dev_kappa": 0.3795,
+          "n_classes": 2,
+          "n_train": 928,
+          "n_test": 934,
+          "interpretation": "minimal",
+          "classes": [
+            "identified as having disability",
+            "not identified as having disability"
+          ]
+        },
+        "race_white": {
+          "test_kappa": 0.3231,
+          "dev_kappa": 0.3186,
+          "n_classes": 2,
+          "n_train": 928,
+          "n_test": 934,
+          "interpretation": "minimal",
+          "classes": [
+            "not_white",
+            "white"
+          ]
+        },
+        "race_black": {
+          "test_kappa": 0.1805,
+          "dev_kappa": 0.3002,
+          "n_classes": 2,
+          "n_train": 928,
+          "n_test": 934,
+          "interpretation": "no_agreement",
+          "classes": [
+            "not_black/african american",
+            "black/african american"
+          ]
+        },
+        "race_hispanic": {
+          "test_kappa": 0.0885,
+          "dev_kappa": 0.0606,
+          "n_classes": 2,
+          "n_train": 928,
+          "n_test": 934,
+          "interpretation": "no_agreement",
+          "classes": [
+            "not_hispanic/latino",
+            "hispanic/latino"
+          ]
+        },
+        "race_asian": {
+          "test_kappa": 0.0649,
+          "dev_kappa": 0.1832,
+          "n_classes": 2,
+          "n_train": 928,
+          "n_test": 934,
+          "interpretation": "no_agreement",
+          "classes": [
+            "not_asian/pacific islander",
+            "asian/pacific islander"
+          ]
+        }
+      }
+    },
+    {
+      "prompt": "Facial action coding system",
+      "n_train": 1103,
+      "n_test": 1064,
+      "demographics": {
+        "gender": {
+          "test_kappa": 0.2528,
+          "dev_kappa": 0.3458,
+          "n_classes": 2,
+          "n_train": 1103,
+          "n_test": 1064,
+          "interpretation": "minimal",
+          "classes": [
+            "f",
+            "m"
+          ]
+        },
+        "economically_disadvantaged": {
+          "test_kappa": 0.2823,
+          "dev_kappa": 0.289,
+          "n_classes": 2,
+          "n_train": 1103,
+          "n_test": 1064,
+          "interpretation": "minimal",
+          "classes": [
+            "economically disadvantaged",
+            "not economically disadvantaged"
+          ]
+        },
+        "ell_status": {
+          "test_kappa": 0.3885,
+          "dev_kappa": 0.5418,
+          "n_classes": 2,
+          "n_train": 1085,
+          "n_test": 1047,
+          "interpretation": "minimal",
+          "classes": [
+            "no",
+            "yes"
+          ]
+        },
+        "student_disability_status": {
+          "test_kappa": 0.3027,
+          "dev_kappa": 0.4017,
+          "n_classes": 2,
+          "n_train": 1103,
+          "n_test": 1064,
+          "interpretation": "minimal",
+          "classes": [
+            "identified as having disability",
+            "not identified as having disability"
+          ]
+        },
+        "race_white": {
+          "test_kappa": 0.3309,
+          "dev_kappa": 0.4853,
+          "n_classes": 2,
+          "n_train": 1103,
+          "n_test": 1064,
+          "interpretation": "minimal",
+          "classes": [
+            "not_white",
+            "white"
+          ]
+        },
+        "race_black": {
+          "test_kappa": 0.1282,
+          "dev_kappa": 0.3324,
+          "n_classes": 2,
+          "n_train": 1103,
+          "n_test": 1064,
+          "interpretation": "no_agreement",
+          "classes": [
+            "not_black/african american",
+            "black/african american"
+          ]
+        },
+        "race_hispanic": {
+          "test_kappa": 0.1365,
+          "dev_kappa": 0.196,
+          "n_classes": 2,
+          "n_train": 1103,
+          "n_test": 1064,
+          "interpretation": "no_agreement",
+          "classes": [
+            "not_hispanic/latino",
+            "hispanic/latino"
+          ]
+        },
+        "race_asian": {
+          "test_kappa": 0.2322,
+          "dev_kappa": 0.2387,
+          "n_classes": 2,
+          "n_train": 1103,
+          "n_test": 1064,
+          "interpretation": "minimal",
+          "classes": [
+            "not_asian/pacific islander",
+            "asian/pacific islander"
+          ]
+        }
+      }
+    },
+    {
+      "prompt": "Grades for extracurricular activities",
+      "n_train": 815,
+      "n_test": 811,
+      "demographics": {
+        "gender": {
+          "test_kappa": 0.2258,
+          "dev_kappa": 0.5763,
+          "n_classes": 2,
+          "n_train": 815,
+          "n_test": 811,
+          "interpretation": "minimal",
+          "classes": [
+            "f",
+            "m"
+          ]
+        },
+        "economically_disadvantaged": {
+          "test_kappa": 0.2675,
+          "dev_kappa": 0.2044,
+          "n_classes": 2,
+          "n_train": 807,
+          "n_test": 799,
+          "interpretation": "minimal",
+          "classes": [
+            "economically disadvantaged",
+            "not economically disadvantaged"
+          ]
+        },
+        "ell_status": {
+          "test_kappa": 0.1278,
+          "dev_kappa": 0.1892,
+          "n_classes": 2,
+          "n_train": 815,
+          "n_test": 811,
+          "interpretation": "no_agreement",
+          "classes": [
+            "no",
+            "yes"
+          ]
+        },
+        "student_disability_status": {
+          "test_kappa": 0.1798,
+          "dev_kappa": 0.1009,
+          "n_classes": 2,
+          "n_train": 815,
+          "n_test": 811,
+          "interpretation": "no_agreement",
+          "classes": [
+            "identified as having disability",
+            "not identified as having disability"
+          ]
+        },
+        "race_white": {
+          "test_kappa": 0.3069,
+          "dev_kappa": 0.3415,
+          "n_classes": 2,
+          "n_train": 815,
+          "n_test": 811,
+          "interpretation": "minimal",
+          "classes": [
+            "not_white",
+            "white"
+          ]
+        },
+        "race_black": {
+          "test_kappa": 0.1664,
+          "dev_kappa": 0.3033,
+          "n_classes": 2,
+          "n_train": 815,
+          "n_test": 811,
+          "interpretation": "no_agreement",
+          "classes": [
+            "not_black/african american",
+            "black/african american"
+          ]
+        },
+        "race_hispanic": {
+          "test_kappa": 0.2631,
+          "dev_kappa": 0.3975,
+          "n_classes": 2,
+          "n_train": 815,
+          "n_test": 811,
+          "interpretation": "minimal",
+          "classes": [
+            "not_hispanic/latino",
+            "hispanic/latino"
+          ]
+        },
+        "race_asian": {
+          "test_kappa": 0.0806,
+          "dev_kappa": 0.0433,
+          "n_classes": 2,
+          "n_train": 815,
+          "n_test": 811,
+          "interpretation": "no_agreement",
+          "classes": [
+            "not_asian/pacific islander",
+            "asian/pacific islander"
+          ]
+        }
+      }
+    },
+    {
+      "prompt": "Mandatory extracurricular activities",
+      "n_train": 839,
+      "n_test": 831,
+      "demographics": {
+        "gender": {
+          "test_kappa": 0.3818,
+          "dev_kappa": 0.3799,
+          "n_classes": 2,
+          "n_train": 839,
+          "n_test": 831,
+          "interpretation": "minimal",
+          "classes": [
+            "f",
+            "m"
+          ]
+        },
+        "economically_disadvantaged": {
+          "test_kappa": 0.3572,
+          "dev_kappa": 0.3043,
+          "n_classes": 2,
+          "n_train": 839,
+          "n_test": 831,
+          "interpretation": "minimal",
+          "classes": [
+            "economically disadvantaged",
+            "not economically disadvantaged"
+          ]
+        },
+        "ell_status": {
+          "test_kappa": 0.3603,
+          "dev_kappa": 0.4167,
+          "n_classes": 2,
+          "n_train": 839,
+          "n_test": 831,
+          "interpretation": "minimal",
+          "classes": [
+            "no",
+            "yes"
+          ]
+        },
+        "student_disability_status": {
+          "test_kappa": 0.248,
+          "dev_kappa": 0.2931,
+          "n_classes": 2,
+          "n_train": 839,
+          "n_test": 831,
+          "interpretation": "minimal",
+          "classes": [
+            "identified as having disability",
+            "not identified as having disability"
+          ]
+        },
+        "race_white": {
+          "test_kappa": 0.2457,
+          "dev_kappa": 0.2517,
+          "n_classes": 2,
+          "n_train": 839,
+          "n_test": 831,
+          "interpretation": "minimal",
+          "classes": [
+            "not_white",
+            "white"
+          ]
+        },
+        "race_black": {
+          "test_kappa": 0.1553,
+          "dev_kappa": 0.25,
+          "n_classes": 2,
+          "n_train": 839,
+          "n_test": 831,
+          "interpretation": "no_agreement",
+          "classes": [
+            "not_black/african american",
+            "black/african american"
+          ]
+        },
+        "race_hispanic": {
+          "test_kappa": 0.1146,
+          "dev_kappa": 0.1864,
+          "n_classes": 2,
+          "n_train": 839,
+          "n_test": 831,
+          "interpretation": "no_agreement",
+          "classes": [
+            "not_hispanic/latino",
+            "hispanic/latino"
+          ]
+        },
+        "race_asian": {
+          "test_kappa": 0.2533,
+          "dev_kappa": 0.2533,
+          "n_classes": 2,
+          "n_train": 839,
+          "n_test": 831,
+          "interpretation": "minimal",
+          "classes": [
+            "not_asian/pacific islander",
+            "asian/pacific islander"
+          ]
+        }
+      }
+    },
+    {
+      "prompt": "Phones and driving",
+      "n_train": 700,
+      "n_test": 467,
+      "demographics": {
+        "gender": {
+          "test_kappa": 0.1445,
+          "dev_kappa": 0.2571,
+          "n_classes": 2,
+          "n_train": 700,
+          "n_test": 467,
+          "interpretation": "no_agreement",
+          "classes": [
+            "f",
+            "m"
+          ]
+        },
+        "race_white": {
+          "test_kappa": 0.0595,
+          "dev_kappa": 0.0964,
+          "n_classes": 2,
+          "n_train": 700,
+          "n_test": 467,
+          "interpretation": "no_agreement",
+          "classes": [
+            "not_white",
+            "white"
+          ]
+        },
+        "race_black": {
+          "test_kappa": 0.0172,
+          "dev_kappa": 0.0698,
+          "n_classes": 2,
+          "n_train": 700,
+          "n_test": 467,
+          "interpretation": "no_agreement",
+          "classes": [
+            "not_black/african american",
+            "black/african american"
+          ]
+        },
+        "race_hispanic": {
+          "test_kappa": 0.0138,
+          "dev_kappa": 0.0349,
+          "n_classes": 2,
+          "n_train": 700,
+          "n_test": 467,
+          "interpretation": "no_agreement",
+          "classes": [
+            "not_hispanic/latino",
+            "hispanic/latino"
+          ]
+        },
+        "race_asian": {
+          "test_kappa": 0.11,
+          "dev_kappa": 0.3787,
+          "n_classes": 2,
+          "n_train": 700,
+          "n_test": 467,
+          "interpretation": "no_agreement",
+          "classes": [
+            "not_asian/pacific islander",
+            "asian/pacific islander"
+          ]
+        }
+      }
+    },
+    {
+      "prompt": "Summer projects",
+      "n_train": 875,
+      "n_test": 875,
+      "demographics": {
+        "gender": {
+          "test_kappa": 0.2393,
+          "dev_kappa": 0.2273,
+          "n_classes": 2,
+          "n_train": 875,
+          "n_test": 875,
+          "interpretation": "minimal",
+          "classes": [
+            "f",
+            "m"
+          ]
+        },
+        "economically_disadvantaged": {
+          "test_kappa": 0.2559,
+          "dev_kappa": 0.3195,
+          "n_classes": 2,
+          "n_train": 875,
+          "n_test": 875,
+          "interpretation": "minimal",
+          "classes": [
+            "economically disadvantaged",
+            "not economically disadvantaged"
+          ]
+        },
+        "ell_status": {
+          "test_kappa": 0.2968,
+          "dev_kappa": 0.8514,
+          "n_classes": 2,
+          "n_train": 875,
+          "n_test": 875,
+          "interpretation": "minimal",
+          "classes": [
+            "no",
+            "yes"
+          ]
+        },
+        "student_disability_status": {
+          "test_kappa": 0.118,
+          "dev_kappa": 0.3803,
+          "n_classes": 2,
+          "n_train": 875,
+          "n_test": 875,
+          "interpretation": "no_agreement",
+          "classes": [
+            "identified as having disability",
+            "not identified as having disability"
+          ]
+        },
+        "race_white": {
+          "test_kappa": 0.2573,
+          "dev_kappa": 0.3988,
+          "n_classes": 2,
+          "n_train": 875,
+          "n_test": 875,
+          "interpretation": "minimal",
+          "classes": [
+            "not_white",
+            "white"
+          ]
+        },
+        "race_black": {
+          "test_kappa": 0.2659,
+          "dev_kappa": 0.2629,
+          "n_classes": 2,
+          "n_train": 875,
+          "n_test": 875,
+          "interpretation": "minimal",
+          "classes": [
+            "not_black/african american",
+            "black/african american"
+          ]
+        },
+        "race_hispanic": {
+          "test_kappa": 0.0983,
+          "dev_kappa": 0.1987,
+          "n_classes": 2,
+          "n_train": 875,
+          "n_test": 875,
+          "interpretation": "no_agreement",
+          "classes": [
+            "not_hispanic/latino",
+            "hispanic/latino"
+          ]
+        },
+        "race_asian": {
+          "test_kappa": 0.1459,
+          "dev_kappa": 0.3271,
+          "n_classes": 2,
+          "n_train": 875,
+          "n_test": 875,
+          "interpretation": "no_agreement",
+          "classes": [
+            "not_asian/pacific islander",
+            "asian/pacific islander"
+          ]
+        }
+      }
+    },
+    {
+      "prompt": "The Face on Mars",
+      "n_train": 819,
+      "n_test": 764,
+      "demographics": {
+        "gender": {
+          "test_kappa": 0.1482,
+          "dev_kappa": 0.2644,
+          "n_classes": 2,
+          "n_train": 819,
+          "n_test": 764,
+          "interpretation": "no_agreement",
+          "classes": [
+            "f",
+            "m"
+          ]
+        },
+        "economically_disadvantaged": {
+          "test_kappa": 0.2696,
+          "dev_kappa": 0.3924,
+          "n_classes": 2,
+          "n_train": 819,
+          "n_test": 764,
+          "interpretation": "minimal",
+          "classes": [
+            "economically disadvantaged",
+            "not economically disadvantaged"
+          ]
+        },
+        "ell_status": {
+          "test_kappa": 0.008,
+          "dev_kappa": 0.2689,
+          "n_classes": 2,
+          "n_train": 813,
+          "n_test": 759,
+          "interpretation": "no_agreement",
+          "classes": [
+            "no",
+            "yes"
+          ]
+        },
+        "student_disability_status": {
+          "test_kappa": 0.0694,
+          "dev_kappa": 0.1568,
+          "n_classes": 2,
+          "n_train": 819,
+          "n_test": 764,
+          "interpretation": "no_agreement",
+          "classes": [
+            "identified as having disability",
+            "not identified as having disability"
+          ]
+        },
+        "race_white": {
+          "test_kappa": 0.1783,
+          "dev_kappa": 0.3586,
+          "n_classes": 2,
+          "n_train": 819,
+          "n_test": 764,
+          "interpretation": "no_agreement",
+          "classes": [
+            "not_white",
+            "white"
+          ]
+        },
+        "race_black": {
+          "test_kappa": 0.2191,
+          "dev_kappa": 0.2312,
+          "n_classes": 2,
+          "n_train": 819,
+          "n_test": 764,
+          "interpretation": "minimal",
+          "classes": [
+            "not_black/african american",
+            "black/african american"
+          ]
+        },
+        "race_hispanic": {
+          "test_kappa": 0.0172,
+          "dev_kappa": 0.1361,
+          "n_classes": 2,
+          "n_train": 819,
+          "n_test": 764,
+          "interpretation": "no_agreement",
+          "classes": [
+            "not_hispanic/latino",
+            "hispanic/latino"
+          ]
+        },
+        "race_asian": {
+          "test_kappa": 0.0931,
+          "dev_kappa": 0.2587,
+          "n_classes": 2,
+          "n_train": 819,
+          "n_test": 764,
+          "interpretation": "no_agreement",
+          "classes": [
+            "not_asian/pacific islander",
+            "asian/pacific islander"
+          ]
+        }
+      }
+    }
+  ]
+}
