@@ -1,0 +1,53 @@
+--- Per-Prompt Bias Analysis: PERSUADE (Longformer) ---
+Loading predictions from persuade_debiased_longformer_predictions.csv...
+Saved raw per-prompt Z-scores to per_prompt_raw_zscores_longformer_persuade.csv
+
+====================================================================================================
+  PER-PROMPT Z-SCORE MAGNITUDE & VARIANCE (PERSUADE - LONGFORMER)
+====================================================================================================
+                  Category                         Focal Group  Num_Prompts  Mean_QWK_Base  Mean_QWK_Debiased  Mean_Abs_Z_Base  Mean_Abs_Z_Debiased  Var_Z_Base  Var_Z_Debiased
+economically_disadvantaged      Not economically disadvantaged            7          0.644              0.718            9.877               12.179      55.780         160.421
+economically_disadvantaged          Economically disadvantaged            5          0.749              0.794            7.564                8.297      13.623          12.757
+                ell_status                                                3          0.102              0.429            4.640                3.382      32.598           1.388
+                ell_status                                 Yes           11          0.629              0.707            7.492                6.741      33.372          14.507
+                ell_status                                  No            1          0.717              0.801            6.624               10.081         NaN             NaN
+                    gender                                   M            8          0.764              0.824            6.206                6.228       7.014           7.694
+                    gender                                   F            7          0.531              0.643            4.796                4.523      14.184          14.805
+            race_ethnicity      American Indian/Alaskan Native            6          0.766              0.598            4.379                7.772      38.815         212.625
+            race_ethnicity              Asian/Pacific Islander            7          0.639              0.663            7.141               10.728      40.259         194.451
+            race_ethnicity                     Hispanic/Latino            6          0.746              0.793            2.834                3.127       3.709           5.903
+            race_ethnicity             Two or more races/Other            6          0.705              0.771            2.052                2.352       5.429           6.606
+            race_ethnicity                               White            7          0.635              0.674            6.883               10.052      44.377         166.334
+            race_ethnicity      American Indian/Alaskan Native            3          0.645              0.692            1.467                1.563       2.631           3.772
+            race_ethnicity              Asian/Pacific Islander            3          0.641              0.737            2.722                3.039       4.004           6.483
+            race_ethnicity              Black/African American            3          0.701              0.789            3.383                3.411       0.651           3.562
+            race_ethnicity             Two or more races/Other            3          0.682              0.766            1.749                1.849       4.322           5.619
+            race_ethnicity                               White            3          0.680              0.761            3.620                3.637       8.413          15.746
+            race_ethnicity      American Indian/Alaskan Native            5          0.699              0.771            9.859                9.963     237.020         183.070
+            race_ethnicity              Asian/Pacific Islander            5          0.746              0.794            4.386                5.121       8.019           7.415
+            race_ethnicity              Black/African American            4          0.744              0.773            4.576                4.539       0.199           3.086
+            race_ethnicity                     Hispanic/Latino            5          0.756              0.806            5.136                5.685      20.606          33.495
+            race_ethnicity             Two or more races/Other            5          0.672              0.697            2.410                2.957      12.937          21.227
+ student_disability_status Not identified as having disability            1          0.837              0.884            7.184                7.851         NaN             NaN
+ student_disability_status     Identified as having disability           10          0.689              0.732            4.542                4.724      10.460          12.989
+====================================================================================================
+Saved aggregated per-prompt statistics to per_prompt_aggregated_bias_longformer_persuade.csv
+--- Per-Prompt Bias Analysis: ASAP (Longformer) ---
+Loading predictions from asap_debiased_longformer_predictions.csv...
+Saved raw per-prompt Z-scores to per_prompt_raw_zscores_longformer_asap.csv
+
+====================================================================================================
+  PER-PROMPT Z-SCORE MAGNITUDE & VARIANCE (ASAP - LONGFORMER)
+====================================================================================================
+                  Category                     Focal Group  Num_Prompts  Mean_QWK_Base  Mean_QWK_Debiased  Mean_Abs_Z_Base  Mean_Abs_Z_Debiased  Var_Z_Base  Var_Z_Debiased
+economically_disadvantaged  Not economically disadvantaged            1          0.803              0.794            5.169                6.765         NaN             NaN
+                ell_status                             Yes            1          0.755              0.750            3.227                7.284         NaN             NaN
+                    gender                               M            1          0.801              0.785            3.090                2.434         NaN             NaN
+            race_ethnicity  American Indian/Alaskan Native            1          0.829              0.835            0.618                1.312         NaN             NaN
+            race_ethnicity          Asian/Pacific Islander            1          0.856              0.855            3.711                2.608         NaN             NaN
+            race_ethnicity          Black/African American            1          0.752              0.741            0.177                0.998         NaN             NaN
+            race_ethnicity                 Hispanic/Latino            1          0.791              0.781            2.288                0.144         NaN             NaN
+            race_ethnicity                           White            1          0.791              0.777            1.844                1.048         NaN             NaN
+ student_disability_status Identified as having disability            1          0.731              0.702            7.937               11.790         NaN             NaN
+====================================================================================================
+Saved aggregated per-prompt statistics to per_prompt_aggregated_bias_longformer_asap.csv

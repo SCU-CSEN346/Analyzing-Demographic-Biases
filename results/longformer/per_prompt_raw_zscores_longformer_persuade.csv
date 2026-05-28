@@ -1,0 +1,125 @@
+Prompt,Category,Reference Group,Focal Group,Z-Score (Base),Z-Score (Debiased),QWK (Base),QWK (Debiased)
+Phones and driving,gender,M,F,6.252555730669927,7.574159478884476,0.7554779716507891,0.7360393186038798
+Phones and driving,race_ethnicity,Black/African American,White,-2.3801584723955345,-1.9490389491905173,0.7048350281169686,0.7452820842552249
+Phones and driving,race_ethnicity,Black/African American,Hispanic/Latino,-1.0128169286127373,0.7938836236204996,0.7293075519079439,0.7655879855680625
+Phones and driving,race_ethnicity,Black/African American,Two or more races/Other,-2.0709521041683794,-1.0836011271641006,0.741972259167775,0.7014344619315872
+Phones and driving,race_ethnicity,Black/African American,Asian/Pacific Islander,3.0897545502939785,3.7273085384039555,0.8898128898128899,0.9471743247283962
+Phones and driving,race_ethnicity,Black/African American,American Indian/Alaskan Native,-1.4036320645995277,-1.6001495464005,,
+Car-free cities,gender,F,M,-9.849703191841506,-10.24486057645674,0.702459280933446,0.7498307910519636
+Car-free cities,race_ethnicity,White,Hispanic/Latino,0.559659445564142,0.8437933621211601,0.7107243105860134,0.7355382127135998
+Car-free cities,race_ethnicity,White,Black/African American,-4.468975367080743,-4.8168483333899275,0.7039421410957821,0.7733360348283985
+Car-free cities,race_ethnicity,White,Asian/Pacific Islander,6.754898369240156,6.249390787506314,0.6719113469788538,0.654610213012687
+Car-free cities,race_ethnicity,White,Two or more races/Other,-3.7751976332190886,-0.45198911544610193,0.5431939286290973,0.4519273853005472
+Car-free cities,race_ethnicity,White,American Indian/Alaskan Native,-5.915076831915611,-5.69947554076372,0.7393278837420527,0.7393278837420527
+Car-free cities,ell_status,No,Yes,-4.742223203627682,-2.091088039112539,0.7449229439723463,0.7153220014364376
+Summer projects,gender,M,F,3.831062336230558,2.5730433613550057,0.7405692578773324,0.7601728536551917
+Summer projects,race_ethnicity,Black/African American,Hispanic/Latino,3.2571095873878777,6.539301230470803,0.7482648346309901,0.7528710457069864
+Summer projects,race_ethnicity,Black/African American,Asian/Pacific Islander,8.852416731974357,11.138320846985952,0.6922377248773646,0.6991358573655704
+Summer projects,race_ethnicity,Black/African American,White,6.724182038539459,10.70488662678844,0.7054674730191102,0.6863586040506875
+Summer projects,race_ethnicity,Black/African American,Two or more races/Other,1.5476683550765395,2.5784105550486287,0.7542161124189518,0.8593845170113114
+Summer projects,race_ethnicity,Black/African American,American Indian/Alaskan Native,14.528221689864557,34.84688044016098,,0.0
+Summer projects,ell_status,No,Yes,-4.458687325437806,-3.089507082187915,0.6635386407143145,0.6085055044488011
+Summer projects,economically_disadvantaged,Not economically disadvantaged,Economically disadvantaged,-4.08854673590613,-4.271051018395733,0.7564086274671596,0.7295263023664368
+Summer projects,student_disability_status,Not identified as having disability,Identified as having disability,-3.187899563900513,-5.0102806349402735,0.7903948656223173,0.7903976407265996
+"""A Cowboy Who Rode the Waves""",gender,M,F,2.3688279673311565,1.9364655329050238,0.5324318108280215,0.6347557830592832
+"""A Cowboy Who Rode the Waves""",race_ethnicity,Hispanic/Latino,White,0.921064122292495,-0.3782636497186295,0.5867626577223825,0.6698789765655164
+"""A Cowboy Who Rode the Waves""",race_ethnicity,Hispanic/Latino,Black/African American,-3.69771417484771,-4.2537046033933485,0.5502920181700195,0.7143534817033683
+"""A Cowboy Who Rode the Waves""",race_ethnicity,Hispanic/Latino,Two or more races/Other,1.8426254805031757,3.5928400684429858,0.5673007420420338,0.7002491004705231
+"""A Cowboy Who Rode the Waves""",race_ethnicity,Hispanic/Latino,Asian/Pacific Islander,4.23654213862627,4.969142345562666,0.3746172688303736,0.5355007865757735
+"""A Cowboy Who Rode the Waves""",race_ethnicity,Hispanic/Latino,American Indian/Alaskan Native,1.7569088739354355,0.9169597325113471,0.3503937007874015,0.36640000000000006
+"""A Cowboy Who Rode the Waves""",ell_status,No,Yes,-6.825839788498977,-6.323883962929242,0.3611473272490222,0.5362776025236593
+"""A Cowboy Who Rode the Waves""",ell_status,No, ,-11.163493484945844,-2.589285720599544,,
+"""A Cowboy Who Rode the Waves""",economically_disadvantaged,Economically disadvantaged,Not economically disadvantaged,4.908279721238004,3.4749109125267883,0.6009821577179841,0.6778677184293855
+"""A Cowboy Who Rode the Waves""",student_disability_status,Not identified as having disability,Identified as having disability,-2.372159502839424,-2.1343098488142167,0.3758890469416786,0.618848167539267
+Mandatory extracurricular activities,gender,F,M,-6.500225340384546,-6.615680337374649,0.792496538011146,0.8185200761102904
+Mandatory extracurricular activities,race_ethnicity,White,Asian/Pacific Islander,7.361299563270353,7.985701532776192,0.798246424845836,0.7978111636225819
+Mandatory extracurricular activities,race_ethnicity,White,Hispanic/Latino,-3.9868934702899077,-4.11018644091924,0.8306210548178217,0.8413358683739676
+Mandatory extracurricular activities,race_ethnicity,White,Black/African American,-4.84840040466824,-6.170921425132048,0.7220652577535962,0.7550687819113765
+Mandatory extracurricular activities,race_ethnicity,White,Two or more races/Other,0.21643623647669052,0.4629306943487637,0.7791938962404222,0.8102092249167856
+Mandatory extracurricular activities,race_ethnicity,White,American Indian/Alaskan Native,8.092473797259485,6.658587461447399,0.5590062111801243,0.5590062111801243
+Mandatory extracurricular activities,ell_status,No,Yes,-7.713907059509031,-9.832577480540508,0.7550248905191451,0.804151891252955
+Mandatory extracurricular activities,economically_disadvantaged,Not economically disadvantaged,Economically disadvantaged,-12.329193866093425,-13.914340894345056,0.7938397118172765,0.8148470066518847
+Mandatory extracurricular activities,student_disability_status,Not identified as having disability,Identified as having disability,-4.487404643065008,-5.663641208901626,0.8130513848720479,0.8315935423300505
+Exploring Venus,gender,F,M,-8.654039021375572,-8.844547701789345,0.7582555928838495,0.8263199273029009
+Exploring Venus,race_ethnicity,Hispanic/Latino,Black/African American,-2.466339000005671,-1.2489291346332902,0.7777270321047114,0.8379753171387903
+Exploring Venus,race_ethnicity,Hispanic/Latino,White,3.2507359931282016,3.0019597217281997,0.7821469675440229,0.8315955771689448
+Exploring Venus,race_ethnicity,Hispanic/Latino,American Indian/Alaskan Native,1.4510742585808667,1.9946982878812023,0.7942803183596385,0.7942803183596385
+Exploring Venus,race_ethnicity,Hispanic/Latino,Two or more races/Other,-1.9266573629256385,-1.124971702920606,0.7164745320989081,0.7388344632347463
+Exploring Venus,race_ethnicity,Hispanic/Latino,Asian/Pacific Islander,0.4532829643652429,0.1531905282600082,0.8324145534729879,0.8867165500040228
+Exploring Venus,ell_status,No,Yes,-7.7582716410937325,-8.361585527071865,0.6099276769281219,0.7293271074726904
+Exploring Venus,economically_disadvantaged,Economically disadvantaged,Not economically disadvantaged,4.400260696193604,3.7991584769564013,0.7888235029872872,0.8373443649366534
+Exploring Venus,student_disability_status,Not identified as having disability,Identified as having disability,-9.577318545516002,-8.791640858491627,0.7043483925310021,0.7729941134121654
+Facial action coding system,gender,F,M,-8.717957335055722,-8.0321927624554,0.8237012425525102,0.8641468845972542
+Facial action coding system,race_ethnicity,Black/African American,White,5.361503005631762,5.2868740072509075,0.8299042467256134,0.8734364178695101
+Facial action coding system,race_ethnicity,Black/African American,Hispanic/Latino,1.5483203658580844,0.89204153839967,0.786807618942075,0.8461849746430041
+Facial action coding system,race_ethnicity,Black/African American,Two or more races/Other,2.2079055608444667,1.1980803664582063,0.851395925583375,0.8860060472017693
+Facial action coding system,race_ethnicity,Black/African American,Asian/Pacific Islander,4.6084797439295935,4.735944789757553,0.8737052467567659,0.9177393896326854
+Facial action coding system,race_ethnicity,Black/African American,American Indian/Alaskan Native,3.236146037109716,1.7116666218340402,0.847584260335381,0.9758026253360746
+Facial action coding system,ell_status,No,Yes,-7.384477286715089,-6.2135575445167,0.741096254629623,0.8326897209686863
+Facial action coding system,economically_disadvantaged,Not economically disadvantaged,Economically disadvantaged,-10.696930907251726,-8.954712288178872,0.7785153763935285,0.8309062113295891
+Facial action coding system,student_disability_status,Identified as having disability,Not identified as having disability,7.184038875047712,7.850838294507939,0.8368163793736509,0.8836825904995568
+The Face on Mars,gender,F,M,-4.886777033082204,-5.5186041412283355,0.7912608734762437,0.8279387799450165
+The Face on Mars,race_ethnicity,Black/African American,White,4.4648473446439185,5.822342422314387,0.7384545793694395,0.8122826758408799
+The Face on Mars,race_ethnicity,Black/African American,Hispanic/Latino,3.8752679620658697,5.206602322211149,0.7297622641299778,0.7782446280417585
+The Face on Mars,race_ethnicity,Black/African American,American Indian/Alaskan Native,-2.5831915688864475,-4.74610203639295,0.9018036072144289,0.7748161764705882
+The Face on Mars,race_ethnicity,Black/African American,Two or more races/Other,0.7511309746801078,2.212848909735472,0.7374467733004055,0.8884661357935318
+The Face on Mars,race_ethnicity,Black/African American,Asian/Pacific Islander,1.8077464538727706,3.6443690966370537,0.653521868961883,0.6683747384235661
+The Face on Mars,ell_status,No,Yes,-4.683177179415954,-6.836725735920856,0.6797513902518809,0.6262128892107168
+The Face on Mars,ell_status,No, ,-2.206507715653638,-4.735741949683121,0.11149825783972123,0.7662082514734774
+The Face on Mars,economically_disadvantaged,Not economically disadvantaged,Economically disadvantaged,-5.116005632890881,-7.559599644742308,0.7496304300854117,0.8014130475670169
+The Face on Mars,student_disability_status,Not identified as having disability,Identified as having disability,-0.961443868762878,1.1969635221182107,0.7722275261002125,0.8248325892857142
+Community service,gender,F,M,-4.522130335237598,-5.172002301062622,0.6840602019414497,0.8078617050425776
+Community service,race_ethnicity,White,Black/African American,-4.992019486335408,-5.114596645725883,0.7297800535319445,0.7520660431726232
+Community service,race_ethnicity,White,Hispanic/Latino,-8.951693612318074,-13.747455003212762,0.6732117400690567,0.8034161105754922
+Community service,race_ethnicity,White,American Indian/Alaskan Native,3.7305570663496397,15.789908867870853,0.7129455909943715,1.0
+Community service,race_ethnicity,White,Asian/Pacific Islander,4.680032267851245,4.36342329058913,0.7612963241239651,0.8601970591787665
+Community service,race_ethnicity,White,Two or more races/Other,-2.2670967753191924,-4.155239543543859,0.5611029872571548,0.6705002875215641
+Community service,ell_status,No,Yes,-6.193993793236539,-5.84967935664034,0.6077570241811736,0.8532918272717642
+Community service,economically_disadvantaged,Not economically disadvantaged,Economically disadvantaged,-5.590065544902982,-6.784075270595256,0.6657851567371555,0.794089491679913
+Community service,student_disability_status,Not identified as having disability,Identified as having disability,-8.8698679892714,-8.886767135111754,0.6642676297086455,0.7374427837742676
+Grades for extracurricular activities,gender,M,F,3.1838291826831595,4.382638954130064,0.7403634405412354,0.7899070162897824
+Grades for extracurricular activities,race_ethnicity,Black/African American,Hispanic/Latino,3.944601935353171,3.8227385223498653,0.7075741994822091,0.7918328228152108
+Grades for extracurricular activities,race_ethnicity,Black/African American,White,8.732393478729628,9.184143500689991,0.7484493623454739,0.7942592570556594
+Grades for extracurricular activities,race_ethnicity,Black/African American,Asian/Pacific Islander,7.229019048636462,6.549575402405139,0.5377994035473238,0.5974733097853356
+Grades for extracurricular activities,race_ethnicity,Black/African American,Two or more races/Other,3.691223958647467,4.479578489875863,0.5786259541984733,0.7244094488188977
+Grades for extracurricular activities,race_ethnicity,Black/African American,American Indian/Alaskan Native,4.438581267302836,3.575164116301218,0.9139983235540654,0.837727441515039
+Grades for extracurricular activities,ell_status,No,Yes,-6.138239287277367,-6.2103722314038965,0.5875939662468264,0.6995054540352845
+Grades for extracurricular activities,economically_disadvantaged,Economically disadvantaged,Not economically disadvantaged,11.096965779876422,13.996630405412489,0.7288408487724466,0.7967941149308407
+Grades for extracurricular activities,student_disability_status,Not identified as having disability,Identified as having disability,-0.579879253140436,-0.06737203942650431,0.7354393666222466,0.7834955235500195
+Driverless cars,gender,M,F,7.54510188838217,4.230203170159328,0.7212852017103618,0.7803300764622438
+Driverless cars,race_ethnicity,Black/African American,Hispanic/Latino,3.3643704866427013,1.5065948401826528,0.7746708186039295,0.8206143892165682
+Driverless cars,race_ethnicity,Black/African American,Asian/Pacific Islander,3.948476950937377,3.550509314141942,0.8243221704712487,0.8123885516669969
+Driverless cars,race_ethnicity,Black/African American,White,1.620385366973562,0.48102935021272786,0.7166732149780263,0.8058252885055248
+Driverless cars,race_ethnicity,Black/African American,American Indian/Alaskan Native,0.08435356942317028,0.1535819474720867,0.40084092501751933,0.40084092501751933
+Driverless cars,race_ethnicity,Black/African American,Two or more races/Other,-2.04327337470573,-2.562339017966461,0.5640676546054354,0.5663085130362913
+Driverless cars,ell_status,No, ,-0.5512995938143904,-2.82082090546574,0.09259259259259245,0.09259259259259245
+Driverless cars,ell_status,No,Yes,-2.336407217285404,-3.37888212092375,0.47473026689381037,0.6797797010228167
+Driverless cars,economically_disadvantaged,Economically disadvantaged,Not economically disadvantaged,2.1732589246524423,0.4810485524421144,0.6070122380081586,0.7895186382771033
+Driverless cars,student_disability_status,Not identified as having disability,Identified as having disability,-2.398850873089833,-1.8348161831736423,0.4920414262876207,0.46029524942279443
+Does the electoral college work?,gender,F,M,-4.125989026961164,-3.3763585016819953,0.7408116008208181,0.8582860842073698
+Does the electoral college work?,race_ethnicity,White,Hispanic/Latino,-2.0575066567841187,-1.4636598687499118,0.785840321412354,0.8646604664965848
+Does the electoral college work?,race_ethnicity,White,American Indian/Alaskan Native,0.7344408468037753,-1.4468321627818597,0.7843137254901961,0.7843137254901961
+Does the electoral college work?,race_ethnicity,White,Asian/Pacific Islander,0.662909207275577,0.8226953770864244,0.6584538111721985,0.8080150576425378
+Does the electoral college work?,race_ethnicity,White,Two or more races/Other,-0.10784684882824097,1.2375314079916129,0.7412254610350981,0.8548590660496425
+Cell phones at school,gender,M,F,6.916006923572039,7.0397072704282575,0.7350767148978927,0.8028447190758936
+Cell phones at school,race_ethnicity,Hispanic/Latino,White,6.686762454922969,7.53028684322498,0.6711073770342094,0.7823335120272537
+Cell phones at school,race_ethnicity,Hispanic/Latino,American Indian/Alaskan Native,-1.1928482492130188,-1.775907483696496,0.7889977392614921,0.9154297549188816
+Cell phones at school,race_ethnicity,Hispanic/Latino,Black/African American,-3.9845242363815045,-4.7294864967173265,0.7756175654796255,0.8152873907160699
+Cell phones at school,race_ethnicity,Hispanic/Latino,Asian/Pacific Islander,3.4752675973161438,3.9945907391028705,0.7151511112995754,0.7875235689198348
+Cell phones at school,race_ethnicity,Hispanic/Latino,Two or more races/Other,1.4781300730754547,0.8303189376652279,0.7622293063647356,0.8595071383104483
+Cell phones at school,ell_status,Yes,No,6.6244211660258205,10.080845977869838,0.7171504685534944,0.8014160718871726
+Cell phones at school,economically_disadvantaged,Economically disadvantaged,Not economically disadvantaged,7.795630102241174,9.676985520402177,0.6926465422389143,0.7975351252599319
+Cell phones at school,student_disability_status,Not identified as having disability,Identified as having disability,-7.67137351609679,-7.825025265962215,0.726610911741905,0.6512800961905041
+Distance learning,gender,F,M,-2.394475545267198,-2.01834745345436,0.820327893513983,0.8395088299229423
+Distance learning,race_ethnicity,White,Asian/Pacific Islander,2.471482089647144,6.184563297193084,0.8403549541643159,0.8498641865873923
+Distance learning,race_ethnicity,White,Hispanic/Latino,-10.123590921518163,-8.258620033015514,0.7790196340800404,0.7830256997955346
+Distance learning,race_ethnicity,White,Black/African American,-3.995160852446679,-2.0517682958105334,0.8215708540968056,0.8134002372936899
+Distance learning,race_ethnicity,White,Two or more races/Other,5.684035898747328,8.479667109504385,0.7364793656635273,0.6965101937168976
+Distance learning,race_ethnicity,White,American Indian/Alaskan Native,-30.823557515904422,-20.220909681472904,,
+Distance learning,ell_status,No,Yes,-24.177213394071703,-15.965340453482812,0.6976981117362567,0.6940370864137682
+Distance learning,economically_disadvantaged,Economically disadvantaged,Not economically disadvantaged,15.246954711567886,16.052192411539195,0.7824804148493365,0.814943274199859
+Distance learning,student_disability_status,Not identified as having disability,Identified as having disability,-5.3176468537316195,-5.830191018618151,0.8127541912189098,0.8466277368790363
+Seeking multiple opinions,gender,M,F,-3.475050146279811,-3.926525435559451,-0.5078597339782345,0.0
+Seeking multiple opinions,race_ethnicity,Black/African American,Asian/Pacific Islander,20.451020512793686,41.75173118297961,0.0,0.0
+Seeking multiple opinions,race_ethnicity,Black/African American,White,18.899193528362694,36.93635894374015,0.0,0.0
+Seeking multiple opinions,economically_disadvantaged,Economically disadvantaged,Not economically disadvantaged,23.514892028519487,37.774604899939334,0.31004989308624364,0.31004989308624364

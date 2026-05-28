@@ -1,0 +1,10 @@
+Prompt,Category,Reference Group,Focal Group,Z-Score (Base),Z-Score (Debiased),QWK (Base),QWK (Debiased)
+test,gender,F,M,-3.0896019499913767,-2.433804799706183,0.8009312117432462,0.7853083054995629
+test,race_ethnicity,Two or more races/Other,Black/African American,0.17699469958019332,-0.9977570571405671,0.7520734821009214,0.7414620964892225
+test,race_ethnicity,Two or more races/Other,Hispanic/Latino,2.287602854973508,-0.14438583546760683,0.7914266470875975,0.7809160703432959
+test,race_ethnicity,Two or more races/Other,White,1.8444800899460658,1.0475397314200467,0.7911887399000566,0.7768714211306306
+test,race_ethnicity,Two or more races/Other,Asian/Pacific Islander,3.711395821186199,2.607620567489364,0.856086876759035,0.8552982788318673
+test,race_ethnicity,Two or more races/Other,American Indian/Alaskan Native,0.6177278332661422,1.3120923494082681,0.8287292817679558,0.8347296268088348
+test,ell_status,No,Yes,-3.227204450064294,-7.283836403829289,0.7554220610617672,0.7503323170138296
+test,economically_disadvantaged,Economically disadvantaged,Not economically disadvantaged,5.169058183290442,6.765195225802629,0.8029152272296851,0.7941839320355267
+test,student_disability_status,Not identified as having disability,Identified as having disability,-7.936587725873359,-11.79042938004205,0.7305456040406414,0.7019908622935229

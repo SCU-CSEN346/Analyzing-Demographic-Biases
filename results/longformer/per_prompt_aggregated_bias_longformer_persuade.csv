@@ -1,0 +1,25 @@
+Category,Reference Group,Focal Group,Num_Prompts,Mean_Abs_Z_Base,Var_Z_Base,Mean_Abs_Z_Debiased,Var_Z_Debiased,Mean_QWK_Base,Mean_QWK_Debiased
+economically_disadvantaged,Economically disadvantaged,Not economically disadvantaged,7,9.877,55.78,12.179,160.421,0.644,0.718
+economically_disadvantaged,Not economically disadvantaged,Economically disadvantaged,5,7.564,13.623,8.297,12.757,0.749,0.794
+ell_status,No, ,3,4.64,32.598,3.382,1.388,0.102,0.429
+ell_status,No,Yes,11,7.492,33.372,6.741,14.507,0.629,0.707
+ell_status,Yes,No,1,6.624,,10.081,,0.717,0.801
+gender,F,M,8,6.206,7.014,6.228,7.694,0.764,0.824
+gender,M,F,7,4.796,14.184,4.523,14.805,0.531,0.643
+race_ethnicity,Black/African American,American Indian/Alaskan Native,6,4.379,38.815,7.772,212.625,0.766,0.598
+race_ethnicity,Black/African American,Asian/Pacific Islander,7,7.141,40.259,10.728,194.451,0.639,0.663
+race_ethnicity,Black/African American,Hispanic/Latino,6,2.834,3.709,3.127,5.903,0.746,0.793
+race_ethnicity,Black/African American,Two or more races/Other,6,2.052,5.429,2.352,6.606,0.705,0.771
+race_ethnicity,Black/African American,White,7,6.883,44.377,10.052,166.334,0.635,0.674
+race_ethnicity,Hispanic/Latino,American Indian/Alaskan Native,3,1.467,2.631,1.563,3.772,0.645,0.692
+race_ethnicity,Hispanic/Latino,Asian/Pacific Islander,3,2.722,4.004,3.039,6.483,0.641,0.737
+race_ethnicity,Hispanic/Latino,Black/African American,3,3.383,0.651,3.411,3.562,0.701,0.789
+race_ethnicity,Hispanic/Latino,Two or more races/Other,3,1.749,4.322,1.849,5.619,0.682,0.766
+race_ethnicity,Hispanic/Latino,White,3,3.62,8.413,3.637,15.746,0.68,0.761
+race_ethnicity,White,American Indian/Alaskan Native,5,9.859,237.02,9.963,183.07,0.699,0.771
+race_ethnicity,White,Asian/Pacific Islander,5,4.386,8.019,5.121,7.415,0.746,0.794
+race_ethnicity,White,Black/African American,4,4.576,0.199,4.539,3.086,0.744,0.773
+race_ethnicity,White,Hispanic/Latino,5,5.136,20.606,5.685,33.495,0.756,0.806
+race_ethnicity,White,Two or more races/Other,5,2.41,12.937,2.957,21.227,0.672,0.697
+student_disability_status,Identified as having disability,Not identified as having disability,1,7.184,,7.851,,0.837,0.884
+student_disability_status,Not identified as having disability,Identified as having disability,10,4.542,10.46,4.724,12.989,0.689,0.732
