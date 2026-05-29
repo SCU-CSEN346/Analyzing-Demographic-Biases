@@ -141,7 +141,7 @@ V2 retraining with lr=2e-5 in progress.
 - Data Preparation & Tokenization Section
 - Model Architecture & Fine-Tuning Section
 - XLNet Preliminary Implementation
-- RoBERTa Implementation
+- RoBERTa Implementation (Including fine-tuning, bias analysis, probing, GRL, Orthogonal Projection)
 - Evaluation and Results Section
 
 ### Karthik Tamil
