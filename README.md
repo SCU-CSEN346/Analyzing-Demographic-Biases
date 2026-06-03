@@ -132,7 +132,7 @@ V2 retraining with lr=2e-5 in progress.
 - Automated Bias Evaluation Section
 - Embedded Features Extraction Section
 - GitHub README
-- XLNet Fine-Tuning
+- XLNet Fine-Tuning (Fine-tuning, Bias Analysis, Hidden States Probing, GRL, Orthogonal Projection)
 - Evaluation and Results Section
 
 ### Tom Ngo
@@ -141,7 +141,7 @@ V2 retraining with lr=2e-5 in progress.
 - Data Preparation & Tokenization Section
 - Model Architecture & Fine-Tuning Section
 - XLNet Preliminary Implementation
-- RoBERTa Implementation (Including fine-tuning, bias analysis, probing, GRL, Orthogonal Projection)
+- RoBERTa Implementation (Fine-tuning, Bias Analysis, Hidden States Probing, GRL, Orthogonal Projection)
 - Evaluation and Results Section
 
 ### Karthik Tamil
@@ -151,7 +151,7 @@ V2 retraining with lr=2e-5 in progress.
 - GitHub README
 - HuggingFace Datasets
 - HuggingFace README
-- Longformer Implementation
+- Longformer Implementation (Fine-tuning, Bias Analysis, Hidden States Probing, GRL, Orthogonal Projection)
 - Evaluation and Results Section
 
 ---
