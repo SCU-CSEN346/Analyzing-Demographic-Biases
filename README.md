@@ -18,9 +18,9 @@ This project extends [Kwako & Ormerod (BEA 2024)](https://aclanthology.org/2024.
 
 | Model | Base | Mitigation Strategy | PERSUADE 2.0 QWK | ASAP 2.0 QWK |
 |---|---|---|---|---|
-| `[MODEL NAME]-GRL` | DeBERTa-v3 | Adversarial (GRL) | — | — |
-| `[MODEL NAME]-OrthoProj` | DeBERTa-v3 | Orthogonal Projection | — | — |
-| Baseline (no debiasing) | DeBERTa-v3 | — | — | — |
+| `[MODEL NAME]-GRL` | RoBERTa-v3 | Adversarial (GRL) | — | — |
+| `[MODEL NAME]-OrthoProj` | RoBERTa-v3 | Orthogonal Projection | — | — |
+| Baseline (no debiasing) | RoBERTa-v3 | — | — | — |
 | XLNet (v1, lr=1e-6) | XLNet-base-cased | None (baseline) | 0.594 (macro avg) | — |
 | XLNet (v2, lr=2e-5) | XLNet-base-cased | None (baseline) | in progress | — |
 <!-- TODO: Fill in QWK scores and model names after experiments complete -->
@@ -93,6 +93,25 @@ Fairness is evaluated using demographic parity and equalized odds across race an
 ## Results
 
 > 🚧 Experiments in progress. Results table will be populated here.
+### Model Performance
+| QWK | XLNet | RoBERTa | Longformer |
+| --- | --- | --- | ---|
+| PERSUADE | ... | ... | ... |
+| ASAP | ... | ... |... |
+
+### Gradient Reversal Layer (GRL)
+
+| QWK | XLNet | RoBERTa | Longformer |
+| --- | --- | --- | ---|
+|  gender | −0.11 | −0.37 | −0.12 |
+| race | −0.22 | −1.78 | +2.00 |
+| ELL | −0.20 | −2.11 | −0.57 |
+| SES | +0.01 | −1.55 |+1.65 |
+| disability | −0.53 | −0.59 | +0.23 |
+| QWK | +0.003 | -0.025 | +0.09 |
+
+
+### Orthogonal Projection
 
 ### XLNet Replication (v1)
 Macro-average QWK: **0.594** vs Kwako & Ormerod's reported **0.864**.
@@ -116,7 +135,6 @@ V2 retraining with lr=2e-5 in progress.
 ```
 .
 ├── data/               # Data loading and preprocessing scripts
-├── models/             # Model implementations
 ├── experiments/        # Training and evaluation scripts
 ├── results/            # Output scores and fairness metrics
 └── paper/              # LaTeX source (Overleaf)
