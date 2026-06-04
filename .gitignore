@@ -8,3 +8,5 @@ __pycache__/
 *.pt
 slurm_scheduler/
 *.txt
+*.npz
+*.bin

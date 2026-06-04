@@ -1,0 +1,10 @@
+{
+  "attribute": "race_asian",
+  "inlp_iters": 1,
+  "macro_qwk_base": null,
+  "macro_qwk_proj": null,
+  "mean_probe_kappa_before": null,
+  "mean_probe_kappa_after": null,
+  "n_prompts": 0,
+  "per_prompt": []
+}

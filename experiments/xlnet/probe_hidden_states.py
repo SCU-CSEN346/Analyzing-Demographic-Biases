@@ -64,7 +64,18 @@ RACE_BINARIES = {
 BINARY_COLS = ["gender", "economically_disadvantaged", "ell_status",
                "student_disability_status"]
 
-SCORE_COL  = "holistic_essay_score"
+# Dataset switch: PERSUADE (default) or ASAP.
+DATASET    = os.environ.get("DATASET", "PERSUADE").upper()
+if DATASET not in ("PERSUADE", "ASAP"):
+    raise ValueError("Set DATASET=PERSUADE or DATASET=ASAP")
+if DATASET == "PERSUADE":
+    SCORE_COL = "holistic_essay_score"
+    TRAIN_REL = "PERSUADE/train/persuade_corpus_2.0_train.csv"
+    TEST_REL  = "PERSUADE/test/persuade_corpus_2.0_test.csv"
+else:  # ASAP
+    SCORE_COL = "score"
+    TRAIN_REL = "ASAP/train/ASAP_2_Final_github_train.csv"
+    TEST_REL  = "ASAP/test/ASAP_2_Final_github_test.csv"
 TEXT_COL   = "full_text"
 PROMPT_COL = "prompt_name"
 
@@ -93,10 +104,7 @@ torch.manual_seed(RANDOM_SEED)
 np.random.seed(RANDOM_SEED)
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-print(f"Device: {device}")
-print(f"MODELS_DIR: {MODELS_DIR}")
-print(f"DATA_BASE:  {DATA_BASE}")
-print(f"OUT_DIR:    {OUT_DIR}")
+print(f"[probing] device={device} models={MODELS_DIR}")
 
 
 # ── XLNet feature model (frozen) ───────────────────────────────────────────
@@ -312,22 +320,26 @@ def build_tasks(df_tr, df_te):
 
 # ── Main ───────────────────────────────────────────────────────────────────
 def main():
-    print("Loading PERSUADE...")
     persuade_train = pd.read_csv(
-        os.path.join(DATA_BASE, "PERSUADE/train/persuade_corpus_2.0_train.csv"),
+        os.path.join(DATA_BASE, TRAIN_REL),
         low_memory=False
     ).drop_duplicates(subset="essay_id").reset_index(drop=True)
 
     persuade_test = pd.read_csv(
-        os.path.join(DATA_BASE, "PERSUADE/test/persuade_corpus_2.0_test.csv"),
+        os.path.join(DATA_BASE, TEST_REL),
         low_memory=False
     ).drop_duplicates(subset="essay_id").reset_index(drop=True)
 
     for df in [persuade_train, persuade_test]:
         for c in BINARY_COLS + ["race_ethnicity"]:
             if c in df.columns:
+                # Map all null-like tokens to NA. Previously only "nan" was
+                # mapped, so empty strings ("") survived as a spurious third
+                # class on some prompts (Cowboy/Driverless/Face on Mars for ELL),
+                # corrupting n_classes and depressing kappa. Map "", "nan",
+                # "none", "<na>" -> NA.
                 df[c] = (df[c].astype(str).str.lower().str.strip()
-                              .replace("nan", pd.NA))
+                              .replace(["nan", "", "none", "<na>"], pd.NA))
 
     persuade_train = persuade_train[
         persuade_train[TEXT_COL].notna() & persuade_train[SCORE_COL].notna()
@@ -348,26 +360,33 @@ def main():
         pt_filename = f"xlnet_{prompt.replace(' ', '_')}.pt"
         pt_path = os.path.join(MODELS_DIR, pt_filename)
         if not os.path.exists(pt_path):
-            print(f"Skipping '{prompt}' — no .pt at {pt_path}")
+            print(f"[{prompt}] skipped (no .pt)")
             continue
 
-        print(f"\n{'=' * 60}\nProbing: {prompt}\n{'=' * 60}")
+        print(f"\n[{prompt}]")
 
         tr = persuade_train[persuade_train[PROMPT_COL] == prompt].reset_index(drop=True)
         te = persuade_test[persuade_test[PROMPT_COL] == prompt].reset_index(drop=True)
 
         if len(tr) < 20 or len(te) < 5:
-            print(f"  Skipping — insufficient rows (n_train={len(tr)}, n_test={len(te)})")
+            print(f"  skipped (train={len(tr)}, test={len(te)})")
             continue
 
-        # Load scoring model and freeze
+        # Load scoring model and freeze. strict=False so GRL checkpoints, which
+        # additionally store demo_head.* keys, load just the scoring path
+        # (xlnet.* + regressor.*) and ignore the adversary head. The scoring
+        # path is byte-identical between baseline and GRL checkpoints, so the
+        # extracted hidden states are the encoder we actually want to probe.
         model = XLNetRegressor().to(device)
         state = torch.load(pt_path, map_location=device, weights_only=False)
-        model.load_state_dict(state)
+        missing, unexpected = model.load_state_dict(state, strict=False)
+        real_missing = [k for k in missing if not k.startswith("demo_head")]
+        if real_missing:
+            print(f"  warn: missing scoring-path keys {real_missing[:4]} "
+                  f"-- this .pt may not match the scoring architecture")
         for param in model.parameters():
             param.requires_grad = False
         model.eval()
-        print(f"  Loaded {pt_path}")
 
         # Tokenize + extract hidden states ONCE per prompt (reuse across tasks)
         tr_ds = EssayDataset(tr[TEXT_COL].tolist(), tokenizer)
@@ -375,9 +394,7 @@ def main():
         te_ds = EssayDataset(te[TEXT_COL].tolist(), tokenizer)
         te_dl = DataLoader(te_ds, batch_size=ENCODER_BS)
 
-        print("  Extracting hidden states (train)...")
         h_train = extract_hidden_states(model, tr_dl)
-        print("  Extracting hidden states (test)...")
         h_test = extract_hidden_states(model, te_dl)
 
         # Free model memory before running probes
@@ -413,18 +430,40 @@ def main():
                 h_tr_valid, y_tr, test_size=0.1, seed=RANDOM_SEED
             )
 
-            # Need >=2 classes in dev for kappa to be informative
+            # Need >=2 classes in dev for kappa to be informative.
+            # PREVIOUS BEHAVIOR (leak): on a degenerate dev split this used the
+            # TEST set as dev, so the probe early-stopped on the very data it
+            # then reported -> optimistic test_kappa. We never touch test for
+            # model selection now.
+            no_early_stop = False
             if len(np.unique(y_dev_split)) < 2:
-                # Fall back: use a slice of test as dev (test-shaped kappas still on held-out test)
-                h_dev_split = h_te_valid
-                y_dev_split = y_te
+                # Retry with a larger dev fraction (0.2) to try to capture the
+                # minority class in dev without peeking at test.
+                h_tr_split, h_dev_split, y_tr_split, y_dev_split = safe_stratified_split(
+                    h_tr_valid, y_tr, test_size=0.2, seed=RANDOM_SEED
+                )
+            if len(np.unique(y_dev_split)) < 2:
+                # Still degenerate (very sparse minority). Train on ALL train
+                # rows with no early stopping (final-epoch weights). dev_kappa
+                # is reported as NaN to flag that selection was disabled here.
+                # test_kappa remains a clean held-out estimate.
                 h_tr_split, y_tr_split = h_tr_valid, y_tr
+                h_dev_split, y_dev_split = h_tr_valid, y_tr  # placeholder, not test
+                no_early_stop = True
 
-            probe, dev_kappa = train_probe(
-                h_tr_split, y_tr_split,
-                h_dev_split, y_dev_split,
-                num_classes,
-            )
+            if no_early_stop:
+                probe, _ = train_probe(
+                    h_tr_split, y_tr_split,
+                    h_dev_split, y_dev_split,
+                    num_classes,
+                )
+                dev_kappa = float("nan")
+            else:
+                probe, dev_kappa = train_probe(
+                    h_tr_split, y_tr_split,
+                    h_dev_split, y_dev_split,
+                    num_classes,
+                )
             test_kappa = evaluate_probe(probe, h_te_valid, y_te)
 
             if test_kappa < 0.2:
@@ -438,8 +477,7 @@ def main():
             else:
                 interpretation = "almost_perfect"
 
-            print(f"  {task_name:32s} dev={dev_kappa:+.3f}  test={test_kappa:+.3f}  "
-                  f"n_train={n_tr}  n_test={n_te}  ({interpretation})")
+            print(f"  {task_name:30s} κ={test_kappa:+.3f} (n_tr={n_tr} n_te={n_te} {interpretation})")
 
             prompt_results["demographics"][task_name] = {
                 "test_kappa":     round(test_kappa, 4),
@@ -454,14 +492,19 @@ def main():
         all_results.append(prompt_results)
 
     # ── Aggregate summary ──────────────────────────────────────────────────
-    print(f"\n{'=' * 60}\nPROBING SUMMARY (mean test kappa across prompts)\n{'=' * 60}")
+    print(f"\n[summary] mean test κ across prompts:")
     all_task_names = sorted({
         t for r in all_results for t in r["demographics"].keys()
     })
     summary = {}
     for task_name in all_task_names:
-        kappas = [r["demographics"][task_name]["test_kappa"]
-                  for r in all_results if task_name in r["demographics"]]
+        kappas_raw = [r["demographics"][task_name]["test_kappa"]
+                      for r in all_results if task_name in r["demographics"]]
+        # Drop NaN cells before aggregating. A single NaN (e.g. a tiny prompt
+        # like "Seeking multiple opinions", n_test=8, where kappa is undefined)
+        # otherwise poisons np.mean -> the whole attribute aggregates to NaN.
+        kappas = [k for k in kappas_raw if k is not None and not np.isnan(k)]
+        n_dropped = len(kappas_raw) - len(kappas)
         if not kappas:
             continue
         summary[task_name] = {
@@ -470,12 +513,12 @@ def main():
             "min_kappa":  round(float(np.min(kappas)), 4),
             "max_kappa":  round(float(np.max(kappas)), 4),
             "n_prompts":  len(kappas),
+            "n_dropped_nan": n_dropped,
         }
-        print(f"  {task_name:32s} mean={summary[task_name]['mean_kappa']:+.3f}  "
-              f"median={summary[task_name]['median_kappa']:+.3f}  "
-              f"min={summary[task_name]['min_kappa']:+.3f}  "
-              f"max={summary[task_name]['max_kappa']:+.3f}  "
-              f"({summary[task_name]['n_prompts']} prompts)")
+        print(f"  {task_name:30s} mean={summary[task_name]['mean_kappa']:+.3f} "
+              f"med={summary[task_name]['median_kappa']:+.3f} "
+              f"range=[{summary[task_name]['min_kappa']:+.3f},"
+              f"{summary[task_name]['max_kappa']:+.3f}] n={summary[task_name]['n_prompts']}")
 
     output = {
         "run_version": RUN_VERSION,
@@ -494,7 +537,7 @@ def main():
     out_path = os.path.join(OUT_DIR, f"probing_{RUN_VERSION}.json")
     with open(out_path, "w") as f:
         json.dump(output, f, indent=2)
-    print(f"\n✅ Saved → {out_path}")
+    print(f"\nsaved={out_path}")
 
 
 if __name__ == "__main__":

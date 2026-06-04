@@ -1,0 +1,162 @@
+[
+  {
+    "prompt": "\"A Cowboy Who Rode the Waves\"",
+    "n_test": 527,
+    "qwk": 0.7024,
+    "exact_acc": 0.6641,
+    "bias": {
+      "gender": {
+        "human_smd": 0.2714,
+        "model_smd": 0.3586,
+        "n_a": 285,
+        "n_b": 242
+      },
+      "ell_status": {
+        "human_smd": 0.325,
+        "model_smd": 0.3618,
+        "n_a": 499,
+        "n_b": 28
+      },
+      "economically_disadvantaged": {
+        "human_smd": 0.1598,
+        "model_smd": 0.3105,
+        "n_a": 196,
+        "n_b": 331
+      },
+      "student_disability_status": {
+        "human_smd": 0.1757,
+        "model_smd": 0.4041,
+        "n_a": 434,
+        "n_b": 93
+      }
+    }
+  },
+  {
+    "prompt": "Driverless cars",
+    "n_test": 2670,
+    "qwk": 0.7874,
+    "exact_acc": 0.664,
+    "bias": {
+      "gender": {
+        "human_smd": 0.1974,
+        "model_smd": 0.2465,
+        "n_a": 1389,
+        "n_b": 1279
+      },
+      "ell_status": {
+        "human_smd": -0.1194,
+        "model_smd": -0.1704,
+        "n_a": 2214,
+        "n_b": 264
+      },
+      "economically_disadvantaged": {
+        "human_smd": 0.3802,
+        "model_smd": 0.4249,
+        "n_a": 1084,
+        "n_b": 1584
+      },
+      "student_disability_status": {
+        "human_smd": 0.5678,
+        "model_smd": 0.6413,
+        "n_a": 2461,
+        "n_b": 207
+      }
+    }
+  },
+  {
+    "prompt": "Exploring Venus",
+    "n_test": 1463,
+    "qwk": 0.7725,
+    "exact_acc": 0.609,
+    "bias": {
+      "gender": {
+        "human_smd": 0.1512,
+        "model_smd": 0.1597,
+        "n_a": 718,
+        "n_b": 745
+      },
+      "ell_status": {
+        "human_smd": 0.3108,
+        "model_smd": 0.4924,
+        "n_a": 949,
+        "n_b": 512
+      },
+      "economically_disadvantaged": {
+        "human_smd": 0.0495,
+        "model_smd": 0.0389,
+        "n_a": 422,
+        "n_b": 1041
+      },
+      "student_disability_status": {
+        "human_smd": 0.5299,
+        "model_smd": 0.6103,
+        "n_a": 867,
+        "n_b": 596
+      }
+    }
+  },
+  {
+    "prompt": "Facial action coding system",
+    "n_test": 1840,
+    "qwk": 0.7934,
+    "exact_acc": 0.6332,
+    "bias": {
+      "gender": {
+        "human_smd": 0.1392,
+        "model_smd": 0.1685,
+        "n_a": 597,
+        "n_b": 1240
+      },
+      "ell_status": {
+        "human_smd": 0.5685,
+        "model_smd": 0.8264,
+        "n_a": 1766,
+        "n_b": 50
+      },
+      "economically_disadvantaged": {
+        "human_smd": 0.339,
+        "model_smd": 0.357,
+        "n_a": 888,
+        "n_b": 949
+      },
+      "student_disability_status": {
+        "human_smd": 0.2263,
+        "model_smd": 0.2729,
+        "n_a": 1784,
+        "n_b": 53
+      }
+    }
+  },
+  {
+    "prompt": "The Face on Mars",
+    "n_test": 921,
+    "qwk": 0.6346,
+    "exact_acc": 0.5461,
+    "bias": {
+      "gender": {
+        "human_smd": 0.2638,
+        "model_smd": 0.2968,
+        "n_a": 486,
+        "n_b": 430
+      },
+      "ell_status": {
+        "human_smd": 0.1114,
+        "model_smd": 0.1435,
+        "n_a": 765,
+        "n_b": 144
+      },
+      "economically_disadvantaged": {
+        "human_smd": 0.2167,
+        "model_smd": 0.3648,
+        "n_a": 340,
+        "n_b": 576
+      },
+      "student_disability_status": {
+        "human_smd": 0.3924,
+        "model_smd": 0.4416,
+        "n_a": 811,
+        "n_b": 105
+      }
+    }
+  }
+]

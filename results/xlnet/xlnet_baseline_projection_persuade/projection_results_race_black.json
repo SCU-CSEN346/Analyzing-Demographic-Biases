@@ -1,0 +1,146 @@
+{
+  "attribute": "race_black",
+  "inlp_iters": 1,
+  "macro_qwk_base": 0.7548232096083052,
+  "macro_qwk_proj": 0.7548596944290138,
+  "mean_probe_kappa_before": 0.8154434086967729,
+  "mean_probe_kappa_after": 0.40978323940578626,
+  "n_prompts": 15,
+  "per_prompt": [
+    {
+      "prompt": "\"A Cowboy Who Rode the Waves\"",
+      "n_test": 684,
+      "qwk_base": 0.6971300882495288,
+      "qwk_proj": 0.6983443844981674,
+      "probe_kappa_before": 0.9528177344968882,
+      "probe_kappa_after": 0.45340189349634763,
+      "n_directions_removed": 1
+    },
+    {
+      "prompt": "Car-free cities",
+      "n_test": 976,
+      "qwk_base": 0.756867294278618,
+      "qwk_proj": 0.753752473998501,
+      "probe_kappa_before": 0.9374363543788188,
+      "probe_kappa_after": 0.5104279812357999,
+      "n_directions_removed": 1
+    },
+    {
+      "prompt": "Cell phones at school",
+      "n_test": 827,
+      "qwk_base": 0.7051497600413854,
+      "qwk_proj": 0.7051497600413854,
+      "probe_kappa_before": 0.6482191255783394,
+      "probe_kappa_after": 0.23466103316061315,
+      "n_directions_removed": 1
+    },
+    {
+      "prompt": "Community service",
+      "n_test": 774,
+      "qwk_base": 0.7065267971528204,
+      "qwk_proj": 0.7061232258101725,
+      "probe_kappa_before": 0.9274013855315931,
+      "probe_kappa_after": 0.4648172421230774,
+      "n_directions_removed": 1
+    },
+    {
+      "prompt": "Distance learning",
+      "n_test": 659,
+      "qwk_base": 0.8475514163398663,
+      "qwk_proj": 0.8471830623016954,
+      "probe_kappa_before": 0.6458685408513697,
+      "probe_kappa_after": 0.30576304454500836,
+      "n_directions_removed": 1
+    },
+    {
+      "prompt": "Does the electoral college work?",
+      "n_test": 228,
+      "qwk_base": 0.8528307913439271,
+      "qwk_proj": 0.8528307913439271,
+      "probe_kappa_before": 0.4002746771869824,
+      "probe_kappa_after": 0.12038694478709688,
+      "n_directions_removed": 1
+    },
+    {
+      "prompt": "Driverless cars",
+      "n_test": 500,
+      "qwk_base": 0.7095747588738335,
+      "qwk_proj": 0.7113615905444013,
+      "probe_kappa_before": 0.7734869834537794,
+      "probe_kappa_after": 0.406911033566995,
+      "n_directions_removed": 1
+    },
+    {
+      "prompt": "Exploring Venus",
+      "n_test": 934,
+      "qwk_base": 0.8062713713332639,
+      "qwk_proj": 0.8065767079055937,
+      "probe_kappa_before": 0.8933003139786848,
+      "probe_kappa_after": 0.4673519251832504,
+      "n_directions_removed": 1
+    },
+    {
+      "prompt": "Facial action coding system",
+      "n_test": 1064,
+      "qwk_base": 0.8555612643865861,
+      "qwk_proj": 0.8558284735045233,
+      "probe_kappa_before": 0.7591546719071816,
+      "probe_kappa_after": 0.30939280629894816,
+      "n_directions_removed": 1
+    },
+    {
+      "prompt": "Grades for extracurricular activities",
+      "n_test": 811,
+      "qwk_base": 0.6927634501445157,
+      "qwk_proj": 0.6926665243176384,
+      "probe_kappa_before": 0.9670400776479152,
+      "probe_kappa_after": 0.5423083942886826,
+      "n_directions_removed": 1
+    },
+    {
+      "prompt": "Mandatory extracurricular activities",
+      "n_test": 831,
+      "qwk_base": 0.8100013659874957,
+      "qwk_proj": 0.8100013659874957,
+      "probe_kappa_before": 0.8719907583997211,
+      "probe_kappa_after": 0.4756689194848369,
+      "n_directions_removed": 1
+    },
+    {
+      "prompt": "Phones and driving",
+      "n_test": 467,
+      "qwk_base": 0.7353604968439533,
+      "qwk_proj": 0.7353604968439533,
+      "probe_kappa_before": 0.9307450676472285,
+      "probe_kappa_after": 0.5433714545229347,
+      "n_directions_removed": 1
+    },
+    {
+      "prompt": "Seeking multiple opinions",
+      "n_test": 8,
+      "qwk_base": 0.6,
+      "qwk_proj": 0.6,
+      "probe_kappa_before": 0.6539654584255579,
+      "probe_kappa_after": 0.29762432572230846,
+      "n_directions_removed": 1
+    },
+    {
+      "prompt": "Summer projects",
+      "n_test": 875,
+      "qwk_base": 0.7636320144841765,
+      "qwk_proj": 0.7636859426551426,
+      "probe_kappa_before": 0.9062918340026773,
+      "probe_kappa_after": 0.5258666666666667,
+      "n_directions_removed": 1
+    },
+    {
+      "prompt": "The Face on Mars",
+      "n_test": 764,
+      "qwk_base": 0.7831272746646066,
+      "qwk_proj": 0.7840306166826129,
+      "probe_kappa_before": 0.9636581469648562,
+      "probe_kappa_after": 0.48879492600422836,
+      "n_directions_removed": 1
+    }
+  ]
+}

@@ -1,0 +1,119 @@
+{
+  "attribute": "student_disability_status",
+  "inlp_iters": 1,
+  "macro_qwk_base": 0.7481074634715066,
+  "macro_qwk_proj": 0.7499786464728974,
+  "mean_probe_kappa_before": 0.8630309650671067,
+  "mean_probe_kappa_after": 0.33492356452507116,
+  "n_prompts": 12,
+  "per_prompt": [
+    {
+      "prompt": "\"A Cowboy Who Rode the Waves\"",
+      "n_test": 684,
+      "qwk_base": 0.6971300882495288,
+      "qwk_proj": 0.7032568613070829,
+      "probe_kappa_before": 0.9746434231378764,
+      "probe_kappa_after": 0.16129032258064513,
+      "n_directions_removed": 1
+    },
+    {
+      "prompt": "Cell phones at school",
+      "n_test": 827,
+      "qwk_base": 0.7051497600413854,
+      "qwk_proj": 0.7030578138558236,
+      "probe_kappa_before": 0.7266932854683321,
+      "probe_kappa_after": 0.20248797478852198,
+      "n_directions_removed": 1
+    },
+    {
+      "prompt": "Community service",
+      "n_test": 774,
+      "qwk_base": 0.7065267971528204,
+      "qwk_proj": 0.7180860803156397,
+      "probe_kappa_before": 0.9753656658968437,
+      "probe_kappa_after": 0.2810405991328341,
+      "n_directions_removed": 1
+    },
+    {
+      "prompt": "Distance learning",
+      "n_test": 659,
+      "qwk_base": 0.8475514163398663,
+      "qwk_proj": 0.8475514163398663,
+      "probe_kappa_before": 0.738635764222793,
+      "probe_kappa_after": 0.42217202304234747,
+      "n_directions_removed": 1
+    },
+    {
+      "prompt": "Driverless cars",
+      "n_test": 500,
+      "qwk_base": 0.7095747588738335,
+      "qwk_proj": 0.7169678996513444,
+      "probe_kappa_before": 0.8086664632285627,
+      "probe_kappa_after": 0.24415039203177413,
+      "n_directions_removed": 1
+    },
+    {
+      "prompt": "Exploring Venus",
+      "n_test": 934,
+      "qwk_base": 0.8062713713332639,
+      "qwk_proj": 0.8062713713332639,
+      "probe_kappa_before": 0.8866389400240904,
+      "probe_kappa_after": 0.5842099098043809,
+      "n_directions_removed": 1
+    },
+    {
+      "prompt": "Facial action coding system",
+      "n_test": 1064,
+      "qwk_base": 0.8555612643865861,
+      "qwk_proj": 0.8557499069594343,
+      "probe_kappa_before": 0.7996849473530445,
+      "probe_kappa_after": 0.5503392904121087,
+      "n_directions_removed": 1
+    },
+    {
+      "prompt": "Grades for extracurricular activities",
+      "n_test": 811,
+      "qwk_base": 0.6927634501445157,
+      "qwk_proj": 0.6935405863558,
+      "probe_kappa_before": 0.9913355942293994,
+      "probe_kappa_after": 0.47303129182142156,
+      "n_directions_removed": 1
+    },
+    {
+      "prompt": "Mandatory extracurricular activities",
+      "n_test": 831,
+      "qwk_base": 0.8100013659874957,
+      "qwk_proj": 0.8105130221503722,
+      "probe_kappa_before": 0.9293068873123136,
+      "probe_kappa_after": 0.5184853985371844,
+      "n_directions_removed": 1
+    },
+    {
+      "prompt": "Seeking multiple opinions",
+      "n_test": 8,
+      "qwk_base": 0.6,
+      "qwk_proj": 0.6,
+      "probe_kappa_before": 0.6289616978978356,
+      "probe_kappa_after": 0.23945412710586866,
+      "n_directions_removed": 1
+    },
+    {
+      "prompt": "Summer projects",
+      "n_test": 875,
+      "qwk_base": 0.7636320144841765,
+      "qwk_proj": 0.7608567269131462,
+      "probe_kappa_before": 0.9134662930608208,
+      "probe_kappa_after": 0.171488690163072,
+      "n_directions_removed": 1
+    },
+    {
+      "prompt": "The Face on Mars",
+      "n_test": 764,
+      "qwk_base": 0.7831272746646066,
+      "qwk_proj": 0.783892072492995,
+      "probe_kappa_before": 0.9829726189733674,
+      "probe_kappa_after": 0.17093275488069415,
+      "n_directions_removed": 1
+    }
+  ]
+}

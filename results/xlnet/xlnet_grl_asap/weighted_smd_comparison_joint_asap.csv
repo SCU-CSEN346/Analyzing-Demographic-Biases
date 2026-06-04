@@ -1,0 +1,26 @@
+prompt,attribute,simple_human_smd,weighted_human_smd,model_smd_pooled,amplification,reg_model_z,reg_coef_group,reg_se_group,reg_p_value,reg_n,p_value_bh,significant
+"""A Cowboy Who Rode the Waves""",gender,0.2708,0.2624,0.3635,0.1011,0.256,0.1336,0.0486,0.0061,527,0.0056,True
+"""A Cowboy Who Rode the Waves""",ell_status,0.3222,0.3173,0.4158,0.0985,0.8046,0.1381,0.0459,0.0027,527,0.1371,False
+"""A Cowboy Who Rode the Waves""",economically_disadvantaged,0.1594,0.146,0.301,0.155,0.3319,0.162,0.0494,0.0011,527,0.1352,False
+"""A Cowboy Who Rode the Waves""",student_disability_status,0.1751,0.1691,0.382,0.2129,0.6515,0.2104,0.0474,0.0,527,0.1531,False
+"""A Cowboy Who Rode the Waves""",race_black_white,-0.0695,-0.0695,-0.0629,-0.0066,-0.0269,-0.014,0.0657,0.8316,300,0.5517,False
+Driverless cars,gender,0.1973,0.1973,0.2455,0.0482,0.1522,0.0656,0.0175,0.0002,2668,0.0,True
+Driverless cars,ell_status,-0.1193,-0.1193,-0.1788,0.0595,-0.3003,-0.0611,0.0177,0.0006,2478,0.0744,False
+Driverless cars,economically_disadvantaged,0.3801,0.3801,0.4202,0.0401,0.2031,0.0801,0.0176,0.0,2668,0.0,True
+Driverless cars,student_disability_status,0.5671,0.5589,0.6264,0.0675,0.7102,0.1207,0.0167,0.0,2668,0.0,True
+Driverless cars,race_black_white,0.1935,0.1935,0.201,0.0074,0.0639,0.0275,0.0226,0.2226,1554,0.0004,True
+Exploring Venus,gender,0.1511,0.1511,0.1572,0.0061,0.066,0.0344,0.0283,0.224,1463,0.007,True
+Exploring Venus,ell_status,0.3106,0.288,0.4812,0.1933,0.4102,0.1761,0.0268,0.0,1461,0.0,True
+Exploring Venus,economically_disadvantaged,0.0495,0.0495,0.0356,-0.0139,-0.0178,-0.0073,0.0283,0.796,1463,0.4052,False
+Exploring Venus,student_disability_status,0.5295,0.5107,0.6119,0.1012,0.3696,0.1656,0.0272,0.0,1463,0.0,True
+Exploring Venus,race_black_white,-0.1634,-0.178,-0.0593,-0.1187,0.1968,0.0659,0.0445,0.1395,679,0.1244,False
+Facial action coding system,gender,0.1391,0.1391,0.1542,0.0151,0.0754,0.0328,0.0252,0.1929,1837,0.0085,True
+Facial action coding system,ell_status,0.5664,0.4452,0.7296,0.2844,1.7797,0.2069,0.0233,0.0,1816,0.0052,True
+Facial action coding system,economically_disadvantaged,0.3389,0.3389,0.3695,0.0306,0.1735,0.0872,0.0251,0.0005,1837,0.0,True
+Facial action coding system,student_disability_status,0.2251,0.2251,0.3172,0.0921,0.9347,0.1105,0.023,0.0,1837,0.126,False
+Facial action coding system,race_black_white,0.4378,0.4378,0.494,0.0561,0.3906,0.1062,0.03,0.0004,1139,0.0,True
+The Face on Mars,gender,0.2635,0.2635,0.3216,0.0582,0.1933,0.0885,0.0326,0.0067,916,0.0002,True
+The Face on Mars,ell_status,0.1111,0.1111,0.149,0.0378,0.1981,0.0592,0.0352,0.093,909,0.2295,False
+The Face on Mars,economically_disadvantaged,0.2164,0.2164,0.3378,0.1213,0.2632,0.1157,0.034,0.0007,916,0.0031,True
+The Face on Mars,student_disability_status,0.3912,0.3912,0.495,0.1038,0.793,0.177,0.0308,0.0,916,0.0003,True
+The Face on Mars,race_black_white,0.2337,0.2337,0.2682,0.0345,0.0957,0.0415,0.0403,0.3033,562,0.0117,True

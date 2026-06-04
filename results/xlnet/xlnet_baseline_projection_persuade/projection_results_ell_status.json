@@ -1,0 +1,137 @@
+{
+  "attribute": "ell_status",
+  "inlp_iters": 1,
+  "macro_qwk_base": 0.7562134033771875,
+  "macro_qwk_proj": 0.758465211252911,
+  "mean_probe_kappa_before": 0.8982489602311245,
+  "mean_probe_kappa_after": 0.4277718293565963,
+  "n_prompts": 14,
+  "per_prompt": [
+    {
+      "prompt": "\"A Cowboy Who Rode the Waves\"",
+      "n_test": 684,
+      "qwk_base": 0.6971300882495288,
+      "qwk_proj": 0.6884826779559263,
+      "probe_kappa_before": 1.0,
+      "probe_kappa_after": 0.21816403065383994,
+      "n_directions_removed": 1
+    },
+    {
+      "prompt": "Car-free cities",
+      "n_test": 976,
+      "qwk_base": 0.756867294278618,
+      "qwk_proj": 0.7615854175498092,
+      "probe_kappa_before": 1.0,
+      "probe_kappa_after": 0.4148938515464826,
+      "n_directions_removed": 1
+    },
+    {
+      "prompt": "Cell phones at school",
+      "n_test": 827,
+      "qwk_base": 0.7051497600413854,
+      "qwk_proj": 0.7021559768916725,
+      "probe_kappa_before": 0.7326176104685989,
+      "probe_kappa_after": 0.28263658878644105,
+      "n_directions_removed": 1
+    },
+    {
+      "prompt": "Community service",
+      "n_test": 774,
+      "qwk_base": 0.7065267971528204,
+      "qwk_proj": 0.7227155646018337,
+      "probe_kappa_before": 0.983448275862069,
+      "probe_kappa_after": 0.500990099009901,
+      "n_directions_removed": 1
+    },
+    {
+      "prompt": "Distance learning",
+      "n_test": 659,
+      "qwk_base": 0.8475514163398663,
+      "qwk_proj": 0.8495880079210409,
+      "probe_kappa_before": 0.9460667361134447,
+      "probe_kappa_after": 0.7997209365641166,
+      "n_directions_removed": 1
+    },
+    {
+      "prompt": "Does the electoral college work?",
+      "n_test": 228,
+      "qwk_base": 0.8528307913439271,
+      "qwk_proj": 0.8498603166156712,
+      "probe_kappa_before": 0.5261621508913781,
+      "probe_kappa_after": 0.14787302038207506,
+      "n_directions_removed": 1
+    },
+    {
+      "prompt": "Driverless cars",
+      "n_test": 500,
+      "qwk_base": 0.7095747588738335,
+      "qwk_proj": 0.7206939699690156,
+      "probe_kappa_before": 0.8217972745465518,
+      "probe_kappa_after": 0.25992036248798567,
+      "n_directions_removed": 1
+    },
+    {
+      "prompt": "Exploring Venus",
+      "n_test": 934,
+      "qwk_base": 0.8062713713332639,
+      "qwk_proj": 0.8073420824489552,
+      "probe_kappa_before": 0.9324223248111826,
+      "probe_kappa_after": 0.5958752954619289,
+      "n_directions_removed": 1
+    },
+    {
+      "prompt": "Facial action coding system",
+      "n_test": 1064,
+      "qwk_base": 0.8555612643865861,
+      "qwk_proj": 0.8555612643865861,
+      "probe_kappa_before": 0.8163631439983752,
+      "probe_kappa_after": 0.5712613922479521,
+      "n_directions_removed": 1
+    },
+    {
+      "prompt": "Grades for extracurricular activities",
+      "n_test": 811,
+      "qwk_base": 0.6927634501445157,
+      "qwk_proj": 0.6996738894403772,
+      "probe_kappa_before": 1.0,
+      "probe_kappa_after": 0.38029545948294585,
+      "n_directions_removed": 1
+    },
+    {
+      "prompt": "Mandatory extracurricular activities",
+      "n_test": 831,
+      "qwk_base": 0.8100013659874957,
+      "qwk_proj": 0.8084411591201504,
+      "probe_kappa_before": 0.9909552505902265,
+      "probe_kappa_after": 0.5099707968293701,
+      "n_directions_removed": 1
+    },
+    {
+      "prompt": "Seeking multiple opinions",
+      "n_test": 8,
+      "qwk_base": 0.6,
+      "qwk_proj": 0.6,
+      "probe_kappa_before": 0.8362093352192362,
+      "probe_kappa_after": 0.298465266558966,
+      "n_directions_removed": 1
+    },
+    {
+      "prompt": "Summer projects",
+      "n_test": 875,
+      "qwk_base": 0.7636320144841765,
+      "qwk_proj": 0.7636080307817854,
+      "probe_kappa_before": 1.0,
+      "probe_kappa_after": 0.5552931328290831,
+      "n_directions_removed": 1
+    },
+    {
+      "prompt": "The Face on Mars",
+      "n_test": 764,
+      "qwk_base": 0.7831272746646066,
+      "qwk_proj": 0.7888045998579298,
+      "probe_kappa_before": 0.9894433407346812,
+      "probe_kappa_after": 0.4534453781512605,
+      "n_directions_removed": 1
+    }
+  ]
+}

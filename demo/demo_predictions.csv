@@ -1,0 +1,1045 @@
+essay_id,corpus,prompt_name,full_text,true_score,gender,race_ethnicity,ell_status,economically_disadvantaged,student_disability_status,model,method,pred_score,in_curated_set
+AAAOPP13416000072397,ASAP,"""A Cowboy Who Rode the Waves""","Luke was a Sea Cowboy from a small town, but before he had became a Sea Cowboy he had a wife. He was a hard work at the Grocery Store and the Bank to make sure his family was sacure.Then, one day, he was given an amazing opportunity. His friend, Don Reist, invited him to go to Europe on a cattle boat,and Luke couldn't resiest.
+
+After he arrived in Europe, World War ll was just ending.So,he help the people get food supplies,animals,and more.44 nations joined together and esablished the UNRRA.The UNRRA is the,United Nations Relief and Rehabilition Adminiistration.They arrived in Europe on August 14.
+
+After a while they recieved Seamen papers and boarded the SS Charles W Wooster.They were on thier way to Greece, but befor they had reached Greece,Luke had turned 18.So, now he was able to be militaried. He was discharged in 1947, and had already made 9 trips.Luke made the most trips and Sea Cowboy had ever had.
+
+To many people the Cattle-Boat-Trips were an unbelievable opportunity for any small-town-boy.It made Luke feel special in some type of way. He also, thought that the apcrolipis in Greece was special to him. A little while after this he wnt on another trip. It took 2 months to cross the Atlantic Ocean From the eastern part of America, and a month to get to China.During the trip he served as the night watch man.
+
+Luke love to have fun.So, on the return trips he had some fun. Being a Sea Cowboy opened up many differenent thing to him. So in Conulison, being in this point of view is a graet way to let people do the same thing.",3.0,f,black/african american,no,economically disadvantaged,not identified as having disability,XLNet,baseline,1.270015001296997,True
+AAAOPP13416000001740,ASAP,"""A Cowboy Who Rode the Waves""","Luke is trying to convince others to particicipate in the Seagoing Cowboys theses are the reasons i chose.
+
+One of the reasons is it gives cowboys a chance to help people around the wolrd. One way the cowboys can help is by heping do farm work. The second way the cowboys can help is by tending to the peoples' animals. After that, The cowboys is serve as a nightwhatch to make sure no one tries to steal the cattle or horses.
+
+The second reason is the cowboys can go sight seeing to see thing that they never knew existed. One thing the cowboys saw was on their way to China, when they toured an excavated castle in Crete and marveled at the Punama Canal. The second thing the cowboys saw was the Acropolis in Greece. The lastf thing that they did was go on a gondola ride in Vinice, Italy a city with streets of water.
+
+The third and last reason is the fun on board. On the return trips after the animals had been unloaded, they played basketball and volleyball. They would do these activities in the holds where the animals had been housed. They would also play table-tennis tournaments, fencing, boxing, reading, whitting, and games also help to pass the time.
+
+In conclution, The Seagoing Cowboy Program would be an adventure to expirience the world, and do things that you've never done before on this journey of a lifetime opportunity.",4.0,f,black/african american,no,economically disadvantaged,not identified as having disability,XLNet,baseline,2.6683928966522217,True
+AAAOPP13416000040612,ASAP,Driverless cars,"I think that driverless cars can be a good idea to have.Driverless cars will help people alot to stay safe on the roads,By which if someone loses their focus on the road, lets say if they get a text message first thing they want to do is look at the phone,and see what it says,having a driverless car will help because if they are to foucs
+
+on their phone the car will give you a sign that you are in danger and that will give you a heads up that you need to foucs on the on road.
+
+The driverless cars will have a lot of sensors that will help keep you safe.""The information from the sensors can cause to apply brakes on the individual wheel and reduce power from the engine,allowing far better contorl than a human driver alone."" The sensors also makes sure the driver has keeps hold of the wheel at all times.
+
+Also i feel like the number of accdients will go down and the law is all about keepinf drivers,passengers and pedestrians safe. Another reason why this will help, Is that new drivers are mostly
+
+nervous to start driving out for the first time. With this car i think will help them not be as nervous knowing that it will tell you when you are in danger and needs to slow down.
+
+They are worried they won't know who fault the accdient is but thats they same with most acdeints. They will have to solve it like everyone other case. I think having the driverless car will bring more postive than neagtive. I would like to see the out come of having the driverless cars to see how it affected things.",4.0,f,white,no,not economically disadvantaged,identified as having disability,XLNet,baseline,2.695501804351806,True
+AAAOPP13416000001315,ASAP,Driverless cars,"After reading the article and seeing both the positive and negative aspects of driverless cars, I have come to the conclusion that driverless cars are indeed safe. The features on them are more advanced than any other car out today. They are up to date on all technology as well.
+
+Most vehicular accidents are a result of human error, not a malfunction of the vehicle. By having driverless cars, it makes it so the operator of the vehicle does not have to do as much to maintain control of the vehicle. Therefore, it could reduce human error, making it safer for passengers in cars, as well as pedestrians. The driverless car warns the person operating the vehicle of upcoming potentially dangerous hazards and things like road construction.
+
+More advances are being made for smarter cars all the time, making them safer and better. Some examples of these advancements that are being considered include flashing lights on the windsheild, cameras that watch the operater of the vehicle, and other heads up displays. On top of all of that, the smarter cars already warn the operator when he or she needs to take full control over the vehicle if and when needed. This is one of the many things that make smarter cars safer.
+
+Even though they are often called ""driverless cars"", operators of the smarter car still have control of the vehicle, and must remain ready to take control if needed. It is almost like having safety insurance because it has two levels of protection. The smarter car watches the road and controls the car for you as you stay alert and watch the road as well. If for some reason the technology of the vehicle malfunctions, you can still manually avoid collisions and other dangerous situations.
+
+In conclusion, driverless cars are a safe alternative to regular cars. They have many more safety features and the operator still has control of the vehicle. They are always being improved as well. You can count on smarter cars to get you to your destination safely while being able to enjoy the ride. ",5.0,m,white,yes,not economically disadvantaged,not identified as having disability,XLNet,baseline,3.500017166137696,True
+AAAVUP14319000111977,ASAP,Exploring Venus,"Do you know why they say studying venus is a worthy pursuit despite the dangers it presents? i will be giving claims about this idea from the article to help you understand this idea about studying venus. My thesis is talking abuut venus.
+
+Venus is not always called venus they also call it the ""Evening Star"" because it's one of the brightest points of light in the night sky. It makes it simple for even an amateur stargazer to spot. The nickname is misleading because it's a planet and a star. If you didn't know this venus is the second planet from the sun so, venus is right in front of us. Venus is simple to see from the distant but safe vantage point of earth, it has proved a very challenging place to examine more closely.
+
+Venus is also called earth's twin because it is the closest planet to earth, density, size and occasionally the closest in distance too. In venus a thick atmosphere of almost 97% carbon dioxide covers venus.Even more challenging are the clouds of highly corrosive sulfuric acid in venus's atmosphere. Earth, venus and mars are neighbors, their speeds are meanly different because sometimes we are closer to mars. Other times we are closer to venus, it's random
+
+because of the speed that the three planets travel around the sun.
+
+The National Aeronautics Space Administration (NASA) has one particularly compelling idea for sending humans to study venus in venus. NASA has devices that were first envision in the 1800s and played an important role in the 1940s during the World War II. ",3.0,m,hispanic/latino,yes,not economically disadvantaged,not identified as having disability,XLNet,baseline,1.374406337738037,True
+AAAVUP14319000048322,ASAP,Exploring Venus,"Kids dream about going to space and see all the planets.
+
+In ""The challenge of Exploring Venus"", the author supports the idea that studyuing Venus is a worthy pursuit despite the dangers bceause Venus sometimes has problems, and also NASA are sending humans to study about the venus
+
+The first reason why studying Venus is a worthy pursuit despite is because the Venus has problems at times. Sometimes we could be way more closer to Mars or soemtimes Venus, It depends which one is in the corner. The Earth, Mars, and Venus are all close to each other. ""not a single spaceship has touched down on Venus in more than three decades."" This quote explains the issue that Venus has been having. "" Numerous factors contribue to Venu's reputation as a challenging planet for humas to study, despite promimity to us."" This shows that people has been studying and trying to find what is wrong with Venus and why a spaceship has not landed.
+
+The last reason why studying Venus is a worthy pusuite despite is because the NASA are sending humans to study about Venus. Venus would allow scientists to float above the fray. "" Imagine a blimp-like vehicle hovering 30 or so miles above the roiling venusian landscape.' In this quote they are giving an example on how it feels to float around venus. ""Mnay researchers are workng on innovations that woukld allow our mahcines to last long enough to contribue meaningfully to our konowledge of Venus."" This quote explains that they are trying to make the venu more close up.
+
+In the article ""The Challenge of Exploring Venus"", the author supports the idea that studying Venus is a worthy pursuit despite the dangers it presents because Venus sometimes has probelms and also NASA are sending humnas ton study about thr venus. ",4.0,f,hispanic/latino,yes,economically disadvantaged,not identified as having disability,XLNet,baseline,2.5980417728424072,True
+AAAOPP13416000046855,ASAP,The Face on Mars,"The head is just a huge rock formation on the planet Cydonia. That huge head could be a big hill that has holes in it. When the Mars Orbiter Camera team went up and saw the face, they just said it was a natural landform and no alien monument after all. They went up there a second time and said that it looks like the Middle Butte in the Snake River Plain of Idaho. The face takes form of a lava dome isolated mesa about the same height sa the Face on Mars.
+
+My team went up in space and caught a few shots at the face. We can compare the 1976, 1998, and 2001 and now we can see what it is. The Face is actually something that we have on our planet. We can compare a lava dome and the mask to see if the mask is actually just a huge rock. These are the pictures we showed to the world that the face is just a big rock.",3.0,m,white,yes,economically disadvantaged,not identified as having disability,XLNet,baseline,1.9694921970367432,True
+AAAOPP13416000045917,ASAP,The Face on Mars,"The Face on Mars was discovered in 1976 by Viking 1 while searching for landing sites for Viking 2. Some think it was created by aliens. NASA has said that it is just a rock formation. Some agree with NASA,others disagree. Either way the Face has sparked controversy and has appeared in a movie,books,magizenes,checkout lines,and radio talk shows.
+
+First of all,according to NASA such rock formations are common and so while it might have been a surprise, the sensation was short lived. Also,according to the passage,such formations are common on Earth as well as on Mars.
+
+Secondly,the Face sparked enough controversy that NASA had to go back twice to see if the the Face even looked like a face. The 1st time it was too cloudy to get a good picture but the 2nd time they got a good picture,and as it turned out the Face didn't even look like a face when looked at up close.
+
+Finally,why would NASA lie? Defenders of the NASA budget themselves wish that there was an ancient civilization on Mars. A civilization on Mars would help NASA's budget by giving them more money,so why would they be hiding anything.
+
+In conclusion,the Face probably wasn't created by aliens. Such formations are common on Mars and on Earth. The Face doesn't even look like a face when viewed up close. Lastly an ancient civilization would benefit NASA so they would have no reason to keep evidence of one from the public.",4.0,m,white,no,not economically disadvantaged,identified as having disability,XLNet,baseline,2.8926377296447754,True
+9504EDD8FE31,PERSUADE,Cell phones at school,"Dear Principal,
+
+I highly encourage you to set the policy number 1 where you allow students to bring cell phones to school. I believe cell phones are necessary for young students because its a way to communicate with parents, friends and other people quickly and fairly easily. I believe outlawing cell phones in schools can be a safety issue to students who live fairly far from the school for the simple fact that they won't have any form of communication with their families. Also I believe allowing cell phones can now help a student academically.
+
+With recent advances in technology we are able to do more with a cell phone than just talk and text message. With phones such as the IPhone, Blackberry and the Droid we are able to use phone applications to do everything from web-surfing to education. If cell phones are allowed in schools they can be used productively during class to distribute homework, notes and to do research for projects. Even if the cell phones can only be on during lunch or other free periods it can help students be more focused in school instead of wondering what new texts they got or trying to secretly text their parents during an emergency.
+
+Though allowing cell phones to school can be highly beneficial, i believe the students should be reminded that it is a privilege not a right. I understand the saying ""give a man a inch and he'll try to take miles"" and I know when some students are given opportunities they try to ""push the envelope"" and try to over use the opportunity. I believe that if you allow the policy number one but a cell phone is out in class when it is not a true emergency, that the phone should be confiscated and given to the students parents. I also believe that constant offenders of that rule should be excluded from the policy and are forced to not bring their phone to school.
+
+I believe cell phones are extremely important and passing the first policy in opposition to the second will can be beneficial to students, parents and even the school if they decide to take advantage of the opportunities given by this policy. This can make students morally happy and make them work harder opposed to the other policy which can upset students and decrease their production rate. This opportunity is golden and all we need is for you to put it in affect.",5.0,m,black/african american,no,not economically disadvantaged,not identified as having disability,XLNet,baseline,4.361671447753906,True
+8027D8B7844F,PERSUADE,Cell phones at school,"The principal should let students have there phone during free times because they might have missed a class time thinking about something else and then when they go back to that class they will not know what to do. then when a test comes up they will not know and then they will fail the test .
+
+But if they do let them have there phones out during there free time and there know class periods going on they can call or text there friends and see what was there home work or what they did during in that class period if they were not following along. That would be there fault.
+
+If they could have there cell phones they might not because they can ask there friends to explain it to them if they later at lunch or to see if they can go there house later to have them show it to them and then they can text or call there parents to see if they can go or not and they can then the parents can call the school then the kids can go home with a friend to have them show what to do and what they did during class time.
+
+Then the students can talk to there friends to see what has been going and to see if they want to meet somewhere for they can talk and to see what they have been doing all day and see if they had a good day or a bad day in school so far. so that's what they should do because they students are hurting the class time and there education so why not there still following along in class there still learning and what need to know about what was going on in this world. and learn every thing they need to know . plus if do not then buddies they might tell them what they want to them but they don't they might not following along in class because there wondering about there going to say during and not follow along.
+
+i think this should be the policy because it could help out a lot with them",4.0,m,white,no,economically disadvantaged,identified as having disability,XLNet,baseline,3.148808717727661,True
+C4700AD0EE9A,PERSUADE,Community service,"Mr. principle
+
+I think its a great idea for students to help out and join community service, you should require all students to join. Helping the community is very important because there aren't a lot of people who would take the time to help out.
+
+They probably think its a waist of time when its not. Not many people want to stop what there doing or some are just to busy. The community is a lot in need for some support and help, and we should give it to them if they need it.
+
+There are a bungle of things that students can help with, little elementary kids with hard school assignments that parents come home too late to help with.
+
+dirty ponds and lakes that need cleaning up, parks with loads of trash everywhere, buildings with nasty spray paint all over and senior citizens who need help around the house. Also on Halloween there's little kids who need to get around the area without trouble, and not all little kids have older brothers and sisters to take them.
+
+There are animal shelters and so much more they can do for the community.
+
+I have friends in the ninth grade who perform service to the community and it helps them with there high-school diploma. Some just do it because they think its right and a good thing. So that's why Mr. principle all of us and students should come together and do what we can for the community.            ",4.0,f,hispanic/latino,no,not economically disadvantaged,identified as having disability,XLNet,baseline,2.7112720012664795,True
+F9CF17C68E82,PERSUADE,Community service,"Dear Principal,
+
+I think that all students should be required to take part in community service.
+
+It is a great way to connect yourself with your community and help out others who are less fortunate than you or the environment.
+
+As an eighth grader, I take part in tutoring some of the younger sixth graders at my school.
+
+I think of this as community service because I do not get paid for these actions.
+
+Also, it is community service because I am helping some of the younger children at my school understand what they are learning better.
+
+Some students might not want to take part in the community service at first.
+
+They might be reluctant to try.
+
+After beginning the process, those certain students might realize that by taking part in community service, you can learn more about yourself as well as the environment and others around you.
+
+The students who at first did not want to take part in the community service, might come to realize that they enjoy helping others and from doing so, benefit personally.
+
+An issue with requiring all students to perform in community service is the time commitment.
+
+Some busy students might decide that community service is not worth their time when they could be doing things that directly benefit themselves.
+
+For example, they might rather spend time with their friends than spend time with children in a homeless shelter.
+
+I think it is important that you understand that these students might take more time to convince to take part in your community service than others.
+
+You should not simply tell them to do the community service because they are required to but you should explain to them why it is so important and you have decided to put emphasis on it.
+
+I think that it is important for everyone to take part in making this world a better place.
+
+Community service is one way to get people to contribute to that.
+
+Students should show that they have a say and have their own individual rights.
+
+By helping others or the environment around you, students can show that they can change this world, one little step at a time.
+
+Community service could be that first little step.
+
+I find it very important for all students to take part in community service some time in their life.
+
+I think by making it a requirement for the students that attend our school, everyone will find that community service helps to better understand yourself as well as others.
+
+It is a great opportunity that we should all take advantage of.
+
+Sincerely,
+
+Your student",4.0,f,white,no,not economically disadvantaged,not identified as having disability,XLNet,baseline,4.367660999298096,True
+27A2E22A4634,PERSUADE,Distance learning,"Some believe that is better to teach children at home whereas the majority of people believe that it is highly recommended to send them to school for their better development. In my opinion it is more appropriate to send students to school instead of teaching them at home. Students would benefit from being able to attend classes because it can be motivated, and distance learning is not good because it would make cheating easier, there would be less social interaction, ad they would need to be highly motivated.
+
+One of the biggest advantages of go to school is to improve their social capacity. Students will develop social skill when they are admitted to school by interacting with their teachers and classmates. Because they come from diverse family background and have different financial statements, students tend to learn a lot from each other and more likely to realize. For example, to name a few, a bout other religions or moral practices of his peers or they can learn the habits of dressing or the way of talking about his peers.
+
+Secondly, the growth and development of the students is assessed on a regularly basis by conducting tests, homework in a school in this area of high competition among schools to gain popularity, this process will have impact on students will make them ready to sustain in the really changeling world. For example in this area they can prove their learning, ability, and dedication.
+
+On the contrary, teaching children at homo also has few advantages. If students are taught at home, with full attention and focus on the child, he is more likely to understand the subject well. Secondly, student can be taught in a more amicable way and be more comfortable when they are accompanied by their family at home. But they not make new friends or socialize with different people. Also some parents do not always have the time to supervise their children for that reason it is better that they go to school to receive better supervise and education.
+
+In conclusion, both approaches have their own advantages, but sending the student to school will make him more successful in his life, while teaching him at home may result lower rates for education, but he will not be competent in the world. Also attend to school make the student stronger with more benefits to share with the world and their improve their social capacity with other people.          ",5.0,f,hispanic/latino,yes,economically disadvantaged,not identified as having disability,XLNet,baseline,3.6449766159057617,True
+859F995E6AE7,PERSUADE,Exploring Venus,"The support of this idea and why is dngers study Venus is on the planet's surface, temperatures average over 800 degrees Fahrenheit, and the atmospheric pressure is 90 times greater than what we experience on our own planet. These contions are far more extreme than anything humas encounter on Earth. Venus has the hottesr suface temperature of any planet in our solar sytem. Venusian geology and weather present aditional impediments like erupting volcanes. Venus was prebably covered lagerly with oceans and could have supported various forms of life just like Earth. The planet has a surface of rocky sediment and includes familiar such as valleys, mountains, and craters. The National Aeronautics and Space Administration has one particularly compelling idea for sending humans to study Venus. NASA's possible solution to the hostile conditions on the surface of Venus would allow scientidts to float above the fray. Solar power would be plentiful, and radiation would not exeed Earth levels. Not easy conditions, but survivble for humans. Peering at Venus from shipnorbiting or hovering safely far above the planet can provide only limited insight on ground conditions because most forms of light cannot penetrate the dense atmosphere, rendering standard forms of photography and videography ineffective. More importantly, researchers cannot take samples of rock, gas, or anything else, from distance. NASA is working on other approaches to studying Venus. Striving to meet the challenge presented by venus has value, not only because of the insight to be gained itself, but also because human curiosity will likely lead us into many equally intimidating endeavors. Our travels on earth and beyond should not be limited by dangers and doubs but should be expanded to meet the very edges of imagination and innovation. ",3.0,m,hispanic/latino,yes,economically disadvantaged,not identified as having disability,XLNet,baseline,1.4370293617248535,True
+EC025D0FFD23,PERSUADE,Grades for extracurricular activities,"Dear, TEACHER_NAME
+
+I think that it should be at least a B grade average to participate in sports because when you try to get into college they will not except C average. Plus if the student really wanted to play sports they get a B average. And that would be better for us in the future when we are trying to get into college. Don't in college they look at your grade from the past years to see if you qualify for what ever college you are trying to get into.
+
+A B grade average is not really hard to get if we pay attention and do all of our homework and assignments. And in high school the coaches for the sports teams want students to get at least a 3.5 grade average so if students get use to having a b grade average then when they get in to high school they will already know what they have to do if they want to plat sports. There are probably students who already have B grade averages so it won't make a difference to them.
+
+If most you know that most kids have a C grade average and you want to change the policy then all the students that have below a B grade average should have to attend a after school program. There they get help with there homework and do make-up work until there grade gets up but if they don't even try to get there grade raised then they should get kicked off any activity that they do unless they get there grade up.",4.0,m,black/african american,no,economically disadvantaged,not identified as having disability,XLNet,baseline,2.557871103286743,True
+87C607A0EF62,PERSUADE,Mandatory extracurricular activities,"You've probably heard the saying, ""Try new things."" You may be tired of hearing it, but it's actually a good thing to do. Being in extracurricular activities is a way to try new things that you might not have known you like. I think all students should participate in extracurricular activities because you can explore something you haven't before, you can make friends, and you might find that it's something you enjoy.
+
+Participating in an extracurricular activity allows you to explore different options that you haven't before. Trying new things is a good way to see what you like and dislike. You could realize that you love to play sports through extracurricular activities. You could also gain experience. Having experience in different fields can be helpful for academic and life purposes. Participating in an extracurricular activity might be helpful for the future. It could help with getting a job and it could end up being your career path. Getting the opportunity to explore new things is a reason you should participate in extracurricular activities.
+
+Making friends is also a bonus when you are in an activity. You can find people with similar interests as you. Starting conversations with others is easier if you're in the same activity as them. You could have fun while participating with others. Doing things with other people can make you enjoy the activity more. Participating is also an opportunity for you to meet new people you wouldn't have known if you weren't in an extracurricular activity. You could make long lasting friendships you wouldn't have made if you didn't participate. Being in an extracurricular activity is a fun way to make new friends.
+
+The downside is that you would be forced to be in an activity. If you are forced to do something, it can make the activity less fun. However, you could find that the activity is something you really like to do. You can find out new things about yourself or find a new hobby. Extracurricular activities are outlets for you to find new things that you enjoy.
+
+I think that students should participate in an extracurricular activity. You get to explore different things, you can make new friends, and you could find that the activity you're in is something you like to do. Even though you would be forced to participate, extracurricular activities are something everyone can enjoy.",5.0,f,black/african american,no,not economically disadvantaged,not identified as having disability,XLNet,baseline,3.567943811416626,True
+AAAOPP13416000072397,ASAP,"""A Cowboy Who Rode the Waves""","Luke was a Sea Cowboy from a small town, but before he had became a Sea Cowboy he had a wife. He was a hard work at the Grocery Store and the Bank to make sure his family was sacure.Then, one day, he was given an amazing opportunity. His friend, Don Reist, invited him to go to Europe on a cattle boat,and Luke couldn't resiest.
+
+After he arrived in Europe, World War ll was just ending.So,he help the people get food supplies,animals,and more.44 nations joined together and esablished the UNRRA.The UNRRA is the,United Nations Relief and Rehabilition Adminiistration.They arrived in Europe on August 14.
+
+After a while they recieved Seamen papers and boarded the SS Charles W Wooster.They were on thier way to Greece, but befor they had reached Greece,Luke had turned 18.So, now he was able to be militaried. He was discharged in 1947, and had already made 9 trips.Luke made the most trips and Sea Cowboy had ever had.
+
+To many people the Cattle-Boat-Trips were an unbelievable opportunity for any small-town-boy.It made Luke feel special in some type of way. He also, thought that the apcrolipis in Greece was special to him. A little while after this he wnt on another trip. It took 2 months to cross the Atlantic Ocean From the eastern part of America, and a month to get to China.During the trip he served as the night watch man.
+
+Luke love to have fun.So, on the return trips he had some fun. Being a Sea Cowboy opened up many differenent thing to him. So in Conulison, being in this point of view is a graet way to let people do the same thing.",3.0,f,black/african american,no,economically disadvantaged,not identified as having disability,XLNet,GRL,1.3994694948196411,True
+AAAOPP13416000001740,ASAP,"""A Cowboy Who Rode the Waves""","Luke is trying to convince others to particicipate in the Seagoing Cowboys theses are the reasons i chose.
+
+One of the reasons is it gives cowboys a chance to help people around the wolrd. One way the cowboys can help is by heping do farm work. The second way the cowboys can help is by tending to the peoples' animals. After that, The cowboys is serve as a nightwhatch to make sure no one tries to steal the cattle or horses.
+
+The second reason is the cowboys can go sight seeing to see thing that they never knew existed. One thing the cowboys saw was on their way to China, when they toured an excavated castle in Crete and marveled at the Punama Canal. The second thing the cowboys saw was the Acropolis in Greece. The lastf thing that they did was go on a gondola ride in Vinice, Italy a city with streets of water.
+
+The third and last reason is the fun on board. On the return trips after the animals had been unloaded, they played basketball and volleyball. They would do these activities in the holds where the animals had been housed. They would also play table-tennis tournaments, fencing, boxing, reading, whitting, and games also help to pass the time.
+
+In conclution, The Seagoing Cowboy Program would be an adventure to expirience the world, and do things that you've never done before on this journey of a lifetime opportunity.",4.0,f,black/african american,no,economically disadvantaged,not identified as having disability,XLNet,GRL,2.5195202827453613,True
+AAAOPP13416000040612,ASAP,Driverless cars,"I think that driverless cars can be a good idea to have.Driverless cars will help people alot to stay safe on the roads,By which if someone loses their focus on the road, lets say if they get a text message first thing they want to do is look at the phone,and see what it says,having a driverless car will help because if they are to foucs
+
+on their phone the car will give you a sign that you are in danger and that will give you a heads up that you need to foucs on the on road.
+
+The driverless cars will have a lot of sensors that will help keep you safe.""The information from the sensors can cause to apply brakes on the individual wheel and reduce power from the engine,allowing far better contorl than a human driver alone."" The sensors also makes sure the driver has keeps hold of the wheel at all times.
+
+Also i feel like the number of accdients will go down and the law is all about keepinf drivers,passengers and pedestrians safe. Another reason why this will help, Is that new drivers are mostly
+
+nervous to start driving out for the first time. With this car i think will help them not be as nervous knowing that it will tell you when you are in danger and needs to slow down.
+
+They are worried they won't know who fault the accdient is but thats they same with most acdeints. They will have to solve it like everyone other case. I think having the driverless car will bring more postive than neagtive. I would like to see the out come of having the driverless cars to see how it affected things.",4.0,f,white,no,not economically disadvantaged,identified as having disability,XLNet,GRL,2.74497938156128,True
+AAAOPP13416000001315,ASAP,Driverless cars,"After reading the article and seeing both the positive and negative aspects of driverless cars, I have come to the conclusion that driverless cars are indeed safe. The features on them are more advanced than any other car out today. They are up to date on all technology as well.
+
+Most vehicular accidents are a result of human error, not a malfunction of the vehicle. By having driverless cars, it makes it so the operator of the vehicle does not have to do as much to maintain control of the vehicle. Therefore, it could reduce human error, making it safer for passengers in cars, as well as pedestrians. The driverless car warns the person operating the vehicle of upcoming potentially dangerous hazards and things like road construction.
+
+More advances are being made for smarter cars all the time, making them safer and better. Some examples of these advancements that are being considered include flashing lights on the windsheild, cameras that watch the operater of the vehicle, and other heads up displays. On top of all of that, the smarter cars already warn the operator when he or she needs to take full control over the vehicle if and when needed. This is one of the many things that make smarter cars safer.
+
+Even though they are often called ""driverless cars"", operators of the smarter car still have control of the vehicle, and must remain ready to take control if needed. It is almost like having safety insurance because it has two levels of protection. The smarter car watches the road and controls the car for you as you stay alert and watch the road as well. If for some reason the technology of the vehicle malfunctions, you can still manually avoid collisions and other dangerous situations.
+
+In conclusion, driverless cars are a safe alternative to regular cars. They have many more safety features and the operator still has control of the vehicle. They are always being improved as well. You can count on smarter cars to get you to your destination safely while being able to enjoy the ride. ",5.0,m,white,yes,not economically disadvantaged,not identified as having disability,XLNet,GRL,3.62387490272522,True
+AAAVUP14319000111977,ASAP,Exploring Venus,"Do you know why they say studying venus is a worthy pursuit despite the dangers it presents? i will be giving claims about this idea from the article to help you understand this idea about studying venus. My thesis is talking abuut venus.
+
+Venus is not always called venus they also call it the ""Evening Star"" because it's one of the brightest points of light in the night sky. It makes it simple for even an amateur stargazer to spot. The nickname is misleading because it's a planet and a star. If you didn't know this venus is the second planet from the sun so, venus is right in front of us. Venus is simple to see from the distant but safe vantage point of earth, it has proved a very challenging place to examine more closely.
+
+Venus is also called earth's twin because it is the closest planet to earth, density, size and occasionally the closest in distance too. In venus a thick atmosphere of almost 97% carbon dioxide covers venus.Even more challenging are the clouds of highly corrosive sulfuric acid in venus's atmosphere. Earth, venus and mars are neighbors, their speeds are meanly different because sometimes we are closer to mars. Other times we are closer to venus, it's random
+
+because of the speed that the three planets travel around the sun.
+
+The National Aeronautics Space Administration (NASA) has one particularly compelling idea for sending humans to study venus in venus. NASA has devices that were first envision in the 1800s and played an important role in the 1940s during the World War II. ",3.0,m,hispanic/latino,yes,not economically disadvantaged,not identified as having disability,XLNet,GRL,1.500266194343567,True
+AAAVUP14319000048322,ASAP,Exploring Venus,"Kids dream about going to space and see all the planets.
+
+In ""The challenge of Exploring Venus"", the author supports the idea that studyuing Venus is a worthy pursuit despite the dangers bceause Venus sometimes has problems, and also NASA are sending humans to study about the venus
+
+The first reason why studying Venus is a worthy pursuit despite is because the Venus has problems at times. Sometimes we could be way more closer to Mars or soemtimes Venus, It depends which one is in the corner. The Earth, Mars, and Venus are all close to each other. ""not a single spaceship has touched down on Venus in more than three decades."" This quote explains the issue that Venus has been having. "" Numerous factors contribue to Venu's reputation as a challenging planet for humas to study, despite promimity to us."" This shows that people has been studying and trying to find what is wrong with Venus and why a spaceship has not landed.
+
+The last reason why studying Venus is a worthy pusuite despite is because the NASA are sending humans to study about Venus. Venus would allow scientists to float above the fray. "" Imagine a blimp-like vehicle hovering 30 or so miles above the roiling venusian landscape.' In this quote they are giving an example on how it feels to float around venus. ""Mnay researchers are workng on innovations that woukld allow our mahcines to last long enough to contribue meaningfully to our konowledge of Venus."" This quote explains that they are trying to make the venu more close up.
+
+In the article ""The Challenge of Exploring Venus"", the author supports the idea that studying Venus is a worthy pursuit despite the dangers it presents because Venus sometimes has probelms and also NASA are sending humnas ton study about thr venus. ",4.0,f,hispanic/latino,yes,economically disadvantaged,not identified as having disability,XLNet,GRL,2.38974666595459,True
+AAAOPP13416000046855,ASAP,The Face on Mars,"The head is just a huge rock formation on the planet Cydonia. That huge head could be a big hill that has holes in it. When the Mars Orbiter Camera team went up and saw the face, they just said it was a natural landform and no alien monument after all. They went up there a second time and said that it looks like the Middle Butte in the Snake River Plain of Idaho. The face takes form of a lava dome isolated mesa about the same height sa the Face on Mars.
+
+My team went up in space and caught a few shots at the face. We can compare the 1976, 1998, and 2001 and now we can see what it is. The Face is actually something that we have on our planet. We can compare a lava dome and the mask to see if the mask is actually just a huge rock. These are the pictures we showed to the world that the face is just a big rock.",3.0,m,white,yes,economically disadvantaged,not identified as having disability,XLNet,GRL,2.052093744277954,True
+AAAOPP13416000045917,ASAP,The Face on Mars,"The Face on Mars was discovered in 1976 by Viking 1 while searching for landing sites for Viking 2. Some think it was created by aliens. NASA has said that it is just a rock formation. Some agree with NASA,others disagree. Either way the Face has sparked controversy and has appeared in a movie,books,magizenes,checkout lines,and radio talk shows.
+
+First of all,according to NASA such rock formations are common and so while it might have been a surprise, the sensation was short lived. Also,according to the passage,such formations are common on Earth as well as on Mars.
+
+Secondly,the Face sparked enough controversy that NASA had to go back twice to see if the the Face even looked like a face. The 1st time it was too cloudy to get a good picture but the 2nd time they got a good picture,and as it turned out the Face didn't even look like a face when looked at up close.
+
+Finally,why would NASA lie? Defenders of the NASA budget themselves wish that there was an ancient civilization on Mars. A civilization on Mars would help NASA's budget by giving them more money,so why would they be hiding anything.
+
+In conclusion,the Face probably wasn't created by aliens. Such formations are common on Mars and on Earth. The Face doesn't even look like a face when viewed up close. Lastly an ancient civilization would benefit NASA so they would have no reason to keep evidence of one from the public.",4.0,m,white,no,not economically disadvantaged,identified as having disability,XLNet,GRL,2.791043519973755,True
+9504EDD8FE31,PERSUADE,Cell phones at school,"Dear Principal,
+
+I highly encourage you to set the policy number 1 where you allow students to bring cell phones to school. I believe cell phones are necessary for young students because its a way to communicate with parents, friends and other people quickly and fairly easily. I believe outlawing cell phones in schools can be a safety issue to students who live fairly far from the school for the simple fact that they won't have any form of communication with their families. Also I believe allowing cell phones can now help a student academically.
+
+With recent advances in technology we are able to do more with a cell phone than just talk and text message. With phones such as the IPhone, Blackberry and the Droid we are able to use phone applications to do everything from web-surfing to education. If cell phones are allowed in schools they can be used productively during class to distribute homework, notes and to do research for projects. Even if the cell phones can only be on during lunch or other free periods it can help students be more focused in school instead of wondering what new texts they got or trying to secretly text their parents during an emergency.
+
+Though allowing cell phones to school can be highly beneficial, i believe the students should be reminded that it is a privilege not a right. I understand the saying ""give a man a inch and he'll try to take miles"" and I know when some students are given opportunities they try to ""push the envelope"" and try to over use the opportunity. I believe that if you allow the policy number one but a cell phone is out in class when it is not a true emergency, that the phone should be confiscated and given to the students parents. I also believe that constant offenders of that rule should be excluded from the policy and are forced to not bring their phone to school.
+
+I believe cell phones are extremely important and passing the first policy in opposition to the second will can be beneficial to students, parents and even the school if they decide to take advantage of the opportunities given by this policy. This can make students morally happy and make them work harder opposed to the other policy which can upset students and decrease their production rate. This opportunity is golden and all we need is for you to put it in affect.",5.0,m,black/african american,no,not economically disadvantaged,not identified as having disability,XLNet,GRL,3.961550235748291,True
+8027D8B7844F,PERSUADE,Cell phones at school,"The principal should let students have there phone during free times because they might have missed a class time thinking about something else and then when they go back to that class they will not know what to do. then when a test comes up they will not know and then they will fail the test .
+
+But if they do let them have there phones out during there free time and there know class periods going on they can call or text there friends and see what was there home work or what they did during in that class period if they were not following along. That would be there fault.
+
+If they could have there cell phones they might not because they can ask there friends to explain it to them if they later at lunch or to see if they can go there house later to have them show it to them and then they can text or call there parents to see if they can go or not and they can then the parents can call the school then the kids can go home with a friend to have them show what to do and what they did during class time.
+
+Then the students can talk to there friends to see what has been going and to see if they want to meet somewhere for they can talk and to see what they have been doing all day and see if they had a good day or a bad day in school so far. so that's what they should do because they students are hurting the class time and there education so why not there still following along in class there still learning and what need to know about what was going on in this world. and learn every thing they need to know . plus if do not then buddies they might tell them what they want to them but they don't they might not following along in class because there wondering about there going to say during and not follow along.
+
+i think this should be the policy because it could help out a lot with them",4.0,m,white,no,economically disadvantaged,identified as having disability,XLNet,GRL,2.7838587760925293,True
+C4700AD0EE9A,PERSUADE,Community service,"Mr. principle
+
+I think its a great idea for students to help out and join community service, you should require all students to join. Helping the community is very important because there aren't a lot of people who would take the time to help out.
+
+They probably think its a waist of time when its not. Not many people want to stop what there doing or some are just to busy. The community is a lot in need for some support and help, and we should give it to them if they need it.
+
+There are a bungle of things that students can help with, little elementary kids with hard school assignments that parents come home too late to help with.
+
+dirty ponds and lakes that need cleaning up, parks with loads of trash everywhere, buildings with nasty spray paint all over and senior citizens who need help around the house. Also on Halloween there's little kids who need to get around the area without trouble, and not all little kids have older brothers and sisters to take them.
+
+There are animal shelters and so much more they can do for the community.
+
+I have friends in the ninth grade who perform service to the community and it helps them with there high-school diploma. Some just do it because they think its right and a good thing. So that's why Mr. principle all of us and students should come together and do what we can for the community.            ",4.0,f,hispanic/latino,no,not economically disadvantaged,identified as having disability,XLNet,GRL,2.4106764793396,True
+F9CF17C68E82,PERSUADE,Community service,"Dear Principal,
+
+I think that all students should be required to take part in community service.
+
+It is a great way to connect yourself with your community and help out others who are less fortunate than you or the environment.
+
+As an eighth grader, I take part in tutoring some of the younger sixth graders at my school.
+
+I think of this as community service because I do not get paid for these actions.
+
+Also, it is community service because I am helping some of the younger children at my school understand what they are learning better.
+
+Some students might not want to take part in the community service at first.
+
+They might be reluctant to try.
+
+After beginning the process, those certain students might realize that by taking part in community service, you can learn more about yourself as well as the environment and others around you.
+
+The students who at first did not want to take part in the community service, might come to realize that they enjoy helping others and from doing so, benefit personally.
+
+An issue with requiring all students to perform in community service is the time commitment.
+
+Some busy students might decide that community service is not worth their time when they could be doing things that directly benefit themselves.
+
+For example, they might rather spend time with their friends than spend time with children in a homeless shelter.
+
+I think it is important that you understand that these students might take more time to convince to take part in your community service than others.
+
+You should not simply tell them to do the community service because they are required to but you should explain to them why it is so important and you have decided to put emphasis on it.
+
+I think that it is important for everyone to take part in making this world a better place.
+
+Community service is one way to get people to contribute to that.
+
+Students should show that they have a say and have their own individual rights.
+
+By helping others or the environment around you, students can show that they can change this world, one little step at a time.
+
+Community service could be that first little step.
+
+I find it very important for all students to take part in community service some time in their life.
+
+I think by making it a requirement for the students that attend our school, everyone will find that community service helps to better understand yourself as well as others.
+
+It is a great opportunity that we should all take advantage of.
+
+Sincerely,
+
+Your student",4.0,f,white,no,not economically disadvantaged,not identified as having disability,XLNet,GRL,3.7555744647979736,True
+27A2E22A4634,PERSUADE,Distance learning,"Some believe that is better to teach children at home whereas the majority of people believe that it is highly recommended to send them to school for their better development. In my opinion it is more appropriate to send students to school instead of teaching them at home. Students would benefit from being able to attend classes because it can be motivated, and distance learning is not good because it would make cheating easier, there would be less social interaction, ad they would need to be highly motivated.
+
+One of the biggest advantages of go to school is to improve their social capacity. Students will develop social skill when they are admitted to school by interacting with their teachers and classmates. Because they come from diverse family background and have different financial statements, students tend to learn a lot from each other and more likely to realize. For example, to name a few, a bout other religions or moral practices of his peers or they can learn the habits of dressing or the way of talking about his peers.
+
+Secondly, the growth and development of the students is assessed on a regularly basis by conducting tests, homework in a school in this area of high competition among schools to gain popularity, this process will have impact on students will make them ready to sustain in the really changeling world. For example in this area they can prove their learning, ability, and dedication.
+
+On the contrary, teaching children at homo also has few advantages. If students are taught at home, with full attention and focus on the child, he is more likely to understand the subject well. Secondly, student can be taught in a more amicable way and be more comfortable when they are accompanied by their family at home. But they not make new friends or socialize with different people. Also some parents do not always have the time to supervise their children for that reason it is better that they go to school to receive better supervise and education.
+
+In conclusion, both approaches have their own advantages, but sending the student to school will make him more successful in his life, while teaching him at home may result lower rates for education, but he will not be competent in the world. Also attend to school make the student stronger with more benefits to share with the world and their improve their social capacity with other people.          ",5.0,f,hispanic/latino,yes,economically disadvantaged,not identified as having disability,XLNet,GRL,3.8647665977478014,True
+859F995E6AE7,PERSUADE,Exploring Venus,"The support of this idea and why is dngers study Venus is on the planet's surface, temperatures average over 800 degrees Fahrenheit, and the atmospheric pressure is 90 times greater than what we experience on our own planet. These contions are far more extreme than anything humas encounter on Earth. Venus has the hottesr suface temperature of any planet in our solar sytem. Venusian geology and weather present aditional impediments like erupting volcanes. Venus was prebably covered lagerly with oceans and could have supported various forms of life just like Earth. The planet has a surface of rocky sediment and includes familiar such as valleys, mountains, and craters. The National Aeronautics and Space Administration has one particularly compelling idea for sending humans to study Venus. NASA's possible solution to the hostile conditions on the surface of Venus would allow scientidts to float above the fray. Solar power would be plentiful, and radiation would not exeed Earth levels. Not easy conditions, but survivble for humans. Peering at Venus from shipnorbiting or hovering safely far above the planet can provide only limited insight on ground conditions because most forms of light cannot penetrate the dense atmosphere, rendering standard forms of photography and videography ineffective. More importantly, researchers cannot take samples of rock, gas, or anything else, from distance. NASA is working on other approaches to studying Venus. Striving to meet the challenge presented by venus has value, not only because of the insight to be gained itself, but also because human curiosity will likely lead us into many equally intimidating endeavors. Our travels on earth and beyond should not be limited by dangers and doubs but should be expanded to meet the very edges of imagination and innovation. ",3.0,m,hispanic/latino,yes,economically disadvantaged,not identified as having disability,XLNet,GRL,1.111769676208496,True
+EC025D0FFD23,PERSUADE,Grades for extracurricular activities,"Dear, TEACHER_NAME
+
+I think that it should be at least a B grade average to participate in sports because when you try to get into college they will not except C average. Plus if the student really wanted to play sports they get a B average. And that would be better for us in the future when we are trying to get into college. Don't in college they look at your grade from the past years to see if you qualify for what ever college you are trying to get into.
+
+A B grade average is not really hard to get if we pay attention and do all of our homework and assignments. And in high school the coaches for the sports teams want students to get at least a 3.5 grade average so if students get use to having a b grade average then when they get in to high school they will already know what they have to do if they want to plat sports. There are probably students who already have B grade averages so it won't make a difference to them.
+
+If most you know that most kids have a C grade average and you want to change the policy then all the students that have below a B grade average should have to attend a after school program. There they get help with there homework and do make-up work until there grade gets up but if they don't even try to get there grade raised then they should get kicked off any activity that they do unless they get there grade up.",4.0,m,black/african american,no,economically disadvantaged,not identified as having disability,XLNet,GRL,2.501880407333374,True
+87C607A0EF62,PERSUADE,Mandatory extracurricular activities,"You've probably heard the saying, ""Try new things."" You may be tired of hearing it, but it's actually a good thing to do. Being in extracurricular activities is a way to try new things that you might not have known you like. I think all students should participate in extracurricular activities because you can explore something you haven't before, you can make friends, and you might find that it's something you enjoy.
+
+Participating in an extracurricular activity allows you to explore different options that you haven't before. Trying new things is a good way to see what you like and dislike. You could realize that you love to play sports through extracurricular activities. You could also gain experience. Having experience in different fields can be helpful for academic and life purposes. Participating in an extracurricular activity might be helpful for the future. It could help with getting a job and it could end up being your career path. Getting the opportunity to explore new things is a reason you should participate in extracurricular activities.
+
+Making friends is also a bonus when you are in an activity. You can find people with similar interests as you. Starting conversations with others is easier if you're in the same activity as them. You could have fun while participating with others. Doing things with other people can make you enjoy the activity more. Participating is also an opportunity for you to meet new people you wouldn't have known if you weren't in an extracurricular activity. You could make long lasting friendships you wouldn't have made if you didn't participate. Being in an extracurricular activity is a fun way to make new friends.
+
+The downside is that you would be forced to be in an activity. If you are forced to do something, it can make the activity less fun. However, you could find that the activity is something you really like to do. You can find out new things about yourself or find a new hobby. Extracurricular activities are outlets for you to find new things that you enjoy.
+
+I think that students should participate in an extracurricular activity. You get to explore different things, you can make new friends, and you could find that the activity you're in is something you like to do. Even though you would be forced to participate, extracurricular activities are something everyone can enjoy.",5.0,f,black/african american,no,not economically disadvantaged,not identified as having disability,XLNet,GRL,3.683930635452272,True
+AAAOPP13416000072397,ASAP,"""A Cowboy Who Rode the Waves""","Luke was a Sea Cowboy from a small town, but before he had became a Sea Cowboy he had a wife. He was a hard work at the Grocery Store and the Bank to make sure his family was sacure.Then, one day, he was given an amazing opportunity. His friend, Don Reist, invited him to go to Europe on a cattle boat,and Luke couldn't resiest.
+
+After he arrived in Europe, World War ll was just ending.So,he help the people get food supplies,animals,and more.44 nations joined together and esablished the UNRRA.The UNRRA is the,United Nations Relief and Rehabilition Adminiistration.They arrived in Europe on August 14.
+
+After a while they recieved Seamen papers and boarded the SS Charles W Wooster.They were on thier way to Greece, but befor they had reached Greece,Luke had turned 18.So, now he was able to be militaried. He was discharged in 1947, and had already made 9 trips.Luke made the most trips and Sea Cowboy had ever had.
+
+To many people the Cattle-Boat-Trips were an unbelievable opportunity for any small-town-boy.It made Luke feel special in some type of way. He also, thought that the apcrolipis in Greece was special to him. A little while after this he wnt on another trip. It took 2 months to cross the Atlantic Ocean From the eastern part of America, and a month to get to China.During the trip he served as the night watch man.
+
+Luke love to have fun.So, on the return trips he had some fun. Being a Sea Cowboy opened up many differenent thing to him. So in Conulison, being in this point of view is a graet way to let people do the same thing.",3.0,f,black/african american,no,economically disadvantaged,not identified as having disability,RoBERTa,baseline,1.5155933,True
+AAAOPP13416000001740,ASAP,"""A Cowboy Who Rode the Waves""","Luke is trying to convince others to particicipate in the Seagoing Cowboys theses are the reasons i chose.
+
+One of the reasons is it gives cowboys a chance to help people around the wolrd. One way the cowboys can help is by heping do farm work. The second way the cowboys can help is by tending to the peoples' animals. After that, The cowboys is serve as a nightwhatch to make sure no one tries to steal the cattle or horses.
+
+The second reason is the cowboys can go sight seeing to see thing that they never knew existed. One thing the cowboys saw was on their way to China, when they toured an excavated castle in Crete and marveled at the Punama Canal. The second thing the cowboys saw was the Acropolis in Greece. The lastf thing that they did was go on a gondola ride in Vinice, Italy a city with streets of water.
+
+The third and last reason is the fun on board. On the return trips after the animals had been unloaded, they played basketball and volleyball. They would do these activities in the holds where the animals had been housed. They would also play table-tennis tournaments, fencing, boxing, reading, whitting, and games also help to pass the time.
+
+In conclution, The Seagoing Cowboy Program would be an adventure to expirience the world, and do things that you've never done before on this journey of a lifetime opportunity.",4.0,f,black/african american,no,economically disadvantaged,not identified as having disability,RoBERTa,baseline,2.6101308,True
+AAAOPP13416000046855,ASAP,The Face on Mars,"The head is just a huge rock formation on the planet Cydonia. That huge head could be a big hill that has holes in it. When the Mars Orbiter Camera team went up and saw the face, they just said it was a natural landform and no alien monument after all. They went up there a second time and said that it looks like the Middle Butte in the Snake River Plain of Idaho. The face takes form of a lava dome isolated mesa about the same height sa the Face on Mars.
+
+My team went up in space and caught a few shots at the face. We can compare the 1976, 1998, and 2001 and now we can see what it is. The Face is actually something that we have on our planet. We can compare a lava dome and the mask to see if the mask is actually just a huge rock. These are the pictures we showed to the world that the face is just a big rock.",3.0,m,white,yes,economically disadvantaged,not identified as having disability,RoBERTa,baseline,1.8225535,True
+AAAOPP13416000045917,ASAP,The Face on Mars,"The Face on Mars was discovered in 1976 by Viking 1 while searching for landing sites for Viking 2. Some think it was created by aliens. NASA has said that it is just a rock formation. Some agree with NASA,others disagree. Either way the Face has sparked controversy and has appeared in a movie,books,magizenes,checkout lines,and radio talk shows.
+
+First of all,according to NASA such rock formations are common and so while it might have been a surprise, the sensation was short lived. Also,according to the passage,such formations are common on Earth as well as on Mars.
+
+Secondly,the Face sparked enough controversy that NASA had to go back twice to see if the the Face even looked like a face. The 1st time it was too cloudy to get a good picture but the 2nd time they got a good picture,and as it turned out the Face didn't even look like a face when looked at up close.
+
+Finally,why would NASA lie? Defenders of the NASA budget themselves wish that there was an ancient civilization on Mars. A civilization on Mars would help NASA's budget by giving them more money,so why would they be hiding anything.
+
+In conclusion,the Face probably wasn't created by aliens. Such formations are common on Mars and on Earth. The Face doesn't even look like a face when viewed up close. Lastly an ancient civilization would benefit NASA so they would have no reason to keep evidence of one from the public.",4.0,m,white,no,not economically disadvantaged,identified as having disability,RoBERTa,baseline,2.7637863,True
+AAAVUP14319000111977,ASAP,Exploring Venus,"Do you know why they say studying venus is a worthy pursuit despite the dangers it presents? i will be giving claims about this idea from the article to help you understand this idea about studying venus. My thesis is talking abuut venus.
+
+Venus is not always called venus they also call it the ""Evening Star"" because it's one of the brightest points of light in the night sky. It makes it simple for even an amateur stargazer to spot. The nickname is misleading because it's a planet and a star. If you didn't know this venus is the second planet from the sun so, venus is right in front of us. Venus is simple to see from the distant but safe vantage point of earth, it has proved a very challenging place to examine more closely.
+
+Venus is also called earth's twin because it is the closest planet to earth, density, size and occasionally the closest in distance too. In venus a thick atmosphere of almost 97% carbon dioxide covers venus.Even more challenging are the clouds of highly corrosive sulfuric acid in venus's atmosphere. Earth, venus and mars are neighbors, their speeds are meanly different because sometimes we are closer to mars. Other times we are closer to venus, it's random
+
+because of the speed that the three planets travel around the sun.
+
+The National Aeronautics Space Administration (NASA) has one particularly compelling idea for sending humans to study venus in venus. NASA has devices that were first envision in the 1800s and played an important role in the 1940s during the World War II. ",3.0,m,hispanic/latino,yes,not economically disadvantaged,not identified as having disability,RoBERTa,baseline,1.3155919,True
+AAAVUP14319000048322,ASAP,Exploring Venus,"Kids dream about going to space and see all the planets.
+
+In ""The challenge of Exploring Venus"", the author supports the idea that studyuing Venus is a worthy pursuit despite the dangers bceause Venus sometimes has problems, and also NASA are sending humans to study about the venus
+
+The first reason why studying Venus is a worthy pursuit despite is because the Venus has problems at times. Sometimes we could be way more closer to Mars or soemtimes Venus, It depends which one is in the corner. The Earth, Mars, and Venus are all close to each other. ""not a single spaceship has touched down on Venus in more than three decades."" This quote explains the issue that Venus has been having. "" Numerous factors contribue to Venu's reputation as a challenging planet for humas to study, despite promimity to us."" This shows that people has been studying and trying to find what is wrong with Venus and why a spaceship has not landed.
+
+The last reason why studying Venus is a worthy pusuite despite is because the NASA are sending humans to study about Venus. Venus would allow scientists to float above the fray. "" Imagine a blimp-like vehicle hovering 30 or so miles above the roiling venusian landscape.' In this quote they are giving an example on how it feels to float around venus. ""Mnay researchers are workng on innovations that woukld allow our mahcines to last long enough to contribue meaningfully to our konowledge of Venus."" This quote explains that they are trying to make the venu more close up.
+
+In the article ""The Challenge of Exploring Venus"", the author supports the idea that studying Venus is a worthy pursuit despite the dangers it presents because Venus sometimes has probelms and also NASA are sending humnas ton study about thr venus. ",4.0,f,hispanic/latino,yes,economically disadvantaged,not identified as having disability,RoBERTa,baseline,2.5421586,True
+AAAOPP13416000040612,ASAP,Driverless cars,"I think that driverless cars can be a good idea to have.Driverless cars will help people alot to stay safe on the roads,By which if someone loses their focus on the road, lets say if they get a text message first thing they want to do is look at the phone,and see what it says,having a driverless car will help because if they are to foucs
+
+on their phone the car will give you a sign that you are in danger and that will give you a heads up that you need to foucs on the on road.
+
+The driverless cars will have a lot of sensors that will help keep you safe.""The information from the sensors can cause to apply brakes on the individual wheel and reduce power from the engine,allowing far better contorl than a human driver alone."" The sensors also makes sure the driver has keeps hold of the wheel at all times.
+
+Also i feel like the number of accdients will go down and the law is all about keepinf drivers,passengers and pedestrians safe. Another reason why this will help, Is that new drivers are mostly
+
+nervous to start driving out for the first time. With this car i think will help them not be as nervous knowing that it will tell you when you are in danger and needs to slow down.
+
+They are worried they won't know who fault the accdient is but thats they same with most acdeints. They will have to solve it like everyone other case. I think having the driverless car will bring more postive than neagtive. I would like to see the out come of having the driverless cars to see how it affected things.",4.0,f,white,no,not economically disadvantaged,identified as having disability,RoBERTa,baseline,2.9085038,True
+AAAOPP13416000001315,ASAP,Driverless cars,"After reading the article and seeing both the positive and negative aspects of driverless cars, I have come to the conclusion that driverless cars are indeed safe. The features on them are more advanced than any other car out today. They are up to date on all technology as well.
+
+Most vehicular accidents are a result of human error, not a malfunction of the vehicle. By having driverless cars, it makes it so the operator of the vehicle does not have to do as much to maintain control of the vehicle. Therefore, it could reduce human error, making it safer for passengers in cars, as well as pedestrians. The driverless car warns the person operating the vehicle of upcoming potentially dangerous hazards and things like road construction.
+
+More advances are being made for smarter cars all the time, making them safer and better. Some examples of these advancements that are being considered include flashing lights on the windsheild, cameras that watch the operater of the vehicle, and other heads up displays. On top of all of that, the smarter cars already warn the operator when he or she needs to take full control over the vehicle if and when needed. This is one of the many things that make smarter cars safer.
+
+Even though they are often called ""driverless cars"", operators of the smarter car still have control of the vehicle, and must remain ready to take control if needed. It is almost like having safety insurance because it has two levels of protection. The smarter car watches the road and controls the car for you as you stay alert and watch the road as well. If for some reason the technology of the vehicle malfunctions, you can still manually avoid collisions and other dangerous situations.
+
+In conclusion, driverless cars are a safe alternative to regular cars. They have many more safety features and the operator still has control of the vehicle. They are always being improved as well. You can count on smarter cars to get you to your destination safely while being able to enjoy the ride. ",5.0,m,white,yes,not economically disadvantaged,not identified as having disability,RoBERTa,baseline,3.7206588,True
+87C607A0EF62,PERSUADE,Mandatory extracurricular activities,"You've probably heard the saying, ""Try new things."" You may be tired of hearing it, but it's actually a good thing to do. Being in extracurricular activities is a way to try new things that you might not have known you like. I think all students should participate in extracurricular activities because you can explore something you haven't before, you can make friends, and you might find that it's something you enjoy.
+
+Participating in an extracurricular activity allows you to explore different options that you haven't before. Trying new things is a good way to see what you like and dislike. You could realize that you love to play sports through extracurricular activities. You could also gain experience. Having experience in different fields can be helpful for academic and life purposes. Participating in an extracurricular activity might be helpful for the future. It could help with getting a job and it could end up being your career path. Getting the opportunity to explore new things is a reason you should participate in extracurricular activities.
+
+Making friends is also a bonus when you are in an activity. You can find people with similar interests as you. Starting conversations with others is easier if you're in the same activity as them. You could have fun while participating with others. Doing things with other people can make you enjoy the activity more. Participating is also an opportunity for you to meet new people you wouldn't have known if you weren't in an extracurricular activity. You could make long lasting friendships you wouldn't have made if you didn't participate. Being in an extracurricular activity is a fun way to make new friends.
+
+The downside is that you would be forced to be in an activity. If you are forced to do something, it can make the activity less fun. However, you could find that the activity is something you really like to do. You can find out new things about yourself or find a new hobby. Extracurricular activities are outlets for you to find new things that you enjoy.
+
+I think that students should participate in an extracurricular activity. You get to explore different things, you can make new friends, and you could find that the activity you're in is something you like to do. Even though you would be forced to participate, extracurricular activities are something everyone can enjoy.",5.0,f,black/african american,no,not economically disadvantaged,not identified as having disability,RoBERTa,baseline,4.0286613,True
+859F995E6AE7,PERSUADE,Exploring Venus,"The support of this idea and why is dngers study Venus is on the planet's surface, temperatures average over 800 degrees Fahrenheit, and the atmospheric pressure is 90 times greater than what we experience on our own planet. These contions are far more extreme than anything humas encounter on Earth. Venus has the hottesr suface temperature of any planet in our solar sytem. Venusian geology and weather present aditional impediments like erupting volcanes. Venus was prebably covered lagerly with oceans and could have supported various forms of life just like Earth. The planet has a surface of rocky sediment and includes familiar such as valleys, mountains, and craters. The National Aeronautics and Space Administration has one particularly compelling idea for sending humans to study Venus. NASA's possible solution to the hostile conditions on the surface of Venus would allow scientidts to float above the fray. Solar power would be plentiful, and radiation would not exeed Earth levels. Not easy conditions, but survivble for humans. Peering at Venus from shipnorbiting or hovering safely far above the planet can provide only limited insight on ground conditions because most forms of light cannot penetrate the dense atmosphere, rendering standard forms of photography and videography ineffective. More importantly, researchers cannot take samples of rock, gas, or anything else, from distance. NASA is working on other approaches to studying Venus. Striving to meet the challenge presented by venus has value, not only because of the insight to be gained itself, but also because human curiosity will likely lead us into many equally intimidating endeavors. Our travels on earth and beyond should not be limited by dangers and doubs but should be expanded to meet the very edges of imagination and innovation. ",3.0,m,hispanic/latino,yes,economically disadvantaged,not identified as having disability,RoBERTa,baseline,1.8390112,True
+C4700AD0EE9A,PERSUADE,Community service,"Mr. principle
+
+I think its a great idea for students to help out and join community service, you should require all students to join. Helping the community is very important because there aren't a lot of people who would take the time to help out.
+
+They probably think its a waist of time when its not. Not many people want to stop what there doing or some are just to busy. The community is a lot in need for some support and help, and we should give it to them if they need it.
+
+There are a bungle of things that students can help with, little elementary kids with hard school assignments that parents come home too late to help with.
+
+dirty ponds and lakes that need cleaning up, parks with loads of trash everywhere, buildings with nasty spray paint all over and senior citizens who need help around the house. Also on Halloween there's little kids who need to get around the area without trouble, and not all little kids have older brothers and sisters to take them.
+
+There are animal shelters and so much more they can do for the community.
+
+I have friends in the ninth grade who perform service to the community and it helps them with there high-school diploma. Some just do it because they think its right and a good thing. So that's why Mr. principle all of us and students should come together and do what we can for the community.            ",4.0,f,hispanic/latino,no,not economically disadvantaged,identified as having disability,RoBERTa,baseline,2.9362137,True
+F9CF17C68E82,PERSUADE,Community service,"Dear Principal,
+
+I think that all students should be required to take part in community service.
+
+It is a great way to connect yourself with your community and help out others who are less fortunate than you or the environment.
+
+As an eighth grader, I take part in tutoring some of the younger sixth graders at my school.
+
+I think of this as community service because I do not get paid for these actions.
+
+Also, it is community service because I am helping some of the younger children at my school understand what they are learning better.
+
+Some students might not want to take part in the community service at first.
+
+They might be reluctant to try.
+
+After beginning the process, those certain students might realize that by taking part in community service, you can learn more about yourself as well as the environment and others around you.
+
+The students who at first did not want to take part in the community service, might come to realize that they enjoy helping others and from doing so, benefit personally.
+
+An issue with requiring all students to perform in community service is the time commitment.
+
+Some busy students might decide that community service is not worth their time when they could be doing things that directly benefit themselves.
+
+For example, they might rather spend time with their friends than spend time with children in a homeless shelter.
+
+I think it is important that you understand that these students might take more time to convince to take part in your community service than others.
+
+You should not simply tell them to do the community service because they are required to but you should explain to them why it is so important and you have decided to put emphasis on it.
+
+I think that it is important for everyone to take part in making this world a better place.
+
+Community service is one way to get people to contribute to that.
+
+Students should show that they have a say and have their own individual rights.
+
+By helping others or the environment around you, students can show that they can change this world, one little step at a time.
+
+Community service could be that first little step.
+
+I find it very important for all students to take part in community service some time in their life.
+
+I think by making it a requirement for the students that attend our school, everyone will find that community service helps to better understand yourself as well as others.
+
+It is a great opportunity that we should all take advantage of.
+
+Sincerely,
+
+Your student",4.0,f,white,no,not economically disadvantaged,not identified as having disability,RoBERTa,baseline,3.9114413,True
+EC025D0FFD23,PERSUADE,Grades for extracurricular activities,"Dear, TEACHER_NAME
+
+I think that it should be at least a B grade average to participate in sports because when you try to get into college they will not except C average. Plus if the student really wanted to play sports they get a B average. And that would be better for us in the future when we are trying to get into college. Don't in college they look at your grade from the past years to see if you qualify for what ever college you are trying to get into.
+
+A B grade average is not really hard to get if we pay attention and do all of our homework and assignments. And in high school the coaches for the sports teams want students to get at least a 3.5 grade average so if students get use to having a b grade average then when they get in to high school they will already know what they have to do if they want to plat sports. There are probably students who already have B grade averages so it won't make a difference to them.
+
+If most you know that most kids have a C grade average and you want to change the policy then all the students that have below a B grade average should have to attend a after school program. There they get help with there homework and do make-up work until there grade gets up but if they don't even try to get there grade raised then they should get kicked off any activity that they do unless they get there grade up.",4.0,m,black/african american,no,economically disadvantaged,not identified as having disability,RoBERTa,baseline,3.0011342,True
+9504EDD8FE31,PERSUADE,Cell phones at school,"Dear Principal,
+
+I highly encourage you to set the policy number 1 where you allow students to bring cell phones to school. I believe cell phones are necessary for young students because its a way to communicate with parents, friends and other people quickly and fairly easily. I believe outlawing cell phones in schools can be a safety issue to students who live fairly far from the school for the simple fact that they won't have any form of communication with their families. Also I believe allowing cell phones can now help a student academically.
+
+With recent advances in technology we are able to do more with a cell phone than just talk and text message. With phones such as the IPhone, Blackberry and the Droid we are able to use phone applications to do everything from web-surfing to education. If cell phones are allowed in schools they can be used productively during class to distribute homework, notes and to do research for projects. Even if the cell phones can only be on during lunch or other free periods it can help students be more focused in school instead of wondering what new texts they got or trying to secretly text their parents during an emergency.
+
+Though allowing cell phones to school can be highly beneficial, i believe the students should be reminded that it is a privilege not a right. I understand the saying ""give a man a inch and he'll try to take miles"" and I know when some students are given opportunities they try to ""push the envelope"" and try to over use the opportunity. I believe that if you allow the policy number one but a cell phone is out in class when it is not a true emergency, that the phone should be confiscated and given to the students parents. I also believe that constant offenders of that rule should be excluded from the policy and are forced to not bring their phone to school.
+
+I believe cell phones are extremely important and passing the first policy in opposition to the second will can be beneficial to students, parents and even the school if they decide to take advantage of the opportunities given by this policy. This can make students morally happy and make them work harder opposed to the other policy which can upset students and decrease their production rate. This opportunity is golden and all we need is for you to put it in affect.",5.0,m,black/african american,no,not economically disadvantaged,not identified as having disability,RoBERTa,baseline,4.2581735,True
+8027D8B7844F,PERSUADE,Cell phones at school,"The principal should let students have there phone during free times because they might have missed a class time thinking about something else and then when they go back to that class they will not know what to do. then when a test comes up they will not know and then they will fail the test .
+
+But if they do let them have there phones out during there free time and there know class periods going on they can call or text there friends and see what was there home work or what they did during in that class period if they were not following along. That would be there fault.
+
+If they could have there cell phones they might not because they can ask there friends to explain it to them if they later at lunch or to see if they can go there house later to have them show it to them and then they can text or call there parents to see if they can go or not and they can then the parents can call the school then the kids can go home with a friend to have them show what to do and what they did during class time.
+
+Then the students can talk to there friends to see what has been going and to see if they want to meet somewhere for they can talk and to see what they have been doing all day and see if they had a good day or a bad day in school so far. so that's what they should do because they students are hurting the class time and there education so why not there still following along in class there still learning and what need to know about what was going on in this world. and learn every thing they need to know . plus if do not then buddies they might tell them what they want to them but they don't they might not following along in class because there wondering about there going to say during and not follow along.
+
+i think this should be the policy because it could help out a lot with them",4.0,m,white,no,economically disadvantaged,identified as having disability,RoBERTa,baseline,2.6707003,True
+27A2E22A4634,PERSUADE,Distance learning,"Some believe that is better to teach children at home whereas the majority of people believe that it is highly recommended to send them to school for their better development. In my opinion it is more appropriate to send students to school instead of teaching them at home. Students would benefit from being able to attend classes because it can be motivated, and distance learning is not good because it would make cheating easier, there would be less social interaction, ad they would need to be highly motivated.
+
+One of the biggest advantages of go to school is to improve their social capacity. Students will develop social skill when they are admitted to school by interacting with their teachers and classmates. Because they come from diverse family background and have different financial statements, students tend to learn a lot from each other and more likely to realize. For example, to name a few, a bout other religions or moral practices of his peers or they can learn the habits of dressing or the way of talking about his peers.
+
+Secondly, the growth and development of the students is assessed on a regularly basis by conducting tests, homework in a school in this area of high competition among schools to gain popularity, this process will have impact on students will make them ready to sustain in the really changeling world. For example in this area they can prove their learning, ability, and dedication.
+
+On the contrary, teaching children at homo also has few advantages. If students are taught at home, with full attention and focus on the child, he is more likely to understand the subject well. Secondly, student can be taught in a more amicable way and be more comfortable when they are accompanied by their family at home. But they not make new friends or socialize with different people. Also some parents do not always have the time to supervise their children for that reason it is better that they go to school to receive better supervise and education.
+
+In conclusion, both approaches have their own advantages, but sending the student to school will make him more successful in his life, while teaching him at home may result lower rates for education, but he will not be competent in the world. Also attend to school make the student stronger with more benefits to share with the world and their improve their social capacity with other people.          ",5.0,f,hispanic/latino,yes,economically disadvantaged,not identified as having disability,RoBERTa,baseline,3.8789673,True
+AAAOPP13416000072397,ASAP,"""A Cowboy Who Rode the Waves""","Luke was a Sea Cowboy from a small town, but before he had became a Sea Cowboy he had a wife. He was a hard work at the Grocery Store and the Bank to make sure his family was sacure.Then, one day, he was given an amazing opportunity. His friend, Don Reist, invited him to go to Europe on a cattle boat,and Luke couldn't resiest.
+
+After he arrived in Europe, World War ll was just ending.So,he help the people get food supplies,animals,and more.44 nations joined together and esablished the UNRRA.The UNRRA is the,United Nations Relief and Rehabilition Adminiistration.They arrived in Europe on August 14.
+
+After a while they recieved Seamen papers and boarded the SS Charles W Wooster.They were on thier way to Greece, but befor they had reached Greece,Luke had turned 18.So, now he was able to be militaried. He was discharged in 1947, and had already made 9 trips.Luke made the most trips and Sea Cowboy had ever had.
+
+To many people the Cattle-Boat-Trips were an unbelievable opportunity for any small-town-boy.It made Luke feel special in some type of way. He also, thought that the apcrolipis in Greece was special to him. A little while after this he wnt on another trip. It took 2 months to cross the Atlantic Ocean From the eastern part of America, and a month to get to China.During the trip he served as the night watch man.
+
+Luke love to have fun.So, on the return trips he had some fun. Being a Sea Cowboy opened up many differenent thing to him. So in Conulison, being in this point of view is a graet way to let people do the same thing.",3.0,f,black/african american,no,economically disadvantaged,not identified as having disability,RoBERTa,GRL,1.8164082,True
+AAAOPP13416000001740,ASAP,"""A Cowboy Who Rode the Waves""","Luke is trying to convince others to particicipate in the Seagoing Cowboys theses are the reasons i chose.
+
+One of the reasons is it gives cowboys a chance to help people around the wolrd. One way the cowboys can help is by heping do farm work. The second way the cowboys can help is by tending to the peoples' animals. After that, The cowboys is serve as a nightwhatch to make sure no one tries to steal the cattle or horses.
+
+The second reason is the cowboys can go sight seeing to see thing that they never knew existed. One thing the cowboys saw was on their way to China, when they toured an excavated castle in Crete and marveled at the Punama Canal. The second thing the cowboys saw was the Acropolis in Greece. The lastf thing that they did was go on a gondola ride in Vinice, Italy a city with streets of water.
+
+The third and last reason is the fun on board. On the return trips after the animals had been unloaded, they played basketball and volleyball. They would do these activities in the holds where the animals had been housed. They would also play table-tennis tournaments, fencing, boxing, reading, whitting, and games also help to pass the time.
+
+In conclution, The Seagoing Cowboy Program would be an adventure to expirience the world, and do things that you've never done before on this journey of a lifetime opportunity.",4.0,f,black/african american,no,economically disadvantaged,not identified as having disability,RoBERTa,GRL,2.353122,True
+AAAOPP13416000046855,ASAP,The Face on Mars,"The head is just a huge rock formation on the planet Cydonia. That huge head could be a big hill that has holes in it. When the Mars Orbiter Camera team went up and saw the face, they just said it was a natural landform and no alien monument after all. They went up there a second time and said that it looks like the Middle Butte in the Snake River Plain of Idaho. The face takes form of a lava dome isolated mesa about the same height sa the Face on Mars.
+
+My team went up in space and caught a few shots at the face. We can compare the 1976, 1998, and 2001 and now we can see what it is. The Face is actually something that we have on our planet. We can compare a lava dome and the mask to see if the mask is actually just a huge rock. These are the pictures we showed to the world that the face is just a big rock.",3.0,m,white,yes,economically disadvantaged,not identified as having disability,RoBERTa,GRL,1.7950406,True
+AAAOPP13416000045917,ASAP,The Face on Mars,"The Face on Mars was discovered in 1976 by Viking 1 while searching for landing sites for Viking 2. Some think it was created by aliens. NASA has said that it is just a rock formation. Some agree with NASA,others disagree. Either way the Face has sparked controversy and has appeared in a movie,books,magizenes,checkout lines,and radio talk shows.
+
+First of all,according to NASA such rock formations are common and so while it might have been a surprise, the sensation was short lived. Also,according to the passage,such formations are common on Earth as well as on Mars.
+
+Secondly,the Face sparked enough controversy that NASA had to go back twice to see if the the Face even looked like a face. The 1st time it was too cloudy to get a good picture but the 2nd time they got a good picture,and as it turned out the Face didn't even look like a face when looked at up close.
+
+Finally,why would NASA lie? Defenders of the NASA budget themselves wish that there was an ancient civilization on Mars. A civilization on Mars would help NASA's budget by giving them more money,so why would they be hiding anything.
+
+In conclusion,the Face probably wasn't created by aliens. Such formations are common on Mars and on Earth. The Face doesn't even look like a face when viewed up close. Lastly an ancient civilization would benefit NASA so they would have no reason to keep evidence of one from the public.",4.0,m,white,no,not economically disadvantaged,identified as having disability,RoBERTa,GRL,2.62192,True
+AAAVUP14319000111977,ASAP,Exploring Venus,"Do you know why they say studying venus is a worthy pursuit despite the dangers it presents? i will be giving claims about this idea from the article to help you understand this idea about studying venus. My thesis is talking abuut venus.
+
+Venus is not always called venus they also call it the ""Evening Star"" because it's one of the brightest points of light in the night sky. It makes it simple for even an amateur stargazer to spot. The nickname is misleading because it's a planet and a star. If you didn't know this venus is the second planet from the sun so, venus is right in front of us. Venus is simple to see from the distant but safe vantage point of earth, it has proved a very challenging place to examine more closely.
+
+Venus is also called earth's twin because it is the closest planet to earth, density, size and occasionally the closest in distance too. In venus a thick atmosphere of almost 97% carbon dioxide covers venus.Even more challenging are the clouds of highly corrosive sulfuric acid in venus's atmosphere. Earth, venus and mars are neighbors, their speeds are meanly different because sometimes we are closer to mars. Other times we are closer to venus, it's random
+
+because of the speed that the three planets travel around the sun.
+
+The National Aeronautics Space Administration (NASA) has one particularly compelling idea for sending humans to study venus in venus. NASA has devices that were first envision in the 1800s and played an important role in the 1940s during the World War II. ",3.0,m,hispanic/latino,yes,not economically disadvantaged,not identified as having disability,RoBERTa,GRL,1.9656355,True
+AAAVUP14319000048322,ASAP,Exploring Venus,"Kids dream about going to space and see all the planets.
+
+In ""The challenge of Exploring Venus"", the author supports the idea that studyuing Venus is a worthy pursuit despite the dangers bceause Venus sometimes has problems, and also NASA are sending humans to study about the venus
+
+The first reason why studying Venus is a worthy pursuit despite is because the Venus has problems at times. Sometimes we could be way more closer to Mars or soemtimes Venus, It depends which one is in the corner. The Earth, Mars, and Venus are all close to each other. ""not a single spaceship has touched down on Venus in more than three decades."" This quote explains the issue that Venus has been having. "" Numerous factors contribue to Venu's reputation as a challenging planet for humas to study, despite promimity to us."" This shows that people has been studying and trying to find what is wrong with Venus and why a spaceship has not landed.
+
+The last reason why studying Venus is a worthy pusuite despite is because the NASA are sending humans to study about Venus. Venus would allow scientists to float above the fray. "" Imagine a blimp-like vehicle hovering 30 or so miles above the roiling venusian landscape.' In this quote they are giving an example on how it feels to float around venus. ""Mnay researchers are workng on innovations that woukld allow our mahcines to last long enough to contribue meaningfully to our konowledge of Venus."" This quote explains that they are trying to make the venu more close up.
+
+In the article ""The Challenge of Exploring Venus"", the author supports the idea that studying Venus is a worthy pursuit despite the dangers it presents because Venus sometimes has probelms and also NASA are sending humnas ton study about thr venus. ",4.0,f,hispanic/latino,yes,economically disadvantaged,not identified as having disability,RoBERTa,GRL,2.6384277,True
+AAAOPP13416000040612,ASAP,Driverless cars,"I think that driverless cars can be a good idea to have.Driverless cars will help people alot to stay safe on the roads,By which if someone loses their focus on the road, lets say if they get a text message first thing they want to do is look at the phone,and see what it says,having a driverless car will help because if they are to foucs
+
+on their phone the car will give you a sign that you are in danger and that will give you a heads up that you need to foucs on the on road.
+
+The driverless cars will have a lot of sensors that will help keep you safe.""The information from the sensors can cause to apply brakes on the individual wheel and reduce power from the engine,allowing far better contorl than a human driver alone."" The sensors also makes sure the driver has keeps hold of the wheel at all times.
+
+Also i feel like the number of accdients will go down and the law is all about keepinf drivers,passengers and pedestrians safe. Another reason why this will help, Is that new drivers are mostly
+
+nervous to start driving out for the first time. With this car i think will help them not be as nervous knowing that it will tell you when you are in danger and needs to slow down.
+
+They are worried they won't know who fault the accdient is but thats they same with most acdeints. They will have to solve it like everyone other case. I think having the driverless car will bring more postive than neagtive. I would like to see the out come of having the driverless cars to see how it affected things.",4.0,f,white,no,not economically disadvantaged,identified as having disability,RoBERTa,GRL,2.1696599,True
+AAAOPP13416000001315,ASAP,Driverless cars,"After reading the article and seeing both the positive and negative aspects of driverless cars, I have come to the conclusion that driverless cars are indeed safe. The features on them are more advanced than any other car out today. They are up to date on all technology as well.
+
+Most vehicular accidents are a result of human error, not a malfunction of the vehicle. By having driverless cars, it makes it so the operator of the vehicle does not have to do as much to maintain control of the vehicle. Therefore, it could reduce human error, making it safer for passengers in cars, as well as pedestrians. The driverless car warns the person operating the vehicle of upcoming potentially dangerous hazards and things like road construction.
+
+More advances are being made for smarter cars all the time, making them safer and better. Some examples of these advancements that are being considered include flashing lights on the windsheild, cameras that watch the operater of the vehicle, and other heads up displays. On top of all of that, the smarter cars already warn the operator when he or she needs to take full control over the vehicle if and when needed. This is one of the many things that make smarter cars safer.
+
+Even though they are often called ""driverless cars"", operators of the smarter car still have control of the vehicle, and must remain ready to take control if needed. It is almost like having safety insurance because it has two levels of protection. The smarter car watches the road and controls the car for you as you stay alert and watch the road as well. If for some reason the technology of the vehicle malfunctions, you can still manually avoid collisions and other dangerous situations.
+
+In conclusion, driverless cars are a safe alternative to regular cars. They have many more safety features and the operator still has control of the vehicle. They are always being improved as well. You can count on smarter cars to get you to your destination safely while being able to enjoy the ride. ",5.0,m,white,yes,not economically disadvantaged,not identified as having disability,RoBERTa,GRL,3.7306376,True
+87C607A0EF62,PERSUADE,Mandatory extracurricular activities,"You've probably heard the saying, ""Try new things."" You may be tired of hearing it, but it's actually a good thing to do. Being in extracurricular activities is a way to try new things that you might not have known you like. I think all students should participate in extracurricular activities because you can explore something you haven't before, you can make friends, and you might find that it's something you enjoy.
+
+Participating in an extracurricular activity allows you to explore different options that you haven't before. Trying new things is a good way to see what you like and dislike. You could realize that you love to play sports through extracurricular activities. You could also gain experience. Having experience in different fields can be helpful for academic and life purposes. Participating in an extracurricular activity might be helpful for the future. It could help with getting a job and it could end up being your career path. Getting the opportunity to explore new things is a reason you should participate in extracurricular activities.
+
+Making friends is also a bonus when you are in an activity. You can find people with similar interests as you. Starting conversations with others is easier if you're in the same activity as them. You could have fun while participating with others. Doing things with other people can make you enjoy the activity more. Participating is also an opportunity for you to meet new people you wouldn't have known if you weren't in an extracurricular activity. You could make long lasting friendships you wouldn't have made if you didn't participate. Being in an extracurricular activity is a fun way to make new friends.
+
+The downside is that you would be forced to be in an activity. If you are forced to do something, it can make the activity less fun. However, you could find that the activity is something you really like to do. You can find out new things about yourself or find a new hobby. Extracurricular activities are outlets for you to find new things that you enjoy.
+
+I think that students should participate in an extracurricular activity. You get to explore different things, you can make new friends, and you could find that the activity you're in is something you like to do. Even though you would be forced to participate, extracurricular activities are something everyone can enjoy.",5.0,f,black/african american,no,not economically disadvantaged,not identified as having disability,RoBERTa,GRL,3.7795422,True
+859F995E6AE7,PERSUADE,Exploring Venus,"The support of this idea and why is dngers study Venus is on the planet's surface, temperatures average over 800 degrees Fahrenheit, and the atmospheric pressure is 90 times greater than what we experience on our own planet. These contions are far more extreme than anything humas encounter on Earth. Venus has the hottesr suface temperature of any planet in our solar sytem. Venusian geology and weather present aditional impediments like erupting volcanes. Venus was prebably covered lagerly with oceans and could have supported various forms of life just like Earth. The planet has a surface of rocky sediment and includes familiar such as valleys, mountains, and craters. The National Aeronautics and Space Administration has one particularly compelling idea for sending humans to study Venus. NASA's possible solution to the hostile conditions on the surface of Venus would allow scientidts to float above the fray. Solar power would be plentiful, and radiation would not exeed Earth levels. Not easy conditions, but survivble for humans. Peering at Venus from shipnorbiting or hovering safely far above the planet can provide only limited insight on ground conditions because most forms of light cannot penetrate the dense atmosphere, rendering standard forms of photography and videography ineffective. More importantly, researchers cannot take samples of rock, gas, or anything else, from distance. NASA is working on other approaches to studying Venus. Striving to meet the challenge presented by venus has value, not only because of the insight to be gained itself, but also because human curiosity will likely lead us into many equally intimidating endeavors. Our travels on earth and beyond should not be limited by dangers and doubs but should be expanded to meet the very edges of imagination and innovation. ",3.0,m,hispanic/latino,yes,economically disadvantaged,not identified as having disability,RoBERTa,GRL,1.9640951,True
+C4700AD0EE9A,PERSUADE,Community service,"Mr. principle
+
+I think its a great idea for students to help out and join community service, you should require all students to join. Helping the community is very important because there aren't a lot of people who would take the time to help out.
+
+They probably think its a waist of time when its not. Not many people want to stop what there doing or some are just to busy. The community is a lot in need for some support and help, and we should give it to them if they need it.
+
+There are a bungle of things that students can help with, little elementary kids with hard school assignments that parents come home too late to help with.
+
+dirty ponds and lakes that need cleaning up, parks with loads of trash everywhere, buildings with nasty spray paint all over and senior citizens who need help around the house. Also on Halloween there's little kids who need to get around the area without trouble, and not all little kids have older brothers and sisters to take them.
+
+There are animal shelters and so much more they can do for the community.
+
+I have friends in the ninth grade who perform service to the community and it helps them with there high-school diploma. Some just do it because they think its right and a good thing. So that's why Mr. principle all of us and students should come together and do what we can for the community.            ",4.0,f,hispanic/latino,no,not economically disadvantaged,identified as having disability,RoBERTa,GRL,2.6431255,True
+F9CF17C68E82,PERSUADE,Community service,"Dear Principal,
+
+I think that all students should be required to take part in community service.
+
+It is a great way to connect yourself with your community and help out others who are less fortunate than you or the environment.
+
+As an eighth grader, I take part in tutoring some of the younger sixth graders at my school.
+
+I think of this as community service because I do not get paid for these actions.
+
+Also, it is community service because I am helping some of the younger children at my school understand what they are learning better.
+
+Some students might not want to take part in the community service at first.
+
+They might be reluctant to try.
+
+After beginning the process, those certain students might realize that by taking part in community service, you can learn more about yourself as well as the environment and others around you.
+
+The students who at first did not want to take part in the community service, might come to realize that they enjoy helping others and from doing so, benefit personally.
+
+An issue with requiring all students to perform in community service is the time commitment.
+
+Some busy students might decide that community service is not worth their time when they could be doing things that directly benefit themselves.
+
+For example, they might rather spend time with their friends than spend time with children in a homeless shelter.
+
+I think it is important that you understand that these students might take more time to convince to take part in your community service than others.
+
+You should not simply tell them to do the community service because they are required to but you should explain to them why it is so important and you have decided to put emphasis on it.
+
+I think that it is important for everyone to take part in making this world a better place.
+
+Community service is one way to get people to contribute to that.
+
+Students should show that they have a say and have their own individual rights.
+
+By helping others or the environment around you, students can show that they can change this world, one little step at a time.
+
+Community service could be that first little step.
+
+I find it very important for all students to take part in community service some time in their life.
+
+I think by making it a requirement for the students that attend our school, everyone will find that community service helps to better understand yourself as well as others.
+
+It is a great opportunity that we should all take advantage of.
+
+Sincerely,
+
+Your student",4.0,f,white,no,not economically disadvantaged,not identified as having disability,RoBERTa,GRL,3.8765264,True
+EC025D0FFD23,PERSUADE,Grades for extracurricular activities,"Dear, TEACHER_NAME
+
+I think that it should be at least a B grade average to participate in sports because when you try to get into college they will not except C average. Plus if the student really wanted to play sports they get a B average. And that would be better for us in the future when we are trying to get into college. Don't in college they look at your grade from the past years to see if you qualify for what ever college you are trying to get into.
+
+A B grade average is not really hard to get if we pay attention and do all of our homework and assignments. And in high school the coaches for the sports teams want students to get at least a 3.5 grade average so if students get use to having a b grade average then when they get in to high school they will already know what they have to do if they want to plat sports. There are probably students who already have B grade averages so it won't make a difference to them.
+
+If most you know that most kids have a C grade average and you want to change the policy then all the students that have below a B grade average should have to attend a after school program. There they get help with there homework and do make-up work until there grade gets up but if they don't even try to get there grade raised then they should get kicked off any activity that they do unless they get there grade up.",4.0,m,black/african american,no,economically disadvantaged,not identified as having disability,RoBERTa,GRL,2.6481588,True
+9504EDD8FE31,PERSUADE,Cell phones at school,"Dear Principal,
+
+I highly encourage you to set the policy number 1 where you allow students to bring cell phones to school. I believe cell phones are necessary for young students because its a way to communicate with parents, friends and other people quickly and fairly easily. I believe outlawing cell phones in schools can be a safety issue to students who live fairly far from the school for the simple fact that they won't have any form of communication with their families. Also I believe allowing cell phones can now help a student academically.
+
+With recent advances in technology we are able to do more with a cell phone than just talk and text message. With phones such as the IPhone, Blackberry and the Droid we are able to use phone applications to do everything from web-surfing to education. If cell phones are allowed in schools they can be used productively during class to distribute homework, notes and to do research for projects. Even if the cell phones can only be on during lunch or other free periods it can help students be more focused in school instead of wondering what new texts they got or trying to secretly text their parents during an emergency.
+
+Though allowing cell phones to school can be highly beneficial, i believe the students should be reminded that it is a privilege not a right. I understand the saying ""give a man a inch and he'll try to take miles"" and I know when some students are given opportunities they try to ""push the envelope"" and try to over use the opportunity. I believe that if you allow the policy number one but a cell phone is out in class when it is not a true emergency, that the phone should be confiscated and given to the students parents. I also believe that constant offenders of that rule should be excluded from the policy and are forced to not bring their phone to school.
+
+I believe cell phones are extremely important and passing the first policy in opposition to the second will can be beneficial to students, parents and even the school if they decide to take advantage of the opportunities given by this policy. This can make students morally happy and make them work harder opposed to the other policy which can upset students and decrease their production rate. This opportunity is golden and all we need is for you to put it in affect.",5.0,m,black/african american,no,not economically disadvantaged,not identified as having disability,RoBERTa,GRL,3.8971891,True
+8027D8B7844F,PERSUADE,Cell phones at school,"The principal should let students have there phone during free times because they might have missed a class time thinking about something else and then when they go back to that class they will not know what to do. then when a test comes up they will not know and then they will fail the test .
+
+But if they do let them have there phones out during there free time and there know class periods going on they can call or text there friends and see what was there home work or what they did during in that class period if they were not following along. That would be there fault.
+
+If they could have there cell phones they might not because they can ask there friends to explain it to them if they later at lunch or to see if they can go there house later to have them show it to them and then they can text or call there parents to see if they can go or not and they can then the parents can call the school then the kids can go home with a friend to have them show what to do and what they did during class time.
+
+Then the students can talk to there friends to see what has been going and to see if they want to meet somewhere for they can talk and to see what they have been doing all day and see if they had a good day or a bad day in school so far. so that's what they should do because they students are hurting the class time and there education so why not there still following along in class there still learning and what need to know about what was going on in this world. and learn every thing they need to know . plus if do not then buddies they might tell them what they want to them but they don't they might not following along in class because there wondering about there going to say during and not follow along.
+
+i think this should be the policy because it could help out a lot with them",4.0,m,white,no,economically disadvantaged,identified as having disability,RoBERTa,GRL,2.7724285,True
+27A2E22A4634,PERSUADE,Distance learning,"Some believe that is better to teach children at home whereas the majority of people believe that it is highly recommended to send them to school for their better development. In my opinion it is more appropriate to send students to school instead of teaching them at home. Students would benefit from being able to attend classes because it can be motivated, and distance learning is not good because it would make cheating easier, there would be less social interaction, ad they would need to be highly motivated.
+
+One of the biggest advantages of go to school is to improve their social capacity. Students will develop social skill when they are admitted to school by interacting with their teachers and classmates. Because they come from diverse family background and have different financial statements, students tend to learn a lot from each other and more likely to realize. For example, to name a few, a bout other religions or moral practices of his peers or they can learn the habits of dressing or the way of talking about his peers.
+
+Secondly, the growth and development of the students is assessed on a regularly basis by conducting tests, homework in a school in this area of high competition among schools to gain popularity, this process will have impact on students will make them ready to sustain in the really changeling world. For example in this area they can prove their learning, ability, and dedication.
+
+On the contrary, teaching children at homo also has few advantages. If students are taught at home, with full attention and focus on the child, he is more likely to understand the subject well. Secondly, student can be taught in a more amicable way and be more comfortable when they are accompanied by their family at home. But they not make new friends or socialize with different people. Also some parents do not always have the time to supervise their children for that reason it is better that they go to school to receive better supervise and education.
+
+In conclusion, both approaches have their own advantages, but sending the student to school will make him more successful in his life, while teaching him at home may result lower rates for education, but he will not be competent in the world. Also attend to school make the student stronger with more benefits to share with the world and their improve their social capacity with other people.          ",5.0,f,hispanic/latino,yes,economically disadvantaged,not identified as having disability,RoBERTa,GRL,4.0090494,True
+AAAOPP13416000072397,ASAP,"""A Cowboy Who Rode the Waves""","Luke was a Sea Cowboy from a small town, but before he had became a Sea Cowboy he had a wife. He was a hard work at the Grocery Store and the Bank to make sure his family was sacure.Then, one day, he was given an amazing opportunity. His friend, Don Reist, invited him to go to Europe on a cattle boat,and Luke couldn't resiest.
+
+After he arrived in Europe, World War ll was just ending.So,he help the people get food supplies,animals,and more.44 nations joined together and esablished the UNRRA.The UNRRA is the,United Nations Relief and Rehabilition Adminiistration.They arrived in Europe on August 14.
+
+After a while they recieved Seamen papers and boarded the SS Charles W Wooster.They were on thier way to Greece, but befor they had reached Greece,Luke had turned 18.So, now he was able to be militaried. He was discharged in 1947, and had already made 9 trips.Luke made the most trips and Sea Cowboy had ever had.
+
+To many people the Cattle-Boat-Trips were an unbelievable opportunity for any small-town-boy.It made Luke feel special in some type of way. He also, thought that the apcrolipis in Greece was special to him. A little while after this he wnt on another trip. It took 2 months to cross the Atlantic Ocean From the eastern part of America, and a month to get to China.During the trip he served as the night watch man.
+
+Luke love to have fun.So, on the return trips he had some fun. Being a Sea Cowboy opened up many differenent thing to him. So in Conulison, being in this point of view is a graet way to let people do the same thing.",3.0,f,black/african american,no,economically disadvantaged,not identified as having disability,Longformer,baseline,2.0035934,True
+AAAOPP13416000001740,ASAP,"""A Cowboy Who Rode the Waves""","Luke is trying to convince others to particicipate in the Seagoing Cowboys theses are the reasons i chose.
+
+One of the reasons is it gives cowboys a chance to help people around the wolrd. One way the cowboys can help is by heping do farm work. The second way the cowboys can help is by tending to the peoples' animals. After that, The cowboys is serve as a nightwhatch to make sure no one tries to steal the cattle or horses.
+
+The second reason is the cowboys can go sight seeing to see thing that they never knew existed. One thing the cowboys saw was on their way to China, when they toured an excavated castle in Crete and marveled at the Punama Canal. The second thing the cowboys saw was the Acropolis in Greece. The lastf thing that they did was go on a gondola ride in Vinice, Italy a city with streets of water.
+
+The third and last reason is the fun on board. On the return trips after the animals had been unloaded, they played basketball and volleyball. They would do these activities in the holds where the animals had been housed. They would also play table-tennis tournaments, fencing, boxing, reading, whitting, and games also help to pass the time.
+
+In conclution, The Seagoing Cowboy Program would be an adventure to expirience the world, and do things that you've never done before on this journey of a lifetime opportunity.",4.0,f,black/african american,no,economically disadvantaged,not identified as having disability,Longformer,baseline,2.4936442,True
+AAAOPP13416000046855,ASAP,The Face on Mars,"The head is just a huge rock formation on the planet Cydonia. That huge head could be a big hill that has holes in it. When the Mars Orbiter Camera team went up and saw the face, they just said it was a natural landform and no alien monument after all. They went up there a second time and said that it looks like the Middle Butte in the Snake River Plain of Idaho. The face takes form of a lava dome isolated mesa about the same height sa the Face on Mars.
+
+My team went up in space and caught a few shots at the face. We can compare the 1976, 1998, and 2001 and now we can see what it is. The Face is actually something that we have on our planet. We can compare a lava dome and the mask to see if the mask is actually just a huge rock. These are the pictures we showed to the world that the face is just a big rock.",3.0,m,white,yes,economically disadvantaged,not identified as having disability,Longformer,baseline,1.8449012,True
+AAAOPP13416000045917,ASAP,The Face on Mars,"The Face on Mars was discovered in 1976 by Viking 1 while searching for landing sites for Viking 2. Some think it was created by aliens. NASA has said that it is just a rock formation. Some agree with NASA,others disagree. Either way the Face has sparked controversy and has appeared in a movie,books,magizenes,checkout lines,and radio talk shows.
+
+First of all,according to NASA such rock formations are common and so while it might have been a surprise, the sensation was short lived. Also,according to the passage,such formations are common on Earth as well as on Mars.
+
+Secondly,the Face sparked enough controversy that NASA had to go back twice to see if the the Face even looked like a face. The 1st time it was too cloudy to get a good picture but the 2nd time they got a good picture,and as it turned out the Face didn't even look like a face when looked at up close.
+
+Finally,why would NASA lie? Defenders of the NASA budget themselves wish that there was an ancient civilization on Mars. A civilization on Mars would help NASA's budget by giving them more money,so why would they be hiding anything.
+
+In conclusion,the Face probably wasn't created by aliens. Such formations are common on Mars and on Earth. The Face doesn't even look like a face when viewed up close. Lastly an ancient civilization would benefit NASA so they would have no reason to keep evidence of one from the public.",4.0,m,white,no,not economically disadvantaged,identified as having disability,Longformer,baseline,2.687476,True
+AAAVUP14319000111977,ASAP,Exploring Venus,"Do you know why they say studying venus is a worthy pursuit despite the dangers it presents? i will be giving claims about this idea from the article to help you understand this idea about studying venus. My thesis is talking abuut venus.
+
+Venus is not always called venus they also call it the ""Evening Star"" because it's one of the brightest points of light in the night sky. It makes it simple for even an amateur stargazer to spot. The nickname is misleading because it's a planet and a star. If you didn't know this venus is the second planet from the sun so, venus is right in front of us. Venus is simple to see from the distant but safe vantage point of earth, it has proved a very challenging place to examine more closely.
+
+Venus is also called earth's twin because it is the closest planet to earth, density, size and occasionally the closest in distance too. In venus a thick atmosphere of almost 97% carbon dioxide covers venus.Even more challenging are the clouds of highly corrosive sulfuric acid in venus's atmosphere. Earth, venus and mars are neighbors, their speeds are meanly different because sometimes we are closer to mars. Other times we are closer to venus, it's random
+
+because of the speed that the three planets travel around the sun.
+
+The National Aeronautics Space Administration (NASA) has one particularly compelling idea for sending humans to study venus in venus. NASA has devices that were first envision in the 1800s and played an important role in the 1940s during the World War II. ",3.0,m,hispanic/latino,yes,not economically disadvantaged,not identified as having disability,Longformer,baseline,1.74968,True
+AAAVUP14319000048322,ASAP,Exploring Venus,"Kids dream about going to space and see all the planets.
+
+In ""The challenge of Exploring Venus"", the author supports the idea that studyuing Venus is a worthy pursuit despite the dangers bceause Venus sometimes has problems, and also NASA are sending humans to study about the venus
+
+The first reason why studying Venus is a worthy pursuit despite is because the Venus has problems at times. Sometimes we could be way more closer to Mars or soemtimes Venus, It depends which one is in the corner. The Earth, Mars, and Venus are all close to each other. ""not a single spaceship has touched down on Venus in more than three decades."" This quote explains the issue that Venus has been having. "" Numerous factors contribue to Venu's reputation as a challenging planet for humas to study, despite promimity to us."" This shows that people has been studying and trying to find what is wrong with Venus and why a spaceship has not landed.
+
+The last reason why studying Venus is a worthy pusuite despite is because the NASA are sending humans to study about Venus. Venus would allow scientists to float above the fray. "" Imagine a blimp-like vehicle hovering 30 or so miles above the roiling venusian landscape.' In this quote they are giving an example on how it feels to float around venus. ""Mnay researchers are workng on innovations that woukld allow our mahcines to last long enough to contribue meaningfully to our konowledge of Venus."" This quote explains that they are trying to make the venu more close up.
+
+In the article ""The Challenge of Exploring Venus"", the author supports the idea that studying Venus is a worthy pursuit despite the dangers it presents because Venus sometimes has probelms and also NASA are sending humnas ton study about thr venus. ",4.0,f,hispanic/latino,yes,economically disadvantaged,not identified as having disability,Longformer,baseline,2.9272742,True
+AAAOPP13416000040612,ASAP,Driverless cars,"I think that driverless cars can be a good idea to have.Driverless cars will help people alot to stay safe on the roads,By which if someone loses their focus on the road, lets say if they get a text message first thing they want to do is look at the phone,and see what it says,having a driverless car will help because if they are to foucs
+
+on their phone the car will give you a sign that you are in danger and that will give you a heads up that you need to foucs on the on road.
+
+The driverless cars will have a lot of sensors that will help keep you safe.""The information from the sensors can cause to apply brakes on the individual wheel and reduce power from the engine,allowing far better contorl than a human driver alone."" The sensors also makes sure the driver has keeps hold of the wheel at all times.
+
+Also i feel like the number of accdients will go down and the law is all about keepinf drivers,passengers and pedestrians safe. Another reason why this will help, Is that new drivers are mostly
+
+nervous to start driving out for the first time. With this car i think will help them not be as nervous knowing that it will tell you when you are in danger and needs to slow down.
+
+They are worried they won't know who fault the accdient is but thats they same with most acdeints. They will have to solve it like everyone other case. I think having the driverless car will bring more postive than neagtive. I would like to see the out come of having the driverless cars to see how it affected things.",4.0,f,white,no,not economically disadvantaged,identified as having disability,Longformer,baseline,2.6620283,True
+AAAOPP13416000001315,ASAP,Driverless cars,"After reading the article and seeing both the positive and negative aspects of driverless cars, I have come to the conclusion that driverless cars are indeed safe. The features on them are more advanced than any other car out today. They are up to date on all technology as well.
+
+Most vehicular accidents are a result of human error, not a malfunction of the vehicle. By having driverless cars, it makes it so the operator of the vehicle does not have to do as much to maintain control of the vehicle. Therefore, it could reduce human error, making it safer for passengers in cars, as well as pedestrians. The driverless car warns the person operating the vehicle of upcoming potentially dangerous hazards and things like road construction.
+
+More advances are being made for smarter cars all the time, making them safer and better. Some examples of these advancements that are being considered include flashing lights on the windsheild, cameras that watch the operater of the vehicle, and other heads up displays. On top of all of that, the smarter cars already warn the operator when he or she needs to take full control over the vehicle if and when needed. This is one of the many things that make smarter cars safer.
+
+Even though they are often called ""driverless cars"", operators of the smarter car still have control of the vehicle, and must remain ready to take control if needed. It is almost like having safety insurance because it has two levels of protection. The smarter car watches the road and controls the car for you as you stay alert and watch the road as well. If for some reason the technology of the vehicle malfunctions, you can still manually avoid collisions and other dangerous situations.
+
+In conclusion, driverless cars are a safe alternative to regular cars. They have many more safety features and the operator still has control of the vehicle. They are always being improved as well. You can count on smarter cars to get you to your destination safely while being able to enjoy the ride. ",5.0,m,white,yes,not economically disadvantaged,not identified as having disability,Longformer,baseline,3.4487402,True
+87C607A0EF62,PERSUADE,Mandatory extracurricular activities,"You've probably heard the saying, ""Try new things."" You may be tired of hearing it, but it's actually a good thing to do. Being in extracurricular activities is a way to try new things that you might not have known you like. I think all students should participate in extracurricular activities because you can explore something you haven't before, you can make friends, and you might find that it's something you enjoy.
+
+Participating in an extracurricular activity allows you to explore different options that you haven't before. Trying new things is a good way to see what you like and dislike. You could realize that you love to play sports through extracurricular activities. You could also gain experience. Having experience in different fields can be helpful for academic and life purposes. Participating in an extracurricular activity might be helpful for the future. It could help with getting a job and it could end up being your career path. Getting the opportunity to explore new things is a reason you should participate in extracurricular activities.
+
+Making friends is also a bonus when you are in an activity. You can find people with similar interests as you. Starting conversations with others is easier if you're in the same activity as them. You could have fun while participating with others. Doing things with other people can make you enjoy the activity more. Participating is also an opportunity for you to meet new people you wouldn't have known if you weren't in an extracurricular activity. You could make long lasting friendships you wouldn't have made if you didn't participate. Being in an extracurricular activity is a fun way to make new friends.
+
+The downside is that you would be forced to be in an activity. If you are forced to do something, it can make the activity less fun. However, you could find that the activity is something you really like to do. You can find out new things about yourself or find a new hobby. Extracurricular activities are outlets for you to find new things that you enjoy.
+
+I think that students should participate in an extracurricular activity. You get to explore different things, you can make new friends, and you could find that the activity you're in is something you like to do. Even though you would be forced to participate, extracurricular activities are something everyone can enjoy.",5.0,f,black/african american,no,not economically disadvantaged,not identified as having disability,Longformer,baseline,4.0111337,True
+859F995E6AE7,PERSUADE,Exploring Venus,"The support of this idea and why is dngers study Venus is on the planet's surface, temperatures average over 800 degrees Fahrenheit, and the atmospheric pressure is 90 times greater than what we experience on our own planet. These contions are far more extreme than anything humas encounter on Earth. Venus has the hottesr suface temperature of any planet in our solar sytem. Venusian geology and weather present aditional impediments like erupting volcanes. Venus was prebably covered lagerly with oceans and could have supported various forms of life just like Earth. The planet has a surface of rocky sediment and includes familiar such as valleys, mountains, and craters. The National Aeronautics and Space Administration has one particularly compelling idea for sending humans to study Venus. NASA's possible solution to the hostile conditions on the surface of Venus would allow scientidts to float above the fray. Solar power would be plentiful, and radiation would not exeed Earth levels. Not easy conditions, but survivble for humans. Peering at Venus from shipnorbiting or hovering safely far above the planet can provide only limited insight on ground conditions because most forms of light cannot penetrate the dense atmosphere, rendering standard forms of photography and videography ineffective. More importantly, researchers cannot take samples of rock, gas, or anything else, from distance. NASA is working on other approaches to studying Venus. Striving to meet the challenge presented by venus has value, not only because of the insight to be gained itself, but also because human curiosity will likely lead us into many equally intimidating endeavors. Our travels on earth and beyond should not be limited by dangers and doubs but should be expanded to meet the very edges of imagination and innovation. ",3.0,m,hispanic/latino,yes,economically disadvantaged,not identified as having disability,Longformer,baseline,1.8840514,True
+C4700AD0EE9A,PERSUADE,Community service,"Mr. principle
+
+I think its a great idea for students to help out and join community service, you should require all students to join. Helping the community is very important because there aren't a lot of people who would take the time to help out.
+
+They probably think its a waist of time when its not. Not many people want to stop what there doing or some are just to busy. The community is a lot in need for some support and help, and we should give it to them if they need it.
+
+There are a bungle of things that students can help with, little elementary kids with hard school assignments that parents come home too late to help with.
+
+dirty ponds and lakes that need cleaning up, parks with loads of trash everywhere, buildings with nasty spray paint all over and senior citizens who need help around the house. Also on Halloween there's little kids who need to get around the area without trouble, and not all little kids have older brothers and sisters to take them.
+
+There are animal shelters and so much more they can do for the community.
+
+I have friends in the ninth grade who perform service to the community and it helps them with there high-school diploma. Some just do it because they think its right and a good thing. So that's why Mr. principle all of us and students should come together and do what we can for the community.            ",4.0,f,hispanic/latino,no,not economically disadvantaged,identified as having disability,Longformer,baseline,2.607762,True
+F9CF17C68E82,PERSUADE,Community service,"Dear Principal,
+
+I think that all students should be required to take part in community service.
+
+It is a great way to connect yourself with your community and help out others who are less fortunate than you or the environment.
+
+As an eighth grader, I take part in tutoring some of the younger sixth graders at my school.
+
+I think of this as community service because I do not get paid for these actions.
+
+Also, it is community service because I am helping some of the younger children at my school understand what they are learning better.
+
+Some students might not want to take part in the community service at first.
+
+They might be reluctant to try.
+
+After beginning the process, those certain students might realize that by taking part in community service, you can learn more about yourself as well as the environment and others around you.
+
+The students who at first did not want to take part in the community service, might come to realize that they enjoy helping others and from doing so, benefit personally.
+
+An issue with requiring all students to perform in community service is the time commitment.
+
+Some busy students might decide that community service is not worth their time when they could be doing things that directly benefit themselves.
+
+For example, they might rather spend time with their friends than spend time with children in a homeless shelter.
+
+I think it is important that you understand that these students might take more time to convince to take part in your community service than others.
+
+You should not simply tell them to do the community service because they are required to but you should explain to them why it is so important and you have decided to put emphasis on it.
+
+I think that it is important for everyone to take part in making this world a better place.
+
+Community service is one way to get people to contribute to that.
+
+Students should show that they have a say and have their own individual rights.
+
+By helping others or the environment around you, students can show that they can change this world, one little step at a time.
+
+Community service could be that first little step.
+
+I find it very important for all students to take part in community service some time in their life.
+
+I think by making it a requirement for the students that attend our school, everyone will find that community service helps to better understand yourself as well as others.
+
+It is a great opportunity that we should all take advantage of.
+
+Sincerely,
+
+Your student",4.0,f,white,no,not economically disadvantaged,not identified as having disability,Longformer,baseline,3.6505308,True
+EC025D0FFD23,PERSUADE,Grades for extracurricular activities,"Dear, TEACHER_NAME
+
+I think that it should be at least a B grade average to participate in sports because when you try to get into college they will not except C average. Plus if the student really wanted to play sports they get a B average. And that would be better for us in the future when we are trying to get into college. Don't in college they look at your grade from the past years to see if you qualify for what ever college you are trying to get into.
+
+A B grade average is not really hard to get if we pay attention and do all of our homework and assignments. And in high school the coaches for the sports teams want students to get at least a 3.5 grade average so if students get use to having a b grade average then when they get in to high school they will already know what they have to do if they want to plat sports. There are probably students who already have B grade averages so it won't make a difference to them.
+
+If most you know that most kids have a C grade average and you want to change the policy then all the students that have below a B grade average should have to attend a after school program. There they get help with there homework and do make-up work until there grade gets up but if they don't even try to get there grade raised then they should get kicked off any activity that they do unless they get there grade up.",4.0,m,black/african american,no,economically disadvantaged,not identified as having disability,Longformer,baseline,2.6338255,True
+9504EDD8FE31,PERSUADE,Cell phones at school,"Dear Principal,
+
+I highly encourage you to set the policy number 1 where you allow students to bring cell phones to school. I believe cell phones are necessary for young students because its a way to communicate with parents, friends and other people quickly and fairly easily. I believe outlawing cell phones in schools can be a safety issue to students who live fairly far from the school for the simple fact that they won't have any form of communication with their families. Also I believe allowing cell phones can now help a student academically.
+
+With recent advances in technology we are able to do more with a cell phone than just talk and text message. With phones such as the IPhone, Blackberry and the Droid we are able to use phone applications to do everything from web-surfing to education. If cell phones are allowed in schools they can be used productively during class to distribute homework, notes and to do research for projects. Even if the cell phones can only be on during lunch or other free periods it can help students be more focused in school instead of wondering what new texts they got or trying to secretly text their parents during an emergency.
+
+Though allowing cell phones to school can be highly beneficial, i believe the students should be reminded that it is a privilege not a right. I understand the saying ""give a man a inch and he'll try to take miles"" and I know when some students are given opportunities they try to ""push the envelope"" and try to over use the opportunity. I believe that if you allow the policy number one but a cell phone is out in class when it is not a true emergency, that the phone should be confiscated and given to the students parents. I also believe that constant offenders of that rule should be excluded from the policy and are forced to not bring their phone to school.
+
+I believe cell phones are extremely important and passing the first policy in opposition to the second will can be beneficial to students, parents and even the school if they decide to take advantage of the opportunities given by this policy. This can make students morally happy and make them work harder opposed to the other policy which can upset students and decrease their production rate. This opportunity is golden and all we need is for you to put it in affect.",5.0,m,black/african american,no,not economically disadvantaged,not identified as having disability,Longformer,baseline,3.9866884,True
+8027D8B7844F,PERSUADE,Cell phones at school,"The principal should let students have there phone during free times because they might have missed a class time thinking about something else and then when they go back to that class they will not know what to do. then when a test comes up they will not know and then they will fail the test .
+
+But if they do let them have there phones out during there free time and there know class periods going on they can call or text there friends and see what was there home work or what they did during in that class period if they were not following along. That would be there fault.
+
+If they could have there cell phones they might not because they can ask there friends to explain it to them if they later at lunch or to see if they can go there house later to have them show it to them and then they can text or call there parents to see if they can go or not and they can then the parents can call the school then the kids can go home with a friend to have them show what to do and what they did during class time.
+
+Then the students can talk to there friends to see what has been going and to see if they want to meet somewhere for they can talk and to see what they have been doing all day and see if they had a good day or a bad day in school so far. so that's what they should do because they students are hurting the class time and there education so why not there still following along in class there still learning and what need to know about what was going on in this world. and learn every thing they need to know . plus if do not then buddies they might tell them what they want to them but they don't they might not following along in class because there wondering about there going to say during and not follow along.
+
+i think this should be the policy because it could help out a lot with them",4.0,m,white,no,economically disadvantaged,identified as having disability,Longformer,baseline,2.570435,True
+27A2E22A4634,PERSUADE,Distance learning,"Some believe that is better to teach children at home whereas the majority of people believe that it is highly recommended to send them to school for their better development. In my opinion it is more appropriate to send students to school instead of teaching them at home. Students would benefit from being able to attend classes because it can be motivated, and distance learning is not good because it would make cheating easier, there would be less social interaction, ad they would need to be highly motivated.
+
+One of the biggest advantages of go to school is to improve their social capacity. Students will develop social skill when they are admitted to school by interacting with their teachers and classmates. Because they come from diverse family background and have different financial statements, students tend to learn a lot from each other and more likely to realize. For example, to name a few, a bout other religions or moral practices of his peers or they can learn the habits of dressing or the way of talking about his peers.
+
+Secondly, the growth and development of the students is assessed on a regularly basis by conducting tests, homework in a school in this area of high competition among schools to gain popularity, this process will have impact on students will make them ready to sustain in the really changeling world. For example in this area they can prove their learning, ability, and dedication.
+
+On the contrary, teaching children at homo also has few advantages. If students are taught at home, with full attention and focus on the child, he is more likely to understand the subject well. Secondly, student can be taught in a more amicable way and be more comfortable when they are accompanied by their family at home. But they not make new friends or socialize with different people. Also some parents do not always have the time to supervise their children for that reason it is better that they go to school to receive better supervise and education.
+
+In conclusion, both approaches have their own advantages, but sending the student to school will make him more successful in his life, while teaching him at home may result lower rates for education, but he will not be competent in the world. Also attend to school make the student stronger with more benefits to share with the world and their improve their social capacity with other people.          ",5.0,f,hispanic/latino,yes,economically disadvantaged,not identified as having disability,Longformer,baseline,3.6534262,True
+AAAOPP13416000072397,ASAP,"""A Cowboy Who Rode the Waves""","Luke was a Sea Cowboy from a small town, but before he had became a Sea Cowboy he had a wife. He was a hard work at the Grocery Store and the Bank to make sure his family was sacure.Then, one day, he was given an amazing opportunity. His friend, Don Reist, invited him to go to Europe on a cattle boat,and Luke couldn't resiest.
+
+After he arrived in Europe, World War ll was just ending.So,he help the people get food supplies,animals,and more.44 nations joined together and esablished the UNRRA.The UNRRA is the,United Nations Relief and Rehabilition Adminiistration.They arrived in Europe on August 14.
+
+After a while they recieved Seamen papers and boarded the SS Charles W Wooster.They were on thier way to Greece, but befor they had reached Greece,Luke had turned 18.So, now he was able to be militaried. He was discharged in 1947, and had already made 9 trips.Luke made the most trips and Sea Cowboy had ever had.
+
+To many people the Cattle-Boat-Trips were an unbelievable opportunity for any small-town-boy.It made Luke feel special in some type of way. He also, thought that the apcrolipis in Greece was special to him. A little while after this he wnt on another trip. It took 2 months to cross the Atlantic Ocean From the eastern part of America, and a month to get to China.During the trip he served as the night watch man.
+
+Luke love to have fun.So, on the return trips he had some fun. Being a Sea Cowboy opened up many differenent thing to him. So in Conulison, being in this point of view is a graet way to let people do the same thing.",3.0,f,black/african american,no,economically disadvantaged,not identified as having disability,Longformer,GRL,2.1490438,True
+AAAOPP13416000001740,ASAP,"""A Cowboy Who Rode the Waves""","Luke is trying to convince others to particicipate in the Seagoing Cowboys theses are the reasons i chose.
+
+One of the reasons is it gives cowboys a chance to help people around the wolrd. One way the cowboys can help is by heping do farm work. The second way the cowboys can help is by tending to the peoples' animals. After that, The cowboys is serve as a nightwhatch to make sure no one tries to steal the cattle or horses.
+
+The second reason is the cowboys can go sight seeing to see thing that they never knew existed. One thing the cowboys saw was on their way to China, when they toured an excavated castle in Crete and marveled at the Punama Canal. The second thing the cowboys saw was the Acropolis in Greece. The lastf thing that they did was go on a gondola ride in Vinice, Italy a city with streets of water.
+
+The third and last reason is the fun on board. On the return trips after the animals had been unloaded, they played basketball and volleyball. They would do these activities in the holds where the animals had been housed. They would also play table-tennis tournaments, fencing, boxing, reading, whitting, and games also help to pass the time.
+
+In conclution, The Seagoing Cowboy Program would be an adventure to expirience the world, and do things that you've never done before on this journey of a lifetime opportunity.",4.0,f,black/african american,no,economically disadvantaged,not identified as having disability,Longformer,GRL,2.6763213,True
+AAAOPP13416000046855,ASAP,The Face on Mars,"The head is just a huge rock formation on the planet Cydonia. That huge head could be a big hill that has holes in it. When the Mars Orbiter Camera team went up and saw the face, they just said it was a natural landform and no alien monument after all. They went up there a second time and said that it looks like the Middle Butte in the Snake River Plain of Idaho. The face takes form of a lava dome isolated mesa about the same height sa the Face on Mars.
+
+My team went up in space and caught a few shots at the face. We can compare the 1976, 1998, and 2001 and now we can see what it is. The Face is actually something that we have on our planet. We can compare a lava dome and the mask to see if the mask is actually just a huge rock. These are the pictures we showed to the world that the face is just a big rock.",3.0,m,white,yes,economically disadvantaged,not identified as having disability,Longformer,GRL,1.9846588,True
+AAAOPP13416000045917,ASAP,The Face on Mars,"The Face on Mars was discovered in 1976 by Viking 1 while searching for landing sites for Viking 2. Some think it was created by aliens. NASA has said that it is just a rock formation. Some agree with NASA,others disagree. Either way the Face has sparked controversy and has appeared in a movie,books,magizenes,checkout lines,and radio talk shows.
+
+First of all,according to NASA such rock formations are common and so while it might have been a surprise, the sensation was short lived. Also,according to the passage,such formations are common on Earth as well as on Mars.
+
+Secondly,the Face sparked enough controversy that NASA had to go back twice to see if the the Face even looked like a face. The 1st time it was too cloudy to get a good picture but the 2nd time they got a good picture,and as it turned out the Face didn't even look like a face when looked at up close.
+
+Finally,why would NASA lie? Defenders of the NASA budget themselves wish that there was an ancient civilization on Mars. A civilization on Mars would help NASA's budget by giving them more money,so why would they be hiding anything.
+
+In conclusion,the Face probably wasn't created by aliens. Such formations are common on Mars and on Earth. The Face doesn't even look like a face when viewed up close. Lastly an ancient civilization would benefit NASA so they would have no reason to keep evidence of one from the public.",4.0,m,white,no,not economically disadvantaged,identified as having disability,Longformer,GRL,3.0285487,True
+AAAVUP14319000111977,ASAP,Exploring Venus,"Do you know why they say studying venus is a worthy pursuit despite the dangers it presents? i will be giving claims about this idea from the article to help you understand this idea about studying venus. My thesis is talking abuut venus.
+
+Venus is not always called venus they also call it the ""Evening Star"" because it's one of the brightest points of light in the night sky. It makes it simple for even an amateur stargazer to spot. The nickname is misleading because it's a planet and a star. If you didn't know this venus is the second planet from the sun so, venus is right in front of us. Venus is simple to see from the distant but safe vantage point of earth, it has proved a very challenging place to examine more closely.
+
+Venus is also called earth's twin because it is the closest planet to earth, density, size and occasionally the closest in distance too. In venus a thick atmosphere of almost 97% carbon dioxide covers venus.Even more challenging are the clouds of highly corrosive sulfuric acid in venus's atmosphere. Earth, venus and mars are neighbors, their speeds are meanly different because sometimes we are closer to mars. Other times we are closer to venus, it's random
+
+because of the speed that the three planets travel around the sun.
+
+The National Aeronautics Space Administration (NASA) has one particularly compelling idea for sending humans to study venus in venus. NASA has devices that were first envision in the 1800s and played an important role in the 1940s during the World War II. ",3.0,m,hispanic/latino,yes,not economically disadvantaged,not identified as having disability,Longformer,GRL,1.8422084,True
+AAAVUP14319000048322,ASAP,Exploring Venus,"Kids dream about going to space and see all the planets.
+
+In ""The challenge of Exploring Venus"", the author supports the idea that studyuing Venus is a worthy pursuit despite the dangers bceause Venus sometimes has problems, and also NASA are sending humans to study about the venus
+
+The first reason why studying Venus is a worthy pursuit despite is because the Venus has problems at times. Sometimes we could be way more closer to Mars or soemtimes Venus, It depends which one is in the corner. The Earth, Mars, and Venus are all close to each other. ""not a single spaceship has touched down on Venus in more than three decades."" This quote explains the issue that Venus has been having. "" Numerous factors contribue to Venu's reputation as a challenging planet for humas to study, despite promimity to us."" This shows that people has been studying and trying to find what is wrong with Venus and why a spaceship has not landed.
+
+The last reason why studying Venus is a worthy pusuite despite is because the NASA are sending humans to study about Venus. Venus would allow scientists to float above the fray. "" Imagine a blimp-like vehicle hovering 30 or so miles above the roiling venusian landscape.' In this quote they are giving an example on how it feels to float around venus. ""Mnay researchers are workng on innovations that woukld allow our mahcines to last long enough to contribue meaningfully to our konowledge of Venus."" This quote explains that they are trying to make the venu more close up.
+
+In the article ""The Challenge of Exploring Venus"", the author supports the idea that studying Venus is a worthy pursuit despite the dangers it presents because Venus sometimes has probelms and also NASA are sending humnas ton study about thr venus. ",4.0,f,hispanic/latino,yes,economically disadvantaged,not identified as having disability,Longformer,GRL,2.726067,True
+AAAOPP13416000040612,ASAP,Driverless cars,"I think that driverless cars can be a good idea to have.Driverless cars will help people alot to stay safe on the roads,By which if someone loses their focus on the road, lets say if they get a text message first thing they want to do is look at the phone,and see what it says,having a driverless car will help because if they are to foucs
+
+on their phone the car will give you a sign that you are in danger and that will give you a heads up that you need to foucs on the on road.
+
+The driverless cars will have a lot of sensors that will help keep you safe.""The information from the sensors can cause to apply brakes on the individual wheel and reduce power from the engine,allowing far better contorl than a human driver alone."" The sensors also makes sure the driver has keeps hold of the wheel at all times.
+
+Also i feel like the number of accdients will go down and the law is all about keepinf drivers,passengers and pedestrians safe. Another reason why this will help, Is that new drivers are mostly
+
+nervous to start driving out for the first time. With this car i think will help them not be as nervous knowing that it will tell you when you are in danger and needs to slow down.
+
+They are worried they won't know who fault the accdient is but thats they same with most acdeints. They will have to solve it like everyone other case. I think having the driverless car will bring more postive than neagtive. I would like to see the out come of having the driverless cars to see how it affected things.",4.0,f,white,no,not economically disadvantaged,identified as having disability,Longformer,GRL,2.675348,True
+AAAOPP13416000001315,ASAP,Driverless cars,"After reading the article and seeing both the positive and negative aspects of driverless cars, I have come to the conclusion that driverless cars are indeed safe. The features on them are more advanced than any other car out today. They are up to date on all technology as well.
+
+Most vehicular accidents are a result of human error, not a malfunction of the vehicle. By having driverless cars, it makes it so the operator of the vehicle does not have to do as much to maintain control of the vehicle. Therefore, it could reduce human error, making it safer for passengers in cars, as well as pedestrians. The driverless car warns the person operating the vehicle of upcoming potentially dangerous hazards and things like road construction.
+
+More advances are being made for smarter cars all the time, making them safer and better. Some examples of these advancements that are being considered include flashing lights on the windsheild, cameras that watch the operater of the vehicle, and other heads up displays. On top of all of that, the smarter cars already warn the operator when he or she needs to take full control over the vehicle if and when needed. This is one of the many things that make smarter cars safer.
+
+Even though they are often called ""driverless cars"", operators of the smarter car still have control of the vehicle, and must remain ready to take control if needed. It is almost like having safety insurance because it has two levels of protection. The smarter car watches the road and controls the car for you as you stay alert and watch the road as well. If for some reason the technology of the vehicle malfunctions, you can still manually avoid collisions and other dangerous situations.
+
+In conclusion, driverless cars are a safe alternative to regular cars. They have many more safety features and the operator still has control of the vehicle. They are always being improved as well. You can count on smarter cars to get you to your destination safely while being able to enjoy the ride. ",5.0,m,white,yes,not economically disadvantaged,not identified as having disability,Longformer,GRL,3.6697273,True
+87C607A0EF62,PERSUADE,Mandatory extracurricular activities,"You've probably heard the saying, ""Try new things."" You may be tired of hearing it, but it's actually a good thing to do. Being in extracurricular activities is a way to try new things that you might not have known you like. I think all students should participate in extracurricular activities because you can explore something you haven't before, you can make friends, and you might find that it's something you enjoy.
+
+Participating in an extracurricular activity allows you to explore different options that you haven't before. Trying new things is a good way to see what you like and dislike. You could realize that you love to play sports through extracurricular activities. You could also gain experience. Having experience in different fields can be helpful for academic and life purposes. Participating in an extracurricular activity might be helpful for the future. It could help with getting a job and it could end up being your career path. Getting the opportunity to explore new things is a reason you should participate in extracurricular activities.
+
+Making friends is also a bonus when you are in an activity. You can find people with similar interests as you. Starting conversations with others is easier if you're in the same activity as them. You could have fun while participating with others. Doing things with other people can make you enjoy the activity more. Participating is also an opportunity for you to meet new people you wouldn't have known if you weren't in an extracurricular activity. You could make long lasting friendships you wouldn't have made if you didn't participate. Being in an extracurricular activity is a fun way to make new friends.
+
+The downside is that you would be forced to be in an activity. If you are forced to do something, it can make the activity less fun. However, you could find that the activity is something you really like to do. You can find out new things about yourself or find a new hobby. Extracurricular activities are outlets for you to find new things that you enjoy.
+
+I think that students should participate in an extracurricular activity. You get to explore different things, you can make new friends, and you could find that the activity you're in is something you like to do. Even though you would be forced to participate, extracurricular activities are something everyone can enjoy.",5.0,f,black/african american,no,not economically disadvantaged,not identified as having disability,Longformer,GRL,4.0528555,True
+859F995E6AE7,PERSUADE,Exploring Venus,"The support of this idea and why is dngers study Venus is on the planet's surface, temperatures average over 800 degrees Fahrenheit, and the atmospheric pressure is 90 times greater than what we experience on our own planet. These contions are far more extreme than anything humas encounter on Earth. Venus has the hottesr suface temperature of any planet in our solar sytem. Venusian geology and weather present aditional impediments like erupting volcanes. Venus was prebably covered lagerly with oceans and could have supported various forms of life just like Earth. The planet has a surface of rocky sediment and includes familiar such as valleys, mountains, and craters. The National Aeronautics and Space Administration has one particularly compelling idea for sending humans to study Venus. NASA's possible solution to the hostile conditions on the surface of Venus would allow scientidts to float above the fray. Solar power would be plentiful, and radiation would not exeed Earth levels. Not easy conditions, but survivble for humans. Peering at Venus from shipnorbiting or hovering safely far above the planet can provide only limited insight on ground conditions because most forms of light cannot penetrate the dense atmosphere, rendering standard forms of photography and videography ineffective. More importantly, researchers cannot take samples of rock, gas, or anything else, from distance. NASA is working on other approaches to studying Venus. Striving to meet the challenge presented by venus has value, not only because of the insight to be gained itself, but also because human curiosity will likely lead us into many equally intimidating endeavors. Our travels on earth and beyond should not be limited by dangers and doubs but should be expanded to meet the very edges of imagination and innovation. ",3.0,m,hispanic/latino,yes,economically disadvantaged,not identified as having disability,Longformer,GRL,1.9038659,True
+C4700AD0EE9A,PERSUADE,Community service,"Mr. principle
+
+I think its a great idea for students to help out and join community service, you should require all students to join. Helping the community is very important because there aren't a lot of people who would take the time to help out.
+
+They probably think its a waist of time when its not. Not many people want to stop what there doing or some are just to busy. The community is a lot in need for some support and help, and we should give it to them if they need it.
+
+There are a bungle of things that students can help with, little elementary kids with hard school assignments that parents come home too late to help with.
+
+dirty ponds and lakes that need cleaning up, parks with loads of trash everywhere, buildings with nasty spray paint all over and senior citizens who need help around the house. Also on Halloween there's little kids who need to get around the area without trouble, and not all little kids have older brothers and sisters to take them.
+
+There are animal shelters and so much more they can do for the community.
+
+I have friends in the ninth grade who perform service to the community and it helps them with there high-school diploma. Some just do it because they think its right and a good thing. So that's why Mr. principle all of us and students should come together and do what we can for the community.            ",4.0,f,hispanic/latino,no,not economically disadvantaged,identified as having disability,Longformer,GRL,2.5061417,True
+F9CF17C68E82,PERSUADE,Community service,"Dear Principal,
+
+I think that all students should be required to take part in community service.
+
+It is a great way to connect yourself with your community and help out others who are less fortunate than you or the environment.
+
+As an eighth grader, I take part in tutoring some of the younger sixth graders at my school.
+
+I think of this as community service because I do not get paid for these actions.
+
+Also, it is community service because I am helping some of the younger children at my school understand what they are learning better.
+
+Some students might not want to take part in the community service at first.
+
+They might be reluctant to try.
+
+After beginning the process, those certain students might realize that by taking part in community service, you can learn more about yourself as well as the environment and others around you.
+
+The students who at first did not want to take part in the community service, might come to realize that they enjoy helping others and from doing so, benefit personally.
+
+An issue with requiring all students to perform in community service is the time commitment.
+
+Some busy students might decide that community service is not worth their time when they could be doing things that directly benefit themselves.
+
+For example, they might rather spend time with their friends than spend time with children in a homeless shelter.
+
+I think it is important that you understand that these students might take more time to convince to take part in your community service than others.
+
+You should not simply tell them to do the community service because they are required to but you should explain to them why it is so important and you have decided to put emphasis on it.
+
+I think that it is important for everyone to take part in making this world a better place.
+
+Community service is one way to get people to contribute to that.
+
+Students should show that they have a say and have their own individual rights.
+
+By helping others or the environment around you, students can show that they can change this world, one little step at a time.
+
+Community service could be that first little step.
+
+I find it very important for all students to take part in community service some time in their life.
+
+I think by making it a requirement for the students that attend our school, everyone will find that community service helps to better understand yourself as well as others.
+
+It is a great opportunity that we should all take advantage of.
+
+Sincerely,
+
+Your student",4.0,f,white,no,not economically disadvantaged,not identified as having disability,Longformer,GRL,3.6919162,True
+EC025D0FFD23,PERSUADE,Grades for extracurricular activities,"Dear, TEACHER_NAME
+
+I think that it should be at least a B grade average to participate in sports because when you try to get into college they will not except C average. Plus if the student really wanted to play sports they get a B average. And that would be better for us in the future when we are trying to get into college. Don't in college they look at your grade from the past years to see if you qualify for what ever college you are trying to get into.
+
+A B grade average is not really hard to get if we pay attention and do all of our homework and assignments. And in high school the coaches for the sports teams want students to get at least a 3.5 grade average so if students get use to having a b grade average then when they get in to high school they will already know what they have to do if they want to plat sports. There are probably students who already have B grade averages so it won't make a difference to them.
+
+If most you know that most kids have a C grade average and you want to change the policy then all the students that have below a B grade average should have to attend a after school program. There they get help with there homework and do make-up work until there grade gets up but if they don't even try to get there grade raised then they should get kicked off any activity that they do unless they get there grade up.",4.0,m,black/african american,no,economically disadvantaged,not identified as having disability,Longformer,GRL,2.6078877,True
+9504EDD8FE31,PERSUADE,Cell phones at school,"Dear Principal,
+
+I highly encourage you to set the policy number 1 where you allow students to bring cell phones to school. I believe cell phones are necessary for young students because its a way to communicate with parents, friends and other people quickly and fairly easily. I believe outlawing cell phones in schools can be a safety issue to students who live fairly far from the school for the simple fact that they won't have any form of communication with their families. Also I believe allowing cell phones can now help a student academically.
+
+With recent advances in technology we are able to do more with a cell phone than just talk and text message. With phones such as the IPhone, Blackberry and the Droid we are able to use phone applications to do everything from web-surfing to education. If cell phones are allowed in schools they can be used productively during class to distribute homework, notes and to do research for projects. Even if the cell phones can only be on during lunch or other free periods it can help students be more focused in school instead of wondering what new texts they got or trying to secretly text their parents during an emergency.
+
+Though allowing cell phones to school can be highly beneficial, i believe the students should be reminded that it is a privilege not a right. I understand the saying ""give a man a inch and he'll try to take miles"" and I know when some students are given opportunities they try to ""push the envelope"" and try to over use the opportunity. I believe that if you allow the policy number one but a cell phone is out in class when it is not a true emergency, that the phone should be confiscated and given to the students parents. I also believe that constant offenders of that rule should be excluded from the policy and are forced to not bring their phone to school.
+
+I believe cell phones are extremely important and passing the first policy in opposition to the second will can be beneficial to students, parents and even the school if they decide to take advantage of the opportunities given by this policy. This can make students morally happy and make them work harder opposed to the other policy which can upset students and decrease their production rate. This opportunity is golden and all we need is for you to put it in affect.",5.0,m,black/african american,no,not economically disadvantaged,not identified as having disability,Longformer,GRL,4.0599675,True
+8027D8B7844F,PERSUADE,Cell phones at school,"The principal should let students have there phone during free times because they might have missed a class time thinking about something else and then when they go back to that class they will not know what to do. then when a test comes up they will not know and then they will fail the test .
+
+But if they do let them have there phones out during there free time and there know class periods going on they can call or text there friends and see what was there home work or what they did during in that class period if they were not following along. That would be there fault.
+
+If they could have there cell phones they might not because they can ask there friends to explain it to them if they later at lunch or to see if they can go there house later to have them show it to them and then they can text or call there parents to see if they can go or not and they can then the parents can call the school then the kids can go home with a friend to have them show what to do and what they did during class time.
+
+Then the students can talk to there friends to see what has been going and to see if they want to meet somewhere for they can talk and to see what they have been doing all day and see if they had a good day or a bad day in school so far. so that's what they should do because they students are hurting the class time and there education so why not there still following along in class there still learning and what need to know about what was going on in this world. and learn every thing they need to know . plus if do not then buddies they might tell them what they want to them but they don't they might not following along in class because there wondering about there going to say during and not follow along.
+
+i think this should be the policy because it could help out a lot with them",4.0,m,white,no,economically disadvantaged,identified as having disability,Longformer,GRL,2.7039208,True
+27A2E22A4634,PERSUADE,Distance learning,"Some believe that is better to teach children at home whereas the majority of people believe that it is highly recommended to send them to school for their better development. In my opinion it is more appropriate to send students to school instead of teaching them at home. Students would benefit from being able to attend classes because it can be motivated, and distance learning is not good because it would make cheating easier, there would be less social interaction, ad they would need to be highly motivated.
+
+One of the biggest advantages of go to school is to improve their social capacity. Students will develop social skill when they are admitted to school by interacting with their teachers and classmates. Because they come from diverse family background and have different financial statements, students tend to learn a lot from each other and more likely to realize. For example, to name a few, a bout other religions or moral practices of his peers or they can learn the habits of dressing or the way of talking about his peers.
+
+Secondly, the growth and development of the students is assessed on a regularly basis by conducting tests, homework in a school in this area of high competition among schools to gain popularity, this process will have impact on students will make them ready to sustain in the really changeling world. For example in this area they can prove their learning, ability, and dedication.
+
+On the contrary, teaching children at homo also has few advantages. If students are taught at home, with full attention and focus on the child, he is more likely to understand the subject well. Secondly, student can be taught in a more amicable way and be more comfortable when they are accompanied by their family at home. But they not make new friends or socialize with different people. Also some parents do not always have the time to supervise their children for that reason it is better that they go to school to receive better supervise and education.
+
+In conclusion, both approaches have their own advantages, but sending the student to school will make him more successful in his life, while teaching him at home may result lower rates for education, but he will not be competent in the world. Also attend to school make the student stronger with more benefits to share with the world and their improve their social capacity with other people.          ",5.0,f,hispanic/latino,yes,economically disadvantaged,not identified as having disability,Longformer,GRL,4.041139,True

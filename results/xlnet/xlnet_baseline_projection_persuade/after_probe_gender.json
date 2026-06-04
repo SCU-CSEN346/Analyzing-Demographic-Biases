@@ -1,0 +1,281 @@
+{
+  "attribute": "gender",
+  "mean_after_kappa": 0.2254,
+  "median_after_kappa": 0.2197,
+  "min_after_kappa": -0.0222,
+  "max_after_kappa": 0.4667,
+  "n_prompts": 15,
+  "n_dropped_nan": 0,
+  "per_prompt": [
+    {
+      "prompt": "A_Cowboy_Who_Rode_the_Waves",
+      "n_train": 688,
+      "n_test": 684,
+      "demographics": {
+        "gender": {
+          "test_kappa": 0.0969,
+          "dev_kappa": 0.1481,
+          "n_classes": 2,
+          "n_train": 688,
+          "n_test": 684,
+          "classes": [
+            "f",
+            "m"
+          ]
+        }
+      }
+    },
+    {
+      "prompt": "Car-free_cities",
+      "n_train": 983,
+      "n_test": 976,
+      "demographics": {
+        "gender": {
+          "test_kappa": 0.2684,
+          "dev_kappa": 0.1359,
+          "n_classes": 2,
+          "n_train": 983,
+          "n_test": 976,
+          "classes": [
+            "f",
+            "m"
+          ]
+        }
+      }
+    },
+    {
+      "prompt": "Cell_phones_at_school",
+      "n_train": 829,
+      "n_test": 827,
+      "demographics": {
+        "gender": {
+          "test_kappa": 0.1913,
+          "dev_kappa": 0.2473,
+          "n_classes": 2,
+          "n_train": 829,
+          "n_test": 827,
+          "classes": [
+            "f",
+            "m"
+          ]
+        }
+      }
+    },
+    {
+      "prompt": "Community_service",
+      "n_train": 768,
+      "n_test": 774,
+      "demographics": {
+        "gender": {
+          "test_kappa": 0.2052,
+          "dev_kappa": 0.1873,
+          "n_classes": 2,
+          "n_train": 768,
+          "n_test": 774,
+          "classes": [
+            "f",
+            "m"
+          ]
+        }
+      }
+    },
+    {
+      "prompt": "Distance_learning",
+      "n_train": 1498,
+      "n_test": 659,
+      "demographics": {
+        "gender": {
+          "test_kappa": 0.2061,
+          "dev_kappa": 0.2923,
+          "n_classes": 2,
+          "n_train": 1498,
+          "n_test": 659,
+          "classes": [
+            "f",
+            "m"
+          ]
+        }
+      }
+    },
+    {
+      "prompt": "Does_the_electoral_college_work?",
+      "n_train": 1818,
+      "n_test": 228,
+      "demographics": {
+        "gender": {
+          "test_kappa": 0.3421,
+          "dev_kappa": 0.2976,
+          "n_classes": 2,
+          "n_train": 1818,
+          "n_test": 228,
+          "classes": [
+            "f",
+            "m"
+          ]
+        }
+      }
+    },
+    {
+      "prompt": "Driverless_cars",
+      "n_train": 1386,
+      "n_test": 500,
+      "demographics": {
+        "gender": {
+          "test_kappa": 0.2266,
+          "dev_kappa": 0.1755,
+          "n_classes": 2,
+          "n_train": 1386,
+          "n_test": 500,
+          "classes": [
+            "f",
+            "m"
+          ]
+        }
+      }
+    },
+    {
+      "prompt": "Exploring_Venus",
+      "n_train": 928,
+      "n_test": 934,
+      "demographics": {
+        "gender": {
+          "test_kappa": 0.2253,
+          "dev_kappa": 0.505,
+          "n_classes": 2,
+          "n_train": 928,
+          "n_test": 934,
+          "classes": [
+            "f",
+            "m"
+          ]
+        }
+      }
+    },
+    {
+      "prompt": "Facial_action_coding_system",
+      "n_train": 1103,
+      "n_test": 1064,
+      "demographics": {
+        "gender": {
+          "test_kappa": 0.2047,
+          "dev_kappa": 0.2639,
+          "n_classes": 2,
+          "n_train": 1103,
+          "n_test": 1064,
+          "classes": [
+            "f",
+            "m"
+          ]
+        }
+      }
+    },
+    {
+      "prompt": "Grades_for_extracurricular_activities",
+      "n_train": 815,
+      "n_test": 811,
+      "demographics": {
+        "gender": {
+          "test_kappa": 0.2197,
+          "dev_kappa": 0.3746,
+          "n_classes": 2,
+          "n_train": 815,
+          "n_test": 811,
+          "classes": [
+            "f",
+            "m"
+          ]
+        }
+      }
+    },
+    {
+      "prompt": "Mandatory_extracurricular_activities",
+      "n_train": 839,
+      "n_test": 831,
+      "demographics": {
+        "gender": {
+          "test_kappa": 0.3213,
+          "dev_kappa": 0.3322,
+          "n_classes": 2,
+          "n_train": 839,
+          "n_test": 831,
+          "classes": [
+            "f",
+            "m"
+          ]
+        }
+      }
+    },
+    {
+      "prompt": "Phones_and_driving",
+      "n_train": 700,
+      "n_test": 467,
+      "demographics": {
+        "gender": {
+          "test_kappa": -0.0222,
+          "dev_kappa": 0.1514,
+          "n_classes": 2,
+          "n_train": 700,
+          "n_test": 467,
+          "classes": [
+            "f",
+            "m"
+          ]
+        }
+      }
+    },
+    {
+      "prompt": "Seeking_multiple_opinions",
+      "n_train": 1544,
+      "n_test": 8,
+      "demographics": {
+        "gender": {
+          "test_kappa": 0.4667,
+          "dev_kappa": 0.4451,
+          "n_classes": 2,
+          "n_train": 1544,
+          "n_test": 8,
+          "classes": [
+            "f",
+            "m"
+          ]
+        }
+      }
+    },
+    {
+      "prompt": "Summer_projects",
+      "n_train": 875,
+      "n_test": 875,
+      "demographics": {
+        "gender": {
+          "test_kappa": 0.2468,
+          "dev_kappa": 0.1818,
+          "n_classes": 2,
+          "n_train": 875,
+          "n_test": 875,
+          "classes": [
+            "f",
+            "m"
+          ]
+        }
+      }
+    },
+    {
+      "prompt": "The_Face_on_Mars",
+      "n_train": 819,
+      "n_test": 764,
+      "demographics": {
+        "gender": {
+          "test_kappa": 0.1819,
+          "dev_kappa": 0.2274,
+          "n_classes": 2,
+          "n_train": 819,
+          "n_test": 764,
+          "classes": [
+            "f",
+            "m"
+          ]
+        }
+      }
+    }
+  ]
+}

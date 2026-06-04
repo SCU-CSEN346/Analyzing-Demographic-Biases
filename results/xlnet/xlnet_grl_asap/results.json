@@ -1,0 +1,1638 @@
+{
+  "run_version": "grl_joint_l05_asap",
+  "dataset": "ASAP",
+  "joint_attrs": [
+    "gender",
+    "ell_status",
+    "econ_disadvantaged",
+    "disability",
+    "race_white_vs_black"
+  ],
+  "lambda_max": 0.5,
+  "gamma": 10.0,
+  "max_len": 2048,
+  "batch_size": 8,
+  "grad_accum": 1,
+  "macro_qwk": 0.7287849595584796,
+  "mean_model_smd_per_attr": {
+    "gender": 0.24848557710647584,
+    "ell_status": 0.3203484505414963,
+    "econ_disadvantaged": 0.2930606760084629,
+    "disability": 0.486992734670639,
+    "race_white_vs_black": 0.16757093966007233
+  },
+  "mean_amplification_per_attr": {
+    "gender": 0.04390618801116943,
+    "ell_status": 0.10526032149791717,
+    "econ_disadvantaged": 0.06400953382253646,
+    "disability": 0.10858305394649506,
+    "race_white_vs_black": -0.0024613723158836364
+  },
+  "results": [
+    {
+      "prompt": "\"A Cowboy Who Rode the Waves\"",
+      "n_train": 1483,
+      "n_dev": 165,
+      "n_test": 527,
+      "best_dev_qwk": 0.7022828900917863,
+      "test_qwk": 0.6840822543792842,
+      "test_acc": 0.6110056925996205,
+      "bias": {
+        "gender": {
+          "class_0_mean_pred": 2.4668312072753906,
+          "class_0_mean_true": 2.6315789222717285,
+          "class_0_n": 285,
+          "class_1_mean_pred": 2.171342372894287,
+          "class_1_mean_true": 2.409090995788574,
+          "class_1_n": 242,
+          "model_smd": 0.3652515709400177,
+          "human_smd": 0.27135005593299866,
+          "amplification": 0.09390151500701904
+        },
+        "ell_status": {
+          "class_0_mean_pred": 2.3483920097351074,
+          "class_0_mean_true": 2.543086290359497,
+          "class_0_n": 499,
+          "class_1_mean_pred": 2.023716449737549,
+          "class_1_mean_true": 2.2857143878936768,
+          "class_1_n": 28,
+          "model_smd": 0.4167103171348572,
+          "human_smd": 0.32499951124191284,
+          "amplification": 0.09171080589294434
+        },
+        "econ_disadvantaged": {
+          "class_0_mean_pred": 2.486646890640259,
+          "class_0_mean_true": 2.6122448444366455,
+          "class_0_n": 196,
+          "class_1_mean_pred": 2.239060163497925,
+          "class_1_mean_true": 2.4803626537323,
+          "class_1_n": 331,
+          "model_smd": 0.30321675539016724,
+          "human_smd": 0.1597711443901062,
+          "amplification": 0.14344561100006104
+        },
+        "disability": {
+          "class_0_mean_pred": 2.386228322982788,
+          "class_0_mean_true": 2.5552995204925537,
+          "class_0_n": 434,
+          "class_1_mean_pred": 2.0740716457366943,
+          "class_1_mean_true": 2.408602237701416,
+          "class_1_n": 93,
+          "model_smd": 0.3839206397533417,
+          "human_smd": 0.17565788328647614,
+          "amplification": 0.20826275646686554
+        },
+        "race_white_vs_black": {
+          "class_0_mean_pred": 2.207310199737549,
+          "class_0_mean_true": 2.4285714626312256,
+          "class_0_n": 175,
+          "class_1_mean_pred": 2.2617344856262207,
+          "class_1_mean_true": 2.48799991607666,
+          "class_1_n": 125,
+          "model_smd": -0.06498830765485764,
+          "human_smd": -0.06973584741353989,
+          "amplification": -0.004747539758682251
+        }
+      },
+      "history": [
+        {
+          "epoch": 1,
+          "lambda": 0.12182739314446134,
+          "train_score_loss": 0.8527204143944739,
+          "train_demo_loss_mean": 0.6898233093588451,
+          "train_demo_loss_per_attr": {
+            "gender": 0.823112187719956,
+            "ell_status": 0.5150055590310184,
+            "econ_disadvantaged": 0.7409440205053791,
+            "disability": 0.662042079828755,
+            "race_white_vs_black": 0.7080126997091171
+          },
+          "dev_qwk": 0.5232024477307496,
+          "dev_demo_acc_per_attr": {
+            "gender": 0.5575757575757576,
+            "ell_status": 0.9813664596273292,
+            "econ_disadvantaged": 0.4303030303030303,
+            "disability": 0.9090909090909091,
+            "race_white_vs_black": 0.7706422018348624
+          }
+        },
+        {
+          "epoch": 2,
+          "lambda": 0.23052972376112113,
+          "train_score_loss": 0.42804569596787684,
+          "train_demo_loss_mean": 0.6342514809052782,
+          "train_demo_loss_per_attr": {
+            "gender": 0.7063118321865054,
+            "ell_status": 0.46965282708708295,
+            "econ_disadvantaged": 0.6947370575877837,
+            "disability": 0.6185403912757107,
+            "race_white_vs_black": 0.6820152963893081
+          },
+          "dev_qwk": 0.6075216972034716,
+          "dev_demo_acc_per_attr": {
+            "gender": 0.5818181818181818,
+            "ell_status": 0.9813664596273292,
+            "econ_disadvantaged": 0.48484848484848486,
+            "disability": 0.9090909090909091,
+            "race_white_vs_black": 0.7614678899082569
+          }
+        },
+        {
+          "epoch": 3,
+          "lambda": 0.31717320254727976,
+          "train_score_loss": 0.3567614874080959,
+          "train_demo_loss_mean": 0.6341485272978945,
+          "train_demo_loss_per_attr": {
+            "gender": 0.6981649485216379,
+            "ell_status": 0.49345114050404115,
+            "econ_disadvantaged": 0.6884446884037592,
+            "disability": 0.6018730291665927,
+            "race_white_vs_black": 0.6888088298934413
+          },
+          "dev_qwk": 0.5848265345024781,
+          "dev_demo_acc_per_attr": {
+            "gender": 0.5212121212121212,
+            "ell_status": 0.9813664596273292,
+            "econ_disadvantaged": 0.5575757575757576,
+            "disability": 0.9090909090909091,
+            "race_white_vs_black": 0.6146788990825688
+          }
+        },
+        {
+          "epoch": 4,
+          "lambda": 0.3805145481158968,
+          "train_score_loss": 0.2983078239579821,
+          "train_demo_loss_mean": 0.6451978625925258,
+          "train_demo_loss_per_attr": {
+            "gender": 0.6975487023290555,
+            "ell_status": 0.5162438182392932,
+            "econ_disadvantaged": 0.6910289875253663,
+            "disability": 0.6243599509758798,
+            "race_white_vs_black": 0.6968078538930341
+          },
+          "dev_qwk": 0.5701639117504669,
+          "dev_demo_acc_per_attr": {
+            "gender": 0.46060606060606063,
+            "ell_status": 0.9813664596273292,
+            "econ_disadvantaged": 0.6181818181818182,
+            "disability": 0.896969696969697,
+            "race_white_vs_black": 0.3486238532110092
+          }
+        },
+        {
+          "epoch": 5,
+          "lambda": 0.42395315413102186,
+          "train_score_loss": 0.29996906675081836,
+          "train_demo_loss_mean": 0.66091085012042,
+          "train_demo_loss_per_attr": {
+            "gender": 0.6987580288445234,
+            "ell_status": 0.5744368990758719,
+            "econ_disadvantaged": 0.6887107053803015,
+            "disability": 0.6401936530021904,
+            "race_white_vs_black": 0.7024549642992118
+          },
+          "dev_qwk": 0.6429609533959887,
+          "dev_demo_acc_per_attr": {
+            "gender": 0.4666666666666667,
+            "ell_status": 0.9192546583850931,
+            "econ_disadvantaged": 0.6242424242424243,
+            "disability": 0.6060606060606061,
+            "race_white_vs_black": 0.23853211009174313
+          }
+        },
+        {
+          "epoch": 6,
+          "lambda": 0.45245253633533267,
+          "train_score_loss": 0.2567212779378859,
+          "train_demo_loss_mean": 0.6817433935656305,
+          "train_demo_loss_per_attr": {
+            "gender": 0.6974805690755091,
+            "ell_status": 0.5984886982487634,
+            "econ_disadvantaged": 0.6893754875587597,
+            "disability": 0.7256433319096941,
+            "race_white_vs_black": 0.6977288810354261
+          },
+          "dev_qwk": 0.6829433706341133,
+          "dev_demo_acc_per_attr": {
+            "gender": 0.5333333333333333,
+            "ell_status": 0.8881987577639752,
+            "econ_disadvantaged": 0.6,
+            "disability": 0.10303030303030303,
+            "race_white_vs_black": 0.6513761467889908
+          }
+        },
+        {
+          "epoch": 7,
+          "lambda": 0.47061118577114336,
+          "train_score_loss": 0.22088955661290735,
+          "train_demo_loss_mean": 0.6844582452669352,
+          "train_demo_loss_per_attr": {
+            "gender": 0.6902849760637522,
+            "ell_status": 0.583422707996201,
+            "econ_disadvantaged": 0.6887096027546611,
+            "disability": 0.7740801164047668,
+            "race_white_vs_black": 0.6857938231152952
+          },
+          "dev_qwk": 0.7022828900917863,
+          "dev_demo_acc_per_attr": {
+            "gender": 0.5818181818181818,
+            "ell_status": 0.906832298136646,
+            "econ_disadvantaged": 0.5696969696969697,
+            "disability": 0.09090909090909091,
+            "race_white_vs_black": 0.7706422018348624
+          }
+        },
+        {
+          "epoch": 8,
+          "lambda": 0.4819662480716542,
+          "train_score_loss": 0.20633193921355564,
+          "train_demo_loss_mean": 0.6897268361128659,
+          "train_demo_loss_per_attr": {
+            "gender": 0.694584834720344,
+            "ell_status": 0.5402822893346829,
+            "econ_disadvantaged": 0.6915002542818549,
+            "disability": 0.8331232704749721,
+            "race_white_vs_black": 0.6891435317524753
+          },
+          "dev_qwk": 0.6376396448009166,
+          "dev_demo_acc_per_attr": {
+            "gender": 0.5454545454545454,
+            "ell_status": 0.9751552795031055,
+            "econ_disadvantaged": 0.593939393939394,
+            "disability": 0.09090909090909091,
+            "race_white_vs_black": 0.7706422018348624
+          }
+        },
+        {
+          "epoch": 9,
+          "lambda": 0.48898380864311874,
+          "train_score_loss": 0.19389542678040744,
+          "train_demo_loss_mean": 0.6726018631856586,
+          "train_demo_loss_per_attr": {
+            "gender": 0.6959250504634545,
+            "ell_status": 0.5057767867679777,
+            "econ_disadvantaged": 0.6897431134534542,
+            "disability": 0.7678539179823163,
+            "race_white_vs_black": 0.7037104472610906
+          },
+          "dev_qwk": 0.6323011963406052,
+          "dev_demo_acc_per_attr": {
+            "gender": 0.5515151515151515,
+            "ell_status": 0.9813664596273292,
+            "econ_disadvantaged": 0.5757575757575758,
+            "disability": 0.10909090909090909,
+            "race_white_vs_black": 0.7706422018348624
+          }
+        },
+        {
+          "epoch": 10,
+          "lambda": 0.4932892542361603,
+          "train_score_loss": 0.16517667455280943,
+          "train_demo_loss_mean": 0.6588259971924144,
+          "train_demo_loss_per_attr": {
+            "gender": 0.6909110243868684,
+            "ell_status": 0.5038952909354661,
+            "econ_disadvantaged": 0.6922111872154076,
+            "disability": 0.7090694821933918,
+            "race_white_vs_black": 0.6980430012309378
+          },
+          "dev_qwk": 0.6222527472527473,
+          "dev_demo_acc_per_attr": {
+            "gender": 0.5151515151515151,
+            "ell_status": 0.9813664596273292,
+            "econ_disadvantaged": 0.593939393939394,
+            "disability": 0.593939393939394,
+            "race_white_vs_black": 0.7706422018348624
+          }
+        },
+        {
+          "epoch": 11,
+          "lambda": 0.49591895104631023,
+          "train_score_loss": 0.1502123065518915,
+          "train_demo_loss_mean": 0.6452046201119215,
+          "train_demo_loss_per_attr": {
+            "gender": 0.695022786499597,
+            "ell_status": 0.46609171894979506,
+            "econ_disadvantaged": 0.6946010225862566,
+            "disability": 0.6683949551627352,
+            "race_white_vs_black": 0.7019126173612233
+          },
+          "dev_qwk": 0.6492027334851936,
+          "dev_demo_acc_per_attr": {
+            "gender": 0.5454545454545454,
+            "ell_status": 0.9813664596273292,
+            "econ_disadvantaged": 0.5575757575757576,
+            "disability": 0.896969696969697,
+            "race_white_vs_black": 0.7706422018348624
+          }
+        },
+        {
+          "epoch": 12,
+          "lambda": 0.49752073756641324,
+          "train_score_loss": 0.13202005387638682,
+          "train_demo_loss_mean": 0.6332719873497579,
+          "train_demo_loss_per_attr": {
+            "gender": 0.6993215777386866,
+            "ell_status": 0.4538672029227521,
+            "econ_disadvantaged": 0.6938724929789635,
+            "disability": 0.6213604263654852,
+            "race_white_vs_black": 0.6979382367429019
+          },
+          "dev_qwk": 0.6579776812334952,
+          "dev_demo_acc_per_attr": {
+            "gender": 0.47878787878787876,
+            "ell_status": 0.9813664596273292,
+            "econ_disadvantaged": 0.5757575757575758,
+            "disability": 0.9090909090909091,
+            "race_white_vs_black": 0.7706422018348624
+          }
+        },
+        {
+          "epoch": 13,
+          "lambda": 0.4984947829606311,
+          "train_score_loss": 0.11938891471919383,
+          "train_demo_loss_mean": 0.6434561715417957,
+          "train_demo_loss_per_attr": {
+            "gender": 0.6975351438197588,
+            "ell_status": 0.4935938991822559,
+            "econ_disadvantaged": 0.6908213441145236,
+            "disability": 0.632368203199802,
+            "race_white_vs_black": 0.7029622673926383
+          },
+          "dev_qwk": 0.6074232690935046,
+          "dev_demo_acc_per_attr": {
+            "gender": 0.4484848484848485,
+            "ell_status": 0.9813664596273292,
+            "econ_disadvantaged": 0.5696969696969697,
+            "disability": 0.9090909090909091,
+            "race_white_vs_black": 0.7706422018348624
+          }
+        }
+      ],
+      "pt_path": "/workspace/results/xlnet/grl_joint_l05_asap/xlnet_\"A_Cowboy_Who_Rode_the_Waves\".pt"
+    },
+    {
+      "prompt": "Driverless cars",
+      "n_train": 3150,
+      "n_dev": 350,
+      "n_test": 2670,
+      "best_dev_qwk": 0.760250698482217,
+      "test_qwk": 0.7603719301784018,
+      "test_acc": 0.6479400749063671,
+      "bias": {
+        "gender": {
+          "class_0_mean_pred": 3.404348850250244,
+          "class_0_mean_true": 3.2721381187438965,
+          "class_0_n": 1389,
+          "class_1_mean_pred": 3.210784673690796,
+          "class_1_mean_true": 3.078968048095703,
+          "class_1_n": 1279,
+          "model_smd": 0.24547550082206726,
+          "human_smd": 0.197407066822052,
+          "amplification": 0.04806843400001526
+        },
+        "ell_status": {
+          "class_0_mean_pred": 3.2921676635742188,
+          "class_0_mean_true": 3.169828414916992,
+          "class_0_n": 2214,
+          "class_1_mean_pred": 3.4469106197357178,
+          "class_1_mean_true": 3.295454502105713,
+          "class_1_n": 264,
+          "model_smd": -0.17983783781528473,
+          "human_smd": -0.11944712698459625,
+          "amplification": 0.06039071083068848
+        },
+        "econ_disadvantaged": {
+          "class_0_mean_pred": 3.507113456726074,
+          "class_0_mean_true": 3.399446487426758,
+          "class_0_n": 1084,
+          "class_1_mean_pred": 3.177729368209839,
+          "class_1_mean_true": 3.0290403366088867,
+          "class_1_n": 1584,
+          "model_smd": 0.41960474848747253,
+          "human_smd": 0.3802306354045868,
+          "amplification": 0.03937411308288574
+        },
+        "disability": {
+          "class_0_mean_pred": 3.348733901977539,
+          "class_0_mean_true": 3.2234864234924316,
+          "class_0_n": 2461,
+          "class_1_mean_pred": 2.86956524848938,
+          "class_1_mean_true": 2.6570048332214355,
+          "class_1_n": 207,
+          "model_smd": 0.6278967261314392,
+          "human_smd": 0.5678355097770691,
+          "amplification": 0.06006121635437012
+        },
+        "race_white_vs_black": {
+          "class_0_mean_pred": 3.328871250152588,
+          "class_0_mean_true": 3.192307710647583,
+          "class_0_n": 806,
+          "class_1_mean_pred": 3.173807144165039,
+          "class_1_mean_true": 3.0093584060668945,
+          "class_1_n": 748,
+          "model_smd": 0.20139218866825104,
+          "human_smd": 0.19366362690925598,
+          "amplification": 0.007728561758995056
+        }
+      },
+      "history": [
+        {
+          "epoch": 1,
+          "lambda": 0.12216105682731315,
+          "train_score_loss": 0.796041930705782,
+          "train_demo_loss_mean": 0.6790009811197794,
+          "train_demo_loss_per_attr": {
+            "gender": 0.7083114255190123,
+            "ell_status": 0.6420086228132564,
+            "econ_disadvantaged": 0.7130170642818561,
+            "disability": 0.5789498017870763,
+            "race_white_vs_black": 0.7527179911976954
+          },
+          "dev_qwk": 0.7167590367354946,
+          "dev_demo_acc_per_attr": {
+            "gender": 0.5444126074498568,
+            "ell_status": 0.9355828220858896,
+            "econ_disadvantaged": 0.5959885386819485,
+            "disability": 0.9484240687679083,
+            "race_white_vs_black": 0.5707070707070707
+          }
+        },
+        {
+          "epoch": 2,
+          "lambda": 0.23080899795157284,
+          "train_score_loss": 0.4736637806135511,
+          "train_demo_loss_mean": 0.6566070109086761,
+          "train_demo_loss_per_attr": {
+            "gender": 0.6945075655823929,
+            "ell_status": 0.626282292142303,
+            "econ_disadvantaged": 0.6869136028041458,
+            "disability": 0.5741181790393358,
+            "race_white_vs_black": 0.7012134149752028
+          },
+          "dev_qwk": 0.7531456299723523,
+          "dev_demo_acc_per_attr": {
+            "gender": 0.5415472779369628,
+            "ell_status": 0.9355828220858896,
+            "econ_disadvantaged": 0.5959885386819485,
+            "disability": 0.9484240687679083,
+            "race_white_vs_black": 0.494949494949495
+          }
+        },
+        {
+          "epoch": 3,
+          "lambda": 0.31738512776182237,
+          "train_score_loss": 0.4376034352136037,
+          "train_demo_loss_mean": 0.6507272740793535,
+          "train_demo_loss_per_attr": {
+            "gender": 0.6925097107508705,
+            "ell_status": 0.6282757860173288,
+            "econ_disadvantaged": 0.6860623356840958,
+            "disability": 0.5578795172991016,
+            "race_white_vs_black": 0.6889090206453709
+          },
+          "dev_qwk": 0.7462096242584046,
+          "dev_demo_acc_per_attr": {
+            "gender": 0.5300859598853869,
+            "ell_status": 0.9355828220858896,
+            "econ_disadvantaged": 0.6217765042979942,
+            "disability": 0.9484240687679083,
+            "race_white_vs_black": 0.5454545454545454
+          }
+        },
+        {
+          "epoch": 4,
+          "lambda": 0.38066377298618514,
+          "train_score_loss": 0.4099044170076885,
+          "train_demo_loss_mean": 0.6498511326710655,
+          "train_demo_loss_per_attr": {
+            "gender": 0.6929191097678665,
+            "ell_status": 0.6243442083981118,
+            "econ_disadvantaged": 0.6832884729911729,
+            "disability": 0.5616158817487507,
+            "race_white_vs_black": 0.6870879904494259
+          },
+          "dev_qwk": 0.7045454545454546,
+          "dev_demo_acc_per_attr": {
+            "gender": 0.5186246418338109,
+            "ell_status": 0.9355828220858896,
+            "econ_disadvantaged": 0.6160458452722063,
+            "disability": 0.9484240687679083,
+            "race_white_vs_black": 0.51010101010101
+          }
+        },
+        {
+          "epoch": 5,
+          "lambda": 0.4240528079726066,
+          "train_score_loss": 0.3611717200279236,
+          "train_demo_loss_mean": 0.6490825790986348,
+          "train_demo_loss_per_attr": {
+            "gender": 0.6899756864919933,
+            "ell_status": 0.6245072167724707,
+            "econ_disadvantaged": 0.6830654387513431,
+            "disability": 0.5586868158765504,
+            "race_white_vs_black": 0.6891777376008164
+          },
+          "dev_qwk": 0.759485877010698,
+          "dev_demo_acc_per_attr": {
+            "gender": 0.5702005730659025,
+            "ell_status": 0.9355828220858896,
+            "econ_disadvantaged": 0.5787965616045845,
+            "disability": 0.9484240687679083,
+            "race_white_vs_black": 0.5353535353535354
+          }
+        },
+        {
+          "epoch": 6,
+          "lambda": 0.4525167630978113,
+          "train_score_loss": 0.3151578533838666,
+          "train_demo_loss_mean": 0.6502732404445408,
+          "train_demo_loss_per_attr": {
+            "gender": 0.6912551318966953,
+            "ell_status": 0.626552369941774,
+            "econ_disadvantaged": 0.6787067763045993,
+            "disability": 0.5676670433813218,
+            "race_white_vs_black": 0.6871848806983135
+          },
+          "dev_qwk": 0.760250698482217,
+          "dev_demo_acc_per_attr": {
+            "gender": 0.5386819484240688,
+            "ell_status": 0.9355828220858896,
+            "econ_disadvantaged": 0.5730659025787965,
+            "disability": 0.9484240687679083,
+            "race_white_vs_black": 0.5151515151515151
+          }
+        },
+        {
+          "epoch": 7,
+          "lambda": 0.4706516397743282,
+          "train_score_loss": 0.30201260159886073,
+          "train_demo_loss_mean": 0.6485648447804901,
+          "train_demo_loss_per_attr": {
+            "gender": 0.69137188009551,
+            "ell_status": 0.6164583701657649,
+            "econ_disadvantaged": 0.6806563900629276,
+            "disability": 0.5651400115384719,
+            "race_white_vs_black": 0.6891975720397762
+          },
+          "dev_qwk": 0.6931751769518821,
+          "dev_demo_acc_per_attr": {
+            "gender": 0.5558739255014327,
+            "ell_status": 0.9355828220858896,
+            "econ_disadvantaged": 0.5759312320916905,
+            "disability": 0.9484240687679083,
+            "race_white_vs_black": 0.5050505050505051
+          }
+        },
+        {
+          "epoch": 8,
+          "lambda": 0.4819913617198881,
+          "train_score_loss": 0.27926688543387823,
+          "train_demo_loss_mean": 0.64593462664041,
+          "train_demo_loss_per_attr": {
+            "gender": 0.6924761412975787,
+            "ell_status": 0.6277569473935248,
+            "econ_disadvantaged": 0.6801326965180303,
+            "disability": 0.5416785749264011,
+            "race_white_vs_black": 0.6876287730665155
+          },
+          "dev_qwk": 0.7472066552960424,
+          "dev_demo_acc_per_attr": {
+            "gender": 0.5616045845272206,
+            "ell_status": 0.9355828220858896,
+            "econ_disadvantaged": 0.5530085959885387,
+            "disability": 0.9484240687679083,
+            "race_white_vs_black": 0.494949494949495
+          }
+        },
+        {
+          "epoch": 9,
+          "lambda": 0.48899925917681875,
+          "train_score_loss": 0.24219039674789186,
+          "train_demo_loss_mean": 0.6480449012989243,
+          "train_demo_loss_per_attr": {
+            "gender": 0.6919430984168176,
+            "ell_status": 0.6235368273130231,
+            "econ_disadvantaged": 0.6766282981181758,
+            "disability": 0.5609880839786517,
+            "race_white_vs_black": 0.6871281986679536
+          },
+          "dev_qwk": 0.7271666459431283,
+          "dev_demo_acc_per_attr": {
+            "gender": 0.5415472779369628,
+            "ell_status": 0.9355828220858896,
+            "econ_disadvantaged": 0.5730659025787965,
+            "disability": 0.9484240687679083,
+            "race_white_vs_black": 0.494949494949495
+          }
+        },
+        {
+          "epoch": 10,
+          "lambda": 0.49329870717187063,
+          "train_score_loss": 0.21937709657918839,
+          "train_demo_loss_mean": 0.6517747199776374,
+          "train_demo_loss_per_attr": {
+            "gender": 0.6912926845264344,
+            "ell_status": 0.6284314006310255,
+            "econ_disadvantaged": 0.6789886422973468,
+            "disability": 0.5702508926183393,
+            "race_white_vs_black": 0.6899099798150401
+          },
+          "dev_qwk": 0.7334927130569429,
+          "dev_demo_acc_per_attr": {
+            "gender": 0.5644699140401146,
+            "ell_status": 0.9355828220858896,
+            "econ_disadvantaged": 0.5530085959885387,
+            "disability": 0.9484240687679083,
+            "race_white_vs_black": 0.51010101010101
+          }
+        },
+        {
+          "epoch": 11,
+          "lambda": 0.49592471491877044,
+          "train_score_loss": 0.1772381071249644,
+          "train_demo_loss_mean": 0.6489628099814959,
+          "train_demo_loss_per_attr": {
+            "gender": 0.6923699330700583,
+            "ell_status": 0.6151815673584492,
+            "econ_disadvantaged": 0.6777836317560263,
+            "disability": 0.568127815015129,
+            "race_white_vs_black": 0.691351102707816
+          },
+          "dev_qwk": 0.7552400978088161,
+          "dev_demo_acc_per_attr": {
+            "gender": 0.5501432664756447,
+            "ell_status": 0.9355828220858896,
+            "econ_disadvantaged": 0.5558739255014327,
+            "disability": 0.9484240687679083,
+            "race_white_vs_black": 0.5151515151515151
+          }
+        },
+        {
+          "epoch": 12,
+          "lambda": 0.49752424477832935,
+          "train_score_loss": 0.14996954781668526,
+          "train_demo_loss_mean": 0.6524919643326832,
+          "train_demo_loss_per_attr": {
+            "gender": 0.6932648299383186,
+            "ell_status": 0.6240960961248482,
+            "econ_disadvantaged": 0.6802295567535832,
+            "disability": 0.5731270500083467,
+            "race_white_vs_black": 0.6917422888383188
+          },
+          "dev_qwk": 0.7483956937966827,
+          "dev_demo_acc_per_attr": {
+            "gender": 0.5501432664756447,
+            "ell_status": 0.9355828220858896,
+            "econ_disadvantaged": 0.5759312320916905,
+            "disability": 0.9484240687679083,
+            "race_white_vs_black": 0.51010101010101
+          }
+        }
+      ],
+      "pt_path": "/workspace/results/xlnet/grl_joint_l05_asap/xlnet_Driverless_cars.pt"
+    },
+    {
+      "prompt": "Exploring Venus",
+      "n_train": 2715,
+      "n_dev": 302,
+      "n_test": 1463,
+      "best_dev_qwk": 0.834946908182386,
+      "test_qwk": 0.7683600164897175,
+      "test_acc": 0.6028708133971292,
+      "bias": {
+        "gender": {
+          "class_0_mean_pred": 2.6241350173950195,
+          "class_0_mean_true": 2.6364903450012207,
+          "class_0_n": 718,
+          "class_1_mean_pred": 2.4797451496124268,
+          "class_1_mean_true": 2.4845638275146484,
+          "class_1_n": 745,
+          "model_smd": 0.15741558372974396,
+          "human_smd": 0.15120123326778412,
+          "amplification": 0.006214350461959839
+        },
+        "ell_status": {
+          "class_0_mean_pred": 2.6969919204711914,
+          "class_0_mean_true": 2.6638567447662354,
+          "class_0_n": 949,
+          "class_1_mean_pred": 2.2802276611328125,
+          "class_1_mean_true": 2.36328125,
+          "class_1_n": 512,
+          "model_smd": 0.48245367407798767,
+          "human_smd": 0.3107982277870178,
+          "amplification": 0.17165544629096985
+        },
+        "econ_disadvantaged": {
+          "class_0_mean_pred": 2.574079990386963,
+          "class_0_mean_true": 2.5947866439819336,
+          "class_0_n": 422,
+          "class_1_mean_pred": 2.54109263420105,
+          "class_1_mean_true": 2.544668674468994,
+          "class_1_n": 1041,
+          "model_smd": 0.0356326587498188,
+          "human_smd": 0.04952923581004143,
+          "amplification": -0.013896577060222626
+        },
+        "disability": {
+          "class_0_mean_pred": 2.766963243484497,
+          "class_0_mean_true": 2.7681660652160645,
+          "class_0_n": 867,
+          "class_1_mean_pred": 2.2358758449554443,
+          "class_1_mean_true": 2.255033493041992,
+          "class_1_n": 596,
+          "model_smd": 0.611364483833313,
+          "human_smd": 0.5299142003059387,
+          "amplification": 0.08145028352737427
+        },
+        "race_white_vs_black": {
+          "class_0_mean_pred": 2.557096242904663,
+          "class_0_mean_true": 2.531802177429199,
+          "class_0_n": 566,
+          "class_1_mean_pred": 2.610515832901001,
+          "class_1_mean_true": 2.690265417098999,
+          "class_1_n": 113,
+          "model_smd": -0.05988971143960953,
+          "human_smd": -0.16386540234088898,
+          "amplification": -0.10397569090127945
+        }
+      },
+      "history": [
+        {
+          "epoch": 1,
+          "lambda": 0.12211367532151673,
+          "train_score_loss": 0.8356330200673028,
+          "train_demo_loss_mean": 0.6997717324039285,
+          "train_demo_loss_per_attr": {
+            "gender": 0.701491679313305,
+            "ell_status": 0.6862350097869118,
+            "econ_disadvantaged": 0.7039076476376772,
+            "disability": 0.6923206165152606,
+            "race_white_vs_black": 0.7149037087664885
+          },
+          "dev_qwk": 0.7433204027372183,
+          "dev_demo_acc_per_attr": {
+            "gender": 0.5562913907284768,
+            "ell_status": 0.574750830564784,
+            "econ_disadvantaged": 0.5993377483443708,
+            "disability": 0.7317880794701986,
+            "race_white_vs_black": 0.6689655172413793
+          }
+        },
+        {
+          "epoch": 2,
+          "lambda": 0.23076934520697578,
+          "train_score_loss": 0.45084827943511213,
+          "train_demo_loss_mean": 0.6854605751638385,
+          "train_demo_loss_per_attr": {
+            "gender": 0.6900476093487474,
+            "ell_status": 0.6818698991560883,
+            "econ_disadvantaged": 0.686398787104481,
+            "disability": 0.6792941561531467,
+            "race_white_vs_black": 0.6896924240567285
+          },
+          "dev_qwk": 0.7420633641666935,
+          "dev_demo_acc_per_attr": {
+            "gender": 0.5099337748344371,
+            "ell_status": 0.6046511627906976,
+            "econ_disadvantaged": 0.6788079470198676,
+            "disability": 0.7317880794701986,
+            "race_white_vs_black": 0.7034482758620689
+          }
+        },
+        {
+          "epoch": 3,
+          "lambda": 0.3173550407344087,
+          "train_score_loss": 0.39896056454484635,
+          "train_demo_loss_mean": 0.6827252586104595,
+          "train_demo_loss_per_attr": {
+            "gender": 0.6906668417394842,
+            "ell_status": 0.6780697161941641,
+            "econ_disadvantaged": 0.6837268316714977,
+            "disability": 0.6753088705041056,
+            "race_white_vs_black": 0.6858540329430466
+          },
+          "dev_qwk": 0.7883691813204268,
+          "dev_demo_acc_per_attr": {
+            "gender": 0.48344370860927155,
+            "ell_status": 0.6179401993355482,
+            "econ_disadvantaged": 0.6589403973509934,
+            "disability": 0.7152317880794702,
+            "race_white_vs_black": 0.7034482758620689
+          }
+        },
+        {
+          "epoch": 4,
+          "lambda": 0.380642589161175,
+          "train_score_loss": 0.3630236153279879,
+          "train_demo_loss_mean": 0.6797740839855206,
+          "train_demo_loss_per_attr": {
+            "gender": 0.6902405117455992,
+            "ell_status": 0.6773791212949238,
+            "econ_disadvantaged": 0.6824272572444576,
+            "disability": 0.6682633593134315,
+            "race_white_vs_black": 0.6805601703291908
+          },
+          "dev_qwk": 0.7700874407273677,
+          "dev_demo_acc_per_attr": {
+            "gender": 0.4735099337748344,
+            "ell_status": 0.6212624584717608,
+            "econ_disadvantaged": 0.6920529801324503,
+            "disability": 0.6688741721854304,
+            "race_white_vs_black": 0.7034482758620689
+          }
+        },
+        {
+          "epoch": 5,
+          "lambda": 0.42403866195296835,
+          "train_score_loss": 0.3320661302484421,
+          "train_demo_loss_mean": 0.6782649352472585,
+          "train_demo_loss_per_attr": {
+            "gender": 0.6893569327332972,
+            "ell_status": 0.6728026442235254,
+            "econ_disadvantaged": 0.6824675658144048,
+            "disability": 0.6678389045573038,
+            "race_white_vs_black": 0.678858628907761
+          },
+          "dev_qwk": 0.834946908182386,
+          "dev_demo_acc_per_attr": {
+            "gender": 0.4966887417218543,
+            "ell_status": 0.6345514950166113,
+            "econ_disadvantaged": 0.6754966887417219,
+            "disability": 0.695364238410596,
+            "race_white_vs_black": 0.7103448275862069
+          }
+        },
+        {
+          "epoch": 6,
+          "lambda": 0.45250764632399587,
+          "train_score_loss": 0.2942317393603246,
+          "train_demo_loss_mean": 0.6776217992579512,
+          "train_demo_loss_per_attr": {
+            "gender": 0.6893703187360661,
+            "ell_status": 0.6723243610689751,
+            "econ_disadvantaged": 0.682927433171865,
+            "disability": 0.6645834701433255,
+            "race_white_vs_black": 0.6789034131695243
+          },
+          "dev_qwk": 0.815888201087976,
+          "dev_demo_acc_per_attr": {
+            "gender": 0.48344370860927155,
+            "ell_status": 0.6046511627906976,
+            "econ_disadvantaged": 0.6622516556291391,
+            "disability": 0.7019867549668874,
+            "race_white_vs_black": 0.696551724137931
+          }
+        },
+        {
+          "epoch": 7,
+          "lambda": 0.470645897590959,
+          "train_score_loss": 0.2548669692122036,
+          "train_demo_loss_mean": 0.6752370269544786,
+          "train_demo_loss_per_attr": {
+            "gender": 0.6869709752046591,
+            "ell_status": 0.6694302487752214,
+            "econ_disadvantaged": 0.68125815331738,
+            "disability": 0.6587236274524353,
+            "race_white_vs_black": 0.6798021300226974
+          },
+          "dev_qwk": 0.7648946649296177,
+          "dev_demo_acc_per_attr": {
+            "gender": 0.5,
+            "ell_status": 0.5946843853820598,
+            "econ_disadvantaged": 0.6423841059602649,
+            "disability": 0.7450331125827815,
+            "race_white_vs_black": 0.7034482758620689
+          }
+        },
+        {
+          "epoch": 8,
+          "lambda": 0.4819877970496632,
+          "train_score_loss": 0.241169188013832,
+          "train_demo_loss_mean": 0.6781466536905321,
+          "train_demo_loss_per_attr": {
+            "gender": 0.6878422400204733,
+            "ell_status": 0.6714357901350798,
+            "econ_disadvantaged": 0.6817858364255787,
+            "disability": 0.6630299877346507,
+            "race_white_vs_black": 0.6866394141368779
+          },
+          "dev_qwk": 0.7095412375521322,
+          "dev_demo_acc_per_attr": {
+            "gender": 0.5264900662251656,
+            "ell_status": 0.5714285714285714,
+            "econ_disadvantaged": 0.5397350993377483,
+            "disability": 0.7450331125827815,
+            "race_white_vs_black": 0.7034482758620689
+          }
+        },
+        {
+          "epoch": 9,
+          "lambda": 0.4889970661228026,
+          "train_score_loss": 0.19442896272156998,
+          "train_demo_loss_mean": 0.6815414775992624,
+          "train_demo_loss_per_attr": {
+            "gender": 0.6873623818455917,
+            "ell_status": 0.6774726901024426,
+            "econ_disadvantaged": 0.686065770193731,
+            "disability": 0.6627471701041749,
+            "race_white_vs_black": 0.6940593757503719
+          },
+          "dev_qwk": 0.7644514562246291,
+          "dev_demo_acc_per_attr": {
+            "gender": 0.5099337748344371,
+            "ell_status": 0.6013289036544851,
+            "econ_disadvantaged": 0.543046357615894,
+            "disability": 0.7549668874172185,
+            "race_white_vs_black": 0.7034482758620689
+          }
+        },
+        {
+          "epoch": 10,
+          "lambda": 0.49329736542598546,
+          "train_score_loss": 0.175849272445201,
+          "train_demo_loss_mean": 0.6849756907340101,
+          "train_demo_loss_per_attr": {
+            "gender": 0.6883386601297146,
+            "ell_status": 0.6782709919384295,
+            "econ_disadvantaged": 0.6869448092273134,
+            "disability": 0.6604010183316058,
+            "race_white_vs_black": 0.7109229740429872
+          },
+          "dev_qwk": 0.8117562615692645,
+          "dev_demo_acc_per_attr": {
+            "gender": 0.5364238410596026,
+            "ell_status": 0.5913621262458472,
+            "econ_disadvantaged": 0.5993377483443708,
+            "disability": 0.7549668874172185,
+            "race_white_vs_black": 0.7034482758620689
+          }
+        },
+        {
+          "epoch": 11,
+          "lambda": 0.4959238967996543,
+          "train_score_loss": 0.1614651239187239,
+          "train_demo_loss_mean": 0.6873032617417872,
+          "train_demo_loss_per_attr": {
+            "gender": 0.6898383721132113,
+            "ell_status": 0.6815943978974666,
+            "econ_disadvantaged": 0.6916784361823816,
+            "disability": 0.665263471964847,
+            "race_white_vs_black": 0.70814163055103
+          },
+          "dev_qwk": 0.8104998954193683,
+          "dev_demo_acc_per_attr": {
+            "gender": 0.5231788079470199,
+            "ell_status": 0.5913621262458472,
+            "econ_disadvantaged": 0.48344370860927155,
+            "disability": 0.7284768211920529,
+            "race_white_vs_black": 0.7034482758620689
+          }
+        }
+      ],
+      "pt_path": "/workspace/results/xlnet/grl_joint_l05_asap/xlnet_Exploring_Venus.pt"
+    },
+    {
+      "prompt": "Facial action coding system",
+      "n_train": 2738,
+      "n_dev": 305,
+      "n_test": 1840,
+      "best_dev_qwk": 0.8220520534208486,
+      "test_qwk": 0.7875493378798141,
+      "test_acc": 0.6380434782608696,
+      "bias": {
+        "gender": {
+          "class_0_mean_pred": 3.5240132808685303,
+          "class_0_mean_true": 3.2680068016052246,
+          "class_0_n": 597,
+          "class_1_mean_pred": 3.373242139816284,
+          "class_1_mean_true": 3.1346774101257324,
+          "class_1_n": 1240,
+          "model_smd": 0.1531178504228592,
+          "human_smd": 0.13918165862560272,
+          "amplification": 0.01393619179725647
+        },
+        "ell_status": {
+          "class_0_mean_pred": 3.446263551712036,
+          "class_0_mean_true": 3.1964893341064453,
+          "class_0_n": 1766,
+          "class_1_mean_pred": 2.8154687881469727,
+          "class_1_mean_true": 2.7200000286102295,
+          "class_1_n": 50,
+          "model_smd": 0.7323349714279175,
+          "human_smd": 0.5684886574745178,
+          "amplification": 0.16384631395339966
+        },
+        "econ_disadvantaged": {
+          "class_0_mean_pred": 3.607809066772461,
+          "class_0_mean_true": 3.343468427658081,
+          "class_0_n": 888,
+          "class_1_mean_pred": 3.248600482940674,
+          "class_1_mean_true": 3.0231823921203613,
+          "class_1_n": 949,
+          "model_smd": 0.37038615345954895,
+          "human_smd": 0.3390445113182068,
+          "amplification": 0.03134164214134216
+        },
+        "disability": {
+          "class_0_mean_pred": 3.4307429790496826,
+          "class_0_mean_true": 3.1844170093536377,
+          "class_0_n": 1784,
+          "class_1_mean_pred": 3.1360554695129395,
+          "class_1_mean_true": 2.962264060974121,
+          "class_1_n": 53,
+          "model_smd": 0.3186810314655304,
+          "human_smd": 0.22626647353172302,
+          "amplification": 0.09241455793380737
+        },
+        "race_white_vs_black": {
+          "class_0_mean_pred": 3.4372916221618652,
+          "class_0_mean_true": 3.195897340774536,
+          "class_0_n": 975,
+          "class_1_mean_pred": 2.9945693016052246,
+          "class_1_mean_true": 2.7987804412841797,
+          "class_1_n": 164,
+          "model_smd": 0.49305692315101624,
+          "human_smd": 0.438568651676178,
+          "amplification": 0.05448827147483826
+        }
+      },
+      "history": [
+        {
+          "epoch": 1,
+          "lambda": 0.12211669908949463,
+          "train_score_loss": 0.7044155087411795,
+          "train_demo_loss_mean": 0.6981266442830452,
+          "train_demo_loss_per_attr": {
+            "gender": 0.6997139880600534,
+            "ell_status": 0.6833838474034467,
+            "econ_disadvantaged": 0.7071050528416468,
+            "disability": 0.7023494302899571,
+            "race_white_vs_black": 0.698080902820122
+          },
+          "dev_qwk": 0.7175108538350217,
+          "dev_demo_acc_per_attr": {
+            "gender": 0.5311475409836065,
+            "ell_status": 0.83,
+            "econ_disadvantaged": 0.580327868852459,
+            "disability": 0.740983606557377,
+            "race_white_vs_black": 0.717391304347826
+          }
+        },
+        {
+          "epoch": 2,
+          "lambda": 0.2307718757968229,
+          "train_score_loss": 0.383273852663897,
+          "train_demo_loss_mean": 0.6791797976811933,
+          "train_demo_loss_per_attr": {
+            "gender": 0.6934614346057885,
+            "ell_status": 0.6710381104542142,
+            "econ_disadvantaged": 0.6863068868298853,
+            "disability": 0.6683276099740261,
+            "race_white_vs_black": 0.6767649465420521
+          },
+          "dev_qwk": 0.7511284722222222,
+          "dev_demo_acc_per_attr": {
+            "gender": 0.5836065573770491,
+            "ell_status": 0.8333333333333334,
+            "econ_disadvantaged": 0.5311475409836065,
+            "disability": 0.7672131147540984,
+            "race_white_vs_black": 0.7065217391304348
+          }
+        },
+        {
+          "epoch": 3,
+          "lambda": 0.3173569608832094,
+          "train_score_loss": 0.3422572872253819,
+          "train_demo_loss_mean": 0.6712978167394119,
+          "train_demo_loss_per_attr": {
+            "gender": 0.6886758822409719,
+            "ell_status": 0.6622652434887247,
+            "econ_disadvantaged": 0.6784400751647391,
+            "disability": 0.6532974458481755,
+            "race_white_vs_black": 0.6738104369544489
+          },
+          "dev_qwk": 0.7698876149689708,
+          "dev_demo_acc_per_attr": {
+            "gender": 0.5704918032786885,
+            "ell_status": 0.83,
+            "econ_disadvantaged": 0.6229508196721312,
+            "disability": 0.7672131147540984,
+            "race_white_vs_black": 0.717391304347826
+          }
+        },
+        {
+          "epoch": 4,
+          "lambda": 0.38064394112530686,
+          "train_score_loss": 0.30784453258974176,
+          "train_demo_loss_mean": 0.6713831068320198,
+          "train_demo_loss_per_attr": {
+            "gender": 0.6875314003152865,
+            "ell_status": 0.6630389297675945,
+            "econ_disadvantaged": 0.6814972145247938,
+            "disability": 0.6513798372183247,
+            "race_white_vs_black": 0.6734681523340995
+          },
+          "dev_qwk": 0.788657613635341,
+          "dev_demo_acc_per_attr": {
+            "gender": 0.5868852459016394,
+            "ell_status": 0.8333333333333334,
+            "econ_disadvantaged": 0.5049180327868853,
+            "disability": 0.7540983606557377,
+            "race_white_vs_black": 0.7119565217391305
+          }
+        },
+        {
+          "epoch": 5,
+          "lambda": 0.42403956476762705,
+          "train_score_loss": 0.2641934519531607,
+          "train_demo_loss_mean": 0.6706485347495439,
+          "train_demo_loss_per_attr": {
+            "gender": 0.6868064646093239,
+            "ell_status": 0.6627426731241691,
+            "econ_disadvantaged": 0.68078795187652,
+            "disability": 0.649519203829373,
+            "race_white_vs_black": 0.6733863803083331
+          },
+          "dev_qwk": 0.807022234104175,
+          "dev_demo_acc_per_attr": {
+            "gender": 0.5081967213114754,
+            "ell_status": 0.83,
+            "econ_disadvantaged": 0.6065573770491803,
+            "disability": 0.760655737704918,
+            "race_white_vs_black": 0.717391304347826
+          }
+        },
+        {
+          "epoch": 6,
+          "lambda": 0.452508228169735,
+          "train_score_loss": 0.24205064599404288,
+          "train_demo_loss_mean": 0.6724358095529186,
+          "train_demo_loss_per_attr": {
+            "gender": 0.6892060195942029,
+            "ell_status": 0.6666104933554303,
+            "econ_disadvantaged": 0.6781831839402808,
+            "disability": 0.6497057992317995,
+            "race_white_vs_black": 0.6784735516428793
+          },
+          "dev_qwk": 0.7668336167314544,
+          "dev_demo_acc_per_attr": {
+            "gender": 0.6,
+            "ell_status": 0.8266666666666667,
+            "econ_disadvantaged": 0.6262295081967213,
+            "disability": 0.7573770491803279,
+            "race_white_vs_black": 0.7336956521739131
+          }
+        },
+        {
+          "epoch": 7,
+          "lambda": 0.4706462640666914,
+          "train_score_loss": 0.2138260812808163,
+          "train_demo_loss_mean": 0.6736801729008185,
+          "train_demo_loss_per_attr": {
+            "gender": 0.6874929008361844,
+            "ell_status": 0.6756715083789684,
+            "econ_disadvantaged": 0.6795250274363558,
+            "disability": 0.6502047178514261,
+            "race_white_vs_black": 0.6755067100011576
+          },
+          "dev_qwk": 0.8020546015046582,
+          "dev_demo_acc_per_attr": {
+            "gender": 0.5672131147540984,
+            "ell_status": 0.82,
+            "econ_disadvantaged": 0.6360655737704918,
+            "disability": 0.6459016393442623,
+            "race_white_vs_black": 0.717391304347826
+          }
+        },
+        {
+          "epoch": 8,
+          "lambda": 0.4819880245533572,
+          "train_score_loss": 0.20227343501445583,
+          "train_demo_loss_mean": 0.678642274282714,
+          "train_demo_loss_per_attr": {
+            "gender": 0.6885568794210388,
+            "ell_status": 0.675822244337589,
+            "econ_disadvantaged": 0.6873348395610858,
+            "disability": 0.6559494056692943,
+            "race_white_vs_black": 0.6855480024245617
+          },
+          "dev_qwk": 0.8220520534208486,
+          "dev_demo_acc_per_attr": {
+            "gender": 0.5475409836065573,
+            "ell_status": 0.8233333333333334,
+            "econ_disadvantaged": 0.6196721311475409,
+            "disability": 0.6491803278688525,
+            "race_white_vs_black": 0.6141304347826086
+          }
+        },
+        {
+          "epoch": 9,
+          "lambda": 0.48899720608765695,
+          "train_score_loss": 0.1778881791911045,
+          "train_demo_loss_mean": 0.6849776311349276,
+          "train_demo_loss_per_attr": {
+            "gender": 0.689152413290641,
+            "ell_status": 0.6828107303453897,
+            "econ_disadvantaged": 0.6900127032557178,
+            "disability": 0.6677257097181498,
+            "race_white_vs_black": 0.6951865990647391
+          },
+          "dev_qwk": 0.6996029263875978,
+          "dev_demo_acc_per_attr": {
+            "gender": 0.5049180327868853,
+            "ell_status": 0.8233333333333334,
+            "econ_disadvantaged": 0.5704918032786885,
+            "disability": 0.7442622950819672,
+            "race_white_vs_black": 0.43478260869565216
+          }
+        },
+        {
+          "epoch": 10,
+          "lambda": 0.4932974510588146,
+          "train_score_loss": 0.15697033689177062,
+          "train_demo_loss_mean": 0.6878130059422377,
+          "train_demo_loss_per_attr": {
+            "gender": 0.6895496251814108,
+            "ell_status": 0.6931573002038729,
+            "econ_disadvantaged": 0.6919184974168293,
+            "disability": 0.6737728907159739,
+            "race_white_vs_black": 0.6906667161931015
+          },
+          "dev_qwk": 0.7544832520906937,
+          "dev_demo_acc_per_attr": {
+            "gender": 0.521311475409836,
+            "ell_status": 0.8166666666666667,
+            "econ_disadvantaged": 0.5147540983606558,
+            "disability": 0.7278688524590164,
+            "race_white_vs_black": 0.6902173913043478
+          }
+        },
+        {
+          "epoch": 11,
+          "lambda": 0.49592394901363157,
+          "train_score_loss": 0.13785040961990747,
+          "train_demo_loss_mean": 0.6955067831749271,
+          "train_demo_loss_per_attr": {
+            "gender": 0.6911915407756128,
+            "ell_status": 0.7020238506316608,
+            "econ_disadvantaged": 0.6904331202045001,
+            "disability": 0.6936464340856786,
+            "race_white_vs_black": 0.7002389701771828
+          },
+          "dev_qwk": 0.8118161822540612,
+          "dev_demo_acc_per_attr": {
+            "gender": 0.5016393442622951,
+            "ell_status": 0.7966666666666666,
+            "econ_disadvantaged": 0.6295081967213115,
+            "disability": 0.7344262295081967,
+            "race_white_vs_black": 0.6413043478260869
+          }
+        },
+        {
+          "epoch": 12,
+          "lambda": 0.4975237787398532,
+          "train_score_loss": 0.1363897971466042,
+          "train_demo_loss_mean": 0.6910832382148533,
+          "train_demo_loss_per_attr": {
+            "gender": 0.693274990971825,
+            "ell_status": 0.6873834732730697,
+            "econ_disadvantaged": 0.6884572719743091,
+            "disability": 0.6886286114643871,
+            "race_white_vs_black": 0.697671843390675
+          },
+          "dev_qwk": 0.7642598713067064,
+          "dev_demo_acc_per_attr": {
+            "gender": 0.5081967213114754,
+            "ell_status": 0.82,
+            "econ_disadvantaged": 0.4524590163934426,
+            "disability": 0.7278688524590164,
+            "race_white_vs_black": 0.7010869565217391
+          }
+        },
+        {
+          "epoch": 13,
+          "lambda": 0.49849663112741993,
+          "train_score_loss": 0.11668829294431811,
+          "train_demo_loss_mean": 0.684722420151968,
+          "train_demo_loss_per_attr": {
+            "gender": 0.6936050369055223,
+            "ell_status": 0.6748038143151595,
+            "econ_disadvantaged": 0.6827488825351709,
+            "disability": 0.675526984834148,
+            "race_white_vs_black": 0.6969273821698397
+          },
+          "dev_qwk": 0.7887266213884323,
+          "dev_demo_acc_per_attr": {
+            "gender": 0.5704918032786885,
+            "ell_status": 0.82,
+            "econ_disadvantaged": 0.5147540983606558,
+            "disability": 0.7311475409836066,
+            "race_white_vs_black": 0.7010869565217391
+          }
+        },
+        {
+          "epoch": 14,
+          "lambda": 0.4990876209867676,
+          "train_score_loss": 0.10725006593936895,
+          "train_demo_loss_mean": 0.6800207925913252,
+          "train_demo_loss_per_attr": {
+            "gender": 0.6957290220740072,
+            "ell_status": 0.6667743825916895,
+            "econ_disadvantaged": 0.6789772240073851,
+            "disability": 0.6682020695924323,
+            "race_white_vs_black": 0.6904212646911116
+          },
+          "dev_qwk": 0.7929143454038997,
+          "dev_demo_acc_per_attr": {
+            "gender": 0.5540983606557377,
+            "ell_status": 0.8233333333333334,
+            "econ_disadvantaged": 0.6032786885245902,
+            "disability": 0.740983606557377,
+            "race_white_vs_black": 0.7010869565217391
+          }
+        }
+      ],
+      "pt_path": "/workspace/results/xlnet/grl_joint_l05_asap/xlnet_Facial_action_coding_system.pt"
+    },
+    {
+      "prompt": "The Face on Mars",
+      "n_train": 1884,
+      "n_dev": 210,
+      "n_test": 921,
+      "best_dev_qwk": 0.8279329608938547,
+      "test_qwk": 0.6435612588651798,
+      "test_acc": 0.5635179153094463,
+      "bias": {
+        "gender": {
+          "class_0_mean_pred": 2.880369186401367,
+          "class_0_mean_true": 2.5658435821533203,
+          "class_0_n": 486,
+          "class_1_mean_pred": 2.6480376720428467,
+          "class_1_mean_true": 2.330232620239258,
+          "class_1_n": 430,
+          "model_smd": 0.32116737961769104,
+          "human_smd": 0.2637569308280945,
+          "amplification": 0.05741044878959656
+        },
+        "ell_status": {
+          "class_0_mean_pred": 2.787019968032837,
+          "class_0_mean_true": 2.470588207244873,
+          "class_0_n": 765,
+          "class_1_mean_pred": 2.679144859313965,
+          "class_1_mean_true": 2.368055582046509,
+          "class_1_n": 144,
+          "model_smd": 0.15008112788200378,
+          "human_smd": 0.11138279736042023,
+          "amplification": 0.03869833052158356
+        },
+        "econ_disadvantaged": {
+          "class_0_mean_pred": 2.9271600246429443,
+          "class_0_mean_true": 2.579411745071411,
+          "class_0_n": 340,
+          "class_1_mean_pred": 2.679307699203491,
+          "class_1_mean_true": 2.381944417953491,
+          "class_1_n": 576,
+          "model_smd": 0.336463063955307,
+          "human_smd": 0.21668018400669098,
+          "amplification": 0.11978287994861603
+        },
+        "disability": {
+          "class_0_mean_pred": 2.8103132247924805,
+          "class_0_mean_true": 2.496917486190796,
+          "class_0_n": 811,
+          "class_1_mean_pred": 2.470014810562134,
+          "class_1_mean_true": 2.133333444595337,
+          "class_1_n": 105,
+          "model_smd": 0.4931007921695709,
+          "human_smd": 0.39237433671951294,
+          "amplification": 0.10072645545005798
+        },
+        "race_white_vs_black": {
+          "class_0_mean_pred": 2.7601799964904785,
+          "class_0_mean_true": 2.4666666984558105,
+          "class_0_n": 330,
+          "class_1_mean_pred": 2.5755319595336914,
+          "class_1_mean_true": 2.2586207389831543,
+          "class_1_n": 232,
+          "model_smd": 0.2682836055755615,
+          "human_smd": 0.23408406972885132,
+          "amplification": 0.034199535846710205
+        }
+      },
+      "history": [
+        {
+          "epoch": 1,
+          "lambda": 0.12196131295766854,
+          "train_score_loss": 1.0036991690374484,
+          "train_demo_loss_mean": 0.6834566158277922,
+          "train_demo_loss_per_attr": {
+            "gender": 0.7253758915873806,
+            "ell_status": 0.6497219838859053,
+            "econ_disadvantaged": 0.6952578931460667,
+            "disability": 0.6492811611267811,
+            "race_white_vs_black": 0.6976461493928278
+          },
+          "dev_qwk": 0.8008136079084375,
+          "dev_demo_acc_per_attr": {
+            "gender": 0.5144230769230769,
+            "ell_status": 0.9463414634146341,
+            "econ_disadvantaged": 0.5288461538461539,
+            "disability": 0.9807692307692307,
+            "race_white_vs_black": 0.6666666666666666
+          }
+        },
+        {
+          "epoch": 2,
+          "lambda": 0.23064182406564204,
+          "train_score_loss": 0.4684901794304007,
+          "train_demo_loss_mean": 0.653459747956092,
+          "train_demo_loss_per_attr": {
+            "gender": 0.6961965974438133,
+            "ell_status": 0.6200232643898893,
+            "econ_disadvantaged": 0.6911939817625813,
+            "disability": 0.5704491380552609,
+            "race_white_vs_black": 0.6894357581289148
+          },
+          "dev_qwk": 0.745090498281374,
+          "dev_demo_acc_per_attr": {
+            "gender": 0.5961538461538461,
+            "ell_status": 0.9463414634146341,
+            "econ_disadvantaged": 0.5961538461538461,
+            "disability": 0.9807692307692307,
+            "race_white_vs_black": 0.6598639455782312
+          }
+        },
+        {
+          "epoch": 3,
+          "lambda": 0.3172582753174328,
+          "train_score_loss": 0.3968661869154361,
+          "train_demo_loss_mean": 0.6493587174885114,
+          "train_demo_loss_per_attr": {
+            "gender": 0.6921330772138289,
+            "ell_status": 0.6141236938619792,
+            "econ_disadvantaged": 0.6871924324279006,
+            "disability": 0.5712775034926028,
+            "race_white_vs_black": 0.6820668804462452
+          },
+          "dev_qwk": 0.8027280916226998,
+          "dev_demo_acc_per_attr": {
+            "gender": 0.6105769230769231,
+            "ell_status": 0.9463414634146341,
+            "econ_disadvantaged": 0.5817307692307693,
+            "disability": 0.9807692307692307,
+            "race_white_vs_black": 0.6598639455782312
+          }
+        },
+        {
+          "epoch": 4,
+          "lambda": 0.3805744544175015,
+          "train_score_loss": 0.36974870070277255,
+          "train_demo_loss_mean": 0.6526955349234799,
+          "train_demo_loss_per_attr": {
+            "gender": 0.6896081938507834,
+            "ell_status": 0.6333485229935384,
+            "econ_disadvantaged": 0.6869250867101881,
+            "disability": 0.5683638401040366,
+            "race_white_vs_black": 0.6852320309588527
+          },
+          "dev_qwk": 0.8279329608938547,
+          "dev_demo_acc_per_attr": {
+            "gender": 0.5721153846153846,
+            "ell_status": 0.9463414634146341,
+            "econ_disadvantaged": 0.5817307692307693,
+            "disability": 0.9807692307692307,
+            "race_white_vs_black": 0.6394557823129252
+          }
+        },
+        {
+          "epoch": 5,
+          "lambda": 0.423993161625953,
+          "train_score_loss": 0.3273058712102805,
+          "train_demo_loss_mean": 0.652471877747206,
+          "train_demo_loss_per_attr": {
+            "gender": 0.6858670464986693,
+            "ell_status": 0.635442407085958,
+            "econ_disadvantaged": 0.6841269581955459,
+            "disability": 0.574714962882225,
+            "race_white_vs_black": 0.6822080140736323
+          },
+          "dev_qwk": 0.7954282866269455,
+          "dev_demo_acc_per_attr": {
+            "gender": 0.5865384615384616,
+            "ell_status": 0.9463414634146341,
+            "econ_disadvantaged": 0.6298076923076923,
+            "disability": 0.9807692307692307,
+            "race_white_vs_black": 0.6598639455782312
+          }
+        },
+        {
+          "epoch": 6,
+          "lambda": 0.45247832173404257,
+          "train_score_loss": 0.2852692006753002,
+          "train_demo_loss_mean": 0.6505458378640657,
+          "train_demo_loss_per_attr": {
+            "gender": 0.6903726619523235,
+            "ell_status": 0.6204830775090171,
+            "econ_disadvantaged": 0.6809391818865381,
+            "disability": 0.5769131654345692,
+            "race_white_vs_black": 0.684021102537881
+          },
+          "dev_qwk": 0.7611404595202589,
+          "dev_demo_acc_per_attr": {
+            "gender": 0.6298076923076923,
+            "ell_status": 0.9463414634146341,
+            "econ_disadvantaged": 0.6009615384615384,
+            "disability": 0.9807692307692307,
+            "race_white_vs_black": 0.673469387755102
+          }
+        },
+        {
+          "epoch": 7,
+          "lambda": 0.470627427266739,
+          "train_score_loss": 0.26159030616663065,
+          "train_demo_loss_mean": 0.6495139102889231,
+          "train_demo_loss_per_attr": {
+            "gender": 0.6887258630303358,
+            "ell_status": 0.6327083717527905,
+            "econ_disadvantaged": 0.6840748538177486,
+            "disability": 0.5619682932806294,
+            "race_white_vs_black": 0.6800921695631111
+          },
+          "dev_qwk": 0.7640758273161581,
+          "dev_demo_acc_per_attr": {
+            "gender": 0.5528846153846154,
+            "ell_status": 0.9463414634146341,
+            "econ_disadvantaged": 0.6394230769230769,
+            "disability": 0.9807692307692307,
+            "race_white_vs_black": 0.6666666666666666
+          }
+        },
+        {
+          "epoch": 8,
+          "lambda": 0.4819763308102304,
+          "train_score_loss": 0.253063349713692,
+          "train_demo_loss_mean": 0.6521668314978732,
+          "train_demo_loss_per_attr": {
+            "gender": 0.6894667426491595,
+            "ell_status": 0.6372023973950468,
+            "econ_disadvantaged": 0.6820749785277769,
+            "disability": 0.5762609002724536,
+            "race_white_vs_black": 0.6758291386449297
+          },
+          "dev_qwk": 0.7466942807073442,
+          "dev_demo_acc_per_attr": {
+            "gender": 0.5817307692307693,
+            "ell_status": 0.9463414634146341,
+            "econ_disadvantaged": 0.6105769230769231,
+            "disability": 0.9807692307692307,
+            "race_white_vs_black": 0.673469387755102
+          }
+        },
+        {
+          "epoch": 9,
+          "lambda": 0.4889900118286784,
+          "train_score_loss": 0.24076765509927348,
+          "train_demo_loss_mean": 0.6527583085881549,
+          "train_demo_loss_per_attr": {
+            "gender": 0.6874076478472421,
+            "ell_status": 0.6329536316931279,
+            "econ_disadvantaged": 0.6850019931349585,
+            "disability": 0.5761763254326117,
+            "race_white_vs_black": 0.6822519448328344
+          },
+          "dev_qwk": 0.7763625907861388,
+          "dev_demo_acc_per_attr": {
+            "gender": 0.5961538461538461,
+            "ell_status": 0.9463414634146341,
+            "econ_disadvantaged": 0.6057692307692307,
+            "disability": 0.9807692307692307,
+            "race_white_vs_black": 0.6666666666666666
+          }
+        },
+        {
+          "epoch": 10,
+          "lambda": 0.4932930494790768,
+          "train_score_loss": 0.20024215036137089,
+          "train_demo_loss_mean": 0.6469372738003337,
+          "train_demo_loss_per_attr": {
+            "gender": 0.6884005872066321,
+            "ell_status": 0.6219215340820753,
+            "econ_disadvantaged": 0.6826866609754871,
+            "disability": 0.5659301204924758,
+            "race_white_vs_black": 0.6757474662449986
+          },
+          "dev_qwk": 0.7987564351139935,
+          "dev_demo_acc_per_attr": {
+            "gender": 0.5817307692307693,
+            "ell_status": 0.9463414634146341,
+            "econ_disadvantaged": 0.6009615384615384,
+            "disability": 0.9807692307692307,
+            "race_white_vs_black": 0.6666666666666666
+          }
+        }
+      ],
+      "pt_path": "/workspace/results/xlnet/grl_joint_l05_asap/xlnet_The_Face_on_Mars.pt"
+    }
+  ]
+}

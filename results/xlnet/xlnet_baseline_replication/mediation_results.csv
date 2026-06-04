@@ -1,5 +1,0 @@
-attribute,n_matched,coef_raw,coef_controlled,smd_raw,smd_controlled,prop_mediated
-gender,10402,-0.0491,-0.0002,-0.0449,-0.0002,0.9954
-ell_status,9898,-0.1482,-0.3231,-0.1346,-0.2935,-1.1804
-economically_disadvantaged,8699,-0.1247,-0.1477,-0.1118,-0.1325,-0.1845
-student_disability_status,8731,-0.1272,-0.1998,-0.1141,-0.1792,-0.5713

@@ -30,6 +30,16 @@ from sklearn.model_selection import train_test_split
 
 warnings.filterwarnings("ignore")
 
+# wandb optional — set USE_WANDB=0 to disable; silent fallback if not installed.
+USE_WANDB = os.environ.get("USE_WANDB", "1") == "1"
+if USE_WANDB:
+    try:
+        import wandb
+    except ImportError:
+        print("wandb not installed — continuing without logging "
+              "(set USE_WANDB=0 to silence)")
+        USE_WANDB = False
+
 # ── Config ─────────────────────────────────────────────────────────────────
 MODEL_NAME   = "xlnet-base-cased"
 MAX_LEN      = int(os.environ.get("MAX_LEN", 2048))
@@ -38,7 +48,22 @@ BATCH_SIZE   = int(os.environ.get("BATCH_SIZE", 8)) # Kwako & Ormerod (BEA 2024)
 EPOCHS       = int(os.environ.get("EPOCHS", 20))    # Kwako & Ormerod (BEA 2024)
 DEV_SPLIT    = 0.10
 RANDOM_SEED  = 42
-SCORE_COL    = "holistic_essay_score"
+
+# Dataset switch: PERSUADE (default) or ASAP. ASAP uses a different score
+# column and per-prompt score ranges.
+DATASET      = os.environ.get("DATASET", "PERSUADE").upper()
+if DATASET not in ("PERSUADE", "ASAP"):
+    raise ValueError("Set DATASET=PERSUADE or DATASET=ASAP")
+
+if DATASET == "PERSUADE":
+    SCORE_COL = "holistic_essay_score"
+    TRAIN_REL = "PERSUADE/train/persuade_corpus_2.0_train.csv"
+    TEST_REL  = "PERSUADE/test/persuade_corpus_2.0_test.csv"
+else:  # ASAP
+    SCORE_COL = "score"
+    TRAIN_REL = "ASAP/train/ASAP_2_Final_github_train.csv"
+    TEST_REL  = "ASAP/test/ASAP_2_Final_github_test.csv"
+
 TEXT_COL     = "full_text"
 PROMPT_COL   = "prompt_name"
 DEMO_COLS    = ["gender", "race_ethnicity", "economically_disadvantaged",
@@ -59,9 +84,17 @@ device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 print(f"[{RUN_VERSION}] device={device}  results={RESULTS_DIR}")
 
 # ── Metrics ────────────────────────────────────────────────────────────────
-def quadratic_weighted_kappa(y_true, y_pred, min_score=1, max_score=6):
-    y_true = np.clip(np.round(y_true).astype(int), min_score, max_score)
-    y_pred = np.clip(np.round(y_pred).astype(int), min_score, max_score)
+def quadratic_weighted_kappa(y_true, y_pred, min_score=None, max_score=None):
+    # Derive score range from the data when not given. PERSUADE is 1-6; ASAP
+    # ranges differ per prompt (e.g. 2-12, 0-30), so hardcoding would distort QWK.
+    yt = np.round(y_true).astype(int)
+    yp = np.round(y_pred).astype(int)
+    if min_score is None:
+        min_score = int(min(yt.min(), yp.min()))
+    if max_score is None:
+        max_score = int(max(yt.max(), yp.max()))
+    y_true = np.clip(yt, min_score, max_score)
+    y_pred = np.clip(yp, min_score, max_score)
     n = max_score - min_score + 1
     O = np.zeros((n, n))
     for t, p in zip(y_true, y_pred):
@@ -238,7 +271,9 @@ def train_prompt(prompt_name, train_df, test_df, tokenizer):
     test_true  = np.array(test_true)
 
     qwk = quadratic_weighted_kappa(test_true, test_preds)
-    exact_acc = np.mean(np.round(test_preds).clip(1, 6) == test_true)
+    lo = int(np.round(test_true).astype(int).min())
+    hi = int(np.round(test_true).astype(int).max())
+    exact_acc = np.mean(np.round(test_preds).clip(lo, hi) == test_true)
 
     test_df = test_df.copy()
     test_df["model_score"] = test_preds
@@ -267,44 +302,53 @@ def main():
         os.path.join(REPO_ROOT, "..", "DATA")
     )
 
-    persuade_train = pd.read_csv(
-        os.path.join(BASE, "PERSUADE/train/persuade_corpus_2.0_train.csv"),
+    df_train = pd.read_csv(
+        os.path.join(BASE, TRAIN_REL),
         low_memory=False
     ).drop_duplicates(subset="essay_id").reset_index(drop=True)
 
-    persuade_test = pd.read_csv(
-        os.path.join(BASE, "PERSUADE/test/persuade_corpus_2.0_test.csv"),
+    df_test = pd.read_csv(
+        os.path.join(BASE, TEST_REL),
         low_memory=False
     ).drop_duplicates(subset="essay_id").reset_index(drop=True)
 
-    # Alternative: load from HuggingFace once dataset is public
-    # persuade_train = pd.read_csv(
-    #     "hf://datasets/nlpscu/Analyzing-Demographic-Biases/PERSUADE/persuade_corpus_2.0_train.csv",
-    #     low_memory=False
-    # ).drop_duplicates(subset="essay_id").reset_index(drop=True)
-
-    for df in [persuade_train, persuade_test]:
+    for df in [df_train, df_test]:
         for c in DEMO_COLS:
             if c in df.columns:
                 df[c] = df[c].astype(str).str.lower().str.strip().replace("nan", pd.NA)
 
-    persuade_train = persuade_train[
-        persuade_train[TEXT_COL].notna() & persuade_train[SCORE_COL].notna()
+    df_train = df_train[
+        df_train[TEXT_COL].notna() & df_train[SCORE_COL].notna()
     ].reset_index(drop=True)
-    persuade_test = persuade_test[
-        persuade_test[TEXT_COL].notna() & persuade_test[SCORE_COL].notna()
+    df_test = df_test[
+        df_test[TEXT_COL].notna() & df_test[SCORE_COL].notna()
     ].reset_index(drop=True)
 
-    prompts = sorted(persuade_train[PROMPT_COL].dropna().unique())
-    print(f"PERSUADE loaded: train={len(persuade_train):,} test={len(persuade_test):,} prompts={len(prompts)}")
+    prompts = sorted(df_train[PROMPT_COL].dropna().unique())
+    print(f"{DATASET} loaded: train={len(df_train):,} test={len(df_test):,} prompts={len(prompts)}")
+
+    global USE_WANDB
+    if USE_WANDB:
+        try:
+            wandb.init(
+                project="xlnet-aes-replication",
+                name=RUN_VERSION,
+                group=RUN_VERSION,
+                config={"dataset": DATASET, "model": MODEL_NAME, "max_len": MAX_LEN,
+                        "batch_size": BATCH_SIZE, "epochs": EPOCHS, "lr": LR,
+                        "run_type": "baseline"},
+            )
+        except Exception as e:
+            print(f"wandb init failed ({e}) — continuing without logging")
+            USE_WANDB = False
 
     tokenizer = XLNetTokenizer.from_pretrained(MODEL_NAME)
 
     all_results = []
 
     for prompt in prompts:
-        tr = persuade_train[persuade_train[PROMPT_COL] == prompt].reset_index(drop=True)
-        te = persuade_test[persuade_test[PROMPT_COL] == prompt].reset_index(drop=True)
+        tr = df_train[df_train[PROMPT_COL] == prompt].reset_index(drop=True)
+        te = df_test[df_test[PROMPT_COL] == prompt].reset_index(drop=True)
 
         if len(tr) < 20 or len(te) < 5:
             print(f"[{prompt}] skipped (train={len(tr)}, test={len(te)})")
@@ -313,12 +357,25 @@ def main():
         result = train_prompt(prompt, tr, te, tokenizer)
         all_results.append(result)
 
+        if USE_WANDB:
+            log = {f"{prompt}/test_qwk": result["qwk"],
+                   f"{prompt}/test_acc": result["exact_acc"]}
+            for attr, b in result.get("bias", {}).items():
+                if isinstance(b, dict) and "model_smd" in b:
+                    log[f"{prompt}/model_smd/{attr}"] = b["model_smd"]
+            wandb.log(log)
+
     results_path = os.path.join(RESULTS_DIR, "results.json")
     with open(results_path, "w") as f:
         json.dump(all_results, f, indent=2)
 
     qwks = [r['qwk'] for r in all_results]
     print(f"\nmacro_qwk={np.mean(qwks):.4f}  saved={results_path}")
+
+    if USE_WANDB:
+        wandb.log({"summary/macro_qwk": float(np.mean(qwks)),
+                   "summary/n_prompts": len(all_results)})
+        wandb.finish()
 
 if __name__ == "__main__":
     main()

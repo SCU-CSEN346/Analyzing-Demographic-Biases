@@ -43,22 +43,44 @@ DATA_BASE  = os.environ.get(
 )
 
 # ── Config ─────────────────────────────────────────────────────────────────
-SCORE_COL  = "holistic_essay_score"
+# Dataset switch: PERSUADE (default) or ASAP. ASAP uses score column 'score'
+# and a different test CSV.
+DATASET    = os.environ.get("DATASET", "PERSUADE").upper()
+if DATASET not in ("PERSUADE", "ASAP"):
+    raise ValueError("Set DATASET=PERSUADE or DATASET=ASAP")
+
+if DATASET == "PERSUADE":
+    SCORE_COL = "holistic_essay_score"
+    TEST_REL  = "PERSUADE/test/persuade_corpus_2.0_test.csv"
+else:  # ASAP
+    SCORE_COL = "score"
+    TEST_REL  = "ASAP/test/ASAP_2_Final_github_test.csv"
 TEXT_COL   = "full_text"
 PROMPT_COL = "prompt_name"
+
+# Output routing (overridable via --out-dir / --label); avoids the prior bug
+# where every run wrote to baseline_replication/weighted_smd_* and clobbered it.
+OUT_DIR = None
+LABEL = None
 
 DEMO_PAIRS = {
     "gender": ("f", "m"),
     "ell_status": ("no", "yes"),
-    "economically_disadvantaged": (
-        "not economically disadvantaged",
-        "economically disadvantaged"
-    ),
-    "student_disability_status": (
-        "not identified as having disability",
-        "identified as having disability"
-    ),
+    "economically_disadvantaged": ("not economically disadvantaged",
+                                   "economically disadvantaged"),
+    "student_disability_status": ("not identified as having disability",
+                                  "identified as having disability"),
+    "race_black_white": ("white", "black/african american"),
 }
+
+# Map a DEMO_PAIRS key (output row label) to the source column in the test CSV.
+# Most attributes use the key as the column directly; race is pairwise
+# (multiple DEMO_PAIRS keys map to the single column 'race_ethnicity').
+ATTR_TO_COLUMN = {
+    "race_black_white": "race_ethnicity",
+}
+def column_for(attr):
+    return ATTR_TO_COLUMN.get(attr, attr)
 
 # ── Exact matching weights ─────────────────────────────────────────────────
 def compute_exact_matching_weights(df, group_col, score_col, group_a, group_b):
@@ -158,27 +180,51 @@ def weighted_regression_smd(df, group_col, score_col, pred_col,
         return None
 
 # ── Main ───────────────────────────────────────────────────────────────────
-def main(results_path):
+def main(results_path, predictions_path=None):
     with open(results_path) as f:
-        model_results = json.load(f)
+        loaded = json.load(f)
+
+    # train_xlnet.py writes a bare list; train_xlnet_grl.py wraps it in a dict
+    # under "results". Handle both.
+    if isinstance(loaded, dict) and "results" in loaded:
+        model_results = loaded["results"]
+    else:
+        model_results = loaded
 
     # Build lookup: prompt -> model predictions
     model_preds_by_prompt = {r["prompt"]: r for r in model_results}
 
     persuade_test = pd.read_csv(
-        os.path.join(DATA_BASE, "PERSUADE/test/persuade_corpus_2.0_test.csv"),
+        os.path.join(DATA_BASE, TEST_REL),
         low_memory=False
     ).drop_duplicates(subset="essay_id").reset_index(drop=True)
 
-    for c in DEMO_PAIRS.keys():
-        if c in persuade_test.columns:
-            persuade_test[c] = (persuade_test[c].astype(str)
-                                .str.lower().str.strip()
-                                .replace("nan", pd.NA))
+    cleaned_cols = set()
+    for attr in DEMO_PAIRS.keys():
+        c = column_for(attr)
+        if c in cleaned_cols or c not in persuade_test.columns:
+            continue
+        persuade_test[c] = (persuade_test[c].astype(str)
+                            .str.lower().str.strip()
+                            .replace("nan", pd.NA))
+        cleaned_cols.add(c)
 
     persuade_test = persuade_test[
         persuade_test[TEXT_COL].notna() & persuade_test[SCORE_COL].notna()
     ].reset_index(drop=True)
+
+    # If a per-essay prediction CSV is supplied (from dump_predictions.py), merge
+    # pred_score onto the test frame by essay_id. This unlocks the K&O-style
+    # weighted regression z (weighted_regression_smd), which needs per-essay
+    # predictions — results.json only stores the aggregate pooled model_smd.
+    have_preds = False
+    if predictions_path:
+        preds_df = pd.read_csv(predictions_path, low_memory=False)
+        preds_df = preds_df[["essay_id", "pred_score"]].drop_duplicates(subset="essay_id")
+        persuade_test = persuade_test.merge(preds_df, on="essay_id", how="left")
+        have_preds = persuade_test["pred_score"].notna().any()
+        n_matched = int(persuade_test["pred_score"].notna().sum())
+        print(f"merged predictions: {n_matched}/{len(persuade_test)} essays matched")
 
     all_results   = []
     all_p_values  = []
@@ -196,17 +242,18 @@ def main(results_path):
         prompt_result = {"prompt": prompt, "n_test": mr.get("n_test"), "demographics": {}}
 
         for demo_col, (group_a, group_b) in DEMO_PAIRS.items():
-            if demo_col not in te.columns:
+            src_col = column_for(demo_col)
+            if src_col not in te.columns:
                 continue
 
-            col_vals = te[demo_col].astype(str).str.lower().str.strip()
+            col_vals = te[src_col].astype(str).str.lower().str.strip()
             mask_a   = col_vals == group_a
             mask_b   = col_vals == group_b
 
             if mask_a.sum() < 5 or mask_b.sum() < 5:
                 continue
 
-            weights = compute_exact_matching_weights(te, demo_col, SCORE_COL, group_a, group_b)
+            weights = compute_exact_matching_weights(te, src_col, SCORE_COL, group_a, group_b)
 
             ha_w = te.loc[mask_a & (weights > 0), SCORE_COL]
             hb_w = te.loc[mask_b & (weights > 0), SCORE_COL]
@@ -226,12 +273,39 @@ def main(results_path):
             if demo_col in mr.get("bias", {}):
                 stored_model_smd = mr["bias"][demo_col].get("model_smd")
 
+            # K&O-style weighted regression z (model_score ~ group + human_score,
+            # weighted by exact-matching weights). Requires per-essay predictions.
+            reg = None
+            if have_preds:
+                reg = weighted_regression_smd(
+                    te, src_col, SCORE_COL, "pred_score",
+                    group_a, group_b, weights
+                )
+
+            # Pooled model SMD: if per-essay predictions are supplied, compute the
+            # pooled SMD FROM THOSE predictions so the per-prompt CSV reflects the
+            # actual run (baseline OR mitigation). Previously this always read the
+            # baseline results.json, so projection/GRL runs reported baseline
+            # pooled SMD + amplification, which is wrong for those runs.
+            pooled_model_smd = stored_model_smd
+            if have_preds:
+                pa = te.loc[mask_a, "pred_score"].dropna()
+                pb = te.loc[mask_b, "pred_score"].dropna()
+                if len(pa) >= 5 and len(pb) >= 5:
+                    pooled_model_smd = float(pooled_smd(pa, pb))
+
             prompt_result["demographics"][demo_col] = {
                 "simple_human_smd":   round(float(simple_human_smd), 4),
                 "weighted_human_smd": round(float(w_human_smd), 4),
-                "model_smd":          round(float(stored_model_smd), 4) if stored_model_smd else None,
-                "amplification":      round(float(abs(stored_model_smd) - abs(w_human_smd)), 4)
-                                      if stored_model_smd else None,
+                "model_smd":          round(float(pooled_model_smd), 4) if pooled_model_smd is not None else None,
+                "amplification":      round(float(abs(pooled_model_smd) - abs(w_human_smd)), 4)
+                                      if pooled_model_smd is not None else None,
+                # K&O regression outputs (None if no predictions supplied)
+                "reg_model_z":        reg["model_smd"]  if reg else None,
+                "reg_coef_group":     reg["coef_group"] if reg else None,
+                "reg_se_group":       reg["se_group"]   if reg else None,
+                "reg_p_value":        reg["p_value"]    if reg else None,
+                "reg_n":              reg["n"]          if reg else None,
                 "p_value_raw":        round(float(p_val), 4),
                 "n_a":                int(mask_a.sum()),
                 "n_b":                int(mask_b.sum()),
@@ -259,6 +333,10 @@ def main(results_path):
                     if demo_col in r["demographics"]
                     and r["demographics"][demo_col]["model_smd"] is not None]
         if w_smds:
+            reg_zs = [r["demographics"][demo_col]["reg_model_z"]
+                      for r in all_results
+                      if demo_col in r["demographics"]
+                      and r["demographics"][demo_col].get("reg_model_z") is not None]
             summary[demo_col] = {
                 "mean_weighted_human_smd": round(float(np.mean(w_smds)), 4),
                 "mean_model_smd":          round(float(np.mean(m_smds)), 4) if m_smds else None,
@@ -268,16 +346,25 @@ def main(results_path):
                     if demo_col in r["demographics"]
                     and r["demographics"][demo_col]["amplification"] is not None
                 ])), 4) if m_smds else None,
+                "mean_reg_model_z":        round(float(np.mean(reg_zs)), 4) if reg_zs else None,
                 "n_prompts": len(w_smds),
             }
-            print(f"  {demo_col}: "
-                  f"weighted_human={summary[demo_col]['mean_weighted_human_smd']:+.3f}  "
-                  f"model={summary[demo_col]['mean_model_smd']:+.3f}  "
-                  f"amplification={summary[demo_col]['mean_amplification']:+.3f}")
+            s = summary[demo_col]
+            line = f"  {demo_col}: weighted_human={s['mean_weighted_human_smd']:+.3f}"
+            if s["mean_model_smd"] is not None:
+                line += (f"  model_pooled={s['mean_model_smd']:+.3f}"
+                         f"  amp={s['mean_amplification']:+.3f}")
+            else:
+                line += "  model_pooled=n/a (not trained against this attribute)"
+            if s["mean_reg_model_z"] is not None:
+                line += f"  K&O_z={s['mean_reg_model_z']:+.3f}"
+            print(line)
 
     output = {"summary": summary, "per_prompt": all_results}
-    out_dir  = os.path.dirname(results_path)
-    out_path = os.path.join(out_dir, "weighted_smd_results.json")
+    out_dir  = OUT_DIR if OUT_DIR else os.path.dirname(results_path)
+    os.makedirs(out_dir, exist_ok=True)
+    tag = f"_{LABEL}" if LABEL else ""
+    out_path = os.path.join(out_dir, f"weighted_smd_results{tag}.json")
     with open(out_path, "w") as f:
         json.dump(output, f, indent=2)
 
@@ -289,12 +376,17 @@ def main(results_path):
                 "attribute":            demo_col,
                 "simple_human_smd":     vals.get("simple_human_smd"),
                 "weighted_human_smd":   vals.get("weighted_human_smd"),
-                "model_smd":            vals.get("model_smd"),
+                "model_smd_pooled":     vals.get("model_smd"),
                 "amplification":        vals.get("amplification"),
+                "reg_model_z":          vals.get("reg_model_z"),
+                "reg_coef_group":       vals.get("reg_coef_group"),
+                "reg_se_group":         vals.get("reg_se_group"),
+                "reg_p_value":          vals.get("reg_p_value"),
+                "reg_n":                vals.get("reg_n"),
                 "p_value_bh":           vals.get("p_value_bh"),
                 "significant":          vals.get("significant"),
             })
-    csv_path = os.path.join(out_dir, "weighted_smd_comparison.csv")
+    csv_path = os.path.join(out_dir, f"weighted_smd_comparison{tag}.csv")
     pd.DataFrame(rows).to_csv(csv_path, index=False)
     print(f"saved: {out_path}, {csv_path}")
 
@@ -306,7 +398,29 @@ if __name__ == "__main__":
     parser.add_argument(
         "--results",
         default=default_results,
-        help="Path to results.json from train_xlnet.py"
+        help="Path to results.json from train_xlnet.py / train_xlnet_grl.py"
+    )
+    parser.add_argument(
+        "--predictions",
+        default=None,
+        help="Optional per-essay prediction CSV from dump_predictions.py. "
+             "When supplied, computes K&O-style weighted regression z-scores "
+             "(matching their cluster-robust regression metric) AND pooled SMD "
+             "from these predictions (not baseline). Use a mitigation CSV here "
+             "and only the projected attribute's row is meaningful (diagonal)."
+    )
+    parser.add_argument(
+        "--out-dir", default=None,
+        help="Directory for output JSON/CSV. Defaults to the results.json dir. "
+             "Set this for mitigation runs so they don't overwrite "
+             "baseline_replication/weighted_smd_*."
+    )
+    parser.add_argument(
+        "--label", default=None,
+        help="Suffix tag for output files, e.g. 'inlp5_ell'. Prevents runs in "
+             "the same dir from clobbering each other."
     )
     args = parser.parse_args()
-    main(args.results)
+    OUT_DIR = args.out_dir
+    LABEL = args.label
+    main(args.results, args.predictions)

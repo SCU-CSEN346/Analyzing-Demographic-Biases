@@ -1,0 +1,65 @@
+{
+  "attribute": "race_hispanic",
+  "inlp_iters": 1,
+  "macro_qwk_base": 0.7610093579010243,
+  "macro_qwk_proj": 0.761721882287662,
+  "mean_probe_kappa_before": 0.7872512728383328,
+  "mean_probe_kappa_after": 0.4394022199109318,
+  "n_prompts": 6,
+  "per_prompt": [
+    {
+      "prompt": "\"A Cowboy Who Rode the Waves\"",
+      "n_test": 684,
+      "qwk_base": 0.6971300882495288,
+      "qwk_proj": 0.6971300882495288,
+      "probe_kappa_before": 0.9311862372474495,
+      "probe_kappa_after": 0.4326580652694262,
+      "n_directions_removed": 1
+    },
+    {
+      "prompt": "Car-free cities",
+      "n_test": 976,
+      "qwk_base": 0.756867294278618,
+      "qwk_proj": 0.7538897464633862,
+      "probe_kappa_before": 0.8990595454260848,
+      "probe_kappa_after": 0.5801958168790564,
+      "n_directions_removed": 1
+    },
+    {
+      "prompt": "Cell phones at school",
+      "n_test": 827,
+      "qwk_base": 0.7051497600413854,
+      "qwk_proj": 0.7037983773156966,
+      "probe_kappa_before": 0.7431969598471198,
+      "probe_kappa_after": 0.35620199509993034,
+      "n_directions_removed": 1
+    },
+    {
+      "prompt": "Community service",
+      "n_test": 774,
+      "qwk_base": 0.7065267971528204,
+      "qwk_proj": 0.7160647571606475,
+      "probe_kappa_before": 0.9520119970007498,
+      "probe_kappa_after": 0.5289375684556408,
+      "n_directions_removed": 1
+    },
+    {
+      "prompt": "Distance learning",
+      "n_test": 659,
+      "qwk_base": 0.8475514163398663,
+      "qwk_proj": 0.8495880079210409,
+      "probe_kappa_before": 0.7636144541086685,
+      "probe_kappa_after": 0.5354558610709117,
+      "n_directions_removed": 1
+    },
+    {
+      "prompt": "Does the electoral college work?",
+      "n_test": 228,
+      "qwk_base": 0.8528307913439271,
+      "qwk_proj": 0.8498603166156712,
+      "probe_kappa_before": 0.43443844339992577,
+      "probe_kappa_after": 0.2029640126906258,
+      "n_directions_removed": 1
+    }
+  ]
+}

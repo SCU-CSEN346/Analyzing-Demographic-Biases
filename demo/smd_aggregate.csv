@@ -1,0 +1,6 @@
+attribute,human,baseline,GRL
+Gender,0.1745,0.187,0.1883
+Race (B/W),0.2425,0.2524,0.2466
+ELL,0.4864,0.5582,0.5244
+Low SES,0.5149,0.5627,0.563
+Disability,0.5795,0.6279,0.6234
